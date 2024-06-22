@@ -1,0 +1,474 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Matemática Discreta" course="1º Curso" prof="Ángel Pérez" prof2="Miguel Romance" data-pagefind-filter="asignatura[content], curso[course], profesor[prof], profesor[prof2]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>16 Caminos y conexion ‣ Parte IV Teoria de grafos ‣ Matemática Discreta‣ Parte IV Teoria de grafos ‣ Matemática Discreta</title>
+<!--Generated on Fri Jun  7 11:08:28 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt4.html" title="Parte IV Teoria de grafos ‣ Matemática Discreta">
+<link rel="up up" href="index.html" title="Matemática Discreta">
+<link rel="start" href="index.html" title="Matemática Discreta">
+<link rel="prev" href="S15.html" title="15 Algunos grafos notables ‣ Parte IV Teoria de grafos ‣ Matemática Discreta">
+<link rel="section" href="S13.html" title="13 Grado y sucesion de grados ‣ Parte IV Teoria de grafos ‣ Matemática Discreta">
+<link rel="section" href="S14.html" title="14 Representacion matricial de grafos ‣ Parte IV Teoria de grafos ‣ Matemática Discreta">
+<link rel="section" href="S15.html" title="15 Algunos grafos notables ‣ Parte IV Teoria de grafos ‣ Matemática Discreta">
+<link rel="part" href="Pt1.html" title="Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="part" href="Pt2.html" title="Parte II Combinatoria ‣ Matemática Discreta">
+<link rel="part" href="Pt3.html" title="Parte III Aritmética entera y modular ‣ Matemática Discreta">
+<link rel="part" href="Pt4.html" title="Parte IV Teoria de grafos ‣ Matemática Discreta">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Matemática Discreta" class="ltx_ref" rel="start">Matemática Discreta</a>
+</li>
+<li class="divider">
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt1.html" title="Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>Fundamentos y el principio de inducción</a></li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt2.html" title="Parte II Combinatoria ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Combinatoria</a></li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt3.html" title="Parte III Aritmética entera y modular ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Aritmética entera y modular</a></li>
+<li data-level="IV" data-path="Pt4.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt4.html" title="Parte IV Teoria de grafos ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">IV </span></b>Teoria de grafos</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="13" data-path="S13.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S13.html" title="13 Grado y sucesion de grados ‣ Parte IV Teoria de grafos ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">13 </span></b>Grado y sucesion de grados</a></li>
+<li data-level="14" data-path="S14.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S14.html" title="14 Representacion matricial de grafos ‣ Parte IV Teoria de grafos ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">14 </span></b>Representacion matricial de grafos</a></li>
+<li data-level="15" data-path="S15.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S15.html" title="15 Algunos grafos notables ‣ Parte IV Teoria de grafos ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">15 </span></b>Algunos grafos notables</a></li>
+<li data-level="16" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="16 Caminos y conexion ‣ Parte IV Teoria de grafos ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">16 </span></b>Caminos y conexion</a></li>
+</ol>
+</li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Caminos y conexion</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">16</span> Caminos y conexion</h1>
+
+<div id="Thmdefinition1" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 16.1</span></span><span class="ltx_text ltx_font_bold"> </span>(Camino)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition1.p1" class="ltx_para">
+<p class="ltx_p">Un camino de longitud <math id="Thmdefinition1.p1.m1" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> entre los vertices <math id="Thmdefinition1.p1.m2" class="ltx_Math" alttext="\displaystyle a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">\displaystyle a</annotation></semantics></math> y <math id="Thmdefinition1.p1.m3" class="ltx_Math" alttext="\displaystyle b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">\displaystyle b</annotation></semantics></math> de un grafo no dirigido es una sucesion finita <math id="Thmdefinition1.p1.m4" class="ltx_Math" alttext="\displaystyle(e_{0},\ldots,e_{n-1})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>e</mi><mn>0</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>e</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(e_{0},\ldots,e_{n-1})</annotation></semantics></math> de aristas del grafo</p>
+<div id="Ex109" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex109.m1" class="ltx_Math" alttext="\displaystyle e_{0}=\{v_{0},v_{1}\},e_{1}=\{v_{1},v_{2}\},\ldots,e_{n-1}=\{v_{%
+n-1},v_{n}\}," display="block"><semantics><mrow><mrow><mrow><msub><mi>e</mi><mn>0</mn></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>v</mi><mn>0</mn></msub><mo>,</mo><msub><mi>v</mi><mn>1</mn></msub><mo stretchy="false">}</mo></mrow></mrow><mo>,</mo><mrow><mrow><msub><mi>e</mi><mn>1</mn></msub><mo>=</mo><mrow><mrow><mo stretchy="false">{</mo><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><msub><mi>v</mi><mn>2</mn></msub><mo stretchy="false">}</mo></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo><mrow><msub><mi>e</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>v</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>v</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle e_{0}=\{v_{0},v_{1}\},e_{1}=\{v_{1},v_{2}\},\ldots,e_{n-1}=\{v_{%
+n-1},v_{n}\},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">de manera que <math id="Thmdefinition1.p1.m5" class="ltx_Math" alttext="\displaystyle v_{0}=a" display="inline"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">\displaystyle v_{0}=a</annotation></semantics></math>, <math id="Thmdefinition1.p1.m6" class="ltx_Math" alttext="\displaystyle v_{n}=b" display="inline"><semantics><mrow><msub><mi>v</mi><mi>n</mi></msub><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\displaystyle v_{n}=b</annotation></semantics></math> y cada arista sucesiva empieza donde termino la anterior. Si el grafo es simple, el camino <math id="Thmdefinition1.p1.m7" class="ltx_Math" alttext="\displaystyle(e_{0},\ldots,e_{n-1})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>e</mi><mn>0</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>e</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(e_{0},\ldots,e_{n-1})</annotation></semantics></math> queda perfectamente determinado por la sucesion de vertices</p>
+<div id="Ex110" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex110.m1" class="ltx_Math" alttext="\displaystyle(a,v_{1},v_{2},\ldots,v_{n-1},b)." display="block"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><msub><mi>v</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>v</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle(a,v_{1},v_{2},\ldots,v_{n-1},b).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Diremos que el camino anterior pasa por (o atraviesa) los vertices
+<math id="Thmdefinition1.p1.m8" class="ltx_Math" alttext="\displaystyle a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">\displaystyle a</annotation></semantics></math>, <math id="Thmdefinition1.p1.m9" class="ltx_Math" alttext="\displaystyle v_{1}" display="inline"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\displaystyle v_{1}</annotation></semantics></math>, <math id="Thmdefinition1.p1.m10" class="ltx_Math" alttext="\displaystyle v_{2}" display="inline"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\displaystyle v_{2}</annotation></semantics></math>, <math id="Thmdefinition1.p1.m11" class="ltx_Math" alttext="\displaystyle\ldots" display="inline"><semantics><mi mathvariant="normal">…</mi><annotation encoding="application/x-tex">\displaystyle\ldots</annotation></semantics></math>, <math id="Thmdefinition1.p1.m12" class="ltx_Math" alttext="\displaystyle v_{n-1}" display="inline"><semantics><msub><mi>v</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">\displaystyle v_{n-1}</annotation></semantics></math>, <math id="Thmdefinition1.p1.m13" class="ltx_Math" alttext="\displaystyle b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">\displaystyle b</annotation></semantics></math>.
+
+Se dice que un camino es un circuito si es cerrada, esto es, empieza y termina en el mismo vertice, es decir, si <math id="Thmdefinition1.p1.m14" class="ltx_Math" alttext="\displaystyle a=b" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\displaystyle a=b</annotation></semantics></math>.
+
+Se dice que un camino es simple si no contiene a la misma arista mas de una vez.
+
+Un circuito que no pasa dos veces por el mismo vertice (salvo el inicial por el que pasa dos veces) se llama ciclo.</p>
+</div>
+</div>
+<div id="Thmdefinition2" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 16.2</span></span><span class="ltx_text ltx_font_bold"> </span>(Conexo)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition2.p1" class="ltx_para">
+<p class="ltx_p">Se dice que un grafo no dirigido <math id="Thmdefinition2.p1.m1" class="ltx_Math" alttext="\displaystyle G" display="inline"><semantics><mi>G</mi><annotation encoding="application/x-tex">\displaystyle G</annotation></semantics></math> es conexo si para cualquier par de vertices <math id="Thmdefinition2.p1.m2" class="ltx_Math" alttext="\displaystyle a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">\displaystyle a</annotation></semantics></math> y <math id="Thmdefinition2.p1.m3" class="ltx_Math" alttext="\displaystyle b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">\displaystyle b</annotation></semantics></math> de <math id="Thmdefinition2.p1.m4" class="ltx_Math" alttext="\displaystyle G" display="inline"><semantics><mi>G</mi><annotation encoding="application/x-tex">\displaystyle G</annotation></semantics></math> existe un camino entre <math id="Thmdefinition2.p1.m5" class="ltx_Math" alttext="\displaystyle a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">\displaystyle a</annotation></semantics></math> y <math id="Thmdefinition2.p1.m6" class="ltx_Math" alttext="\displaystyle b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">\displaystyle b</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Si un grafo no es conexo, se puede expresar como la union de dos o mas subgrafos conexos de manera que los conjuntos de vertices y de aristas de cada par de estos subgrafos son disjuntos entre si. A estos subgrafos se les denomina componentes conexas del grafo dado. De esta manera un grafo es conexo si y solo si tiene una unica componente conexa.</p>
+</div>
+<div id="Thmtheorem1" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 16.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sea <math id="Thmtheorem1.p1.m1" class="ltx_Math" alttext="\displaystyle G" display="inline"><semantics><mi>G</mi><annotation encoding="application/x-tex">\displaystyle G</annotation></semantics></math> un grafo (dirigido o no dirigido, con aristas multiples y lazos o no) y sea <math id="Thmtheorem1.p1.m2" class="ltx_Math" alttext="\displaystyle A=(a_{ij})" display="inline"><semantics><mrow><mi>A</mi><mo mathvariant="normal">=</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><msub><mi>a</mi><mrow><mi>i</mi><mo mathvariant="italic">⁢</mo><mi>j</mi></mrow></msub><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A=(a_{ij})</annotation></semantics></math> su matriz de adyacencias con respecto al orden <math id="Thmtheorem1.p1.m3" class="ltx_Math" alttext="\displaystyle v_{1},v_{2},\ldots,v_{n-1},v_{n}" display="inline"><semantics><mrow><msub><mi>v</mi><mn mathvariant="normal">1</mn></msub><mo mathvariant="normal">,</mo><msub><mi>v</mi><mn mathvariant="normal">2</mn></msub><mo mathvariant="normal">,</mo><mi mathvariant="normal">…</mi><mo mathvariant="normal">,</mo><msub><mi>v</mi><mrow><mi>n</mi><mo mathvariant="normal">−</mo><mn mathvariant="normal">1</mn></mrow></msub><mo mathvariant="normal">,</mo><msub><mi>v</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle v_{1},v_{2},\ldots,v_{n-1},v_{n}</annotation></semantics></math> de su conjunto de vertices. En estas condiciones el numero de caminos de longitud <math id="Thmtheorem1.p1.m4" class="ltx_Math" alttext="\displaystyle m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">\displaystyle m</annotation></semantics></math> entre el vertice <math id="Thmtheorem1.p1.m5" class="ltx_Math" alttext="\displaystyle v_{i}" display="inline"><semantics><msub><mi>v</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\displaystyle v_{i}</annotation></semantics></math> y el vertice <math id="Thmtheorem1.p1.m6" class="ltx_Math" alttext="\displaystyle v_{j}" display="inline"><semantics><msub><mi>v</mi><mi>j</mi></msub><annotation encoding="application/x-tex">\displaystyle v_{j}</annotation></semantics></math> es igual al coeficiente situado en el lugar <math id="Thmtheorem1.p1.m7" class="ltx_Math" alttext="\displaystyle(i,j)" display="inline"><semantics><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>i</mi><mo mathvariant="normal">,</mo><mi>j</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(i,j)</annotation></semantics></math> de la potencia <math id="Thmtheorem1.p1.m8" class="ltx_Math" alttext="\displaystyle m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">\displaystyle m</annotation></semantics></math>-esima de la matriz <math id="Thmtheorem1.p1.m9" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> (con respecto al producto de matrices usual).</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">No la hacemos, pero se puede hacer por induccion sobre la longitud del camino entre dos vertices cualesquiera <math id="p2.m1" class="ltx_Math" alttext="\displaystyle v_{i}" display="inline"><semantics><msub><mi>v</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\displaystyle v_{i}</annotation></semantics></math> y <math id="p2.m2" class="ltx_Math" alttext="\displaystyle v_{j}" display="inline"><semantics><msub><mi>v</mi><mi>j</mi></msub><annotation encoding="application/x-tex">\displaystyle v_{j}</annotation></semantics></math> de un grafo <math id="p2.m3" class="ltx_Math" alttext="\displaystyle G" display="inline"><semantics><mi>G</mi><annotation encoding="application/x-tex">\displaystyle G</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="Thmcorollary1" class="ltx_theorem ltx_theorem_corollary">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Corolario 16.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmcorollary1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Dado un grafo <math id="Thmcorollary1.p1.m1" class="ltx_Math" alttext="\displaystyle G=(V,E)" display="inline"><semantics><mrow><mi>G</mi><mo mathvariant="normal">=</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>V</mi><mo mathvariant="normal">,</mo><mi>E</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle G=(V,E)</annotation></semantics></math> tal que <math id="Thmcorollary1.p1.m2" class="ltx_Math" alttext="\displaystyle|V|=n" display="inline"><semantics><mrow><mrow><mo mathvariant="normal" stretchy="false">|</mo><mi>V</mi><mo mathvariant="normal" stretchy="false">|</mo></mrow><mo mathvariant="normal">=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">\displaystyle|V|=n</annotation></semantics></math>, se verifica que <math id="Thmcorollary1.p1.m3" class="ltx_Math" alttext="\displaystyle G" display="inline"><semantics><mi>G</mi><annotation encoding="application/x-tex">\displaystyle G</annotation></semantics></math> es conexo si y solo si la matriz</span></p>
+<div id="Ex111" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex111.m1" class="ltx_Math" alttext="\displaystyle I_{n}+A+A^{2}+\cdots+A^{n-1}" display="block"><semantics><mrow><msub><mi>I</mi><mi>n</mi></msub><mo>+</mo><mi>A</mi><mo>+</mo><msup><mi>A</mi><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msup><mi>A</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\displaystyle I_{n}+A+A^{2}+\cdots+A^{n-1}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">tiene todos los coeficientes distintos de cero.</span></p>
+</div>
+</div>
+<div id="Thmexamplex40" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex40.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="Thmexamplex40.p1.m1" class="ltx_Math" alttext="\displaystyle G" display="inline"><semantics><mi>G</mi><annotation encoding="application/x-tex">\displaystyle G</annotation></semantics></math> un grafo cuya matriz de adyacencia es:</p>
+<div id="Ex112" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex112.m1" class="ltx_Math" alttext="\displaystyle A=\begin{pmatrix}0&amp;1&amp;0\\
+1&amp;0&amp;1\\
+0&amp;1&amp;0\\
+\end{pmatrix}" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A=\begin{pmatrix}0&amp;1&amp;0\\
+1&amp;0&amp;1\\
+0&amp;1&amp;0\\
+\end{pmatrix}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Entonces su cuadrado es</p>
+<div id="Ex113" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex113.m1" class="ltx_Math" alttext="\displaystyle A^{2}\coloneqq\begin{pmatrix}1&amp;0&amp;1\\
+0&amp;2&amp;0\\
+1&amp;0&amp;1\\
+\end{pmatrix}" display="block"><semantics><mrow><msup><mi>A</mi><mn>2</mn></msup><mo>≔</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mn>2</mn></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mn>1</mn></mtd><mtd><mn>0</mn></mtd><mtd><mn>1</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A^{2}\coloneqq\begin{pmatrix}1&amp;0&amp;1\\
+0&amp;2&amp;0\\
+1&amp;0&amp;1\\
+\end{pmatrix}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Por tanto <math id="Thmexamplex40.p1.m2" class="ltx_Math" alttext="\displaystyle I_{3}+A+A^{2}" display="inline"><semantics><mrow><msub><mi>I</mi><mn>3</mn></msub><mo>+</mo><mi>A</mi><mo>+</mo><msup><mi>A</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\displaystyle I_{3}+A+A^{2}</annotation></semantics></math> tiene todas sus entradas no nulas y el grafo es conexo.</p>
+</div>
+</div>
+<div id="Thmdefinition3" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 16.3</span></span><span class="ltx_text ltx_font_bold"> </span>(Camino euleriano)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition3.p1" class="ltx_para">
+<p class="ltx_p">Un camino euleriano en un grafo no dirigido <math id="Thmdefinition3.p1.m1" class="ltx_Math" alttext="\displaystyle G" display="inline"><semantics><mi>G</mi><annotation encoding="application/x-tex">\displaystyle G</annotation></semantics></math> es un camino simple que contiene a todas las aristas de <math id="Thmdefinition3.p1.m2" class="ltx_Math" alttext="\displaystyle G" display="inline"><semantics><mi>G</mi><annotation encoding="application/x-tex">\displaystyle G</annotation></semantics></math>. Un circuito euleriano en <math id="Thmdefinition3.p1.m3" class="ltx_Math" alttext="\displaystyle G" display="inline"><semantics><mi>G</mi><annotation encoding="application/x-tex">\displaystyle G</annotation></semantics></math> es un circuito simple que contiene todas las aristas del grafo <math id="Thmdefinition3.p1.m4" class="ltx_Math" alttext="\displaystyle G" display="inline"><semantics><mi>G</mi><annotation encoding="application/x-tex">\displaystyle G</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmdefinition4" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 16.4</span></span><span class="ltx_text ltx_font_bold"> </span>(Grafo euleriano)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition4.p1" class="ltx_para">
+<p class="ltx_p">Se dice que un grafo no dirigido es euleriano si contiene un circuito euleriano.</p>
+</div>
+</div>
+<div id="p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Un camino euleriano es un camino que recorre todas las aristas del grafo y sin repetir ninguna.</p>
+</div>
+<div id="Thmtheorem2" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 16.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Un grafo <math id="Thmtheorem2.p1.m1" class="ltx_Math" alttext="\displaystyle G=(V,E)" display="inline"><semantics><mrow><mi>G</mi><mo mathvariant="normal">=</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>V</mi><mo mathvariant="normal">,</mo><mi>E</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle G=(V,E)</annotation></semantics></math> con aristas no dirigidas es euleriano si y solo si todas las aristas estan en la misma componente conexa y todos los vertices tienen grado par.</span></p>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">El siguiente resultado nos da una condicion para la existencia de un camino euleriano no cerrado:</p>
+</div>
+<div id="Thmproposition1" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 16.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Un grafo <math id="Thmproposition1.p1.m1" class="ltx_Math" alttext="\displaystyle G=(V,E)" display="inline"><semantics><mrow><mi>G</mi><mo mathvariant="normal">=</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>V</mi><mo mathvariant="normal">,</mo><mi>E</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle G=(V,E)</annotation></semantics></math> con aristas no dirigidas tal que todas sus aristas estan en la misma componente conexa admite un camino euleriano no cerrado si y solo si contiene exactamente dos vertices de grado impar.</span></p>
+</div>
+</div>
+<div id="Thmproposition2" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 16.2</span></span><span class="ltx_text ltx_font_bold"> </span>(Algoritmo de Fleury)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Para calcular caminos/ciclos eulerianos en un grafo que los admite, usamos el algoritmo de Fleury:</span></p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Comprobacion previa: Todas las aristas estan en la misma componente conexa y a lo sumo hay dos nodos de grado impar (necesario para que existan cambios eulerianos).</span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Paso inicial: elegimos un vertice (</span><math id="I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle v_{0}" display="inline"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">\displaystyle v_{0}</annotation></semantics></math><span class="ltx_text ltx_font_italic">) del siguiente modo:</span></p>
+<ul id="I1.i2.I1" class="ltx_itemize">
+<li id="I1.i2.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i2.I1.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Si hay vertices de grado impar, elegimos uno de grado impar al azar.</span></p>
+</div>
+</li>
+<li id="I1.i2.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i2.I1.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Si no hay vertices de grado impar, elegimos uno de grado par al azar.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Elegimos al azar una arista incidente en el vertice elegido en el paso anterior que no desconecte el grafo. Si no es posible hacerlo, elegimos una de las aristas incidentes al azar. En ambos casos borramos la arista elegida del grafo y nos movemos al vertice del otro extremo de la arista eliminada.</span></p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i4.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Repetimos el proceso hasta que no queden aristas.</span></p>
+</div>
+</li>
+</ul>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">La sucesion de aristas construidas antes es un camino/ciclo euleriano.</span></p>
+</div>
+</div>
+<div id="Thmdefinition5" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 16.5</span></span><span class="ltx_text ltx_font_bold"> </span>(Camino hamiltoniano)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition5.p1" class="ltx_para">
+<p class="ltx_p">Se denomina camino hamiltoniano en un grafo con aristas no orientadas <math id="Thmdefinition5.p1.m1" class="ltx_Math" alttext="\displaystyle G=(V,E)" display="inline"><semantics><mrow><mi>G</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>V</mi><mo>,</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle G=(V,E)</annotation></semantics></math> a cualquier camino simple que contenga a todos los vertices de <math id="Thmdefinition5.p1.m2" class="ltx_Math" alttext="\displaystyle G" display="inline"><semantics><mi>G</mi><annotation encoding="application/x-tex">\displaystyle G</annotation></semantics></math> pasadno una sola vez por cada uno de ellos, pero permitiendo que el vertice inicial de dicho camino sea igual al vertice final. Si el camino hamiltoniano es cerrado, a dicho camino se le denomina circuito hamiltoniano.</p>
+</div>
+</div>
+<div id="Thmdefinition6" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 16.6</span></span><span class="ltx_text ltx_font_bold"> </span>(Grafo hamiltoniano)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition6.p1" class="ltx_para">
+<p class="ltx_p">Se dice que un grafo no dirigido <math id="Thmdefinition6.p1.m1" class="ltx_Math" alttext="\displaystyle G=(V,E)" display="inline"><semantics><mrow><mi>G</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>V</mi><mo>,</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle G=(V,E)</annotation></semantics></math> es hamiltoniano si contiene un circuito hamiltoniano.</p>
+</div>
+</div>
+<div id="p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">Pese a la aparente similitud con la definicion de los grafos eulerianos encontrar un circuito hamiltoniano en un grafo puede no ser tarea facil pues no se conoce una caracterizacion de los grafos hamiltonianos.</p>
+</div>
+<div id="p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">Como se ha comentado, no siempre es sencillo determinar si un grafo simple y conexo dado es hamiltoniano pues, para ello, el unico criterio que tenemos a priori es nuestra habilidad para encontrar o no un circuito hamiltoniano en el grafo dado. La siguiente proposicion nos aporta un resutlado que permite concluir que ciertos grafos son hamiltonianos.</p>
+</div>
+<div id="Thmtheorem3" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 16.3</span></span><span class="ltx_text ltx_font_bold"> </span>(de Dirac)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sea <math id="Thmtheorem3.p1.m1" class="ltx_Math" alttext="\displaystyle G=(V,E)" display="inline"><semantics><mrow><mi>G</mi><mo mathvariant="normal">=</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>V</mi><mo mathvariant="normal">,</mo><mi>E</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle G=(V,E)</annotation></semantics></math> un grafo simple conexo de <math id="Thmtheorem3.p1.m2" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> vertices (<math id="Thmtheorem3.p1.m3" class="ltx_Math" alttext="\displaystyle n\geq 3" display="inline"><semantics><mrow><mi>n</mi><mo mathvariant="normal">≥</mo><mn mathvariant="normal">3</mn></mrow><annotation encoding="application/x-tex">\displaystyle n\geq 3</annotation></semantics></math>) tal que para cualquier vertice <math id="Thmtheorem3.p1.m4" class="ltx_Math" alttext="\displaystyle v\in V" display="inline"><semantics><mrow><mi>v</mi><mo mathvariant="normal">∈</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">\displaystyle v\in V</annotation></semantics></math> se cumple que</span></p>
+<div id="Ex114" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex114.m1" class="ltx_Math" alttext="\displaystyle gr(v)\geq\frac{n}{2}." display="block"><semantics><mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mfrac><mi>n</mi><mn>2</mn></mfrac></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle gr(v)\geq\frac{n}{2}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">entonces <math id="Thmtheorem3.p1.m5" class="ltx_Math" alttext="\displaystyle G" display="inline"><semantics><mi>G</mi><annotation encoding="application/x-tex">\displaystyle G</annotation></semantics></math> es hamiltoniano.</span></p>
+</div>
+</div>
+<div id="p7" class="ltx_para ltx_noindent">
+<p class="ltx_p">El Teorema de Dirac da una condicion suficiente para saber si un grafo es hamiltoniano, pero esta condicion no es una condicion necesaria (en general).</p>
+</div>
+<div id="p8" class="ltx_para ltx_noindent">
+<p class="ltx_p">Hasta el momento no existe ninguna caracterizacion de los grafos hamiltonianos en terminos de los grados del grafo.</p>
+</div>
+<div id="Thmdefinition7" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 16.7</span></span><span class="ltx_text ltx_font_bold"> </span>(Isomorfismo de grafos)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition7.p1" class="ltx_para">
+<p class="ltx_p">Se dice que dos grafos simples <math id="Thmdefinition7.p1.m1" class="ltx_Math" alttext="\displaystyle G_{1}=(V_{1},E_{1})" display="inline"><semantics><mrow><msub><mi>G</mi><mn>1</mn></msub><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>V</mi><mn>1</mn></msub><mo>,</mo><msub><mi>E</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle G_{1}=(V_{1},E_{1})</annotation></semantics></math> y <math id="Thmdefinition7.p1.m2" class="ltx_Math" alttext="\displaystyle G_{2}=(V_{2},E_{2})" display="inline"><semantics><mrow><msub><mi>G</mi><mn>2</mn></msub><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>V</mi><mn>2</mn></msub><mo>,</mo><msub><mi>E</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle G_{2}=(V_{2},E_{2})</annotation></semantics></math> son isomorfos si existe una biyeccion <math id="Thmdefinition7.p1.m3" class="ltx_Math" alttext="\displaystyle f\colon V_{1}\to V_{2}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msub><mi>V</mi><mn>1</mn></msub><mo stretchy="false">→</mo><msub><mi>V</mi><mn>2</mn></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\colon V_{1}\to V_{2}</annotation></semantics></math> tal que <math id="Thmdefinition7.p1.m4" class="ltx_Math" alttext="\displaystyle\forall u,v\in V_{1}" display="inline"><semantics><mrow><mrow><mrow><mo rspace="0.167em">∀</mo><mi>u</mi></mrow><mo>,</mo><mi>v</mi></mrow><mo>∈</mo><msub><mi>V</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle\forall u,v\in V_{1}</annotation></semantics></math></p>
+<div id="Ex115" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex115.m1" class="ltx_Math" alttext="\displaystyle\{u,v\}\in E_{1}\Leftrightarrow\{f(u),f(v)\}\in E_{2}" display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">{</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo stretchy="false">}</mo></mrow><mo>∈</mo><msub><mi>E</mi><mn>1</mn></msub></mrow><mo stretchy="false">⇔</mo><mrow><mrow><mo stretchy="false">{</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">}</mo></mrow><mo>∈</mo><msub><mi>E</mi><mn>2</mn></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\{u,v\}\in E_{1}\Leftrightarrow\{f(u),f(v)\}\in E_{2}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">De la funcion <math id="Thmdefinition7.p1.m5" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> que satisface dicha condicion se dice que es un isomorfismo de grafos entre los grafos <math id="Thmdefinition7.p1.m6" class="ltx_Math" alttext="\displaystyle G_{1}" display="inline"><semantics><msub><mi>G</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\displaystyle G_{1}</annotation></semantics></math> y <math id="Thmdefinition7.p1.m7" class="ltx_Math" alttext="\displaystyle G_{2}" display="inline"><semantics><msub><mi>G</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\displaystyle G_{2}</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="p9" class="ltx_para ltx_noindent">
+<p class="ltx_p">En otras palabras, dos grafos simples son isomorfos si existe una funcion biyectiva entre los dos conjuntos de vertices que preserva las adyacencias. Naturalmente esta definicion se puede extender a multigrafos y multidigrafos teniendo en cuenta el numero de aristas entre cada par de vertices y, en su caso, la orientacion de las aristas.</p>
+</div>
+<div id="Thmexamplex41" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex41.p1" class="ltx_para">
+<p class="ltx_p">Los dos grafos de la figura son isomorfos. Para verlo basta comprobar que la funcion <math id="Thmexamplex41.p1.m1" class="ltx_Math" alttext="\displaystyle f\colon\{a,b,c,d\}\to\{u,v,w,p\}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">{</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo>,</mo><mi>w</mi><mo>,</mo><mi>p</mi><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\colon\{a,b,c,d\}\to\{u,v,w,p\}</annotation></semantics></math>, tal que <math id="Thmexamplex41.p1.m2" class="ltx_Math" alttext="\displaystyle f(a)=u" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>u</mi></mrow><annotation encoding="application/x-tex">\displaystyle f(a)=u</annotation></semantics></math>, <math id="Thmexamplex41.p1.m3" class="ltx_Math" alttext="\displaystyle f(b)=v" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">\displaystyle f(b)=v</annotation></semantics></math>, <math id="Thmexamplex41.p1.m4" class="ltx_Math" alttext="\displaystyle f(c)=w" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>w</mi></mrow><annotation encoding="application/x-tex">\displaystyle f(c)=w</annotation></semantics></math>, <math id="Thmexamplex41.p1.m5" class="ltx_Math" alttext="\displaystyle f(d)=p" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>d</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\displaystyle f(d)=p</annotation></semantics></math> es un isomorfismo de grafos.</p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;"><img src="bmlimages/main-6.svg" alt="" id="Thmexamplex41.p1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="236" height="110"></div>
+</div>
+</div>
+<div id="p10" class="ltx_para ltx_noindent">
+<p class="ltx_p">A menudo es dificil determinar si dos grafos simples son isomorfos. De hecho, empleando herramientas de combinatoria, puede comprobarse que hay <math id="p10.m1" class="ltx_Math" alttext="\displaystyle n!" display="inline"><semantics><mrow><mi>n</mi><mo>!</mo></mrow><annotation encoding="application/x-tex">\displaystyle n!</annotation></semantics></math> aplicaciones biyectivas entre los conjuntos de vertices de dos grafos con <math id="p10.m2" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> vertices, por lo que comprobar una por una si dichas biyecciones preservan las adyacencias no es un buen metodo, sobre todo si <math id="p10.m3" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> es un numero grande.</p>
+</div>
+<div id="p11" class="ltx_para ltx_noindent">
+<p class="ltx_p">Debemos encontrar criterios para determinar si dos grafos simples son isomorfos o no lo son que no precisen una comprobacion exhaustiva.</p>
+</div>
+<div id="p12" class="ltx_para ltx_noindent">
+<p class="ltx_p">Estos criterios se apoyan en el hecho de que hay ciertas propiedades, denominadas invariantes por isomorfismo, que, si un grafo las verifica, cualquier otro grafo isomorfo a el las debe tambien verificar. Por ejemplo:</p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p">Dos grafos isomorfos deben tener el mismo numero de vertices y el mismo numero de aristas.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Si <math id="I2.i2.p1.m1" class="ltx_Math" alttext="\displaystyle f\colon V_{1}\to V_{2}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msub><mi>V</mi><mn>1</mn></msub><mo stretchy="false">→</mo><msub><mi>V</mi><mn>2</mn></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\colon V_{1}\to V_{2}</annotation></semantics></math> establece un isomorfismo entre los grafos <math id="I2.i2.p1.m2" class="ltx_Math" alttext="\displaystyle G_{1}=(V_{1},E_{1})" display="inline"><semantics><mrow><msub><mi>G</mi><mn>1</mn></msub><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>V</mi><mn>1</mn></msub><mo>,</mo><msub><mi>E</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle G_{1}=(V_{1},E_{1})</annotation></semantics></math> y <math id="I2.i2.p1.m3" class="ltx_Math" alttext="\displaystyle G_{2}=(V_{2},E_{2})" display="inline"><semantics><mrow><msub><mi>G</mi><mn>2</mn></msub><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>V</mi><mn>2</mn></msub><mo>,</mo><msub><mi>E</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle G_{2}=(V_{2},E_{2})</annotation></semantics></math>, entonces para cada <math id="I2.i2.p1.m4" class="ltx_Math" alttext="\displaystyle u\in V_{1}" display="inline"><semantics><mrow><mi>u</mi><mo>∈</mo><msub><mi>V</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle u\in V_{1}</annotation></semantics></math> se tiene que <math id="I2.i2.p1.m5" class="ltx_Math" alttext="\displaystyle gr(u)=gr(f(u))" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle gr(u)=gr(f(u))</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Este tipo de resultados sirve para comprobar con cierta facilidad que algunos grafos no son isomorfos.</p>
+</div>
+<div id="Thmtheorem4" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 16.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Si tenemos dos grafos que son isomorfos, entonces comparten todos los invariantes.
+
+Por tanto, si tenemos dos grafos que no comporten algun invariante, entonces no pueden ser isomorfos.</span></p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S15.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

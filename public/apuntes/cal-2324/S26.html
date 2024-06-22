@@ -1,0 +1,380 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Cálculo" course="1º Curso" prof="Alejandro García del Amo" prof2="David González de la Aleja" data-pagefind-filter="asignatura[content], curso[course], profesor[prof], profesor[prof2]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>26 Propiedades de las integrales ‣ Parte VII Integrales ‣ Cálculo‣ Parte VII Integrales ‣ Cálculo</title>
+<!--Generated on Sat Jun  8 00:06:25 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt7.html" title="Parte VII Integrales ‣ Cálculo">
+<link rel="up up" href="index.html" title="Cálculo">
+<link rel="start" href="index.html" title="Cálculo">
+<link rel="prev" href="S25.html" title="25 Qué es la integral? ‣ Parte VII Integrales ‣ Cálculo">
+<link rel="next" href="S27.html" title="27 Teoremas sobre Integrales ‣ Parte VII Integrales ‣ Cálculo">
+<link rel="section" href="S25.html" title="25 Qué es la integral? ‣ Parte VII Integrales ‣ Cálculo">
+<link rel="section" href="S27.html" title="27 Teoremas sobre Integrales ‣ Parte VII Integrales ‣ Cálculo">
+<link rel="part" href="Pt1.html" title="Parte I La recta real y el conjunto de los numeros reales ℝ ‣ Cálculo">
+<link rel="part" href="Pt2.html" title="Parte II Sucesiones de números reales ‣ Cálculo">
+<link rel="part" href="Pt3.html" title="Parte III Series ‣ Cálculo">
+<link rel="part" href="Pt4.html" title="Parte IV Límites y continuidad ‣ Cálculo">
+<link rel="part" href="Pt5.html" title="Parte V Derivadas ‣ Cálculo">
+<link rel="part" href="Pt6.html" title="Parte VI Aplicaciones de las derivadas ‣ Cálculo">
+<link rel="part" href="Pt7.html" title="Parte VII Integrales ‣ Cálculo">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Cálculo" class="ltx_ref" rel="start">Cálculo</a>
+</li>
+<li class="divider">
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt1.html" title="Parte I La recta real y el conjunto de los numeros reales ℝ ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>La recta real y el conjunto de los numeros reales <math class="ltx_Math" alttext="\displaystyle\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\displaystyle\mathbb{R}</annotation></semantics></math></a></li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt2.html" title="Parte II Sucesiones de números reales ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Sucesiones de números reales</a></li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt3.html" title="Parte III Series ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Series</a></li>
+<li data-level="IV" data-path="Pt4.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt4.html" title="Parte IV Límites y continuidad ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">IV </span></b>Límites y continuidad</a></li>
+<li data-level="V" data-path="Pt5.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt5.html" title="Parte V Derivadas ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">V </span></b>Derivadas</a></li>
+<li data-level="VI" data-path="Pt6.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt6.html" title="Parte VI Aplicaciones de las derivadas ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VI </span></b>Aplicaciones de las derivadas</a></li>
+<li data-level="VII" data-path="Pt7.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt7.html" title="Parte VII Integrales ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VII </span></b>Integrales</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="25" data-path="S25.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S25.html" title="25 Qué es la integral? ‣ Parte VII Integrales ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">25 </span></b>Qué es la integral?</a></li>
+<li data-level="26" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="26 Propiedades de las integrales ‣ Parte VII Integrales ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">26 </span></b>Propiedades de las integrales</a></li>
+<li data-level="27" data-path="S27.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S27.html" title="27 Teoremas sobre Integrales ‣ Parte VII Integrales ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">27 </span></b>Teoremas sobre Integrales</a></li>
+</ol>
+</li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Propiedades de las integrales</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">26</span> Propiedades de las integrales</h1>
+
+<div id="Thmtheorem1" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 26.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sea <math id="Thmtheorem1.p1.m1" class="ltx_Math" alttext="\displaystyle f\colon I\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" mathvariant="normal" rspace="0.278em">:</mo><mrow><mi>I</mi><mo mathvariant="normal" stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\colon I\to\mathbb{R}</annotation></semantics></math>, con <math id="Thmtheorem1.p1.m2" class="ltx_Math" alttext="\displaystyle I\subseteq\mathbb{R}" display="inline"><semantics><mrow><mi>I</mi><mo mathvariant="normal">⊆</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle I\subseteq\mathbb{R}</annotation></semantics></math>.</span></p>
+<div id="Ex131" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex131.m1" class="ltx_Math" alttext="\displaystyle\text{Si }f\text{ es continua en }[a,b]\Rightarrow f\text{ es %
+integrable en }[a,b]." display="block"><semantics><mrow><mrow><mrow><mtext mathvariant="italic">Si </mtext><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mtext mathvariant="italic"> es continua en </mtext><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">⇒</mo><mrow><mi>f</mi><mo>⁢</mo><mtext mathvariant="italic"> es integrable en </mtext><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\text{Si }f\text{ es continua en }[a,b]\Rightarrow f\text{ es %
+integrable en }[a,b].</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Además, el área comprendida entre la gráfica de una función continua positiva, el eje <math id="Thmtheorem1.p1.m3" class="ltx_Math" alttext="\displaystyle X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">\displaystyle X</annotation></semantics></math> y las rectas <math id="Thmtheorem1.p1.m4" class="ltx_Math" alttext="\displaystyle x=a" display="inline"><semantics><mrow><mi>x</mi><mo mathvariant="normal">=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">\displaystyle x=a</annotation></semantics></math> y <math id="Thmtheorem1.p1.m5" class="ltx_Math" alttext="\displaystyle x=b" display="inline"><semantics><mrow><mi>x</mi><mo mathvariant="normal">=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\displaystyle x=b</annotation></semantics></math>, es igual a</span></p>
+<div id="Ex132" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex132.m1" class="ltx_Math" alttext="\displaystyle\int^{b}_{a}f." display="block"><semantics><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\int^{b}_{a}f.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Tampoco se ha visto en clase.
+∎</p>
+</div>
+</div>
+<div id="Thmexamplex25" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex25.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmexamplex25.p1.m1" class="ltx_Math" alttext="\displaystyle f(x)=c" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\displaystyle f(x)=c</annotation></semantics></math>, con <math id="Thmexamplex25.p1.m2" class="ltx_Math" alttext="\displaystyle c\in\mathbb{R}" display="inline"><semantics><mrow><mi>c</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle c\in\mathbb{R}</annotation></semantics></math>.
+
+Sean <math id="Thmexamplex25.p1.m3" class="ltx_Math" alttext="\displaystyle a,b\in\mathbb{R}" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle a,b\in\mathbb{R}</annotation></semantics></math> y consideramos el intervalo <math id="Thmexamplex25.p1.m4" class="ltx_Math" alttext="\displaystyle[b,a]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>b</mi><mo>,</mo><mi>a</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\displaystyle[b,a]</annotation></semantics></math>. Sea <math id="Thmexamplex25.p1.m5" class="ltx_Math" alttext="\displaystyle P=\{x_{0},x_{1},\ldots,x_{n}\}\subset[a,b]" display="inline"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mo>⊂</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P=\{x_{0},x_{1},\ldots,x_{n}\}\subset[a,b]</annotation></semantics></math>.</p>
+<div class="ltx_equation ltx_eqn_div">
+<span><math id="Thmexamplex25.p1.m6" class="ltx_Math" alttext="L(f,P)=\sum_{i=1}^{n}m_{i}(x_{i}-x_{i-1})=\sum_{i=1}^{n}c(x_{i}-x_{i-1})=c\sum%
+_{i=1}^{n}(x_{i}-x_{i-1})=c(x_{n}-x_{0})=c(b-a)" display="block"><semantics><mtable displaystyle="true"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>,</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><msub><mi>m</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">L(f,P)=\sum_{i=1}^{n}m_{i}(x_{i}-x_{i-1})=\sum_{i=1}^{n}c(x_{i}-x_{i-1})=c\sum%
+_{i=1}^{n}(x_{i}-x_{i-1})=c(x_{n}-x_{0})=c(b-a)</annotation></semantics></math></span>
+</div>
+<div id="Ex133" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex133.m1" class="ltx_Math" alttext="\displaystyle U(f,P)=\sum_{i=1}^{n}M_{i}(x_{i}-x_{i-1})=c\sum_{i=1}^{n}(x_{i}-%
+x_{i-1})=c(b-a)" display="block"><semantics><mrow><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>,</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><msub><mi>M</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle U(f,P)=\sum_{i=1}^{n}M_{i}(x_{i}-x_{i-1})=c\sum_{i=1}^{n}(x_{i}-%
+x_{i-1})=c(b-a)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Por tanto, <math id="Thmexamplex25.p1.m7" class="ltx_Math" alttext="\displaystyle U(f,P)=L(f,P)=c(b-a)\;\forall P" display="inline"><semantics><mrow><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>,</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>,</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>P</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle U(f,P)=L(f,P)=c(b-a)\;\forall P</annotation></semantics></math>. Es decir, <math id="Thmexamplex25.p1.m8" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es integrable y <math id="Thmexamplex25.p1.m9" class="ltx_Math" alttext="\displaystyle\int^{b}_{a}f(x)dx=\int^{b}_{a}cdx=c(b-a)" display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mrow><mi>c</mi><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\int^{b}_{a}f(x)dx=\int^{b}_{a}cdx=c(b-a)</annotation></semantics></math>.</p>
+</div>
+<figure id="Thmexamplex25.fig1" class="ltx_figure"><div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;"><img src="bmlimages/main-6.svg" alt="" id="Thmexamplex25.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="303" height="171"></div>
+</figure>
+</div>
+<div id="Thmexamplex26" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex26.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmexamplex26.p1.m1" class="ltx_Math" alttext="\displaystyle\int^{1}_{0}xdx=?" display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup></mstyle><mrow><mi>x</mi><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mi mathvariant="normal">?</mi></mrow><annotation encoding="application/x-tex">\displaystyle\int^{1}_{0}xdx=?</annotation></semantics></math>. Consideramos una particion <math id="Thmexamplex26.p1.m2" class="ltx_Math" alttext="\displaystyle P=\{0,\frac{1}{n},\frac{2}{n},\frac{3}{n},\ldots,\frac{n}{n}\}" display="inline"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo>,</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>n</mi></mfrac></mstyle><mo>,</mo><mstyle displaystyle="true"><mfrac><mn>2</mn><mi>n</mi></mfrac></mstyle><mo>,</mo><mstyle displaystyle="true"><mfrac><mn>3</mn><mi>n</mi></mfrac></mstyle><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mstyle displaystyle="true"><mfrac><mi>n</mi><mi>n</mi></mfrac></mstyle><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P=\{0,\frac{1}{n},\frac{2}{n},\frac{3}{n},\ldots,\frac{n}{n}\}</annotation></semantics></math>. Esta particion es equiespacial ya que la diferencia entre cada elemento es siempre <math id="Thmexamplex26.p1.m3" class="ltx_Math" alttext="\displaystyle\frac{1}{n}" display="inline"><semantics><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>n</mi></mfrac></mstyle><annotation encoding="application/x-tex">\displaystyle\frac{1}{n}</annotation></semantics></math>. Por ejemplo, si <math id="Thmexamplex26.p1.m4" class="ltx_Math" alttext="\displaystyle n=4" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\displaystyle n=4</annotation></semantics></math> la particion seria <math id="Thmexamplex26.p1.m5" class="ltx_Math" alttext="\displaystyle P_{4}=\left\{0,\frac{1}{4},\frac{2}{4},\frac{3}{4},\frac{4}{4}\right\}" display="inline"><semantics><mrow><msub><mi>P</mi><mn>4</mn></msub><mo>=</mo><mrow><mo>{</mo><mn>0</mn><mo>,</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>,</mo><mstyle displaystyle="true"><mfrac><mn>2</mn><mn>4</mn></mfrac></mstyle><mo>,</mo><mstyle displaystyle="true"><mfrac><mn>3</mn><mn>4</mn></mfrac></mstyle><mo>,</mo><mstyle displaystyle="true"><mfrac><mn>4</mn><mn>4</mn></mfrac></mstyle><mo>}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P_{4}=\left\{0,\frac{1}{4},\frac{2}{4},\frac{3}{4},\frac{4}{4}\right\}</annotation></semantics></math>. En este caso,</p>
+<div class="ltx_equation ltx_eqn_div">
+<span><math id="Thmexamplex26.p1.m6" class="ltx_Math" alttext="U(x,P_{4})=M_{1}(x_{1}-x_{0})+M_{2}(x_{2}-x_{1})+M_{3}(x_{3}-x_{2})+M_{4}(x_{4%
+}-x_{3})=\\
+=x_{1}\cdot\frac{1}{4}+x_{2}\cdot\frac{1}{4}+x_{3}\cdot\frac{1}{4}+x_{4}\cdot%
+\frac{1}{4}=\frac{1}{4}\cdot\frac{1}{4}+\frac{1}{2}\cdot\frac{1}{4}+\frac{3}{4%
+}\cdot\frac{1}{4}+1\cdot\frac{1}{4}" display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><msub><mi>P</mi><mn>4</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>M</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi>M</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi>M</mi><mn>3</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mn>3</mn></msub><mo>−</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi>M</mi><mn>4</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mn>4</mn></msub><mo>−</mo><msub><mi>x</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mi></mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi></mi><mo>=</mo><mrow><mrow><msub><mi>x</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>+</mo><mrow><msub><mi>x</mi><mn>2</mn></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>+</mo><mrow><msub><mi>x</mi><mn>3</mn></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>+</mo><mrow><msub><mi>x</mi><mn>4</mn></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>+</mo><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></mrow></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">U(x,P_{4})=M_{1}(x_{1}-x_{0})+M_{2}(x_{2}-x_{1})+M_{3}(x_{3}-x_{2})+M_{4}(x_{4%
+}-x_{3})=\\
+=x_{1}\cdot\frac{1}{4}+x_{2}\cdot\frac{1}{4}+x_{3}\cdot\frac{1}{4}+x_{4}\cdot%
+\frac{1}{4}=\frac{1}{4}\cdot\frac{1}{4}+\frac{1}{2}\cdot\frac{1}{4}+\frac{3}{4%
+}\cdot\frac{1}{4}+1\cdot\frac{1}{4}</annotation></semantics></math></span>
+</div>
+<div class="ltx_equation ltx_eqn_div">
+<span><math id="Thmexamplex26.p1.m7" class="ltx_Math" alttext="L(x,P_{4})=m_{1}(x_{1}-x_{0})+m_{2}(x_{2}-x_{1})+m_{3}(x_{3}-x_{2})+m_{4}(x_{4%
+}-x_{3})=\\
+=x_{0}\cdot\frac{1}{4}+x_{1}\cdot\frac{1}{4}+x_{2}\cdot\frac{1}{4}+x_{3}\cdot%
+\frac{1}{4}=0\cdot\frac{1}{4}+\frac{1}{4}\cdot\frac{1}{4}+\frac{1}{2}\cdot%
+\frac{1}{4}+\frac{3}{4}\cdot\frac{1}{4}" display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><msub><mi>P</mi><mn>4</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi>m</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi>m</mi><mn>3</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mn>3</mn></msub><mo>−</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi>m</mi><mn>4</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mn>4</mn></msub><mo>−</mo><msub><mi>x</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mi></mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi></mi><mo>=</mo><mrow><mrow><msub><mi>x</mi><mn>0</mn></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>+</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>+</mo><mrow><msub><mi>x</mi><mn>2</mn></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>+</mo><mrow><msub><mi>x</mi><mn>3</mn></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></mrow><mo>=</mo><mrow><mrow><mn>0</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><mo>+</mo><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></mrow></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">L(x,P_{4})=m_{1}(x_{1}-x_{0})+m_{2}(x_{2}-x_{1})+m_{3}(x_{3}-x_{2})+m_{4}(x_{4%
+}-x_{3})=\\
+=x_{0}\cdot\frac{1}{4}+x_{1}\cdot\frac{1}{4}+x_{2}\cdot\frac{1}{4}+x_{3}\cdot%
+\frac{1}{4}=0\cdot\frac{1}{4}+\frac{1}{4}\cdot\frac{1}{4}+\frac{1}{2}\cdot%
+\frac{1}{4}+\frac{3}{4}\cdot\frac{1}{4}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Ahora vemos el caso general. Para <math id="Thmexamplex26.p1.m8" class="ltx_Math" alttext="\displaystyle P_{n}" display="inline"><semantics><msub><mi>P</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\displaystyle P_{n}</annotation></semantics></math>,</p>
+<div id="Ex134" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex134.m1" class="ltx_Math" alttext="\displaystyle U(x,P_{n})=\sum_{j=1}^{n}M_{j}\cdot(x_{j}-x_{j-1})=\sum_{j=1}^{n%
+}x_{j}\cdot\frac{1}{n}=\sum_{j=1}^{n}\frac{j}{n}\cdot\frac{1}{n}=\frac{1}{n^{2%
+}}\sum_{j=1}^{n}j" display="block"><semantics><mrow><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><msub><mi>P</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><msub><mi>M</mi><mi>j</mi></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>j</mi></msub><mo>−</mo><msub><mi>x</mi><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><msub><mi>x</mi><mi>j</mi></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mfrac><mi>j</mi><mi>n</mi></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>j</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle U(x,P_{n})=\sum_{j=1}^{n}M_{j}\cdot(x_{j}-x_{j-1})=\sum_{j=1}^{n%
+}x_{j}\cdot\frac{1}{n}=\sum_{j=1}^{n}\frac{j}{n}\cdot\frac{1}{n}=\frac{1}{n^{2%
+}}\sum_{j=1}^{n}j</annotation></semantics></math></span>
+</div>
+<div id="Ex135" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex135.m1" class="ltx_Math" alttext="\displaystyle L(x,P_{n})=\sum_{j=1}^{n}m_{j}\cdot(x_{j}-x_{j-1})=\sum_{j=1}^{n%
+}x_{j-1}\cdot\frac{1}{n}=\sum_{j=1}^{n}\frac{j-1}{n}\cdot\frac{1}{n}=\frac{1}{%
+n^{2}}\sum_{j=1}^{n}(j-1)" display="block"><semantics><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><msub><mi>P</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><msub><mi>m</mi><mi>j</mi></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>j</mi></msub><mo>−</mo><msub><mi>x</mi><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><msub><mi>x</mi><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mfrac><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow><mi>n</mi></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mn>1</mn><mi>n</mi></mfrac></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mo stretchy="false">(</mo><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle L(x,P_{n})=\sum_{j=1}^{n}m_{j}\cdot(x_{j}-x_{j-1})=\sum_{j=1}^{n%
+}x_{j-1}\cdot\frac{1}{n}=\sum_{j=1}^{n}\frac{j-1}{n}\cdot\frac{1}{n}=\frac{1}{%
+n^{2}}\sum_{j=1}^{n}(j-1)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Por tanto, nos queda que <math id="Thmexamplex26.p1.m9" class="ltx_Math" alttext="\displaystyle U(x,P_{n})=\frac{1}{n^{2}}\sum_{j=1}^{n}j" display="inline"><semantics><mrow><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><msub><mi>P</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mstyle><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mi>j</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle U(x,P_{n})=\frac{1}{n^{2}}\sum_{j=1}^{n}j</annotation></semantics></math> y <math id="Thmexamplex26.p1.m10" class="ltx_Math" alttext="\displaystyle L(x,P_{n})=\frac{1}{n^{2}}\sum_{j=1}^{n}(j-1)" display="inline"><semantics><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><msub><mi>P</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mstyle><mo>⁢</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mo stretchy="false">(</mo><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle L(x,P_{n})=\frac{1}{n^{2}}\sum_{j=1}^{n}(j-1)</annotation></semantics></math>.
+
+Sea <math id="Thmexamplex26.p1.m11" class="ltx_Math" alttext="\displaystyle U(f)=\mathop{\operator@font\acute{{\imath}}nf}(U(f,P))" display="inline"><semantics><mrow><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi>nf</mi></mrow><mrow><mo stretchy="false">(</mo><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>,</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle U(f)=\mathop{\operator@font\acute{{\imath}}nf}(U(f,P))</annotation></semantics></math> y <math id="Thmexamplex26.p1.m12" class="ltx_Math" alttext="\displaystyle L(f)=\sup(L(f,P))" display="inline"><semantics><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><mo lspace="0.1389em" movablelimits="false" rspace="0em">sup</mo><mrow><mo stretchy="false">(</mo><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>,</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle L(f)=\sup(L(f,P))</annotation></semantics></math>. Es obvio que <math id="Thmexamplex26.p1.m13" class="ltx_Math" alttext="\displaystyle L(f)\leq U(f)" display="inline"><semantics><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle L(f)\leq U(f)</annotation></semantics></math>. En particular,</p>
+<div id="Ex136" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex136.m1" class="ltx_Math" alttext="\displaystyle\frac{1}{n^{2}}\sum_{j=1}^{n}(j-1)=L(f,P_{n})\leq L(f)\leq U(f)%
+\leq U(f,P_{n})=\frac{1}{n^{2}}\sum_{j=1}^{n}j" display="block"><semantics><mrow><mrow><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mo stretchy="false">(</mo><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>,</mo><msub><mi>P</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>,</mo><msub><mi>P</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac><mo>⁢</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mi>j</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\frac{1}{n^{2}}\sum_{j=1}^{n}(j-1)=L(f,P_{n})\leq L(f)\leq U(f)%
+\leq U(f,P_{n})=\frac{1}{n^{2}}\sum_{j=1}^{n}j</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Ademas, <math id="Thmexamplex26.p1.m14" class="ltx_Math" alttext="\displaystyle\sum_{j=1}^{n}j=\frac{n(n+1)}{2}" display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mi>j</mi></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{j=1}^{n}j=\frac{n(n+1)}{2}</annotation></semantics></math> y <math id="Thmexamplex26.p1.m15" class="ltx_Math" alttext="\displaystyle\sum_{j=1}^{n}(j-1)=\sum_{j=1}^{n}j-\sum_{j=1}^{n}1=\frac{n(n-1)}%
+{2}-n" display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mo stretchy="false">(</mo><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mi>j</mi></mrow><mo>−</mo><mrow><mstyle displaystyle="true"><munderover><mo movablelimits="false">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mn>1</mn></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>2</mn></mfrac></mstyle><mo>−</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\sum_{j=1}^{n}(j-1)=\sum_{j=1}^{n}j-\sum_{j=1}^{n}1=\frac{n(n-1)}%
+{2}-n</annotation></semantics></math>.
+
+Por tanto, <math id="Thmexamplex26.p1.m16" class="ltx_Math" alttext="\displaystyle L(f,P_{n})=\frac{1}{n^{2}}\cdot\frac{n(n+1)}{2}-n=\frac{n^{2}+n}%
+{2n^{2}}-\frac{n}{n^{2}}\overset{n\rightarrow\infty}{\longrightarrow}\frac{1}{2}" display="inline"><semantics><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>,</mo><msub><mi>P</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mstyle><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>2</mn></mfrac></mstyle></mrow><mo>−</mo><mi>n</mi></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>−</mo><mrow><mstyle displaystyle="true"><mfrac><mi>n</mi><msup><mi>n</mi><mn>2</mn></msup></mfrac></mstyle><mo>⁢</mo><mover accent="true"><mo stretchy="false">⟶</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></mover><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle L(f,P_{n})=\frac{1}{n^{2}}\cdot\frac{n(n+1)}{2}-n=\frac{n^{2}+n}%
+{2n^{2}}-\frac{n}{n^{2}}\overset{n\rightarrow\infty}{\longrightarrow}\frac{1}{2}</annotation></semantics></math> y <math id="Thmexamplex26.p1.m17" class="ltx_Math" alttext="\displaystyle U(f,P_{n})=\frac{1}{n^{2}}\frac{n(n+1)}{2}=\frac{n^{2}+n}{2n^{2}%
+}\overset{n\rightarrow\infty}{\longrightarrow}\frac{1}{2}" display="inline"><semantics><mrow><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>,</mo><msub><mi>P</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>2</mn></mfrac></mstyle></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>⁢</mo><mover accent="true"><mo stretchy="false">⟶</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></mover><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow></mrow><annotation encoding="application/x-tex">\displaystyle U(f,P_{n})=\frac{1}{n^{2}}\frac{n(n+1)}{2}=\frac{n^{2}+n}{2n^{2}%
+}\overset{n\rightarrow\infty}{\longrightarrow}\frac{1}{2}</annotation></semantics></math>.
+
+Entonces, <math id="Thmexamplex26.p1.m18" class="ltx_Math" alttext="\displaystyle L(f)=U(f)=\frac{1}{2}" display="inline"><semantics><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>U</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle L(f)=U(f)=\frac{1}{2}</annotation></semantics></math> y <math id="Thmexamplex26.p1.m19" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es integrable <math id="Thmexamplex26.p1.m20" class="ltx_Math" alttext="\displaystyle\Rightarrow\int^{1}_{0}xdx=\frac{1}{2}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⇒</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup></mstyle><mrow><mi>x</mi><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">𝑑</mo><mi>x</mi></mrow></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow\int^{1}_{0}xdx=\frac{1}{2}</annotation></semantics></math>.</p>
+</div>
+<figure id="Thmexamplex26.fig1" class="ltx_figure"><div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;"><img src="bmlimages/main-7.svg" alt="" id="Thmexamplex26.g1" class="ltx_graphics ltx_centering ltx_img_landscape" style="vertical-align:-1px" width="257" height="192"></div>
+</figure>
+</div>
+<div id="Thmproposition1" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 26.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sean <math id="Thmproposition1.p1.m1" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> y <math id="Thmproposition1.p1.m2" class="ltx_Math" alttext="\displaystyle g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">\displaystyle g</annotation></semantics></math> integrables en <math id="Thmproposition1.p1.m3" class="ltx_Math" alttext="\displaystyle[a,b]" display="inline"><semantics><mrow><mo mathvariant="normal" stretchy="false">[</mo><mi>a</mi><mo mathvariant="normal">,</mo><mi>b</mi><mo mathvariant="normal" stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\displaystyle[a,b]</annotation></semantics></math>, entonces:</span></p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle f+g" display="inline"><semantics><mrow><mi>f</mi><mo>+</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">\displaystyle f+g</annotation></semantics></math><span class="ltx_text ltx_font_italic"> es integrable en </span><math id="I1.i1.p1.m2" class="ltx_Math" alttext="\displaystyle[a,b]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\displaystyle[a,b]</annotation></semantics></math><span class="ltx_text ltx_font_italic"> y </span><math id="I1.i1.p1.m3" class="ltx_Math" alttext="\displaystyle\int^{b}_{a}(f+g)=\int^{b}_{a}f+\int^{b}_{a}g" display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>+</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mi>f</mi></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mi>g</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\int^{b}_{a}(f+g)=\int^{b}_{a}f+\int^{b}_{a}g</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\lambda f" display="inline"><semantics><mrow><mi>λ</mi><mo>⁢</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">\displaystyle\lambda f</annotation></semantics></math><span class="ltx_text ltx_font_italic"> es integrable en </span><math id="I1.i2.p1.m2" class="ltx_Math" alttext="\displaystyle[a,b]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\displaystyle[a,b]</annotation></semantics></math><span class="ltx_text ltx_font_italic"> y </span><math id="I1.i2.p1.m3" class="ltx_Math" alttext="\displaystyle\int^{b}_{a}\lambda f=\lambda\int^{b}_{a}f" display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mrow><mi>λ</mi><mo>⁢</mo><mi>f</mi></mrow></mrow><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mi>f</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\int^{b}_{a}\lambda f=\lambda\int^{b}_{a}f</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\left|f\right|" display="inline"><semantics><mrow><mo>|</mo><mi>f</mi><mo>|</mo></mrow><annotation encoding="application/x-tex">\displaystyle\left|f\right|</annotation></semantics></math><span class="ltx_text ltx_font_italic"> es integrable en </span><math id="I1.i3.p1.m2" class="ltx_Math" alttext="\displaystyle[a,b]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\displaystyle[a,b]</annotation></semantics></math><span class="ltx_text ltx_font_italic"> y </span><math id="I1.i3.p1.m3" class="ltx_Math" alttext="\displaystyle\int^{b}_{a}f\leq\int^{b}_{a}\left|f\right|." display="inline"><semantics><mrow><mrow><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mi>f</mi></mrow><mo>≤</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mrow><mo>|</mo><mi>f</mi><mo>|</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\int^{b}_{a}f\leq\int^{b}_{a}\left|f\right|.</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i4.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I1.i4.p1.m1" class="ltx_Math" alttext="\displaystyle f\cdot g" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">\displaystyle f\cdot g</annotation></semantics></math><span class="ltx_text ltx_font_italic"> es integrable en </span><math id="I1.i4.p1.m2" class="ltx_Math" alttext="\displaystyle[a,b]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\displaystyle[a,b]</annotation></semantics></math><span class="ltx_text ltx_font_italic"> pero, en general, </span><math id="I1.i4.p1.m3" class="ltx_Math" alttext="\displaystyle\int^{b}_{a}f\cdot g\neq\int^{b}_{a}f\cdot\int^{b}_{a}g" display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>g</mi></mrow></mrow><mo>≠</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mi>g</mi></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\int^{b}_{a}f\cdot g\neq\int^{b}_{a}f\cdot\int^{b}_{a}g</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Thmproposition2" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 26.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sea <math id="Thmproposition2.p1.m1" class="ltx_Math" alttext="\displaystyle f\colon I\to\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" mathvariant="normal" rspace="0.278em">:</mo><mrow><mi>I</mi><mo mathvariant="normal" stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\colon I\to\mathbb{R}</annotation></semantics></math>, <math id="Thmproposition2.p1.m2" class="ltx_Math" alttext="\displaystyle I\subset\mathbb{R}" display="inline"><semantics><mrow><mi>I</mi><mo mathvariant="normal">⊂</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle I\subset\mathbb{R}</annotation></semantics></math> y <math id="Thmproposition2.p1.m3" class="ltx_Math" alttext="\displaystyle a,b,c\in\mathbb{R}" display="inline"><semantics><mrow><mrow><mi>a</mi><mo mathvariant="normal">,</mo><mi>b</mi><mo mathvariant="normal">,</mo><mi>c</mi></mrow><mo mathvariant="normal">∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle a,b,c\in\mathbb{R}</annotation></semantics></math> con <math id="Thmproposition2.p1.m4" class="ltx_Math" alttext="\displaystyle a\leq b\leq c" display="inline"><semantics><mrow><mi>a</mi><mo mathvariant="normal">≤</mo><mi>b</mi><mo mathvariant="normal">≤</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\displaystyle a\leq b\leq c</annotation></semantics></math> . Entonces</span></p>
+<div id="Ex137" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex137.m1" class="ltx_Math" alttext="\displaystyle f\text{ es integrable en }[a,c]\Leftrightarrow f\text{ es %
+integrable en }[a,b]\text{ y }[b,c]." display="block"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mtext mathvariant="italic"> es integrable en </mtext><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">⇔</mo><mrow><mi>f</mi><mo>⁢</mo><mtext mathvariant="italic"> es integrable en </mtext><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo>⁢</mo><mtext mathvariant="italic"> y </mtext><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle f\text{ es integrable en }[a,c]\Leftrightarrow f\text{ es %
+integrable en }[a,b]\text{ y }[b,c].</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Además, <math id="Thmproposition2.p1.m5" class="ltx_Math" alttext="\displaystyle\int^{c}_{a}f=\int^{b}_{a}f+\int^{c}_{b}f" display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><msubsup><mo mathvariant="normal">∫</mo><mi>a</mi><mi>c</mi></msubsup></mstyle><mi>f</mi></mrow><mo mathvariant="normal">=</mo><mrow><mrow><mstyle displaystyle="true"><msubsup><mo mathvariant="normal">∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mi>f</mi></mrow><mo mathvariant="normal">+</mo><mrow><mstyle displaystyle="true"><msubsup><mo mathvariant="normal">∫</mo><mi>b</mi><mi>c</mi></msubsup></mstyle><mi>f</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\int^{c}_{a}f=\int^{b}_{a}f+\int^{c}_{b}f</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Thmproposition3" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 26.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sean <math id="Thmproposition3.p1.m1" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> y <math id="Thmproposition3.p1.m2" class="ltx_Math" alttext="\displaystyle g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">\displaystyle g</annotation></semantics></math> integrables en <math id="Thmproposition3.p1.m3" class="ltx_Math" alttext="\displaystyle[a,b]" display="inline"><semantics><mrow><mo mathvariant="normal" stretchy="false">[</mo><mi>a</mi><mo mathvariant="normal">,</mo><mi>b</mi><mo mathvariant="normal" stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\displaystyle[a,b]</annotation></semantics></math>:</span></p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Si </span><math id="I2.i1.p1.m1" class="ltx_Math" alttext="\displaystyle f(x)\geq 0\quad\forall x\in[a,b]" display="inline"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mn>0</mn></mrow><mspace width="1.167em"></mspace><mrow><mrow><mo rspace="0.167em">∀</mo><mi>x</mi></mrow><mo>∈</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f(x)\geq 0\quad\forall x\in[a,b]</annotation></semantics></math><span class="ltx_text ltx_font_italic">, entonces </span><math id="I2.i1.p1.m2" class="ltx_Math" alttext="\displaystyle\int^{b}_{a}f\geq 0" display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mi>f</mi></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\int^{b}_{a}f\geq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Si </span><math id="I2.i2.p1.m1" class="ltx_Math" alttext="\displaystyle f(x)\geq g(x)\quad\forall x\in[a,b]" display="inline"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1.167em"></mspace><mrow><mrow><mo rspace="0.167em">∀</mo><mi>x</mi></mrow><mo>∈</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f(x)\geq g(x)\quad\forall x\in[a,b]</annotation></semantics></math><span class="ltx_text ltx_font_italic">, entonces </span><math id="I2.i2.p1.m2" class="ltx_Math" alttext="\displaystyle\int^{b}_{a}f\geq\int^{b}_{a}g" display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mi>f</mi></mrow><mo>≥</mo><mrow><mstyle displaystyle="true"><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup></mstyle><mi>g</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\int^{b}_{a}f\geq\int^{b}_{a}g</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S25.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S27.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+---
+interface Props {
+	title: string;
+	description: string;
+}
+import { Image } from "astro:assets";
+import avatar from "../images/avatar.jpeg";
+
+const { title, description } = Astro.props;
+import "@fontsource-variable/inter";
+import { ViewTransitions } from "astro:transitions";
+import { slide, fade } from 'astro:transitions';
+import NavBar from "../components/NavBar.astro";
+import Busqueda from "../components/Busqueda.astro";
+---
+
+<!doctype html>
+<html lang="en" transition:animate={fade({ duration: '0.4s' })}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="sitemap" href="/sitemap-index.xml" />
+		<meta name="generator" content={Astro.generator} />
+		<link href="/apuntes/pagefind/pagefind-ui.css" rel="stylesheet" />
+		<script src="/apuntes/pagefind/pagefind-ui.js" is:inline></script>
+		<title>{title}</title>
+		<ViewTransitions />
+	</head>
+	<body>
+		<NavBar />
+
+		<div>
+			<slot />
+		</div>
+		<Busqueda />
+		<style is:global>
+			html {
+				font-family: "Inter Variable", sans-serif;
+				scroll-behavior: smooth;
+			}
+		</style>
+	</body>
+</html>

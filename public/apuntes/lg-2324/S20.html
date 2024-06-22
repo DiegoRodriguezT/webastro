@@ -1,0 +1,449 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Lógica" course="1º Curso" prof="Ángel Pérez" data-pagefind-filter="asignatura[content], curso[course], profesor[prof]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>20 Alfabeto y reglas de formacion de formulas ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica‣ Parte V Sintaxis de la logica de predicados ‣ Lógica</title>
+<!--Generated on Fri Jun  7 11:07:44 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="up up" href="index.html" title="Lógica">
+<link rel="start" href="index.html" title="Lógica">
+<link rel="prev" href="S19.html" title="19 Introduccion intuitiva a la formalizacion ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="next" href="S21.html" title="21 Arbol estructural, recursion, induccion ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="section" href="S19.html" title="19 Introduccion intuitiva a la formalizacion ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="section" href="S21.html" title="21 Arbol estructural, recursion, induccion ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="section" href="S22.html" title="22 Variables libres y variables ligadas ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="section" href="Sx1.html" title="Terminología matemática ‣ Lógica">
+<link rel="part" href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="part" href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica">
+<link rel="part" href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="part" href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica">
+<link rel="part" href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="part" href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica">
+<link rel="part" href="Pt7.html" title="Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Lógica" class="ltx_ref" rel="start">Lógica</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Sx1.html" title="Terminología matemática ‣ Lógica" class="ltx_ref">Terminología matemática</a></li>
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>Conjuntos, relaciones y funciones</a></li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Sintaxis de la lógica proposicional</a></li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Semantica de la logica proposicional</a></li>
+<li data-level="IV" data-path="Pt4.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">IV </span></b>Teoria de la demostracion para logica proposicional</a></li>
+<li data-level="V" data-path="Pt5.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">V </span></b>Sintaxis de la logica de predicados</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="19" data-path="S19.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S19.html" title="19 Introduccion intuitiva a la formalizacion ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">19 </span></b>Introduccion intuitiva a la formalizacion</a></li>
+<li data-level="20" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="20 Alfabeto y reglas de formacion de formulas ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">20 </span></b>Alfabeto y reglas de formacion de formulas</a></li>
+<li data-level="21" data-path="S21.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S21.html" title="21 Arbol estructural, recursion, induccion ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">21 </span></b>Arbol estructural, recursion, induccion</a></li>
+<li data-level="22" data-path="S22.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S22.html" title="22 Variables libres y variables ligadas ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">22 </span></b>Variables libres y variables ligadas</a></li>
+</ol>
+</li>
+<li data-level="VI" data-path="Pt6.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VI </span></b>Semantica de la logica de predicados</a></li>
+<li data-level="VII" data-path="Pt7.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt7.html" title="Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VII </span></b>Teoria de la demostracion en logica de predicados</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Alfabeto y reglas de formacion de formulas</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">20</span> Alfabeto y reglas de formacion de formulas</h1>
+
+<div id="Thmdefinition1" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 20.1</span></span><span class="ltx_text ltx_font_bold"> </span>(Alfabeto de la logica de predicados)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition1.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmdefinition1.p1.m1" class="ltx_math_unparsed" alttext="\displaystyle A\coloneqq\{p_{1},p_{2},p_{3},\ldots\}\cup\{\top,\perp,\neg,\vee%
+,\wedge,\rightarrow,\leftrightarrow,(,)\}\cup\{c_{1},c_{2},\ldots\}\cup\{P_{1}%
+,P_{2},\ldots\}\cup\{x_{1},x_{2},\ldots\}\cup\{=\}\cup\{,\}" display="inline"><semantics><mrow><mi>A</mi><mo>≔</mo><mrow><mo stretchy="false">{</mo><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><msub><mi>p</mi><mn>2</mn></msub><mo>,</mo><msub><mi>p</mi><mn>3</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">{</mo><mo lspace="0em" rspace="0em">⊤</mo><mo>,</mo><mo lspace="0em" rspace="0em">⟂</mo><mo>,</mo><mi mathvariant="normal">¬</mi><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">∨</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">∧</mo><mo>,</mo><mo lspace="0em" rspace="0em" stretchy="false">→</mo><mo>,</mo><mo lspace="0em" rspace="0em" stretchy="false">↔</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mo>,</mo><mo stretchy="false">)</mo></mrow><mo stretchy="false">}</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">{</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><msub><mi>c</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">{</mo><msub><mi>P</mi><mn>1</mn></msub><mo>,</mo><msub><mi>P</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">{</mo><mo lspace="0em" rspace="0em">=</mo><mo stretchy="false">}</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">{</mo><mo>,</mo><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A\coloneqq\{p_{1},p_{2},p_{3},\ldots\}\cup\{\top,\perp,\neg,\vee%
+,\wedge,\rightarrow,\leftrightarrow,(,)\}\cup\{c_{1},c_{2},\ldots\}\cup\{P_{1}%
+,P_{2},\ldots\}\cup\{x_{1},x_{2},\ldots\}\cup\{=\}\cup\{,\}</annotation></semantics></math>.</p>
+</div>
+</div>
+<figure id="tab1" class="ltx_table"><div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table class="ltx_tabular ltx_centering ltx_align_middle">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_bold">Nombre</span></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_bold">Símbolo</span></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_bold">Tipo</span></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_bold">Aridad</span></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Constante</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m1" class="ltx_Math" alttext="\displaystyle c_{i}" display="inline"><semantics><msub><mi>c</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\displaystyle c_{i}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" rowspan="2">Función</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Función de aridad <math id="m2" class="ltx_Math" alttext="\displaystyle n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n\geq 1</annotation></semantics></math>
+</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m3" class="ltx_Math" alttext="\displaystyle f_{i}" display="inline"><semantics><msub><mi>f</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\displaystyle f_{i}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m4" class="ltx_Math" alttext="\displaystyle n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n\geq 1</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Proposición atómica</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m5" class="ltx_Math" alttext="\displaystyle p_{i}" display="inline"><semantics><msub><mi>p</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\displaystyle p_{i}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" rowspan="2">Predicado</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Predicado de aridad <math id="m6" class="ltx_Math" alttext="\displaystyle n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n\geq 1</annotation></semantics></math>
+</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m7" class="ltx_Math" alttext="\displaystyle P_{i}" display="inline"><semantics><msub><mi>P</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\displaystyle P_{i}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m8" class="ltx_Math" alttext="\displaystyle n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n\geq 1</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t">Variable</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t"><math id="m9" class="ltx_Math" alttext="\displaystyle x_{i}" display="inline"><semantics><msub><mi>x</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\displaystyle x_{i}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">Variable</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">-</td>
+</tr>
+</table>
+</div>
+</figure>
+<figure id="tab2" class="ltx_table"><div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table class="ltx_tabular ltx_centering ltx_align_middle">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_bold">Nombre</span></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_bold">Símbolo</span></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_bold">Tipo</span></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><span class="ltx_text ltx_font_bold">Aridad</span></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Verdadero</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m10" class="ltx_Math" alttext="\displaystyle\top" display="inline"><semantics><mo>⊤</mo><annotation encoding="application/x-tex">\displaystyle\top</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" rowspan="7">Conectiva</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" rowspan="2">0</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Falso</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m11" class="ltx_Math" alttext="\displaystyle\perp" display="inline"><semantics><mo>⟂</mo><annotation encoding="application/x-tex">\displaystyle\perp</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Negación</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m12" class="ltx_Math" alttext="\displaystyle\neg" display="inline"><semantics><mi mathvariant="normal">¬</mi><annotation encoding="application/x-tex">\displaystyle\neg</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Conjunción</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m13" class="ltx_Math" alttext="\displaystyle\wedge" display="inline"><semantics><mo>∧</mo><annotation encoding="application/x-tex">\displaystyle\wedge</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" rowspan="4">2</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Disyunción</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m14" class="ltx_Math" alttext="\displaystyle\vee" display="inline"><semantics><mo>∨</mo><annotation encoding="application/x-tex">\displaystyle\vee</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Implicación</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m15" class="ltx_Math" alttext="\displaystyle\rightarrow" display="inline"><semantics><mo stretchy="false">→</mo><annotation encoding="application/x-tex">\displaystyle\rightarrow</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Doble implicación</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m16" class="ltx_Math" alttext="\displaystyle\leftrightarrow" display="inline"><semantics><mo stretchy="false">↔</mo><annotation encoding="application/x-tex">\displaystyle\leftrightarrow</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Igualdad</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">=</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Igualdad</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">2</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Para todo</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m17" class="ltx_Math" alttext="\displaystyle\forall" display="inline"><semantics><mo>∀</mo><annotation encoding="application/x-tex">\displaystyle\forall</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" rowspan="2">Cuantificador</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t" rowspan="2">-</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Existe</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m18" class="ltx_Math" alttext="\displaystyle\exists" display="inline"><semantics><mo>∃</mo><annotation encoding="application/x-tex">\displaystyle\exists</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Paréntesis izquierdo</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">(</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t" rowspan="3">Auxiliar</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t" rowspan="3">-</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Paréntesis derecho</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t">Coma</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">,</td>
+</tr>
+</table>
+</div>
+</figure>
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Vamos a definir de manera recursiva dos lenguajes sobre <math id="p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math>:</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">El conjunto <math id="I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\mathcal{{T}}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">𝒯</mi><annotation encoding="application/x-tex">\displaystyle\mathcal{{T}}</annotation></semantics></math> de los terminos de la logica de predicados (que representaran elementos del dominio).</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">El conjunto <math id="I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\mathcal{{F}}_{1}" display="inline"><semantics><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\displaystyle\mathcal{{F}}_{1}</annotation></semantics></math> de las formulas de la logica de predicados (que representaran enunciados).</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="Thmdefinition2" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 20.2</span></span><span class="ltx_text ltx_font_bold"> </span>(Recursiva de termino)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition2.p1" class="ltx_para">
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p">Terminos atomicos:</p>
+<ul id="I2.i1.I1" class="ltx_itemize">
+<li id="I2.i1.I0.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i1.I0.i1.p1" class="ltx_para">​<p class="ltx_p">Si <math id="I2.i1.I0.i1.p1.m1" class="ltx_Math" alttext="\displaystyle c" display="inline"><semantics><mi>c</mi><annotation encoding="application/x-tex">\displaystyle c</annotation></semantics></math> es un simbolo constante <math id="I2.i1.I0.i1.p1.m2" class="ltx_Math" alttext="\displaystyle\Rightarrow c" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⇒</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow c</annotation></semantics></math> es un termino.</p>
+</div>
+</li>
+<li id="I2.i1.I0.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i1.I0.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Si <math id="I2.i1.I0.i2.p1.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math> es un simbolo de variable <math id="I2.i1.I0.i2.p1.m2" class="ltx_Math" alttext="\displaystyle\Rightarrow x" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⇒</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow x</annotation></semantics></math> es un termino.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p">Si <math id="I2.i2.p1.m1" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es un simbolo de funcion de aridad <math id="I2.i2.p1.m2" class="ltx_Math" alttext="\displaystyle n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n\geq 1</annotation></semantics></math> y <math id="I2.i2.p1.m3" class="ltx_Math" alttext="\displaystyle t_{1},t_{2},\ldots,t_{n}" display="inline"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>t</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle t_{1},t_{2},\ldots,t_{n}</annotation></semantics></math> son terminos entonces <math id="I2.i2.p1.m4" class="ltx_Math" alttext="\displaystyle f(t_{1},t_{2},\ldots,t_{n})" display="inline"><semantics><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>t</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f(t_{1},t_{2},\ldots,t_{n})</annotation></semantics></math> es un termino.</p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I2.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Cualquier palabra que no se pueda obtener con la aplicacion de las reglas anteriores no es un termino.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Thmdefinition3" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 20.3</span></span><span class="ltx_text ltx_font_bold"> </span>(Recursiva de formula de la logica de primer orden)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition3.p1" class="ltx_para">
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p">Formulas atomicas:</p>
+<ul id="I3.i1.I1" class="ltx_itemize">
+<li id="I3.i1.I0.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i1.I0.i1.p1" class="ltx_para">​<p class="ltx_p">Si <math id="I3.i1.I0.i1.p1.m1" class="ltx_Math" alttext="\displaystyle p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">\displaystyle p</annotation></semantics></math> es un simbolo de proposicion atomica <math id="I3.i1.I0.i1.p1.m2" class="ltx_Math" alttext="\displaystyle\Rightarrow p" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⇒</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow p</annotation></semantics></math> es una formula.</p>
+</div>
+</li>
+<li id="I3.i1.I0.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i1.I0.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i1.I0.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\top" display="inline"><semantics><mo>⊤</mo><annotation encoding="application/x-tex">\displaystyle\top</annotation></semantics></math> es una formula.</p>
+</div>
+</li>
+<li id="I3.i1.I0.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i1.I0.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i1.I0.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\perp" display="inline"><semantics><mo>⟂</mo><annotation encoding="application/x-tex">\displaystyle\perp</annotation></semantics></math> es una formula.</p>
+</div>
+</li>
+<li id="I3.i1.I0.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i1.I0.i4.p1" class="ltx_para">​<p class="ltx_p">Si <math id="I3.i1.I0.i4.p1.m1" class="ltx_Math" alttext="\displaystyle P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">\displaystyle P</annotation></semantics></math> es un simbolo de predicado de aridad <math id="I3.i1.I0.i4.p1.m2" class="ltx_Math" alttext="\displaystyle n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n\geq 1</annotation></semantics></math> y <math id="I3.i1.I0.i4.p1.m3" class="ltx_Math" alttext="\displaystyle t_{1},t_{2},\ldots,t_{n}" display="inline"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>t</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle t_{1},t_{2},\ldots,t_{n}</annotation></semantics></math> son terminos, entonces <math id="I3.i1.I0.i4.p1.m4" class="ltx_math_unparsed" alttext="\displaystyle P(t_{1},t_{2},\ldots,t_{n}" display="inline"><semantics><mrow><mi>P</mi><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>t</mi><mi>n</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P(t_{1},t_{2},\ldots,t_{n}</annotation></semantics></math> es una formula.</p>
+</div>
+</li>
+<li id="I3.i1.I0.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i1.I0.i5.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Si <math id="I3.i1.I0.i5.p1.m1" class="ltx_Math" alttext="\displaystyle t_{1},t_{2}" display="inline"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle t_{1},t_{2}</annotation></semantics></math> son terminos, entonces <math id="I3.i1.I0.i5.p1.m2" class="ltx_Math" alttext="\displaystyle(t_{1}=t_{2})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>=</mo><msub><mi>t</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(t_{1}=t_{2})</annotation></semantics></math> es una formula.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p">Si <math id="I3.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> es una formula <math id="I3.i2.p1.m2" class="ltx_Math" alttext="\displaystyle\Rightarrow\neg\varphi" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⇒</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>φ</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow\neg\varphi</annotation></semantics></math> es una formula.</p>
+</div>
+</li>
+<li id="I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I3.i3.p1" class="ltx_para">​<p class="ltx_p">Si <math id="I3.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi,\psi" display="inline"><semantics><mrow><mi>φ</mi><mo>,</mo><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\varphi,\psi</annotation></semantics></math> son formulas y <math id="I3.i3.p1.m2" class="ltx_math_unparsed" alttext="\displaystyle\circ\in\{\wedge,\vee,\rightarrow,\leftrightarrow\}" display="inline"><semantics><mrow><mo rspace="0em">∘</mo><mo lspace="0em">∈</mo><mrow><mo stretchy="false">{</mo><mo lspace="0em" rspace="0em">∧</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">∨</mo><mo>,</mo><mo lspace="0em" rspace="0em" stretchy="false">→</mo><mo>,</mo><mo lspace="0em" rspace="0em" stretchy="false">↔</mo><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\circ\in\{\wedge,\vee,\rightarrow,\leftrightarrow\}</annotation></semantics></math> entonces <math id="I3.i3.p1.m3" class="ltx_Math" alttext="\displaystyle(\varphi\circ\psi)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>φ</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>ψ</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(\varphi\circ\psi)</annotation></semantics></math> es una formula.</p>
+</div>
+</li>
+<li id="I3.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I3.i4.p1" class="ltx_para">​<p class="ltx_p">Si <math id="I3.i4.p1.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math> es un simbolo de variable y <math id="I3.i4.p1.m2" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> es una formula, entonces:</p>
+<ul id="I3.i4.I1" class="ltx_itemize">
+<li id="I3.i4.I0.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i4.I0.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i4.I0.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\forall x\varphi" display="inline"><semantics><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>φ</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall x\varphi</annotation></semantics></math> es una formula.</p>
+</div>
+</li>
+<li id="I3.i4.I0.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i4.I0.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I3.i4.I0.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\exists x\varphi" display="inline"><semantics><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>φ</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\exists x\varphi</annotation></semantics></math> es una formula.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="I3.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I3.i5.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Cualquier palabra que no se pueda obtener con la aplicacion de las reglas anteriores no esu na formula.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Thmremarkx33" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx33.p1" class="ltx_para">
+<p class="ltx_p">Se aplican los mismos criterios para abreviar formulas mediante eliminacion de parentesis que vimos en logica proposicional.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S19.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S21.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,683 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Lógica" course="1º Curso" prof="Ángel Pérez" data-pagefind-filter="asignatura[content], curso[course], profesor[prof]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>1 Conjuntos ‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica</title>
+<!--Generated on Fri Jun  7 11:07:44 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="up up" href="index.html" title="Lógica">
+<link rel="start" href="index.html" title="Lógica">
+<link rel="prev" href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="next" href="S2.html" title="2 Relaciones ‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="section" href="S2.html" title="2 Relaciones ‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="section" href="S3.html" title="3 Funciones ‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="section" href="Sx1.html" title="Terminología matemática ‣ Lógica">
+<link rel="part" href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="part" href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica">
+<link rel="part" href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="part" href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica">
+<link rel="part" href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="part" href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica">
+<link rel="part" href="Pt7.html" title="Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Lógica" class="ltx_ref" rel="start">Lógica</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Sx1.html" title="Terminología matemática ‣ Lógica" class="ltx_ref">Terminología matemática</a></li>
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>Conjuntos, relaciones y funciones</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="1" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="1 Conjuntos ‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Conjuntos</a></li>
+<li data-level="2" data-path="S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S2.html" title="2 Relaciones ‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Relaciones</a></li>
+<li data-level="3" data-path="S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S3.html" title="3 Funciones ‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Funciones</a></li>
+</ol>
+</li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Sintaxis de la lógica proposicional</a></li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Semantica de la logica proposicional</a></li>
+<li data-level="IV" data-path="Pt4.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">IV </span></b>Teoria de la demostracion para logica proposicional</a></li>
+<li data-level="V" data-path="Pt5.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">V </span></b>Sintaxis de la logica de predicados</a></li>
+<li data-level="VI" data-path="Pt6.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VI </span></b>Semantica de la logica de predicados</a></li>
+<li data-level="VII" data-path="Pt7.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt7.html" title="Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VII </span></b>Teoria de la demostracion en logica de predicados</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Conjuntos</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">1</span> Conjuntos</h1>
+
+<div id="Thmdefinition1" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 1.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Un conjunto es una coleccion de objetos, que se denominan elementos de ese conjunto.</p>
+</div>
+<div id="Thmdefinition1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Si <math id="Thmdefinition1.p2.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es un conjunto y <math id="Thmdefinition1.p2.m2" class="ltx_Math" alttext="\displaystyle b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">\displaystyle b</annotation></semantics></math> es un elemento de <math id="Thmdefinition1.p2.m3" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> decimos que <math id="Thmdefinition1.p2.m4" class="ltx_Math" alttext="\displaystyle b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">\displaystyle b</annotation></semantics></math> pertenece a <math id="Thmdefinition1.p2.m5" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math>. <span class="ltx_text ltx_framed_underline">Notacion:</span> <math id="Thmdefinition1.p2.m6" class="ltx_Math" alttext="\displaystyle b\in A" display="inline"><semantics><mrow><mi>b</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle b\in A</annotation></semantics></math>.</p>
+</div>
+<div id="Thmdefinition1.p3" class="ltx_para">
+<p class="ltx_p">En caso contrario, decimos que <math id="Thmdefinition1.p3.m1" class="ltx_Math" alttext="\displaystyle b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">\displaystyle b</annotation></semantics></math> no pertenece a <math id="Thmdefinition1.p3.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math>. <span class="ltx_text ltx_framed_underline">Notacion:</span> <math id="Thmdefinition1.p3.m3" class="ltx_Math" alttext="\displaystyle b\notin A" display="inline"><semantics><mrow><mi>b</mi><mo>∉</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle b\notin A</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Una forma de expresar conjuntos es enumerar sus elementos:</p>
+</div>
+<div id="Thmexamplex1" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex1.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmexamplex1.p1.m1" class="ltx_Math" alttext="\displaystyle A=\{1,3,5,7\}" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,3,5,7</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A=\{1,3,5,7\}</annotation></semantics></math></p>
+</div>
+</div>
+<div id="Thmdefinition2" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 1.2</span></span><span class="ltx_text ltx_font_bold"> </span>(Subconjunto)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Sean <math id="Thmdefinition2.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> y <math id="Thmdefinition2.p1.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> dos conjuntos. Se dice que <math id="Thmdefinition2.p1.m3" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es un subconjunto de <math id="Thmdefinition2.p1.m4" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> si todo elemento de <math id="Thmdefinition2.p1.m5" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es tambien elemento de <math id="Thmdefinition2.p1.m6" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math>.</p>
+</div>
+<div id="Thmdefinition2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Tambien se dice que <math id="Thmdefinition2.p2.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> esta contenido en <math id="Thmdefinition2.p2.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math>. <span class="ltx_text ltx_framed_underline">Notacion:</span> <math id="Thmdefinition2.p2.m3" class="ltx_Math" alttext="\displaystyle A\subseteq B" display="inline"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\subseteq B</annotation></semantics></math>.</p>
+</div>
+<div id="Thmdefinition2.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">En caso contrario diremos que <math id="Thmdefinition2.p3.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> no esta contenido en B.</p>
+</div>
+<div id="Thmdefinition2.p4" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_framed_underline">Notacion:</span> <math id="Thmdefinition2.p4.m1" class="ltx_Math" alttext="\displaystyle A\not\subseteq B" display="inline"><semantics><mrow><mi>A</mi><mo>⊈</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\not\subseteq B</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmdefinition3" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 1.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Sean <math id="Thmdefinition3.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> y <math id="Thmdefinition3.p1.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> dos conjuntos. Decimos que <math id="Thmdefinition3.p1.m3" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> y <math id="Thmdefinition3.p1.m4" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> son iguales si tienen los mismos elementos. Esto es lo mismo que decir que <math id="Thmdefinition3.p1.m5" class="ltx_Math" alttext="\displaystyle A\subseteq B" display="inline"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\subseteq B</annotation></semantics></math> y <math id="Thmdefinition3.p1.m6" class="ltx_Math" alttext="\displaystyle B\subseteq A" display="inline"><semantics><mrow><mi>B</mi><mo>⊆</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle B\subseteq A</annotation></semantics></math>.</p>
+</div>
+<div id="Thmdefinition3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_framed_underline">Notacion:</span> <math id="Thmdefinition3.p2.m1" class="ltx_Math" alttext="\displaystyle A=B" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle A=B</annotation></semantics></math>.</p>
+</div>
+<div id="Thmdefinition3.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">En caso contrario, diremos que <math id="Thmdefinition3.p3.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> y <math id="Thmdefinition3.p3.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> son distintos.</p>
+</div>
+<div id="Thmdefinition3.p4" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_framed_underline">Notacion:</span> <math id="Thmdefinition3.p4.m1" class="ltx_Math" alttext="\displaystyle A\neq B" display="inline"><semantics><mrow><mi>A</mi><mo>≠</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\neq B</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmremarkx1" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">En un conjunto no se tienen en cuenta elementos repetidos.</p>
+</div>
+<div id="Thmremarkx1.p2" class="ltx_para">
+<p class="ltx_p">Tampoco se tiene en cuenta el orden.</p>
+</div>
+</div>
+<div id="Thmdefinition4" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 1.4</span></span><span class="ltx_text ltx_font_bold"> </span>(Contenido estricto)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition4.p1" class="ltx_para">
+<p class="ltx_p">Decimos que A esta estrictamente contenido en <math id="Thmdefinition4.p1.m1" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> si <math id="Thmdefinition4.p1.m2" class="ltx_Math" alttext="\displaystyle A\subseteq B" display="inline"><semantics><mrow><mi>A</mi><mo>⊆</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\subseteq B</annotation></semantics></math> y <math id="Thmdefinition4.p1.m3" class="ltx_Math" alttext="\displaystyle A\neq B" display="inline"><semantics><mrow><mi>A</mi><mo>≠</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\neq B</annotation></semantics></math>.
+Notacion: <math id="Thmdefinition4.p1.m4" class="ltx_Math" alttext="\displaystyle A\subset B" display="inline"><semantics><mrow><mi>A</mi><mo>⊂</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\subset B</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">La segunda forma de expresar conjuntos consiste en indicar una propiedad.</p>
+</div>
+<div id="Thmexamplex2" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex2.p1" class="ltx_para">
+<div id="Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex7.m1" class="ltx_Math" alttext="\displaystyle A=\{x\mid x\text{ es un numero primo menor que 15}\}" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mi>x</mi><mo>⁢</mo><mtext> es un numero primo menor que 15</mtext></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A=\{x\mid x\text{ es un numero primo menor que 15}\}</annotation></semantics></math></span>
+</div>
+<div id="Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex8.m1" class="ltx_Math" alttext="\displaystyle A=\{2,3,5,7,11,13\}" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>2,3,5,7,11,13</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A=\{2,3,5,7,11,13\}</annotation></semantics></math></span>
+</div>
+<div id="Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex9.m1" class="ltx_Math" alttext="\displaystyle B=\{x\mid x\text{ es un numero primo mayor que 15}\}" display="block"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mi>x</mi><mo>⁢</mo><mtext> es un numero primo mayor que 15</mtext></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle B=\{x\mid x\text{ es un numero primo mayor que 15}\}</annotation></semantics></math></span>
+</div>
+<div id="Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex10.m1" class="ltx_Math" alttext="\displaystyle B=\{17,19,23,29,31,37,41,43,\ldots\}" display="block"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>17,19,23,29,31,37,41,43</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle B=\{17,19,23,29,31,37,41,43,\ldots\}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmdefinition5" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 1.5</span></span><span class="ltx_text ltx_font_bold"> </span>(Conjuntos numericos, informal)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition5.p1" class="ltx_para">
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">Numeros naturales: 
+<br class="ltx_break"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{N}\coloneqq\{1,2,3,4,5,\ldots\}" display="inline"><semantics><mrow><mi>ℕ</mi><mo>≔</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3,4,5</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{N}\coloneqq\{1,2,3,4,5,\ldots\}</annotation></semantics></math>. No tiene solucion <math id="I1.i1.p1.m2" class="ltx_Math" alttext="\displaystyle 2-x=5" display="inline"><semantics><mrow><mrow><mn>2</mn><mo>−</mo><mi>x</mi></mrow><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\displaystyle 2-x=5</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p">Numeros enteros: 
+<br class="ltx_break"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{Z}\coloneqq\{\ldots,-2,-1,0,1,2,\ldots\}" display="inline"><semantics><mrow><mi>ℤ</mi><mo>≔</mo><mrow><mo stretchy="false">{</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mo>−</mo><mn>2</mn></mrow><mo>,</mo><mrow><mo>−</mo><mn>1,0,1,2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}\coloneqq\{\ldots,-2,-1,0,1,2,\ldots\}</annotation></semantics></math>. No tiene solucion <math id="I1.i2.p1.m2" class="ltx_Math" alttext="\displaystyle 2x=5" display="inline"><semantics><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\displaystyle 2x=5</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p">Numeros racionales: 
+<br class="ltx_break"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{Q}\coloneqq\left\{\frac{a}{b}\mid a,b\in\mathbb{Z},b\neq 0\right\}" display="inline"><semantics><mrow><mi>ℚ</mi><mo>≔</mo><mrow><mo>{</mo><mstyle displaystyle="true"><mfrac><mi>a</mi><mi>b</mi></mfrac></mstyle><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℤ</mi></mrow><mo>,</mo><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow></mrow><mo>}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{Q}\coloneqq\left\{\frac{a}{b}\mid a,b\in\mathbb{Z},b\neq 0\right\}</annotation></semantics></math>. Tienen expresion decimal periodica. No tiene solucion <math id="I1.i3.p1.m2" class="ltx_Math" alttext="\displaystyle x^{2}=2" display="inline"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\displaystyle x^{2}=2</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i4.p1" class="ltx_para">​<p class="ltx_p">Numeros reales: 
+<br class="ltx_break"><math id="I1.i4.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\displaystyle\mathbb{R}</annotation></semantics></math>. Tienen expresion decimal arbitraria, periodica o no periodica. No tiene solucion <math id="I1.i4.p1.m2" class="ltx_Math" alttext="\displaystyle x^{2}=-1" display="inline"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle x^{2}=-1</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i5.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Numeros complejos: 
+<br class="ltx_break"><math id="I1.i5.p1.m1" class="ltx_Math" alttext="\displaystyle i\coloneqq\sqrt{-1}" display="inline"><semantics><mrow><mi>i</mi><mo>≔</mo><msqrt><mrow><mo>−</mo><mn>1</mn></mrow></msqrt></mrow><annotation encoding="application/x-tex">\displaystyle i\coloneqq\sqrt{-1}</annotation></semantics></math> la unidad imaginaria.</p>
+</div>
+<div id="I1.i5.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="I1.i5.p2.m1" class="ltx_Math" alttext="\displaystyle\mathbb{C}\coloneqq\{a+bi\mid a,b\in\mathbb{R}\}" display="inline"><semantics><mrow><mi>ℂ</mi><mo>≔</mo><mrow><mo stretchy="false">{</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>i</mi></mrow></mrow><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{C}\coloneqq\{a+bi\mid a,b\in\mathbb{R}\}</annotation></semantics></math></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Thmdefinition6" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 1.6</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition6.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Se define el conjunto vacio como un conjunto sin elementos.</p>
+</div>
+<div id="Thmdefinition6.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_framed_underline">Notacion:</span> <math id="Thmdefinition6.p2.m1" class="ltx_Math" alttext="\displaystyle\varnothing" display="inline"><semantics><mi mathvariant="normal">∅</mi><annotation encoding="application/x-tex">\displaystyle\varnothing</annotation></semantics></math></p>
+</div>
+</div>
+<div id="Thmproposition1" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 1.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sea <math id="Thmproposition1.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> un conjunto cualquiera. Se cumple que <math id="Thmproposition1.p1.m2" class="ltx_Math" alttext="\displaystyle\varnothing\subseteq A" display="inline"><semantics><mrow><mi mathvariant="normal">∅</mi><mo mathvariant="normal">⊆</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle\varnothing\subseteq A</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Lo demostraremos por reduccion al absurdo.</p>
+</div>
+<div id="p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">Supongamos que <math id="p4.m1" class="ltx_Math" alttext="\displaystyle\varnothing\not\subseteq A" display="inline"><semantics><mrow><mi mathvariant="normal">∅</mi><mo>⊈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle\varnothing\not\subseteq A</annotation></semantics></math>. Entonces, existe un elemento <math id="p4.m2" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math> tal que <math id="p4.m3" class="ltx_Math" alttext="\displaystyle x\in\varnothing" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">\displaystyle x\in\varnothing</annotation></semantics></math> y <math id="p4.m4" class="ltx_Math" alttext="\displaystyle x\notin A" display="inline"><semantics><mrow><mi>x</mi><mo>∉</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle x\notin A</annotation></semantics></math>.</p>
+</div>
+<div id="p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">Esto es una contradiccion, ya que el conjunto <math id="p5.m1" class="ltx_Math" alttext="\displaystyle\varnothing" display="inline"><semantics><mi mathvariant="normal">∅</mi><annotation encoding="application/x-tex">\displaystyle\varnothing</annotation></semantics></math> no tiene elementos.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Luego es falso que <math id="p6.m1" class="ltx_Math" alttext="\displaystyle\varnothing\not\subseteq A" display="inline"><semantics><mrow><mi mathvariant="normal">∅</mi><mo>⊈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle\varnothing\not\subseteq A</annotation></semantics></math> y por tanto <math id="p6.m2" class="ltx_Math" alttext="\displaystyle\varnothing\subseteq A" display="inline"><semantics><mrow><mi mathvariant="normal">∅</mi><mo>⊆</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle\varnothing\subseteq A</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="Thmdefinition7" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 1.7</span></span><span class="ltx_text ltx_font_bold"> </span>(Operaciones con conjuntos)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition7.p1" class="ltx_para">
+<p class="ltx_p">Sean <math id="Thmdefinition7.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> y <math id="Thmdefinition7.p1.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> dos conjuntos. Se definen:</p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p">Interseccion de <math id="I2.i1.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> y <math id="I2.i1.p1.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math>: 
+<br class="ltx_break"><math id="I2.i1.p1.m3" class="ltx_Math" alttext="\displaystyle A\cap B\coloneqq\{x\mid x\in A\text{ y }x\in B\}" display="inline"><semantics><mrow><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow><mo>≔</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mi>x</mi><mo>∈</mo><mrow><mi>A</mi><mo>⁢</mo><mtext> y </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>∈</mo><mi>B</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A\cap B\coloneqq\{x\mid x\in A\text{ y }x\in B\}</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p">Union de <math id="I2.i2.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> y <math id="I2.i2.p1.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math>: 
+<br class="ltx_break"><math id="I2.i2.p1.m3" class="ltx_Math" alttext="\displaystyle A\cup B\coloneqq\{x\mid x\in A\text{ o }x\in B\}" display="inline"><semantics><mrow><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow><mo>≔</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mi>x</mi><mo>∈</mo><mrow><mi>A</mi><mo>⁢</mo><mtext> o </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>∈</mo><mi>B</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A\cup B\coloneqq\{x\mid x\in A\text{ o }x\in B\}</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Diferencia entre <math id="I2.i3.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> y <math id="I2.i3.p1.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> (o <math id="I2.i3.p1.m3" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> menos <math id="I2.i3.p1.m4" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math>):</p>
+</div>
+<div id="I2.i3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="I2.i3.p2.m1" class="ltx_Math" alttext="\displaystyle A\setminus B\coloneqq\{x\mid x\in A\text{ y }x\notin B\}" display="inline"><semantics><mrow><mrow><mi>A</mi><mo>∖</mo><mi>B</mi></mrow><mo>≔</mo><mrow><mo stretchy="false">{</mo><mi>x</mi><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mi>x</mi><mo>∈</mo><mrow><mi>A</mi><mo>⁢</mo><mtext> y </mtext><mo>⁢</mo><mi>x</mi></mrow><mo>∉</mo><mi>B</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A\setminus B\coloneqq\{x\mid x\in A\text{ y }x\notin B\}</annotation></semantics></math></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Thmdefinition8" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 1.8</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition8.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Decimos que un conjunto <math id="Thmdefinition8.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es finito si tiene tantos elementos como un numero natural o bien si no tiene elementos (<math id="Thmdefinition8.p1.m2" class="ltx_Math" alttext="\displaystyle\varnothing" display="inline"><semantics><mi mathvariant="normal">∅</mi><annotation encoding="application/x-tex">\displaystyle\varnothing</annotation></semantics></math>).</p>
+</div>
+<div id="Thmdefinition8.p2" class="ltx_para">
+<p class="ltx_p">En caso contrario decimos que <math id="Thmdefinition8.p2.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es infinito.</p>
+</div>
+</div>
+<div id="Thmdefinition9" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 1.9</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition9.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Si <math id="Thmdefinition9.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es un conjunto finito, se define el cardinal de <math id="Thmdefinition9.p1.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> como su numero de elementos. El cardinal de <math id="Thmdefinition9.p1.m3" class="ltx_Math" alttext="\displaystyle\varnothing" display="inline"><semantics><mi mathvariant="normal">∅</mi><annotation encoding="application/x-tex">\displaystyle\varnothing</annotation></semantics></math> es 0. Si <math id="Thmdefinition9.p1.m4" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es un conjunto infinito tiene cardinal infinito.</p>
+</div>
+<div id="Thmdefinition9.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_framed_underline">Notacion:</span> <math id="Thmdefinition9.p2.m1" class="ltx_Math" alttext="\displaystyle|A|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">\displaystyle|A|</annotation></semantics></math></p>
+</div>
+</div>
+<div id="Thmdefinition10" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 1.10</span></span><span class="ltx_text ltx_font_bold"> </span>(Partes de un conjunto)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition10.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="Thmdefinition10.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> un conjunto. Se define el conjunto de las partes de <math id="Thmdefinition10.p1.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> como el conjunto formado por todos los subconjuntos de <math id="Thmdefinition10.p1.m3" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math>. Simbolicamente:</p>
+<div id="Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex11.m1" class="ltx_Math" alttext="\displaystyle\mathcal{{P}}(A)=\{B\mid B\subseteq A\}" display="block"><semantics><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>B</mi><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mi>B</mi><mo>⊆</mo><mi>A</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathcal{{P}}(A)=\{B\mid B\subseteq A\}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmexamplex3" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex3.p1" class="ltx_para">
+<p class="ltx_p">Sean <math id="Thmexamplex3.p1.m1" class="ltx_Math" alttext="\displaystyle A=\{1,2\}" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,2</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A=\{1,2\}</annotation></semantics></math>, <math id="Thmexamplex3.p1.m2" class="ltx_Math" alttext="\displaystyle B=\{1,2,3\}" display="inline"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle B=\{1,2,3\}</annotation></semantics></math>, <math id="Thmexamplex3.p1.m3" class="ltx_Math" alttext="\displaystyle C=\{1,2,3,4\}" display="inline"><semantics><mrow><mi>C</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3,4</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle C=\{1,2,3,4\}</annotation></semantics></math>. Escribir los conjuntos <math id="Thmexamplex3.p1.m4" class="ltx_Math" alttext="\displaystyle\mathcal{{P}}(A),\mathcal{{P}}(B),\mathcal{{P}}(C),\mathcal{{P}}(%
+\mathcal{{P}}(A))" display="inline"><semantics><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>C</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathcal{{P}}(A),\mathcal{{P}}(B),\mathcal{{P}}(C),\mathcal{{P}}(%
+\mathcal{{P}}(A))</annotation></semantics></math>.</p>
+<ul id="I3" class="ltx_itemize">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Subconjuntos de <math id="I3.i1.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math>: <math id="I3.i1.p1.m2" class="ltx_Math" alttext="\displaystyle\{1\},\{2\},\{1,2\},\varnothing" display="inline"><semantics><mrow><mrow><mo stretchy="false">{</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>2</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1,2</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">\displaystyle\{1\},\{2\},\{1,2\},\varnothing</annotation></semantics></math>.</p>
+</div>
+<div id="I3.i1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Luego <math id="I3.i1.p2.m1" class="ltx_Math" alttext="\displaystyle\mathcal{{P}}(A)=\{\varnothing,\{1\},\{2\},\{1,2\}\}" display="inline"><semantics><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mi mathvariant="normal">∅</mi><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>2</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1,2</mn><mo stretchy="false">}</mo></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathcal{{P}}(A)=\{\varnothing,\{1\},\{2\},\{1,2\}\}</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Subconjuntos de <math id="I3.i2.p1.m1" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math>: <math id="I3.i2.p1.m2" class="ltx_Math" alttext="\displaystyle\{1\},\{2\},\{3\},\{1,2\},\{1,3\},\{2,3\},\{1,2,3\},\varnothing" display="inline"><semantics><mrow><mrow><mo stretchy="false">{</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>2</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>3</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1,2</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1,3</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>2,3</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">\displaystyle\{1\},\{2\},\{3\},\{1,2\},\{1,3\},\{2,3\},\{1,2,3\},\varnothing</annotation></semantics></math>.</p>
+</div>
+<div id="I3.i2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Luego <math id="I3.i2.p2.m1" class="ltx_Math" alttext="\displaystyle\mathcal{{P}}(B)=\{\varnothing,\{1\},\{2\},\{3\},\{1,2\},\{1,3\},%
+\{2,3\},\{1,2,3\}\}" display="inline"><semantics><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mi mathvariant="normal">∅</mi><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>2</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>3</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1,2</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1,3</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>2,3</mn><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3</mn><mo stretchy="false">}</mo></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathcal{{P}}(B)=\{\varnothing,\{1\},\{2\},\{3\},\{1,2\},\{1,3\},%
+\{2,3\},\{1,2,3\}\}</annotation></semantics></math></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Thmtheorem1" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 1.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sea <math id="Thmtheorem1.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> un conjunto finito. Entonces se cumple que</span></p>
+<div id="Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex12.m1" class="ltx_Math" alttext="\displaystyle|\mathcal{{P}}(A)|=2^{|A|}" display="block"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><msup><mn>2</mn><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow></msup></mrow><annotation encoding="application/x-tex">\displaystyle|\mathcal{{P}}(A)|=2^{|A|}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p7" class="ltx_para ltx_noindent">
+<p class="ltx_p">Considero el conjunto <math id="p7.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> formado por <math id="p7.m2" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> elementos donde <math id="p7.m3" class="ltx_Math" alttext="\displaystyle n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n\in\mathbb{N}</annotation></semantics></math>.</p>
+</div>
+<div id="p8" class="ltx_para ltx_noindent">
+<p class="ltx_p">Sin perdida de generalidad, supongo que <math id="p8.m1" class="ltx_Math" alttext="\displaystyle A=\{1,2,3,\ldots,n\}" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A=\{1,2,3,\ldots,n\}</annotation></semantics></math>. Para contar subconjuntos de <math id="p8.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math>, planteo el cuestionario</p>
+<ol id="I4" class="ltx_enumerate">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I4.i1.p1" class="ltx_para">​<p class="ltx_p">¿Está 1 en el subconjunto?</p>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I4.i2.p1" class="ltx_para">​<p class="ltx_p">¿Está 2 en el subconjunto?</p>
+</div>
+</li>
+<li id="I4.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">n.</span><div id="I4.ix1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">¿Está <math id="I4.ix1.p1.m1" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> en el subconjunto?</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Hay el mismo numero de subconjuntos de <math id="p8.m3" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> que de respuestas al cuestionario. Como el cuestionario tiene <math id="p8.m4" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> preguntas y cada una 2 respuestas posibles, hay <math id="p8.m5" class="ltx_Math" alttext="\displaystyle 2^{n}" display="inline"><semantics><msup><mn>2</mn><mi>n</mi></msup><annotation encoding="application/x-tex">\displaystyle 2^{n}</annotation></semantics></math> respuestas diferentes al cuestionario y, por tanto, <math id="p8.m6" class="ltx_Math" alttext="\displaystyle 2^{n}" display="inline"><semantics><msup><mn>2</mn><mi>n</mi></msup><annotation encoding="application/x-tex">\displaystyle 2^{n}</annotation></semantics></math> subconjuntos de <math id="p8.m7" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math>.</p>
+</div>
+<div id="p9" class="ltx_para ltx_noindent">
+<p class="ltx_p">Falta probarlo para <math id="p9.m1" class="ltx_Math" alttext="\displaystyle A=\varnothing" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">\displaystyle A=\varnothing</annotation></semantics></math>. Se cumple que <math id="p9.m2" class="ltx_Math" alttext="\displaystyle\varnothing\subseteq\varnothing" display="inline"><semantics><mrow><mi mathvariant="normal">∅</mi><mo>⊆</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">\displaystyle\varnothing\subseteq\varnothing</annotation></semantics></math> y es el unico posible.</p>
+</div>
+<div id="p10" class="ltx_para ltx_noindent">
+<p class="ltx_p">Luego <math id="p10.m1" class="ltx_Math" alttext="\displaystyle\mathcal{{P}}(\varnothing)=\{\varnothing\}" display="inline"><semantics><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi mathvariant="normal">∅</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mi mathvariant="normal">∅</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathcal{{P}}(\varnothing)=\{\varnothing\}</annotation></semantics></math></p>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">Tenemos que <math id="p11.m1" class="ltx_Math" alttext="\displaystyle|A|=0" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle|A|=0</annotation></semantics></math> y <math id="p11.m2" class="ltx_Math" alttext="\displaystyle|\mathcal{{P}}(A)|=1" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle|\mathcal{{P}}(A)|=1</annotation></semantics></math>. Ademas, <math id="p11.m3" class="ltx_Math" alttext="\displaystyle 2^{|A|}=2^{0}=1=|\mathcal{{P}}(A)|" display="inline"><semantics><mrow><msup><mn>2</mn><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow></msup><mo>=</mo><msup><mn>2</mn><mn>0</mn></msup><mo>=</mo><mn>1</mn><mo>=</mo><mrow><mo stretchy="false">|</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle 2^{|A|}=2^{0}=1=|\mathcal{{P}}(A)|</annotation></semantics></math>
+∎</p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p12" class="ltx_para ltx_noindent">
+<p class="ltx_p">Tambien lo demostraremos por induccion sobre <math id="p12.m1" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math>, el numero de elementos de <math id="p12.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math>.</p>
+</div>
+<div id="p13" class="ltx_para ltx_noindent">
+<p class="ltx_p">El caso <math id="p13.m1" class="ltx_Math" alttext="\displaystyle n=0" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle n=0</annotation></semantics></math> esta hecho en la demostracion anterior.</p>
+</div>
+<div id="p14" class="ltx_para ltx_noindent">
+<p class="ltx_p">En el caso base, <math id="p14.m1" class="ltx_Math" alttext="\displaystyle n=1" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n=1</annotation></semantics></math>, <math id="p14.m2" class="ltx_Math" alttext="\displaystyle A=\{1\}" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A=\{1\}</annotation></semantics></math> y <math id="p14.m3" class="ltx_Math" alttext="\displaystyle\mathcal{{P}}(A)=\{\varnothing,\{1\}\}" display="inline"><semantics><mrow><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mi mathvariant="normal">∅</mi><mo>,</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathcal{{P}}(A)=\{\varnothing,\{1\}\}</annotation></semantics></math>. Luego <math id="p14.m4" class="ltx_Math" alttext="\displaystyle|A|=1" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle|A|=1</annotation></semantics></math> y <math id="p14.m5" class="ltx_Math" alttext="\displaystyle|\mathcal{{P}}(A)|=2=2^{1}=2^{|A|}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mn>2</mn><mo>=</mo><msup><mn>2</mn><mn>1</mn></msup><mo>=</mo><msup><mn>2</mn><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow></msup></mrow><annotation encoding="application/x-tex">\displaystyle|\mathcal{{P}}(A)|=2=2^{1}=2^{|A|}</annotation></semantics></math>. Se cumple para <math id="p14.m6" class="ltx_Math" alttext="\displaystyle n=1" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n=1</annotation></semantics></math>.</p>
+</div>
+<div id="p15" class="ltx_para ltx_noindent">
+<p class="ltx_p">Hipotesis de induccion: Supongamos que el resultado es cierto para <math id="p15.m1" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> (<math id="p15.m2" class="ltx_Math" alttext="\displaystyle A=\{1,2,3,\ldots,n\}" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A=\{1,2,3,\ldots,n\}</annotation></semantics></math> y <math id="p15.m3" class="ltx_Math" alttext="\displaystyle|\mathcal{{P}}(A)|=2^{n}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\displaystyle|\mathcal{{P}}(A)|=2^{n}</annotation></semantics></math>)</p>
+</div>
+<div id="p16" class="ltx_para ltx_noindent">
+<p class="ltx_p">Tengo que demostrar, a partir de esto, la tesis de induccion:</p>
+</div>
+<div id="p17" class="ltx_para ltx_noindent">
+<p class="ltx_p">Si <math id="p17.m1" class="ltx_Math" alttext="\displaystyle B=\{1,2,3,\ldots,n,n+1\}" display="inline"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo>,</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle B=\{1,2,3,\ldots,n,n+1\}</annotation></semantics></math> entonces <math id="p17.m2" class="ltx_Math" alttext="\displaystyle|\mathcal{{P}}(A)|=2^{n+1}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\displaystyle|\mathcal{{P}}(A)|=2^{n+1}</annotation></semantics></math>.</p>
+</div>
+<div id="p18" class="ltx_para">
+<p class="ltx_p">Hay 2 tipos de subconjuntos de <math id="p18.m1" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math>.</p>
+<dl id="I5" class="ltx_description">
+<dt id="I5.ix1" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Tipo 1</span></span></dt>
+<dd class="ltx_item">
+<div id="I5.ix1.p1" class="ltx_para">
+<p class="ltx_p">Los que no tienen a <math id="I5.ix1.p1.m1" class="ltx_Math" alttext="\displaystyle n+1" display="inline"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n+1</annotation></semantics></math> como elemento. Por hipotesis de induccion hay <math id="I5.ix1.p1.m2" class="ltx_Math" alttext="\displaystyle 2^{n}" display="inline"><semantics><msup><mn>2</mn><mi>n</mi></msup><annotation encoding="application/x-tex">\displaystyle 2^{n}</annotation></semantics></math> subconjuntos de <math id="I5.ix1.p1.m3" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> de este tipo (son los mismos que los de <math id="I5.ix1.p1.m4" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math>).</p>
+</div>
+</dd>
+<dt id="I5.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">Tipo 2</span></span></dt>
+<dd class="ltx_item">
+<div id="I5.ix2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Los que si tienen a <math id="I5.ix2.p1.m1" class="ltx_Math" alttext="\displaystyle n+1" display="inline"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n+1</annotation></semantics></math> como elemento. Cada uno de estos se obtiene añadiendo el elemento <math id="I5.ix2.p1.m2" class="ltx_Math" alttext="\displaystyle n+1" display="inline"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n+1</annotation></semantics></math> a un subconjunto de <span class="ltx_text ltx_framed_underline">Tipo 1</span>. Por tanto, hay tantos como habia de Tipo 1: <math id="I5.ix2.p1.m3" class="ltx_Math" alttext="\displaystyle 2^{n}" display="inline"><semantics><msup><mn>2</mn><mi>n</mi></msup><annotation encoding="application/x-tex">\displaystyle 2^{n}</annotation></semantics></math>.</p>
+</div>
+</dd>
+</dl>
+<p class="ltx_p">En total, <math id="p18.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> tiene:</p>
+<div id="Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex13.m1" class="ltx_Math" alttext="\displaystyle\underbrace{2^{n}}_{\text{Tipo 1}}+\underbrace{2^{n}}_{\text{Tipo%
+ 2}}=2\cdot 2^{n}=2^{n+1}=|\mathcal{{P}}(B)|" display="block"><semantics><mrow><mrow><munder><munder accentunder="true"><msup><mn>2</mn><mi>n</mi></msup><mo>⏟</mo></munder><mtext>Tipo 1</mtext></munder><mo>+</mo><munder><munder accentunder="true"><msup><mn>2</mn><mi>n</mi></msup><mo>⏟</mo></munder><mtext>Tipo 2</mtext></munder></mrow><mo>=</mo><mrow><mn>2</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mn>2</mn><mi>n</mi></msup></mrow><mo>=</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="false">|</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒫</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\underbrace{2^{n}}_{\text{Tipo 1}}+\underbrace{2^{n}}_{\text{Tipo%
+ 2}}=2\cdot 2^{n}=2^{n+1}=|\mathcal{{P}}(B)|</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Asi, queda demostrada la tesis de induccion.
+∎</p>
+</div>
+</div>
+<div id="Thmdefinition11" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 1.11</span></span><span class="ltx_text ltx_font_bold"> </span>(Par ordenado)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition11.p1" class="ltx_para">
+<p class="ltx_p">Dados dos conjuntos <math id="Thmdefinition11.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> y <math id="Thmdefinition11.p1.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> y dos elementos <math id="Thmdefinition11.p1.m3" class="ltx_Math" alttext="\displaystyle a\in A" display="inline"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle a\in A</annotation></semantics></math> y <math id="Thmdefinition11.p1.m4" class="ltx_Math" alttext="\displaystyle b\in B" display="inline"><semantics><mrow><mi>b</mi><mo>∈</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle b\in B</annotation></semantics></math>, se define el <span class="ltx_text ltx_framed_underline">par ordenado</span> formado por <math id="Thmdefinition11.p1.m5" class="ltx_Math" alttext="\displaystyle a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">\displaystyle a</annotation></semantics></math> y <math id="Thmdefinition11.p1.m6" class="ltx_Math" alttext="\displaystyle b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">\displaystyle b</annotation></semantics></math> como la expresion simbolica</p>
+<div id="Ex14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex14.m1" class="ltx_Math" alttext="\displaystyle(a,b)" display="block"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(a,b)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">donde <math id="Thmdefinition11.p1.m7" class="ltx_Math" alttext="\displaystyle a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">\displaystyle a</annotation></semantics></math> es el primer elemento del par y <math id="Thmdefinition11.p1.m8" class="ltx_Math" alttext="\displaystyle b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">\displaystyle b</annotation></semantics></math> es el segundo elemento del par.</p>
+</div>
+</div>
+<div id="Thmdefinition12" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 1.12</span></span><span class="ltx_text ltx_font_bold"> </span>(Producto cartesiano)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition12.p1" class="ltx_para">
+<p class="ltx_p">Sean <math id="Thmdefinition12.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> y <math id="Thmdefinition12.p1.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> dos conjuntos no vacios. Se define el producto cartesiano de <math id="Thmdefinition12.p1.m3" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> por <math id="Thmdefinition12.p1.m4" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> como el conjunto formado por todos los pares ordenados de la forma <math id="Thmdefinition12.p1.m5" class="ltx_Math" alttext="\displaystyle(a,b)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(a,b)</annotation></semantics></math> donde <math id="Thmdefinition12.p1.m6" class="ltx_Math" alttext="\displaystyle a\in A" display="inline"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle a\in A</annotation></semantics></math> y <math id="Thmdefinition12.p1.m7" class="ltx_Math" alttext="\displaystyle b\in B" display="inline"><semantics><mrow><mi>b</mi><mo>∈</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle b\in B</annotation></semantics></math>. Simbolicamente:</p>
+<div id="Ex15" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex15.m1" class="ltx_Math" alttext="\displaystyle A\times B\coloneqq\{(a,b)\mid a\in A,b\in B\}" display="block"><semantics><mrow><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>B</mi></mrow><mo>≔</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow><mo>,</mo><mrow><mi>b</mi><mo>∈</mo><mi>B</mi></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A\times B\coloneqq\{(a,b)\mid a\in A,b\in B\}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmexamplex4" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex4.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmexamplex4.p1.m1" class="ltx_Math" alttext="\displaystyle A=\{1,2,3\}" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A=\{1,2,3\}</annotation></semantics></math>, <math id="Thmexamplex4.p1.m2" class="ltx_Math" alttext="\displaystyle B=\{2,4\}" display="inline"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>2,4</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle B=\{2,4\}</annotation></semantics></math></p>
+<div id="Ex16" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex16.m1" class="ltx_Math" alttext="\displaystyle A\times B=\{(1,2),(1,4),(2,2),(2,4),(3,2),(3,4)\}" display="block"><semantics><mrow><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>B</mi></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mn>1,2</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>1,4</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>2,2</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>2,4</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>3,2</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>3,4</mn><mo stretchy="false">)</mo></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A\times B=\{(1,2),(1,4),(2,2),(2,4),(3,2),(3,4)\}</annotation></semantics></math></span>
+</div>
+<div id="Ex17" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex17.m1" class="ltx_Math" alttext="\displaystyle B\times A=\{(2,1),(2,2),(2,3),(4,1),(4,2),(4,3)\}" display="block"><semantics><mrow><mrow><mi>B</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>A</mi></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mn>2,1</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>2,2</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>2,3</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>4,1</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>4,2</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>4,3</mn><mo stretchy="false">)</mo></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle B\times A=\{(2,1),(2,2),(2,3),(4,1),(4,2),(4,3)\}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">El producto cartesiano no es conmutativo.</p>
+</div>
+</div>
+<div id="Thmproposition2" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 1.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sean <math id="Thmproposition2.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> y <math id="Thmproposition2.p1.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> dos conjuntos finitos y no vacios. Se cumple que</span></p>
+<div id="Ex18" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex18.m1" class="ltx_Math" alttext="\displaystyle|A\times B|=|A|\cdot|B|" display="block"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>B</mi></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo rspace="0.055em" stretchy="false">|</mo></mrow><mo rspace="0.222em">⋅</mo><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle|A\times B|=|A|\cdot|B|</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p19" class="ltx_para ltx_noindent">
+<p class="ltx_p">Para formar todos los pares ordenados posibles, tenemos <math id="p19.m1" class="ltx_Math" alttext="\displaystyle|A|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mi>A</mi><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">\displaystyle|A|</annotation></semantics></math> opciones en la primera coordenada y <math id="p19.m2" class="ltx_Math" alttext="\displaystyle|B|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">\displaystyle|B|</annotation></semantics></math> en la segunda.</p>
+</div>
+<div id="p20" class="ltx_para ltx_noindent">
+<p class="ltx_p">Por tanto, hay en total <math id="p20.m1" class="ltx_Math" alttext="\displaystyle|A|\cdot|B|" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo rspace="0.055em" stretchy="false">|</mo></mrow><mo rspace="0.222em">⋅</mo><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle|A|\cdot|B|</annotation></semantics></math> pares ordenados.</p>
+</div>
+<div id="p21" class="ltx_para">
+<p class="ltx_p">Así, <math id="p21.m1" class="ltx_Math" alttext="\displaystyle|A\times B|=|A|\cdot|B|" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>B</mi></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mi>A</mi><mo rspace="0.055em" stretchy="false">|</mo></mrow><mo rspace="0.222em">⋅</mo><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle|A\times B|=|A|\cdot|B|</annotation></semantics></math>
+∎</p>
+</div>
+</div>
+<div id="Thmremarkx2" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx2.p1" class="ltx_para">
+<p class="ltx_p">Si <math id="Thmremarkx2.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> o <math id="Thmremarkx2.p1.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> es infinito <math id="Thmremarkx2.p1.m3" class="ltx_Math" alttext="\displaystyle\Rightarrow" display="inline"><semantics><mo stretchy="false">⇒</mo><annotation encoding="application/x-tex">\displaystyle\Rightarrow</annotation></semantics></math> <math id="Thmremarkx2.p1.m4" class="ltx_Math" alttext="\displaystyle|A\times B|=\infty" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>B</mi></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">\displaystyle|A\times B|=\infty</annotation></semantics></math></p>
+</div>
+</div>
+<div id="Thmdefinition13" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 1.13</span></span><span class="ltx_text ltx_font_bold"> </span>(n-tupla ordenada)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition13.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="Thmdefinition13.p1.m1" class="ltx_Math" alttext="\displaystyle n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n\in\mathbb{N}</annotation></semantics></math>, <math id="Thmdefinition13.p1.m2" class="ltx_Math" alttext="\displaystyle n\geq 2" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\displaystyle n\geq 2</annotation></semantics></math>. Sean <math id="Thmdefinition13.p1.m3" class="ltx_Math" alttext="\displaystyle A_{1},A_{2},\ldots,A_{n}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle A_{1},A_{2},\ldots,A_{n}</annotation></semantics></math> conjuntos y <math id="Thmdefinition13.p1.m4" class="ltx_Math" alttext="\displaystyle a_{1}\in A_{1}" display="inline"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>∈</mo><msub><mi>A</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle a_{1}\in A_{1}</annotation></semantics></math>, <math id="Thmdefinition13.p1.m5" class="ltx_Math" alttext="\displaystyle a_{2}\in A_{2}" display="inline"><semantics><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>∈</mo><msub><mi>A</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle a_{2}\in A_{2}</annotation></semantics></math>, <math id="Thmdefinition13.p1.m6" class="ltx_Math" alttext="\displaystyle\ldots" display="inline"><semantics><mi mathvariant="normal">…</mi><annotation encoding="application/x-tex">\displaystyle\ldots</annotation></semantics></math>, <math id="Thmdefinition13.p1.m7" class="ltx_Math" alttext="\displaystyle a_{n}\in A_{n}" display="inline"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>∈</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle a_{n}\in A_{n}</annotation></semantics></math> elementos de sus conjuntos. Se define la n-tupla ordenada formada por esos elementos como la expresion simbolica</p>
+<div id="Ex19" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex19.m1" class="ltx_Math" alttext="\displaystyle(a_{1},a_{2},\ldots,a_{n})" display="block"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(a_{1},a_{2},\ldots,a_{n})</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmdefinition14" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 1.14</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition14.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Sea <math id="Thmdefinition14.p1.m1" class="ltx_Math" alttext="\displaystyle n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n\in\mathbb{N}</annotation></semantics></math>, <math id="Thmdefinition14.p1.m2" class="ltx_Math" alttext="\displaystyle n\geq 2" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\displaystyle n\geq 2</annotation></semantics></math>. Sean <math id="Thmdefinition14.p1.m3" class="ltx_Math" alttext="\displaystyle A_{1},A_{2},\ldots,A_{n}" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle A_{1},A_{2},\ldots,A_{n}</annotation></semantics></math> conjuntos no vacios. Se define el producto cartesiano de esos conjuntos como</p>
+<div id="Ex20" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex20.m1" class="ltx_Math" alttext="\displaystyle A_{1}\times A_{2}\times\dots\times A_{n}\coloneqq\{(a_{1},a_{2},%
+\dots,a_{n})\mid a_{1}\in A_{1},a_{2}\in A_{2},\ldots,a_{n}\in A_{n}\}" display="block"><semantics><mrow><mrow><msub><mi>A</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>A</mi><mn>2</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><mo>≔</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>∈</mo><msub><mi>A</mi><mn>1</mn></msub></mrow><mo>,</mo><mrow><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>∈</mo><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>∈</mo><msub><mi>A</mi><mi>n</mi></msub></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A_{1}\times A_{2}\times\dots\times A_{n}\coloneqq\{(a_{1},a_{2},%
+\dots,a_{n})\mid a_{1}\in A_{1},a_{2}\in A_{2},\ldots,a_{n}\in A_{n}\}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="p22" class="ltx_para ltx_noindent">
+<p class="ltx_p">Si hacemos el producto cartesiano de un conjunto no vacio <math id="p22.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> por si mismo varias veces, usaremos</p>
+<div id="Ex21" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex21.m1" class="ltx_Math" alttext="\displaystyle A^{n}\coloneqq A\times A\times\dots A\text{ (n veces)}" display="block"><semantics><mrow><msup><mi>A</mi><mi>n</mi></msup><mo>≔</mo><mrow><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>A</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">…</mi></mrow><mo>⁢</mo><mi>A</mi><mo>⁢</mo><mtext> (n veces)</mtext></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A^{n}\coloneqq A\times A\times\dots A\text{ (n veces)}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Pt1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,762 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Álgebra Lineal" course="1º Curso" prof="Esther García" prof2="Ana Isabel Muñoz" data-pagefind-filter="asignatura[content], curso[course], profesor[prof], profesor[prof2]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>3 Sistemas de ecuaciones lineales ‣ Parte I Matrices y determinantes. Sistemas de ecuaciones lineales, método de Gauss ‣ Álgebra lineal‣ Parte I Matrices y determinantes. Sistemas de ecuaciones lineales, método de Gauss ‣ Álgebra lineal</title>
+<!--Generated on Fri Jun  7 11:07:08 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt1.html" title="Parte I Matrices y determinantes. Sistemas de ecuaciones lineales, método de Gauss ‣ Álgebra lineal">
+<link rel="up up" href="index.html" title="Álgebra lineal">
+<link rel="start" href="index.html" title="Álgebra lineal">
+<link rel="prev" href="S2.html" title="2 Matrices ‣ Parte I Matrices y determinantes. Sistemas de ecuaciones lineales, método de Gauss ‣ Álgebra lineal">
+<link rel="next" href="S4.html" title="4 Determinantes de matrices cuadradas ‣ Parte I Matrices y determinantes. Sistemas de ecuaciones lineales, método de Gauss ‣ Álgebra lineal">
+<link rel="section" href="S1.html" title="1 Nociones basicas ‣ Parte I Matrices y determinantes. Sistemas de ecuaciones lineales, método de Gauss ‣ Álgebra lineal">
+<link rel="section" href="S2.html" title="2 Matrices ‣ Parte I Matrices y determinantes. Sistemas de ecuaciones lineales, método de Gauss ‣ Álgebra lineal">
+<link rel="section" href="S4.html" title="4 Determinantes de matrices cuadradas ‣ Parte I Matrices y determinantes. Sistemas de ecuaciones lineales, método de Gauss ‣ Álgebra lineal">
+<link rel="part" href="Pt1.html" title="Parte I Matrices y determinantes. Sistemas de ecuaciones lineales, método de Gauss ‣ Álgebra lineal">
+<link rel="part" href="Pt2.html" title="Parte II Espacios vectoriales ‣ Álgebra lineal">
+<link rel="part" href="Pt3.html" title="Parte III Aplicaciones lineales ‣ Álgebra lineal">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Álgebra lineal" class="ltx_ref" rel="start">Álgebra lineal</a>
+</li>
+<li class="divider">
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt1.html" title="Parte I Matrices y determinantes. Sistemas de ecuaciones lineales, método de Gauss ‣ Álgebra lineal" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>Matrices y determinantes. Sistemas de ecuaciones lineales, método de Gauss</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="1" data-path="S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S1.html" title="1 Nociones basicas ‣ Parte I Matrices y determinantes. Sistemas de ecuaciones lineales, método de Gauss ‣ Álgebra lineal" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Nociones basicas</a></li>
+<li data-level="2" data-path="S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S2.html" title="2 Matrices ‣ Parte I Matrices y determinantes. Sistemas de ecuaciones lineales, método de Gauss ‣ Álgebra lineal" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Matrices</a></li>
+<li data-level="3" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="3 Sistemas de ecuaciones lineales ‣ Parte I Matrices y determinantes. Sistemas de ecuaciones lineales, método de Gauss ‣ Álgebra lineal" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Sistemas de ecuaciones lineales</a></li>
+<li data-level="4" data-path="S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S4.html" title="4 Determinantes de matrices cuadradas ‣ Parte I Matrices y determinantes. Sistemas de ecuaciones lineales, método de Gauss ‣ Álgebra lineal" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Determinantes de matrices cuadradas</a></li>
+</ol>
+</li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt2.html" title="Parte II Espacios vectoriales ‣ Álgebra lineal" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Espacios vectoriales</a></li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt3.html" title="Parte III Aplicaciones lineales ‣ Álgebra lineal" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Aplicaciones lineales</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Sistemas de ecuaciones lineales</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">3</span> Sistemas de ecuaciones lineales</h1>
+
+<div id="Thmdefinition1" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 3.1</span></span><span class="ltx_text ltx_font_bold"> </span>(Sistema de ecuaciones lineales)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition1.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="Thmdefinition1.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\displaystyle\mathbb{K}</annotation></semantics></math> un cuerpo. Un sistema lineal de <math id="Thmdefinition1.p1.m2" class="ltx_Math" alttext="\displaystyle m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">\displaystyle m</annotation></semantics></math> ecuaciones con <math id="Thmdefinition1.p1.m3" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> incognitas es una expresion del tipo</p>
+<div id="Ex23" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex23.m1" class="ltx_Math" alttext="\displaystyle\begin{cases}a_{11}x_{1}+\cdots+a_{1n}x_{n}=b_{1}\\
+a_{21}x_{1}+\cdots+a_{2n}x_{n}=b_{2}\\
+\vdots\\
+a_{m1}x_{1}+\cdots+a_{mn}x_{n}=b_{m}\end{cases}" display="block"><semantics><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><msub><mi>a</mi><mn>11</mn></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mn>1</mn><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mn>1</mn></msub></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><msub><mi>a</mi><mn>21</mn></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mn>2</mn></msub></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mi mathvariant="normal">⋮</mi></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi>m</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>m</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mi>m</mi></msub></mrow></mtd><mtd></mtd></mtr></mtable></mrow><annotation encoding="application/x-tex">\displaystyle\begin{cases}a_{11}x_{1}+\cdots+a_{1n}x_{n}=b_{1}\\
+a_{21}x_{1}+\cdots+a_{2n}x_{n}=b_{2}\\
+\vdots\\
+a_{m1}x_{1}+\cdots+a_{mn}x_{n}=b_{m}\end{cases}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">donde todos los <math id="Thmdefinition1.p1.m4" class="ltx_Math" alttext="\displaystyle a_{ij},b_{i}\in\mathbb{K}" display="inline"><semantics><mrow><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>,</mo><msub><mi>b</mi><mi>i</mi></msub></mrow><mo>∈</mo><mi>𝕂</mi></mrow><annotation encoding="application/x-tex">\displaystyle a_{ij},b_{i}\in\mathbb{K}</annotation></semantics></math>, <math id="Thmdefinition1.p1.m5" class="ltx_Math" alttext="\displaystyle i=1,\ldots,n,j=1,\ldots,m" display="inline"><semantics><mrow><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow><mo>,</mo><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>m</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle i=1,\ldots,n,j=1,\ldots,m</annotation></semantics></math>.</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">los elementos <math id="I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle a_{ij}" display="inline"><semantics><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">\displaystyle a_{ij}</annotation></semantics></math> se llaman coeficientes del sistema.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p">los <math id="I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle x_{1},\ldots,x_{n}" display="inline"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle x_{1},\ldots,x_{n}</annotation></semantics></math> se llaman incognitas</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p">los <math id="I1.i3.p1.m1" class="ltx_Math" alttext="\displaystyle b_{1},\ldots,b_{m}" display="inline"><semantics><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>b</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle b_{1},\ldots,b_{m}</annotation></semantics></math> son los terminos independientes</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i4.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">cada una de las expresiones</p>
+<div id="Ex24" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex24.m1" class="ltx_Math" alttext="\displaystyle a_{i1}x_{1}+\cdots+a_{in}x_{n}=b_{i}" display="block"><semantics><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle a_{i1}x_{1}+\cdots+a_{in}x_{n}=b_{i}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">se llama ecuacion del sistema.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Los datos anteriores se pueden organizar utilizando matrices:</p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p">La matriz de tamaño <math id="I2.i1.p1.m1" class="ltx_Math" alttext="\displaystyle m\times n" display="inline"><semantics><mrow><mi>m</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">\displaystyle m\times n</annotation></semantics></math> formada por los coeficientes se llama la matriz del sistema:</p>
+<div id="Ex25" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex25.m1" class="ltx_Math" alttext="\displaystyle A=\begin{pmatrix}a_{11}&amp;&amp;a_{1n}\\
+&amp;\ddots&amp;\\
+a_{m1}&amp;&amp;a_{mn}\\
+\end{pmatrix}\in\mathfrak{M}_{m\times n}(\mathbb{K})" display="block"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><msub><mi>a</mi><mn>11</mn></msub></mtd><mtd></mtd><mtd><msub><mi>a</mi><mrow><mn>1</mn><mo>⁢</mo><mi>n</mi></mrow></msub></mtd></mtr><mtr><mtd></mtd><mtd><mi mathvariant="normal">⋱</mi></mtd><mtd></mtd></mtr><mtr><mtd><msub><mi>a</mi><mrow><mi>m</mi><mo>⁢</mo><mn>1</mn></mrow></msub></mtd><mtd></mtd><mtd><msub><mi>a</mi><mrow><mi>m</mi><mo>⁢</mo><mi>n</mi></mrow></msub></mtd></mtr></mtable><mo>)</mo></mrow><mo>∈</mo><mrow><msub><mi>𝔐</mi><mrow><mi>m</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>n</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝕂</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A=\begin{pmatrix}a_{11}&amp;&amp;a_{1n}\\
+&amp;\ddots&amp;\\
+a_{m1}&amp;&amp;a_{mn}\\
+\end{pmatrix}\in\mathfrak{M}_{m\times n}(\mathbb{K})</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p">La matriz columna formada por los terminos independientes se llama matriz de terminos independientes:</p>
+<div id="Ex26" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex26.m1" class="ltx_Math" alttext="\displaystyle\mathbf{b}=\begin{pmatrix}b_{1}\\
+\vdots\\
+b_{m}\\
+\end{pmatrix}\in\mathfrak{{M}}_{m\times 1}(\mathbb{K})" display="block"><semantics><mrow><mi>𝐛</mi><mo>=</mo><mrow><mo>(</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><msub><mi>b</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd><msub><mi>b</mi><mi>m</mi></msub></mtd></mtr></mtable><mo>)</mo></mrow><mo>∈</mo><mrow><msub><mi>𝔐</mi><mrow><mi>m</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝕂</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbf{b}=\begin{pmatrix}b_{1}\\
+\vdots\\
+b_{m}\\
+\end{pmatrix}\in\mathfrak{{M}}_{m\times 1}(\mathbb{K})</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p">La matriz columna formada por las incognitas se llama matriz de incognitas:</p>
+<div id="Ex27" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex27.m1" class="ltx_Math" alttext="\displaystyle\mathbf{x}=\begin{pmatrix}x_{1}\\
+\vdots\\
+x_{n}\\
+\end{pmatrix}" display="block"><semantics><mrow><mi>𝐱</mi><mo>=</mo><mrow><mo>(</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><msub><mi>x</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd><msub><mi>x</mi><mi>n</mi></msub></mtd></mtr></mtable><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbf{x}=\begin{pmatrix}x_{1}\\
+\vdots\\
+x_{n}\\
+\end{pmatrix}</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i4.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">La matriz de tamaño <math id="I2.i4.p1.m1" class="ltx_Math" alttext="\displaystyle m\times(n+1)" display="inline"><semantics><mrow><mi>m</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle m\times(n+1)</annotation></semantics></math> formada por la matriz de coeficientes y una columna extra que contiene los terminos independientes se llama matriz ampliada:</p>
+<div id="Ex28" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex28.m1" class="ltx_Math" alttext="\displaystyle(A\mid\mathbf{b})=\left(\begin{array}[]{ccc|c}a_{11}&amp;&amp;a_{1n}&amp;b_{1%
+}\\
+&amp;\ddots&amp;&amp;\vdots\\
+a_{m1}&amp;&amp;a_{mn}&amp;b_{m}\end{array}\right)\in\mathfrak{{M}}_{m\times(n+1)}(\mathbb%
+{K})" display="block"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∣</mo><mi>𝐛</mi></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><msub><mi>a</mi><mn>11</mn></msub></mtd><mtd></mtd><mtd class="ltx_border_r"><msub><mi>a</mi><mrow><mn>1</mn><mo>⁢</mo><mi>n</mi></mrow></msub></mtd><mtd><msub><mi>b</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd></mtd><mtd><mi mathvariant="normal">⋱</mi></mtd><mtd class="ltx_border_r"></mtd><mtd><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd><msub><mi>a</mi><mrow><mi>m</mi><mo>⁢</mo><mn>1</mn></mrow></msub></mtd><mtd></mtd><mtd class="ltx_border_r"><msub><mi>a</mi><mrow><mi>m</mi><mo>⁢</mo><mi>n</mi></mrow></msub></mtd><mtd><msub><mi>b</mi><mi>m</mi></msub></mtd></mtr></mtable><mo>)</mo></mrow><mo>∈</mo><mrow><msub><mi>𝔐</mi><mrow><mi>m</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝕂</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle(A\mid\mathbf{b})=\left(\begin{array}[]{ccc|c}a_{11}&amp;&amp;a_{1n}&amp;b_{1%
+}\\
+&amp;\ddots&amp;&amp;\vdots\\
+a_{m1}&amp;&amp;a_{mn}&amp;b_{m}\end{array}\right)\in\mathfrak{{M}}_{m\times(n+1)}(\mathbb%
+{K})</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Utilizando el producto de matrices, se puede comprobar que el sistema se puede reescribir de un modo mas compacto como</p>
+<div id="Ex29" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex29.m1" class="ltx_Math" alttext="\displaystyle A\cdot\mathbf{x}=\mathbf{b}" display="block"><semantics><mrow><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>𝐱</mi></mrow><mo>=</mo><mi>𝐛</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\cdot\mathbf{x}=\mathbf{b}</annotation></semantics></math></span>
+</div>
+</div>
+<div id="Thmdefinition2" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 3.2</span></span><span class="ltx_text ltx_font_bold"> </span>(Soluciones de un sistema de ecuaciones lineales)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition2.p1" class="ltx_para">
+<p class="ltx_p">Decimos que el vector columna</p>
+<div id="Ex30" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex30.m1" class="ltx_Math" alttext="\displaystyle c=\begin{pmatrix}x_{1}\\
+\vdots\\
+x_{n}\\
+\end{pmatrix}" display="block"><semantics><mrow><mi>c</mi><mo>=</mo><mrow><mo>(</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><msub><mi>x</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd><msub><mi>x</mi><mi>n</mi></msub></mtd></mtr></mtable><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle c=\begin{pmatrix}x_{1}\\
+\vdots\\
+x_{n}\\
+\end{pmatrix}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">es una solucion del sistema <math id="Thmdefinition2.p1.m1" class="ltx_Math" alttext="\displaystyle A\cdot x=b" display="inline"><semantics><mrow><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>x</mi></mrow><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\cdot x=b</annotation></semantics></math> si se cumple <math id="Thmdefinition2.p1.m2" class="ltx_Math" alttext="\displaystyle A\cdot\mathbf{c}=\mathbf{b}" display="inline"><semantics><mrow><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>𝐜</mi></mrow><mo>=</mo><mi>𝐛</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\cdot\mathbf{c}=\mathbf{b}</annotation></semantics></math></p>
+</div>
+</div>
+<div id="p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Es decir, una solucion del sistema son valores <math id="p3.m1" class="ltx_Math" alttext="\displaystyle c_{1},\ldots,c_{n}\in\mathbb{K}" display="inline"><semantics><mrow><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>c</mi><mi>n</mi></msub></mrow><mo>∈</mo><mi>𝕂</mi></mrow><annotation encoding="application/x-tex">\displaystyle c_{1},\ldots,c_{n}\in\mathbb{K}</annotation></semantics></math> que al sustituir <math id="p3.m2" class="ltx_Math" alttext="\displaystyle x_{1}" display="inline"><semantics><msub><mi>x</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\displaystyle x_{1}</annotation></semantics></math> por <math id="p3.m3" class="ltx_Math" alttext="\displaystyle c_{1}" display="inline"><semantics><msub><mi>c</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\displaystyle c_{1}</annotation></semantics></math>, etc. en la expresion hacen que las ecuaciones se conviertan en igualdades en K.</p>
+</div>
+<div id="p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">Según su numero de soluciones, los sistemas se clasifican en:</p>
+<ul id="I3" class="ltx_itemize">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p">Sistemas incompatibles: no tienen ninguna solución.</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Sistemas compatibles: tienen soluciones</p>
+<ul id="I3.i2.I1" class="ltx_itemize">
+<li id="I3.i2.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I3.i2.I1.i1.p1" class="ltx_para">​<p class="ltx_p">Si solo admiten una solución, se llaman sistemas compatibles determinados.</p>
+</div>
+</li>
+<li id="I3.i2.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I3.i2.I1.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">En caso contrario, se llaman sistemas compatibles indeterminados.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Un sistema es homogeneo si todos sus terminos independientes son 0. Estos sistemas siempre son sistemas compatibles porque admiten como solucion al vector</p>
+<div id="Ex31" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex31.m1" class="ltx_Math" alttext="\displaystyle 0=\begin{pmatrix}0\\
+\vdots\\
+0\\
+\end{pmatrix}" display="block"><semantics><mrow><mn>0</mn><mo>=</mo><mrow><mo>(</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle 0=\begin{pmatrix}0\\
+\vdots\\
+0\\
+\end{pmatrix}</annotation></semantics></math></span>
+</div>
+</div>
+<div id="Thmdefinition3" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 3.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition3.p1" class="ltx_para">
+<p class="ltx_p">Se dice que dos sistemas <math id="Thmdefinition3.p1.m1" class="ltx_Math" alttext="\displaystyle A\cdot x=b" display="inline"><semantics><mrow><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>x</mi></mrow><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\cdot x=b</annotation></semantics></math> y <math id="Thmdefinition3.p1.m2" class="ltx_Math" alttext="\displaystyle B\cdot x=c" display="inline"><semantics><mrow><mrow><mi>B</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>x</mi></mrow><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\displaystyle B\cdot x=c</annotation></semantics></math> son equivalentes si tienen exactamente las mismas soluciones.</p>
+</div>
+</div>
+<div id="Thmproposition1" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 3.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Si en un sistema de ecuaciones lineales</span></p>
+<ol id="I4" class="ltx_enumerate">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I4.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">se intercambian dos ecuaciones,</span></p>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I4.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">se multiplica una ecuacion por un escalar no nulo, o</span></p>
+</div>
+</li>
+<li id="I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I4.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">se suma a una ecuacion otra multiplicada por un escalar,</span></p>
+</div>
+</li>
+</ol>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">el sistema resultante es equivalente al original.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p6" class="ltx_para">
+<ol id="I5" class="ltx_enumerate">
+<li id="I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I5.i1.p1" class="ltx_para">​<p class="ltx_p">Trivial.</p>
+</div>
+</li>
+<li id="I5.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I5.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Supongamos que multiplicamos por <math id="I5.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\alpha\in\mathbb{K}\neq 0" display="inline"><semantics><mrow><mi>α</mi><mo>∈</mo><mi>𝕂</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\alpha\in\mathbb{K}\neq 0</annotation></semantics></math> la i-esima ecuacion del sistema</p>
+<div id="Ex32" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex32.m1" class="ltx_Math" alttext="\displaystyle a_{i1}x_{1}+\cdots+a_{in}x_{n}=b_{1}" display="block"><semantics><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle a_{i1}x_{1}+\cdots+a_{in}x_{n}=b_{1}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">y que las demas ecuaciones las dejamos igual. Veamos que <math id="I5.i2.p1.m2" class="ltx_Math" alttext="\displaystyle c=(c_{1}\,c_{2}\,\cdots\,c_{n})" display="inline"><semantics><mrow><mi>c</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>c</mi><mn>2</mn></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.170em">⁢</mo><msub><mi>c</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle c=(c_{1}\,c_{2}\,\cdots\,c_{n})</annotation></semantics></math> es solucion del primer sistema si y solo si es solucion del segundo: como hay una ecuacion diferente, basta comprobar que <math id="I5.i2.p1.m3" class="ltx_Math" alttext="\displaystyle c" display="inline"><semantics><mi>c</mi><annotation encoding="application/x-tex">\displaystyle c</annotation></semantics></math> cumple la ecuacion</p>
+<div id="Ex33" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex33.m1" class="ltx_Math" alttext="\displaystyle a_{i1}x_{1}+\dots+a_{in}x_{n}=b_{i}" display="block"><semantics><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle a_{i1}x_{1}+\dots+a_{in}x_{n}=b_{i}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">si y solo si cumple la ecuacion</p>
+<div id="Ex34" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex34.m1" class="ltx_Math" alttext="\displaystyle\alpha a_{i1}x_{1}+\dots+\alpha a_{in}x_{n}=b_{i}" display="block"><semantics><mrow><mrow><mrow><mi>α</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>α</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle\alpha a_{i1}x_{1}+\dots+\alpha a_{in}x_{n}=b_{i}</annotation></semantics></math></span>
+</div>
+</div>
+<div id="I5.i2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="I5.i2.p2.m1" class="ltx_math_unparsed" alttext="\displaystyle\Rightarrow)" display="inline"><semantics><mrow><mo rspace="0em" stretchy="false">⇒</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow)</annotation></semantics></math> Por cumplir el primer sistema, sabemos</p>
+<div id="Ex35" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex35.m1" class="ltx_Math" alttext="\displaystyle a_{i1}c_{1}+\cdots+a_{in}c_{n}=b_{i}" display="block"><semantics><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>c</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>c</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle a_{i1}c_{1}+\cdots+a_{in}c_{n}=b_{i}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">y, multiplicando por <math id="I5.i2.p2.m2" class="ltx_Math" alttext="\displaystyle\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\displaystyle\alpha</annotation></semantics></math> en ambos lados de la igualdad, tenemos que</p>
+<div id="Ex36" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex36.m1" class="ltx_Math" alttext="\displaystyle\alpha a_{i1}c_{1}+\cdots+\alpha a_{in}c_{n}=\alpha b_{i}" display="block"><semantics><mrow><mrow><mrow><mi>α</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>c</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>α</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>c</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mrow><mi>α</mi><mo>⁢</mo><msub><mi>b</mi><mi>i</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\alpha a_{i1}c_{1}+\cdots+\alpha a_{in}c_{n}=\alpha b_{i}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Luego cumple la ecuacion <math id="I5.i2.p2.m3" class="ltx_Math" alttext="\displaystyle i" display="inline"><semantics><mi>i</mi><annotation encoding="application/x-tex">\displaystyle i</annotation></semantics></math> del segundo sistema. Esto implica que <math id="I5.i2.p2.m4" class="ltx_Math" alttext="\displaystyle(c_{1}\,\cdots\,c_{n})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.170em">⁢</mo><msub><mi>c</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(c_{1}\,\cdots\,c_{n})</annotation></semantics></math> es solucion del segundo sistema.</p>
+</div>
+<div id="I5.i2.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="I5.i2.p3.m1" class="ltx_math_unparsed" alttext="\displaystyle\Leftarrow)" display="inline"><semantics><mrow><mo rspace="0em" stretchy="false">⇐</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle\Leftarrow)</annotation></semantics></math> Una solucion que cumple las ecuaciones del segundo sistema es <math id="I5.i2.p3.m2" class="ltx_Math" alttext="\displaystyle(c_{1}\,\cdots\,c_{n})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.170em">⁢</mo><msub><mi>c</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(c_{1}\,\cdots\,c_{n})</annotation></semantics></math>. Por cumplir el segundo sistema, sabemos que</p>
+<div id="Ex37" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex37.m1" class="ltx_Math" alttext="\displaystyle\alpha a_{i1}x_{1}+\cdots+\alpha a_{in}x_{n}=b_{i}" display="block"><semantics><mrow><mrow><mrow><mi>α</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>α</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle\alpha a_{i1}x_{1}+\cdots+\alpha a_{in}x_{n}=b_{i}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">y multiplicando por <math id="I5.i2.p3.m3" class="ltx_Math" alttext="\displaystyle\frac{1}{\alpha}" display="inline"><semantics><mstyle displaystyle="true"><mfrac><mn>1</mn><mi>α</mi></mfrac></mstyle><annotation encoding="application/x-tex">\displaystyle\frac{1}{\alpha}</annotation></semantics></math> llegamos a</p>
+<div id="Ex38" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex38.m1" class="ltx_Math" alttext="\displaystyle a_{i1}x_{1}+\cdots+a_{in}x_{n}=b_{i}" display="block"><semantics><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle a_{i1}x_{1}+\cdots+a_{in}x_{n}=b_{i}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">que es la ecuacion i-esima del primer sistema. Por tanto, <math id="I5.i2.p3.m4" class="ltx_Math" alttext="\displaystyle(c_{1}\,\cdots\,c_{n})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.170em">⁢</mo><msub><mi>c</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(c_{1}\,\cdots\,c_{n})</annotation></semantics></math> tambien es solucion del primer sistema.</p>
+</div>
+</li>
+<li id="I5.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I5.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Supongamos que la i-esima y la j-esima ecuaciones del sistema original son</p>
+<div id="Ex39" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex39.m1" class="ltx_Math" alttext="\displaystyle\begin{dcases}a_{i1}x_{1}+\cdots+a_{in}x_{n}=b_{i}\\
+a_{j1}x_{1}+\cdots+a_{jn}x_{n}=b_{j}\end{dcases}" display="block"><semantics><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mi>i</mi></msub></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi>j</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>j</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mi>j</mi></msub></mrow></mtd><mtd></mtd></mtr></mtable></mrow><annotation encoding="application/x-tex">\displaystyle\begin{dcases}a_{i1}x_{1}+\cdots+a_{in}x_{n}=b_{i}\\
+a_{j1}x_{1}+\cdots+a_{jn}x_{n}=b_{j}\end{dcases}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">y sustituimos la ecuacion j-esima por la suma de la j-esima mas la i-esima multiplicada por un escalar <math id="I5.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\lambda\in\mathbb{K}" display="inline"><semantics><mrow><mi>λ</mi><mo>∈</mo><mi>𝕂</mi></mrow><annotation encoding="application/x-tex">\displaystyle\lambda\in\mathbb{K}</annotation></semantics></math>:</p>
+<div id="Ex40" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex40.m1" class="ltx_Math" alttext="\displaystyle\begin{dcases}a_{i1}x_{1}+\cdots+a_{in}x_{n}=b_{i}\\
+(a_{j1}+\lambda a_{i1})x_{1}+\cdots+(a_{jn}+\lambda a_{in})x_{n}=b_{j}+\lambda
+b%
+_{i}\end{dcases}" display="block"><semantics><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mi>i</mi></msub></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mrow><mi>j</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>+</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mrow><mi>j</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>+</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mrow><msub><mi>b</mi><mi>j</mi></msub><mo>+</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>b</mi><mi>i</mi></msub></mrow></mrow></mrow></mtd><mtd></mtd></mtr></mtable></mrow><annotation encoding="application/x-tex">\displaystyle\begin{dcases}a_{i1}x_{1}+\cdots+a_{in}x_{n}=b_{i}\\
+(a_{j1}+\lambda a_{i1})x_{1}+\cdots+(a_{jn}+\lambda a_{in})x_{n}=b_{j}+\lambda
+b%
+_{i}\end{dcases}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><math id="I5.i3.p1.m2" class="ltx_math_unparsed" alttext="\displaystyle\Rightarrow)" display="inline"><semantics><mrow><mo rspace="0em" stretchy="false">⇒</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow)</annotation></semantics></math> Supongamos que <math id="I5.i3.p1.m3" class="ltx_Math" alttext="\displaystyle(c_{1}\,\cdots\,c_{n})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.170em">⁢</mo><msub><mi>c</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(c_{1}\,\cdots\,c_{n})</annotation></semantics></math> es solucion del primer sistema. En particular, en la i-esima ecuacion</p>
+<div id="Ex41" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex41.m1" class="ltx_Math" alttext="\displaystyle a_{i1}c_{1}+\cdots+a_{in}c_{n}=b_{i}" display="block"><semantics><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>c</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>c</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle a_{i1}c_{1}+\cdots+a_{in}c_{n}=b_{i}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">y en la j-esima</p>
+<div id="Ex42" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex42.m1" class="ltx_Math" alttext="\displaystyle a_{j1}x_{1}+\cdots+a_{jn}x_{n}=b_{i}" display="block"><semantics><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi>j</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>j</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle a_{j1}x_{1}+\cdots+a_{jn}x_{n}=b_{i}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Multiplicando la i-esima ecuacion por <math id="I5.i3.p1.m4" class="ltx_Math" alttext="\displaystyle\lambda\in\mathbb{K}" display="inline"><semantics><mrow><mi>λ</mi><mo>∈</mo><mi>𝕂</mi></mrow><annotation encoding="application/x-tex">\displaystyle\lambda\in\mathbb{K}</annotation></semantics></math> queda:</p>
+<div id="Ex43" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex43.m1" class="ltx_Math" alttext="\displaystyle\lambda a_{i1}c_{1}+\cdots+\lambda a_{in}c_{n}=\lambda b_{i}" display="block"><semantics><mrow><mrow><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>c</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>c</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>b</mi><mi>i</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\lambda a_{i1}c_{1}+\cdots+\lambda a_{in}c_{n}=\lambda b_{i}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">que lo sumamos a la j-esima ecuacion</p>
+<div id="Ex44" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex44.m1" class="ltx_Math" alttext="\displaystyle(a_{j1}+\lambda a_{i1})c_{1}+\cdots+(a_{jn}+\lambda a_{in})c_{n}=%
+b_{j}+\lambda b_{i}" display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mrow><mi>j</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>+</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>c</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mrow><mi>j</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>+</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>c</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mrow><msub><mi>b</mi><mi>j</mi></msub><mo>+</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>b</mi><mi>i</mi></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle(a_{j1}+\lambda a_{i1})c_{1}+\cdots+(a_{jn}+\lambda a_{in})c_{n}=%
+b_{j}+\lambda b_{i}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Llegamos a que se cumple la ecuacion j del segundo sistema y, por tanto, se cumplen todas las ecuaciones. <math id="I5.i3.p1.m5" class="ltx_Math" alttext="\displaystyle c_{1}\,\cdots\,c_{n}" display="inline"><semantics><mrow><msub><mi>c</mi><mn>1</mn></msub><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.170em">⁢</mo><msub><mi>c</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle c_{1}\,\cdots\,c_{n}</annotation></semantics></math> es solucion del segundo sistema.</p>
+</div>
+<div id="I5.i3.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="I5.i3.p2.m1" class="ltx_math_unparsed" alttext="\displaystyle\Leftarrow)" display="inline"><semantics><mrow><mo rspace="0em" stretchy="false">⇐</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle\Leftarrow)</annotation></semantics></math> Supongamos que <math id="I5.i3.p2.m2" class="ltx_Math" alttext="\displaystyle(c_{1}\,\cdots\,c_{n})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.170em">⁢</mo><msub><mi>c</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(c_{1}\,\cdots\,c_{n})</annotation></semantics></math> es una solucion del segundo sistema, cuya i-esima ecuacion es:</p>
+<div id="Ex45" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex45.m1" class="ltx_Math" alttext="\displaystyle a_{i1}c_{1}+\cdots+a_{in}c_{n}=b_{i}" display="block"><semantics><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>c</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>c</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle a_{i1}c_{1}+\cdots+a_{in}c_{n}=b_{i}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">y su j-esima:</p>
+<div id="Ex46" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex46.m1" class="ltx_Math" alttext="\displaystyle(a_{j1}+\lambda a_{i1})c_{1}+\cdots+(a_{jn}+\lambda a_{in})c_{n}=%
+b_{j}+\lambda b_{i}" display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mrow><mi>j</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>+</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>c</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mrow><mi>j</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>+</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>c</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mrow><msub><mi>b</mi><mi>j</mi></msub><mo>+</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>b</mi><mi>i</mi></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle(a_{j1}+\lambda a_{i1})c_{1}+\cdots+(a_{jn}+\lambda a_{in})c_{n}=%
+b_{j}+\lambda b_{i}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Multiplicando en ambos lados de la i-esima ecuacion por <math id="I5.i3.p2.m3" class="ltx_Math" alttext="\displaystyle-\lambda" display="inline"><semantics><mrow><mo>−</mo><mi>λ</mi></mrow><annotation encoding="application/x-tex">\displaystyle-\lambda</annotation></semantics></math> tenemos</p>
+<div id="Ex47" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex47.m1" class="ltx_math_unparsed" alttext="\displaystyle-\lambda a_{i1}c_{1}+\cdots+-\lambda a_{in}c_{n}=-\lambda b_{i}" display="block"><semantics><mrow><mo>−</mo><mi>λ</mi><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mn>1</mn></mrow></msub><msub><mi>c</mi><mn>1</mn></msub><mo>+</mo><mi mathvariant="normal">⋯</mi><mo rspace="0em">+</mo><mo lspace="0em">−</mo><mi>λ</mi><msub><mi>a</mi><mrow><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><msub><mi>c</mi><mi>n</mi></msub><mo rspace="0em">=</mo><mo lspace="0em">−</mo><mi>λ</mi><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle-\lambda a_{i1}c_{1}+\cdots+-\lambda a_{in}c_{n}=-\lambda b_{i}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Sumando a la j-esima ecuacion la anterior:</p>
+<div id="Ex48" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex48.m1" class="ltx_Math" alttext="\displaystyle a_{j1}x_{1}+\cdots+a_{jn}x_{n}=b_{i}" display="block"><semantics><mrow><mrow><mrow><msub><mi>a</mi><mrow><mi>j</mi><mo>⁢</mo><mn>1</mn></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>a</mi><mrow><mi>j</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle a_{j1}x_{1}+\cdots+a_{jn}x_{n}=b_{i}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Por tanto, <math id="I5.i3.p2.m4" class="ltx_Math" alttext="\displaystyle(c_{1}\,\cdots\,c_{n})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.170em">⁢</mo><msub><mi>c</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(c_{1}\,\cdots\,c_{n})</annotation></semantics></math> cumple todas las ecuaciones del primer sistema y, por tanto, es solucion de ambos.</p>
+</div>
+<div id="I5.i3.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Los sistemas son equivalentes.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="Thmdefinition4" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 3.4</span></span><span class="ltx_text ltx_font_bold"> </span>(Matrices equivalentes por filas)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition4.p1" class="ltx_para">
+<p class="ltx_p">Dos matrices son equivalentes por filas si una se puede obtener a partir de la otra multiplicando por delante por una cantidad finita matrices elementales. Como las matrices elementales son todas invertibles, <math id="Thmdefinition4.p1.m1" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> es equivalente por filas a <math id="Thmdefinition4.p1.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> si y solo si <math id="Thmdefinition4.p1.m3" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es equivalente por filas a <math id="Thmdefinition4.p1.m4" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math>. Tienen una relacion de equivalencia ya que cumplen las propiedades reflexiva, transitiva y simetrica.</p>
+</div>
+</div>
+<div id="Thmdefinition5" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 3.5</span></span><span class="ltx_text ltx_font_bold"> </span>(Matriz escalonada)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition5.p1" class="ltx_para">
+<p class="ltx_p">Una matriz <math id="Thmdefinition5.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> esta en forma escalonada si cada fila no nula de <math id="Thmdefinition5.p1.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> comienza con mas ceros que la fila anterior y sus filas nulas, si las tiene, estan en la parte inferior de la matriz. Al primer elemento no nulo de cada fila no nula se le llama pivote de esa fila.</p>
+</div>
+</div>
+<div id="Thmdefinition6" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 3.6</span></span><span class="ltx_text ltx_font_bold"> </span>(Matriz escalonada reducida)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition6.p1" class="ltx_para">
+<p class="ltx_p">Una matriz <math id="Thmdefinition6.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> esta en forma escalonada reducida si, ademas de ser escalonada, el pivote de cada fila no nula es 1 y los elementos superiores al pivote en su misma columna son cero.</p>
+</div>
+</div>
+<div id="p7" class="ltx_para ltx_noindent">
+<p class="ltx_p">Cuando la matriz de coeficientes de un sistema <math id="p7.m1" class="ltx_Math" alttext="\displaystyle Ax=b" display="inline"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\displaystyle Ax=b</annotation></semantics></math> esta en forma escalonada, la discusion y resolucion del sistema es casi directa. Los diferentes casos son:</p>
+<ol id="I6" class="ltx_enumerate">
+<li id="I6.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I6.i1.p1" class="ltx_para">​<p class="ltx_p">La ultima fila no nula de la matriz ampliada es de la forma</p>
+<div id="Ex49" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex49.m1" class="ltx_Math" alttext="\displaystyle\left(\begin{array}[]{ccc|c}0&amp;\cdots&amp;0&amp;\lambda\\
+\end{array}\right)" display="block"><semantics><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true"><mtr><mtd><mn>0</mn></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd class="ltx_border_r"><mn>0</mn></mtd><mtd><mi>λ</mi></mtd></mtr></mtable><mo>)</mo></mrow><annotation encoding="application/x-tex">\displaystyle\left(\begin{array}[]{ccc|c}0&amp;\cdots&amp;0&amp;\lambda\\
+\end{array}\right)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">con <math id="I6.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\lambda\neq 0\in\mathbb{K}" display="inline"><semantics><mrow><mi>λ</mi><mo>≠</mo><mn>0</mn><mo>∈</mo><mi>𝕂</mi></mrow><annotation encoding="application/x-tex">\displaystyle\lambda\neq 0\in\mathbb{K}</annotation></semantics></math>. En este caso, el sistema es incompatible.</p>
+</div>
+</li>
+<li id="I6.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I6.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">La ultima fila no nula de la matriz ampliada es de la forma</p>
+<div id="Ex50" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex50.m1" class="ltx_Math" alttext="\displaystyle\left(\begin{array}[]{ccc|c}0&amp;\cdots&amp;\lambda&amp;\alpha\\
+\end{array}\right)" display="block"><semantics><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true"><mtr><mtd><mn>0</mn></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd class="ltx_border_r"><mi>λ</mi></mtd><mtd><mi>α</mi></mtd></mtr></mtable><mo>)</mo></mrow><annotation encoding="application/x-tex">\displaystyle\left(\begin{array}[]{ccc|c}0&amp;\cdots&amp;\lambda&amp;\alpha\\
+\end{array}\right)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">con <math id="I6.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\lambda\neq 0" display="inline"><semantics><mrow><mi>λ</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\lambda\neq 0</annotation></semantics></math>. En este caso el sistema es compatible. Para resolverlo, se despejan “de abajo a arriba” las incógnitas que corresponden a los pivotes de cada fila no nula. Las incógnitas que no correspondan a pivotes de ninguna fila serán parámetros libres en la solución del sistema. Para decidir si es determinado o indeterminado, nos fijamos en el numero de pivotes y comparamos con el numero de incognitas.</p>
+<ol id="I6.i2.I2" class="ltx_enumerate">
+<li id="I6.i2.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><em class="ltx_emph ltx_font_italic">a</em>)</span><div id="I6.i2.I2.i1.p1" class="ltx_para">​<p class="ltx_p">Si hay tantas incognitas como pivotes, el sistema es compatible determinado.</p>
+</div>
+</li>
+<li id="I6.i2.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><em class="ltx_emph ltx_font_italic">b</em>)</span><div id="I6.i2.I2.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Si hay mas incognitas que pivotes (hay filas no nulas) el sistema es compatible indeterminado, y va a depender exactamente del numero de incognitas que no corresponden a pivotes.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div id="Thmproposition2" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 3.2</span></span><span class="ltx_text ltx_font_bold"> </span>(Método de Gauss)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sea <math id="Thmproposition2.p1.m1" class="ltx_Math" alttext="\displaystyle A\mathbf{x}=\mathbf{b}" display="inline"><semantics><mrow><mrow><mi>A</mi><mo mathvariant="italic">⁢</mo><mi>𝐱</mi></mrow><mo mathvariant="normal">=</mo><mi>𝐛</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\mathbf{x}=\mathbf{b}</annotation></semantics></math> un sistema de ecuaciones lineales. El metodo de Gauss transforma el sistema original en un sistema equivalente cuya matriz del sistema está en forma escalonada:</span></p>
+<ol id="I7" class="ltx_enumerate">
+<li id="I7.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I7.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Conseguir que en la primera fila el pivote esté lo mas a la izquierda posible.</span></p>
+</div>
+</li>
+<li id="I7.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I7.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Hacer ceros debajo del pivote: se suma a cada una de las filas la primera multiplicada por el escalar adecuado.</span></p>
+</div>
+</li>
+<li id="I7.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I7.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Repetir todos los pasos para las siguientes filas y columnas.</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Thmproposition3" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 3.3</span></span><span class="ltx_text ltx_font_bold"> </span>(Método de Gauss-Jordan)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sea <math id="Thmproposition3.p1.m1" class="ltx_Math" alttext="\displaystyle Ax=b" display="inline"><semantics><mrow><mrow><mi>A</mi><mo mathvariant="italic">⁢</mo><mi>x</mi></mrow><mo mathvariant="normal">=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\displaystyle Ax=b</annotation></semantics></math> un sistema de ecuaciones lineales. El método de Gauss-Jordan transforma el sistema original en un sistema equivalente cuya matriz del sistema está en formada escalonada reducida:</span></p>
+<ol id="I8" class="ltx_enumerate">
+<li id="I8.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I8.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Aplicar el metodo de Gauss, obteniendo la matriz de coeficientes en forma escalonada.</span></p>
+</div>
+</li>
+<li id="I8.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I8.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Hacer que todos los pivotes sean iguales a </span><math id="I8.i2.p1.m1" class="ltx_Math" alttext="\displaystyle 1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">\displaystyle 1</annotation></semantics></math><span class="ltx_text ltx_font_italic"> multiplicando cada fila por un escalar.</span></p>
+</div>
+</li>
+<li id="I8.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I8.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">De abajo a arriba hacer ceros encima de cada pivote: se suma a cada una de las filas encima del pivote la última fila multiplicada por el escalar adecuado.</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="p8" class="ltx_para ltx_noindent">
+<p class="ltx_p"><span class="ltx_text ltx_framed_underline">Calculo de la inversa de una matriz A:</span></p>
+</div>
+<div id="p9" class="ltx_para ltx_noindent">
+<p class="ltx_p">Si <math id="p9.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> tiene inversa y <math id="p9.m2" class="ltx_Math" alttext="\displaystyle A\cdot C=I" display="inline"><semantics><mrow><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>C</mi></mrow><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\cdot C=I</annotation></semantics></math> entonces <math id="p9.m3" class="ltx_Math" alttext="\displaystyle C=A^{-1}=\left(\begin{array}[]{c|c|c|c}C^{1}&amp;C^{2}&amp;\cdots&amp;C^{n}%
+\\
+\end{array}\right)" display="inline"><semantics><mrow><mi>C</mi><mo>=</mo><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt"><mtr><mtd class="ltx_border_r"><msup><mi>C</mi><mn>1</mn></msup></mtd><mtd class="ltx_border_r"><msup><mi>C</mi><mn>2</mn></msup></mtd><mtd class="ltx_border_r"><mi mathvariant="normal">⋯</mi></mtd><mtd><msup><mi>C</mi><mi>n</mi></msup></mtd></mtr></mtable><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle C=A^{-1}=\left(\begin{array}[]{c|c|c|c}C^{1}&amp;C^{2}&amp;\cdots&amp;C^{n}%
+\\
+\end{array}\right)</annotation></semantics></math>, donde <math id="p9.m4" class="ltx_Math" alttext="\displaystyle C^{1}" display="inline"><semantics><msup><mi>C</mi><mn>1</mn></msup><annotation encoding="application/x-tex">\displaystyle C^{1}</annotation></semantics></math>, <math id="p9.m5" class="ltx_Math" alttext="\displaystyle\ldots,C^{n}" display="inline"><semantics><mrow><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>C</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\displaystyle\ldots,C^{n}</annotation></semantics></math> son las columnas de <math id="p9.m6" class="ltx_Math" alttext="\displaystyle A^{-1}" display="inline"><semantics><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">\displaystyle A^{-1}</annotation></semantics></math>. Por tanto, buscamos una matriz <math id="p9.m7" class="ltx_Math" alttext="\displaystyle C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">\displaystyle C</annotation></semantics></math> tal que <math id="p9.m8" class="ltx_Math" alttext="\displaystyle AC=I" display="inline"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mi>C</mi></mrow><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">\displaystyle AC=I</annotation></semantics></math>.</p>
+<div id="Ex51" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex51.m1" class="ltx_Math" alttext="\displaystyle AC^{1}=\begin{pmatrix}1\\
+\vdots\\
+0\\
+\end{pmatrix},C^{1}\text{ solucion de }A\mathbf{x}_{1}=\begin{pmatrix}1\\
+\vdots\\
+0\\
+\end{pmatrix}" display="block"><semantics><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><msup><mi>C</mi><mn>1</mn></msup></mrow><mo>=</mo><mrow><mo>(</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mrow><msup><mi>C</mi><mn>1</mn></msup><mo>⁢</mo><mtext> solucion de </mtext><mo>⁢</mo><mi>A</mi><mo>⁢</mo><msub><mi>𝐱</mi><mn>1</mn></msub></mrow><mo>=</mo><mrow><mo>(</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mn>1</mn></mtd></mtr><mtr><mtd><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle AC^{1}=\begin{pmatrix}1\\
+\vdots\\
+0\\
+\end{pmatrix},C^{1}\text{ solucion de }A\mathbf{x}_{1}=\begin{pmatrix}1\\
+\vdots\\
+0\\
+\end{pmatrix}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p ltx_align_center"><math id="p9.m9" class="ltx_Math" alttext="\displaystyle\vdots" display="inline"><semantics><mi mathvariant="normal">⋮</mi><annotation encoding="application/x-tex">\displaystyle\vdots</annotation></semantics></math></p>
+<div id="Ex52" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex52.m1" class="ltx_Math" alttext="\displaystyle AC^{n}=\begin{pmatrix}0\\
+\vdots\\
+1\\
+\end{pmatrix},C^{n}\text{ solucion de }A\mathbf{x}_{n}=\begin{pmatrix}0\\
+\vdots\\
+1\\
+\end{pmatrix}" display="block"><semantics><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><msup><mi>C</mi><mi>n</mi></msup></mrow><mo>=</mo><mrow><mo>(</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd><mn>1</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>,</mo><mrow><mrow><msup><mi>C</mi><mi>n</mi></msup><mo>⁢</mo><mtext> solucion de </mtext><mo>⁢</mo><mi>A</mi><mo>⁢</mo><msub><mi>𝐱</mi><mi>n</mi></msub></mrow><mo>=</mo><mrow><mo>(</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd><mn>1</mn></mtd></mtr></mtable><mo>)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle AC^{n}=\begin{pmatrix}0\\
+\vdots\\
+1\\
+\end{pmatrix},C^{n}\text{ solucion de }A\mathbf{x}_{n}=\begin{pmatrix}0\\
+\vdots\\
+1\\
+\end{pmatrix}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Creamos una matriz ampliada con <math id="p9.m10" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> columnas nuevas, resolviendo todos los sistemas a la vez:</p>
+<div id="Ex53" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex53.m1" class="ltx_Math" alttext="\displaystyle\left(A\left|\begin{matrix}1&amp;\cdots&amp;0\\
+\vdots&amp;\ddots&amp;\vdots\\
+0&amp;\cdots&amp;1\\
+\end{matrix}\right.\right)=\left(A\left|I_{n}\right.\right)" display="block"><semantics><mrow><mrow><mo>(</mo><mrow><mi>A</mi><mo fence="false" stretchy="true">|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><mn>1</mn></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd><mi mathvariant="normal">⋮</mi></mtd><mtd><mi mathvariant="normal">⋱</mi></mtd><mtd><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd><mn>1</mn></mtd></mtr></mtable></mrow><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mrow><mi>A</mi><mo fence="false" stretchy="true">|</mo><msub><mi>I</mi><mi>n</mi></msub></mrow><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\left(A\left|\begin{matrix}1&amp;\cdots&amp;0\\
+\vdots&amp;\ddots&amp;\vdots\\
+0&amp;\cdots&amp;1\\
+\end{matrix}\right.\right)=\left(A\left|I_{n}\right.\right)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Hay dos casos:</p>
+<ul id="I9" class="ltx_itemize">
+<li id="I9.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I9.i1.p1" class="ltx_para">​<p class="ltx_p">Sistema incompatible: si en alguno de los pasos del método de Gauss sobre la matriz se obtiene una fila de la forma</p>
+<div id="Ex54" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex54.m1" class="ltx_math_unparsed" alttext="\displaystyle\begin{pmatrix}0&amp;\cdots&amp;0&amp;|\cdots&amp;x\neq 0&amp;\cdots\\
+\end{pmatrix}\Rightarrow\text{No existe }A^{-1}" display="block"><semantics><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true"><mtr><mtd><mn>0</mn></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd><mn>0</mn></mtd><mtd><mrow><mo fence="false" rspace="0.167em" stretchy="false">|</mo><mi mathvariant="normal">⋯</mi></mrow></mtd><mtd><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd></mtr></mtable><mo>)</mo></mrow><mo stretchy="false">⇒</mo><mrow><mtext>No existe </mtext><mo>⁢</mo><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\begin{pmatrix}0&amp;\cdots&amp;0&amp;|\cdots&amp;x\neq 0&amp;\cdots\\
+\end{pmatrix}\Rightarrow\text{No existe }A^{-1}</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I9.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I9.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">En caso contrario, la matriz escalonada reducida asociada a <math id="I9.i2.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es <math id="I9.i2.p1.m2" class="ltx_Math" alttext="\displaystyle I_{n}" display="inline"><semantics><msub><mi>I</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\displaystyle I_{n}</annotation></semantics></math> y el método de Gauss-Jordan aplicado a <math id="I9.i2.p1.m3" class="ltx_Math" alttext="\displaystyle(A|I_{n})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>I</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(A|I_{n})</annotation></semantics></math> nos proporciona una matriz de la forma <math id="I9.i2.p1.m4" class="ltx_Math" alttext="\displaystyle(I_{n}|C)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><msub><mi>I</mi><mi>n</mi></msub><mo fence="false">|</mo><mi>C</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(I_{n}|C)</annotation></semantics></math>, con <math id="I9.i2.p1.m5" class="ltx_Math" alttext="\displaystyle C" display="inline"><semantics><mi>C</mi><annotation encoding="application/x-tex">\displaystyle C</annotation></semantics></math> la inversa de <math id="I9.i2.p1.m6" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+<div id="Ex55" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex55.m1" class="ltx_Math" alttext="\displaystyle(A|I_{n})\sim_{\text{Gauss-Jordan}}(I_{n}|A^{-1})" display="block"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo fence="false">|</mo><msub><mi>I</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><msub><mo>∼</mo><mtext>Gauss-Jordan</mtext></msub><mrow><mo stretchy="false">(</mo><mrow><msub><mi>I</mi><mi>n</mi></msub><mo fence="false">|</mo><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle(A|I_{n})\sim_{\text{Gauss-Jordan}}(I_{n}|A^{-1})</annotation></semantics></math></span>
+</div>
+</div>
+<div id="Thmproposition4" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 3.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Una matriz <math id="Thmproposition4.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es invertible si y solo si <math id="Thmproposition4.p1.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es producto de matrices elementales.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p10" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="p10.m1" class="ltx_math_unparsed" alttext="\displaystyle\Rightarrow)" display="inline"><semantics><mrow><mo rspace="0em" stretchy="false">⇒</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow)</annotation></semantics></math> Si <math id="p10.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es invertible, el metodo de Gauss-Jordan sobre <math id="p10.m3" class="ltx_Math" alttext="\displaystyle(A\mid I)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∣</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(A\mid I)</annotation></semantics></math> nos devuelve <math id="p10.m4" class="ltx_Math" alttext="\displaystyle(I\mid A^{-1})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>∣</mo><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(I\mid A^{-1})</annotation></semantics></math>. Cada paso del metodo de Gauss-Jordan es una operacion elemental que implica multiplicar <math id="p10.m5" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> por una matriz elemental:</p>
+<div id="Ex56" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex56.m1" class="ltx_Math" alttext="\displaystyle\underbrace{E_{x}\cdots E_{1}}_{\begin{subarray}{c}matrices\\
+elementales\end{subarray}}\cdot(A\mid I)=(I\mid A^{-1})" display="block"><semantics><mrow><mrow><munder><munder accentunder="true"><mrow><msub><mi>E</mi><mi>x</mi></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mi>E</mi><mn>1</mn></msub></mrow><mo>⏟</mo></munder><mtable rowspacing="0pt"><mtr><mtd><mrow><mi>m</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>s</mi></mrow></mtd></mtr><mtr><mtd><mrow><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>s</mi></mrow></mtd></mtr></mtable></munder><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∣</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>∣</mo><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\underbrace{E_{x}\cdots E_{1}}_{\begin{subarray}{c}matrices\\
+elementales\end{subarray}}\cdot(A\mid I)=(I\mid A^{-1})</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Como las matrices son invertibles:</p>
+<div id="Ex57" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex57.m1" class="ltx_Math" alttext="\displaystyle E_{k}\cdots E_{1}\cdot A=I\Rightarrow A=E^{-1}_{1}\cdots E^{-1}_%
+{k}" display="block"><semantics><mrow><mrow><mrow><msub><mi>E</mi><mi>k</mi></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mi>E</mi><mn>1</mn></msub></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>A</mi></mrow><mo>=</mo><mi>I</mi><mo stretchy="false">⇒</mo><mi>A</mi><mo>=</mo><mrow><msubsup><mi>E</mi><mn>1</mn><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msubsup><mi>E</mi><mi>k</mi><mrow><mo>−</mo><mn>1</mn></mrow></msubsup></mrow></mrow><annotation encoding="application/x-tex">\displaystyle E_{k}\cdots E_{1}\cdot A=I\Rightarrow A=E^{-1}_{1}\cdots E^{-1}_%
+{k}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Asi, tenemos que <math id="p10.m6" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es producto de matrices elementales (las inversas de matrices elementales son otras matrices elementales).</p>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p"><math id="p11.m1" class="ltx_math_unparsed" alttext="\displaystyle\Leftarrow)" display="inline"><semantics><mrow><mo rspace="0em" stretchy="false">⇐</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle\Leftarrow)</annotation></semantics></math> Supongamos que <math id="p11.m2" class="ltx_Math" alttext="\displaystyle A=E_{1}\cdot E_{2}\cdots E_{k}" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mrow><msub><mi>E</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>E</mi><mn>2</mn></msub></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mi>E</mi><mi>k</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A=E_{1}\cdot E_{2}\cdots E_{k}</annotation></semantics></math> para ciertas matrices elementales. Por tanto, <math id="p11.m3" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es invertible y su inversa es <math id="p11.m4" class="ltx_Math" alttext="\displaystyle A^{-1}=(E_{1}\cdots E_{k})^{-1}=E^{-1}_{n}\cdots E^{-1}_{1}" display="inline"><semantics><mrow><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mi>E</mi><mi>k</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mrow><msubsup><mi>E</mi><mi>n</mi><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msubsup><mi>E</mi><mn>1</mn><mrow><mo>−</mo><mn>1</mn></mrow></msubsup></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A^{-1}=(E_{1}\cdots E_{k})^{-1}=E^{-1}_{n}\cdots E^{-1}_{1}</annotation></semantics></math> (las matrices elementales son invertibles).
+∎</p>
+</div>
+</div>
+<div id="Thmproposition5" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 3.5</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Dos matrices <math id="Thmproposition5.p1.m1" class="ltx_Math" alttext="\displaystyle A,B" display="inline"><semantics><mrow><mi>A</mi><mo mathvariant="normal">,</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle A,B</annotation></semantics></math> son invertibles si y solo si su producto <math id="Thmproposition5.p1.m2" class="ltx_Math" alttext="\displaystyle AB" display="inline"><semantics><mrow><mi>A</mi><mo mathvariant="italic">⁢</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle AB</annotation></semantics></math> es invertible.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p12" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="p12.m1" class="ltx_math_unparsed" alttext="\displaystyle\Rightarrow)" display="inline"><semantics><mrow><mo rspace="0em" stretchy="false">⇒</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow)</annotation></semantics></math> Ya esta demostrado.</p>
+</div>
+<div id="p13" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="p13.m1" class="ltx_math_unparsed" alttext="\displaystyle\Leftarrow)" display="inline"><semantics><mrow><mo rspace="0em" stretchy="false">⇐</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle\Leftarrow)</annotation></semantics></math> Lo probaremos por reduccion al absurdo. Supongamos que <math id="p13.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> no tiene inversa.</p>
+</div>
+<div id="p14" class="ltx_para ltx_noindent">
+<p class="ltx_p">Como no es invertible, al usar Gauss-Jordan sobre <math id="p14.m1" class="ltx_Math" alttext="\displaystyle(A\mid I)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∣</mo><mi>I</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(A\mid I)</annotation></semantics></math> aparecera una fila de ceros que haga el sistema un sistema incompatible. Es decir, habran matrices elementales que cumplan <math id="p14.m2" class="ltx_Math" alttext="\displaystyle E_{1},\ldots,E_{k}" display="inline"><semantics><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>E</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle E_{1},\ldots,E_{k}</annotation></semantics></math> tales que en el producto <math id="p14.m3" class="ltx_Math" alttext="\displaystyle E_{k}\cdots E_{1}\cdot A" display="inline"><semantics><mrow><mrow><msub><mi>E</mi><mi>k</mi></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mi>E</mi><mn>1</mn></msub></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle E_{k}\cdots E_{1}\cdot A</annotation></semantics></math> aparece una fila de ceros. Multiplicando por B a la derecha:</p>
+<div id="Ex58" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex58.m1" class="ltx_Math" alttext="\displaystyle E_{k}\cdots E_{1}\cdot A\cdot B=\begin{pmatrix}&amp;\cdots&amp;\\
+0&amp;\cdots&amp;0\\
+&amp;\cdots&amp;\\
+\end{pmatrix}\cdot B=\begin{pmatrix}&amp;\cdots&amp;\\
+0&amp;\cdots&amp;0\\
+&amp;\cdots&amp;\\
+\end{pmatrix}" display="block"><semantics><mrow><mrow><mrow><msub><mi>E</mi><mi>k</mi></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mi>E</mi><mn>1</mn></msub></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>A</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>B</mi></mrow><mo>=</mo><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd></mtd></mtr></mtable><mo rspace="0.055em">)</mo></mrow><mo rspace="0.222em">⋅</mo><mi>B</mi></mrow><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd></mtd></mtr><mtr><mtd><mn>0</mn></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd><mn>0</mn></mtd></mtr><mtr><mtd></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd></mtd></mtr></mtable><mo>)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle E_{k}\cdots E_{1}\cdot A\cdot B=\begin{pmatrix}&amp;\cdots&amp;\\
+0&amp;\cdots&amp;0\\
+&amp;\cdots&amp;\\
+\end{pmatrix}\cdot B=\begin{pmatrix}&amp;\cdots&amp;\\
+0&amp;\cdots&amp;0\\
+&amp;\cdots&amp;\\
+\end{pmatrix}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Esto es una contradiccion con que <math id="p14.m4" class="ltx_Math" alttext="\displaystyle A\cdot B" display="inline"><semantics><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\cdot B</annotation></semantics></math> es invertible. Por lo tanto, <math id="p14.m5" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> tiene que ser invertible.</p>
+</div>
+<div id="p15" class="ltx_para ltx_noindent">
+<p class="ltx_p">Tenemos que <math id="p15.m1" class="ltx_Math" alttext="\displaystyle AB" display="inline"><semantics><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle AB</annotation></semantics></math> es invertible y hemos visto que <math id="p15.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> tambien lo es. Queda demostrar que <math id="p15.m3" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> es invertible.</p>
+</div>
+<div id="p16" class="ltx_para">
+<p class="ltx_p">Teniendo en cuenta que el producto de invertibles es invertible, llegamos a</p>
+<div id="Ex59" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex59.m1" class="ltx_Math" alttext="\displaystyle(A^{-1})(A\cdot B)=B\Rightarrow\text{es invertible. }" display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><msup><mi>A</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>B</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>B</mi><mo stretchy="false">⇒</mo><mtext>es invertible. </mtext></mrow><annotation encoding="application/x-tex">\displaystyle(A^{-1})(A\cdot B)=B\Rightarrow\text{es invertible. }</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S2.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S4.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

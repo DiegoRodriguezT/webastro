@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content";
+import SmallCard from "../../components/SmallCard.astro";
+import Layout from "../../layouts/Layout.astro";
+import Blog from "../../components/Blog.astro";
+
+const posts = await getCollection("blog");
+---
+
+<Layout
+	title="diiegorgueez - Blog"
+	description="Ver los ultimos posts de diiegorgueez.me"
+>
+	<Blog>
+</Layout>

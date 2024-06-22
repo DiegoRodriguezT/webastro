@@ -1,0 +1,557 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Cálculo" course="1º Curso" prof="Alejandro García del Amo" prof2="David González de la Aleja" data-pagefind-filter="asignatura[content], curso[course], profesor[prof], profesor[prof2]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>8 Convergencia de sucesiones ‣ Parte II Sucesiones de números reales ‣ Cálculo‣ Parte II Sucesiones de números reales ‣ Cálculo</title>
+<!--Generated on Sat Jun  8 00:06:25 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt2.html" title="Parte II Sucesiones de números reales ‣ Cálculo">
+<link rel="up up" href="index.html" title="Cálculo">
+<link rel="start" href="index.html" title="Cálculo">
+<link rel="prev" href="S7.html" title="7 Sucesiones monótonas y acotadas ‣ Parte II Sucesiones de números reales ‣ Cálculo">
+<link rel="next" href="S9.html" title="9 Sucesiones de Cauchy ‣ Parte II Sucesiones de números reales ‣ Cálculo">
+<link rel="section" href="S6.html" title="6 Sucesiones de números reales ‣ Parte II Sucesiones de números reales ‣ Cálculo">
+<link rel="section" href="S7.html" title="7 Sucesiones monótonas y acotadas ‣ Parte II Sucesiones de números reales ‣ Cálculo">
+<link rel="section" href="S9.html" title="9 Sucesiones de Cauchy ‣ Parte II Sucesiones de números reales ‣ Cálculo">
+<link rel="section" href="S10.html" title="10 Otros criterios de convergencia ‣ Parte II Sucesiones de números reales ‣ Cálculo">
+<link rel="part" href="Pt1.html" title="Parte I La recta real y el conjunto de los numeros reales ℝ ‣ Cálculo">
+<link rel="part" href="Pt2.html" title="Parte II Sucesiones de números reales ‣ Cálculo">
+<link rel="part" href="Pt3.html" title="Parte III Series ‣ Cálculo">
+<link rel="part" href="Pt4.html" title="Parte IV Límites y continuidad ‣ Cálculo">
+<link rel="part" href="Pt5.html" title="Parte V Derivadas ‣ Cálculo">
+<link rel="part" href="Pt6.html" title="Parte VI Aplicaciones de las derivadas ‣ Cálculo">
+<link rel="part" href="Pt7.html" title="Parte VII Integrales ‣ Cálculo">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Cálculo" class="ltx_ref" rel="start">Cálculo</a>
+</li>
+<li class="divider">
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt1.html" title="Parte I La recta real y el conjunto de los numeros reales ℝ ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>La recta real y el conjunto de los numeros reales <math class="ltx_Math" alttext="\displaystyle\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\displaystyle\mathbb{R}</annotation></semantics></math></a></li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt2.html" title="Parte II Sucesiones de números reales ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Sucesiones de números reales</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="6" data-path="S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S6.html" title="6 Sucesiones de números reales ‣ Parte II Sucesiones de números reales ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Sucesiones de números reales</a></li>
+<li data-level="7" data-path="S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S7.html" title="7 Sucesiones monótonas y acotadas ‣ Parte II Sucesiones de números reales ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Sucesiones monótonas y acotadas</a></li>
+<li data-level="8" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="8 Convergencia de sucesiones ‣ Parte II Sucesiones de números reales ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Convergencia de sucesiones</a></li>
+<li data-level="9" data-path="S9.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S9.html" title="9 Sucesiones de Cauchy ‣ Parte II Sucesiones de números reales ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Sucesiones de Cauchy</a></li>
+<li data-level="10" data-path="S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S10.html" title="10 Otros criterios de convergencia ‣ Parte II Sucesiones de números reales ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Otros criterios de convergencia</a></li>
+</ol>
+</li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt3.html" title="Parte III Series ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Series</a></li>
+<li data-level="IV" data-path="Pt4.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt4.html" title="Parte IV Límites y continuidad ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">IV </span></b>Límites y continuidad</a></li>
+<li data-level="V" data-path="Pt5.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt5.html" title="Parte V Derivadas ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">V </span></b>Derivadas</a></li>
+<li data-level="VI" data-path="Pt6.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt6.html" title="Parte VI Aplicaciones de las derivadas ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VI </span></b>Aplicaciones de las derivadas</a></li>
+<li data-level="VII" data-path="Pt7.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt7.html" title="Parte VII Integrales ‣ Cálculo" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VII </span></b>Integrales</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Convergencia de sucesiones</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">8</span> Convergencia de sucesiones</h1>
+
+<div id="Thmdefinition1" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 8.1</span></span><span class="ltx_text ltx_font_bold"> </span>(Convergencia)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition1.p1" class="ltx_para">
+<p class="ltx_p">Dados <math id="Thmdefinition1.p1.m1" class="ltx_Math" alttext="\displaystyle\{x_{n}\}^{\infty}_{n=1}\subset\mathbb{R}" display="inline"><semantics><mrow><msubsup><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mo>⊂</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\{x_{n}\}^{\infty}_{n=1}\subset\mathbb{R}</annotation></semantics></math> y <math id="Thmdefinition1.p1.m2" class="ltx_Math" alttext="\displaystyle a\in\mathbb{R}" display="inline"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle a\in\mathbb{R}</annotation></semantics></math>, diremos que <math id="Thmdefinition1.p1.m3" class="ltx_Math" alttext="\displaystyle\{x_{n}\}^{\infty}_{n=1}" display="inline"><semantics><msubsup><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><annotation encoding="application/x-tex">\displaystyle\{x_{n}\}^{\infty}_{n=1}</annotation></semantics></math> converge al numero <math id="Thmdefinition1.p1.m4" class="ltx_Math" alttext="\displaystyle a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">\displaystyle a</annotation></semantics></math>, y lo denotaremos por <math id="Thmdefinition1.p1.m5" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=a" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=a</annotation></semantics></math>, si dado <math id="Thmdefinition1.p1.m6" class="ltx_Math" alttext="\displaystyle\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\varepsilon&gt;0</annotation></semantics></math> existe <math id="Thmdefinition1.p1.m7" class="ltx_Math" alttext="\displaystyle n_{0}\in\mathbb{N}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>0</mn></msub><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n_{0}\in\mathbb{N}</annotation></semantics></math> con <math id="Thmdefinition1.p1.m8" class="ltx_Math" alttext="\displaystyle|x_{n}-a|&lt;\varepsilon\;\forall n\in\mathbb{N}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mi>ε</mi><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle|x_{n}-a|&lt;\varepsilon\;\forall n\in\mathbb{N}</annotation></semantics></math> con <math id="Thmdefinition1.p1.m9" class="ltx_Math" alttext="\displaystyle n\geq n_{0}" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle n\geq n_{0}</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmremarkx2" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx2.p1" class="ltx_para">
+<p class="ltx_p">Aplicando las propiedades del valor absoluto, observamos que <math id="Thmremarkx2.p1.m1" class="ltx_Math" alttext="\displaystyle|x_{n}-a|&lt;\varepsilon" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">\displaystyle|x_{n}-a|&lt;\varepsilon</annotation></semantics></math> es equivalente a que <math id="Thmremarkx2.p1.m2" class="ltx_Math" alttext="\displaystyle x_{n}\in(a-\varepsilon,a+\varepsilon)" display="inline"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>∈</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>−</mo><mi>ε</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>+</mo><mi>ε</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle x_{n}\in(a-\varepsilon,a+\varepsilon)</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmproposition1" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 8.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">El límite de una sucesión, si existe, es único.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Supongamos, por reduccion al absurdo, que existe <math id="p1.m1" class="ltx_Math" alttext="\displaystyle\{x_{n}\}^{\infty}_{n=1}" display="inline"><semantics><msubsup><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><annotation encoding="application/x-tex">\displaystyle\{x_{n}\}^{\infty}_{n=1}</annotation></semantics></math> y <math id="p1.m2" class="ltx_Math" alttext="\displaystyle a,b\in\mathbb{R}" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle a,b\in\mathbb{R}</annotation></semantics></math> tales que <math id="p1.m3" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=a" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=a</annotation></semantics></math> y <math id="p1.m4" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=b" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=b</annotation></semantics></math>. Supongamos que <math id="p1.m5" class="ltx_Math" alttext="\displaystyle a&lt;b" display="inline"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\displaystyle a&lt;b</annotation></semantics></math>, siendo análogo para <math id="p1.m6" class="ltx_Math" alttext="\displaystyle b&lt;a" display="inline"><semantics><mrow><mi>b</mi><mo>&lt;</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">\displaystyle b&lt;a</annotation></semantics></math>.
+
+Si la sucesion es convergente, para todo entorno de <math id="p1.m7" class="ltx_Math" alttext="\displaystyle a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">\displaystyle a</annotation></semantics></math> a partir de un momento dado todos los elementos de la sucesion están dicho entorno. Lo mismo para un entorno de <math id="p1.m8" class="ltx_Math" alttext="\displaystyle b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">\displaystyle b</annotation></semantics></math>. Cogemos un <math id="p1.m9" class="ltx_Math" alttext="\displaystyle\varepsilon" display="inline"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\displaystyle\varepsilon</annotation></semantics></math> tal que <math id="p1.m10" class="ltx_Math" alttext="\displaystyle a+\varepsilon\leq b+\varepsilon\Rightarrow 2\varepsilon\leq b-a%
+\Rightarrow 0&lt;\varepsilon\leq\frac{b-a}{2}" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>+</mo><mi>ε</mi></mrow><mo>≤</mo><mrow><mi>b</mi><mo>+</mo><mi>ε</mi></mrow><mo stretchy="false">⇒</mo><mrow><mn>2</mn><mo>⁢</mo><mi>ε</mi></mrow><mo>≤</mo><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">⇒</mo><mn>0</mn><mo>&lt;</mo><mi>ε</mi><mo>≤</mo><mstyle displaystyle="true"><mfrac><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle a+\varepsilon\leq b+\varepsilon\Rightarrow 2\varepsilon\leq b-a%
+\Rightarrow 0&lt;\varepsilon\leq\frac{b-a}{2}</annotation></semantics></math>.
+
+Sea <math id="p1.m11" class="ltx_Math" alttext="\displaystyle\varepsilon=\frac{b-a}{2}" display="inline"><semantics><mrow><mi>ε</mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle\varepsilon=\frac{b-a}{2}</annotation></semantics></math>. Como <math id="p1.m12" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=a" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=a</annotation></semantics></math>, <math id="p1.m13" class="ltx_Math" alttext="\displaystyle\exists n_{1}\in\mathbb{N}" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∃</mo><msub><mi>n</mi><mn>1</mn></msub></mrow><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\exists n_{1}\in\mathbb{N}</annotation></semantics></math> tal que <math id="p1.m14" class="ltx_Math" alttext="\displaystyle x_{n}\in(a-\varepsilon,a+\varepsilon)" display="inline"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>∈</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>−</mo><mi>ε</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>+</mo><mi>ε</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle x_{n}\in(a-\varepsilon,a+\varepsilon)</annotation></semantics></math> <math id="p1.m15" class="ltx_Math" alttext="\displaystyle\;\forall n\geq n_{1}\in\mathbb{N}" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow><mo>≥</mo><msub><mi>n</mi><mn>1</mn></msub><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\;\forall n\geq n_{1}\in\mathbb{N}</annotation></semantics></math> y, como <math id="p1.m16" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=b" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=b</annotation></semantics></math>, <math id="p1.m17" class="ltx_Math" alttext="\displaystyle\exists n_{2}\in\mathbb{N}" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∃</mo><msub><mi>n</mi><mn>2</mn></msub></mrow><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\exists n_{2}\in\mathbb{N}</annotation></semantics></math> tal que <math id="p1.m18" class="ltx_Math" alttext="\displaystyle x_{n}\in(b-\varepsilon,b+\varepsilon)\;\forall n\geq n_{2}\in%
+\mathbb{N}" display="inline"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>∈</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>−</mo><mi>ε</mi></mrow><mo>,</mo><mrow><mi>b</mi><mo>+</mo><mi>ε</mi></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>2</mn></msub><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle x_{n}\in(b-\varepsilon,b+\varepsilon)\;\forall n\geq n_{2}\in%
+\mathbb{N}</annotation></semantics></math>.
+
+Definimos <math id="p1.m19" class="ltx_Math" alttext="\displaystyle n_{0}=\mathop{\operator@font m\acute{a}x}\{n_{1},n_{2}\}\in%
+\mathbb{N}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>0</mn></msub><mo>=</mo><mrow><mrow><mi mathvariant="normal">m</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">a</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">x</mi></mrow><mrow><mo stretchy="false">{</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo stretchy="false">}</mo></mrow></mrow><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n_{0}=\mathop{\operator@font m\acute{a}x}\{n_{1},n_{2}\}\in%
+\mathbb{N}</annotation></semantics></math>. Entonces, se tiene que <math id="p1.m20" class="ltx_Math" alttext="\displaystyle x_{n}\in(a-\varepsilon,a+\varepsilon)" display="inline"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>∈</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>−</mo><mi>ε</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>+</mo><mi>ε</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle x_{n}\in(a-\varepsilon,a+\varepsilon)</annotation></semantics></math> y <math id="p1.m21" class="ltx_Math" alttext="\displaystyle x_{n}\in(b-\varepsilon,b+\varepsilon)\;\forall n\geq n_{0}" display="inline"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>∈</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>−</mo><mi>ε</mi></mrow><mo>,</mo><mrow><mi>b</mi><mo>+</mo><mi>ε</mi></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle x_{n}\in(b-\varepsilon,b+\varepsilon)\;\forall n\geq n_{0}</annotation></semantics></math>. Esto no es posible puesto que habíamos supuesto que <math id="p1.m22" class="ltx_Math" alttext="\displaystyle(a-\varepsilon,a+\varepsilon)\cap(b-\varepsilon,b+\varepsilon)=\varnothing" display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>−</mo><mi>ε</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>+</mo><mi>ε</mi></mrow><mo stretchy="false">)</mo></mrow><mo>∩</mo><mrow><mo stretchy="false">(</mo><mrow><mi>b</mi><mo>−</mo><mi>ε</mi></mrow><mo>,</mo><mrow><mi>b</mi><mo>+</mo><mi>ε</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">\displaystyle(a-\varepsilon,a+\varepsilon)\cap(b-\varepsilon,b+\varepsilon)=\varnothing</annotation></semantics></math>. Luego el límite, si existe, es único.
+∎</p>
+</div>
+</div>
+<div id="Thmproposition2" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 8.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sean <math id="Thmproposition2.p1.m1" class="ltx_Math" alttext="\displaystyle\{x_{n}\}^{\infty}_{n=1}" display="inline"><semantics><msubsup><mrow><mo mathvariant="normal" stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo mathvariant="normal" stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo mathvariant="normal">=</mo><mn mathvariant="normal">1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><annotation encoding="application/x-tex">\displaystyle\{x_{n}\}^{\infty}_{n=1}</annotation></semantics></math> y <math id="Thmproposition2.p1.m2" class="ltx_Math" alttext="\displaystyle\{y_{n}\}^{\infty}_{n=1}" display="inline"><semantics><msubsup><mrow><mo mathvariant="normal" stretchy="false">{</mo><msub><mi>y</mi><mi>n</mi></msub><mo mathvariant="normal" stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo mathvariant="normal">=</mo><mn mathvariant="normal">1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><annotation encoding="application/x-tex">\displaystyle\{y_{n}\}^{\infty}_{n=1}</annotation></semantics></math>, ambas convergentes, y <math id="Thmproposition2.p1.m3" class="ltx_Math" alttext="\displaystyle k\in\mathbb{R}" display="inline"><semantics><mrow><mi>k</mi><mo mathvariant="normal">∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle k\in\mathbb{R}</annotation></semantics></math>. Entonces</span></p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}(x_%
+{n}+y_{n})=\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{n}%
++\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}y_{n}" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>+</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>+</mo><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>y</mi><mi>n</mi></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}(x_%
+{n}+y_{n})=\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{n}%
++\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}y_{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}(x_%
+{n}-y_{n})=\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{n}%
+-\mathop{\operator@font l\acute{{\imath}}m}\limits_{n=1\to\infty}y_{n}" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>−</mo><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>y</mi><mi>n</mi></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}(x_%
+{n}-y_{n})=\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{n}%
+-\mathop{\operator@font l\acute{{\imath}}m}\limits_{n=1\to\infty}y_{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}y_{n}=\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{n}%
+\cdot\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}y_{n}" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>⁢</mo><msub><mi>y</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>x</mi><mi>n</mi></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>y</mi><mi>n</mi></msub></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}y_{n}=\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{n}%
+\cdot\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}y_{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I1.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i4.p1.m1" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}%
+\frac{x_{n}}{y_{n}}=\frac{\mathop{\operator@font l\acute{{\imath}}m}\limits_{n%
+\to\infty}x_{n}}{\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty%
+}y_{n}}" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mstyle displaystyle="true"><mfrac><msub><mi>x</mi><mi>n</mi></msub><msub><mi>y</mi><mi>n</mi></msub></mfrac></mstyle></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>x</mi><mi>n</mi></msub></mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>y</mi><mi>n</mi></msub></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}%
+\frac{x_{n}}{y_{n}}=\frac{\mathop{\operator@font l\acute{{\imath}}m}\limits_{n%
+\to\infty}x_{n}}{\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty%
+}y_{n}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> si </span><math id="I1.i4.p1.m2" class="ltx_Math" alttext="\displaystyle y_{0}\neq 0" display="inline"><semantics><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle y_{0}\neq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic">, </span><math id="I1.i4.p1.m3" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}y_{%
+n}\neq 0" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>y</mi><mi>n</mi></msub></mrow><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}y_{%
+n}\neq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I1.i5.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I1.i5.p1.m1" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}(k%
+\cdot x_{n})=k\cdot\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to%
+\infty}x_{n}" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>k</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}(k%
+\cdot x_{n})=k\cdot\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to%
+\infty}x_{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Sean <math id="p2.m1" class="ltx_Math" alttext="\displaystyle a=\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}%
+x_{n}" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle a=\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}%
+x_{n}</annotation></semantics></math>, <math id="p2.m2" class="ltx_Math" alttext="\displaystyle b=\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}%
+y_{n}\in\mathbb{R}" display="inline"><semantics><mrow><mi>b</mi><mo>=</mo><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>y</mi><mi>n</mi></msub></mrow><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle b=\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}%
+y_{n}\in\mathbb{R}</annotation></semantics></math>.</p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p">Sea <math id="I2.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\varepsilon&gt;0</annotation></semantics></math>. Como <math id="I2.i1.p1.m2" class="ltx_Math" alttext="\displaystyle\frac{\varepsilon}{2}&gt;0" display="inline"><semantics><mrow><mstyle displaystyle="true"><mfrac><mi>ε</mi><mn>2</mn></mfrac></mstyle><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\frac{\varepsilon}{2}&gt;0</annotation></semantics></math>, existe un <math id="I2.i1.p1.m3" class="ltx_Math" alttext="\displaystyle n_{0}\in\mathbb{N}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>0</mn></msub><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n_{0}\in\mathbb{N}</annotation></semantics></math> tal que <math id="I2.i1.p1.m4" class="ltx_Math" alttext="\displaystyle|x_{n}-a|&lt;\frac{\varepsilon}{2}\;\forall n\geq n_{0}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mstyle displaystyle="true"><mfrac><mi>ε</mi><mn>2</mn></mfrac></mstyle><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle|x_{n}-a|&lt;\frac{\varepsilon}{2}\;\forall n\geq n_{0}</annotation></semantics></math> y <math id="I2.i1.p1.m5" class="ltx_Math" alttext="\displaystyle|y_{n}-b|&lt;\frac{\varepsilon}{2}\;\forall n\geq n_{0}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>y</mi><mi>n</mi></msub><mo>−</mo><mi>b</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mstyle displaystyle="true"><mfrac><mi>ε</mi><mn>2</mn></mfrac></mstyle><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle|y_{n}-b|&lt;\frac{\varepsilon}{2}\;\forall n\geq n_{0}</annotation></semantics></math>. Entonces</p>
+<div id="Ex19" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex19.m1" class="ltx_Math" alttext="\displaystyle|(x_{n}+y_{n})-(a+b)|=|(x_{n}-a)+(y_{n}-b)|\leq|x_{n}-a|+|y_{n}-b%
+|\leq\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon\;\forall n\geq n_%
+{0}" display="block"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>+</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>y</mi><mi>n</mi></msub><mo>−</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">|</mo></mrow><mo>+</mo><mrow><mo stretchy="false">|</mo><mrow><msub><mi>y</mi><mi>n</mi></msub><mo>−</mo><mi>b</mi></mrow><mo stretchy="false">|</mo></mrow></mrow><mo>≤</mo><mrow><mfrac><mi>ε</mi><mn>2</mn></mfrac><mo>+</mo><mfrac><mi>ε</mi><mn>2</mn></mfrac></mrow><mo>=</mo><mrow><mi>ε</mi><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle|(x_{n}+y_{n})-(a+b)|=|(x_{n}-a)+(y_{n}-b)|\leq|x_{n}-a|+|y_{n}-b%
+|\leq\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon\;\forall n\geq n_%
+{0}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Luego, efectivamente, <math id="I2.i1.p1.m6" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}(x_%
+{n}+y_{n})=a+b" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>+</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}(x_%
+{n}+y_{n})=a+b</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p">Análogo al apartado anterior.</p>
+<div id="Ex20" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex20.m1" class="ltx_Math" alttext="\displaystyle|(x_{n}-y_{n})-(a-b)|=|(x_{n}-a)+[-(y_{n}-b)]|\leq|x_{n}-a|+|-(y_%
+{n}-b)|\leq\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon\;\forall n%
+\geq n_{0}" display="block"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>−</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>y</mi><mi>n</mi></msub><mo>−</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">|</mo></mrow><mo>+</mo><mrow><mo stretchy="false">|</mo><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>y</mi><mi>n</mi></msub><mo>−</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow><mo>≤</mo><mrow><mfrac><mi>ε</mi><mn>2</mn></mfrac><mo>+</mo><mfrac><mi>ε</mi><mn>2</mn></mfrac></mrow><mo>=</mo><mrow><mi>ε</mi><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle|(x_{n}-y_{n})-(a-b)|=|(x_{n}-a)+[-(y_{n}-b)]|\leq|x_{n}-a|+|-(y_%
+{n}-b)|\leq\frac{\varepsilon}{2}+\frac{\varepsilon}{2}=\varepsilon\;\forall n%
+\geq n_{0}</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p">Sea <math id="I2.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\varepsilon&gt;0</annotation></semantics></math>. Sea <math id="I2.i3.p1.m2" class="ltx_Math" alttext="\displaystyle n_{0}\in\mathbb{N}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>0</mn></msub><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n_{0}\in\mathbb{N}</annotation></semantics></math> con <math id="I2.i3.p1.m3" class="ltx_Math" alttext="\displaystyle|x_{n}-a|&lt;\varepsilon\;\forall n\geq n_{0}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mi>ε</mi><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle|x_{n}-a|&lt;\varepsilon\;\forall n\geq n_{0}</annotation></semantics></math>, <math id="I2.i3.p1.m4" class="ltx_Math" alttext="\displaystyle|y_{n}-b|&lt;\varepsilon\;\forall n\geq n_{0}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>y</mi><mi>n</mi></msub><mo>−</mo><mi>b</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mi>ε</mi><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle|y_{n}-b|&lt;\varepsilon\;\forall n\geq n_{0}</annotation></semantics></math>. Sea <math id="I2.i3.p1.m5" class="ltx_Math" alttext="\displaystyle M\in\mathbb{R}" display="inline"><semantics><mrow><mi>M</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle M\in\mathbb{R}</annotation></semantics></math> con <math id="I2.i3.p1.m6" class="ltx_Math" alttext="\displaystyle|y_{n}|\leq M\;\forall n\in\mathbb{N}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><msub><mi>y</mi><mi>n</mi></msub><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mi>M</mi><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle|y_{n}|\leq M\;\forall n\in\mathbb{N}</annotation></semantics></math>.</p>
+<div class="ltx_equation ltx_eqn_div">
+<span><math id="I2.i3.p1.m7" class="ltx_Math" alttext="|x_{n}\cdot y_{n}-a\cdot b|=|(x_{n}\cdot y_{n}-a\cdot y_{n})+(a\cdot y_{n}-a%
+\cdot b)|\leq|x_{n}\cdot y_{n}-a\cdot y_{n}|+|a\cdot y_{n}-ab|=\\
+=|y_{n}|\cdot|x_{n}-a|-|a|\cdot|y_{n}-b|&lt;M\varepsilon+|a|\cdot\varepsilon=%
+\varepsilon(M+|a|)\;\forall n\geq n_{0}" display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><msub><mi>x</mi><mi>n</mi></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><mo>−</mo><mrow><mi>a</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>b</mi></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>x</mi><mi>n</mi></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><mo>−</mo><mrow><mi>a</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>y</mi><mi>n</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>a</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><mo>−</mo><mrow><mi>a</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>b</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><msub><mi>x</mi><mi>n</mi></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><mo>−</mo><mrow><mi>a</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>y</mi><mi>n</mi></msub></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>+</mo><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>a</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><mo>−</mo><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow><mo>=</mo><mi></mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">|</mo><msub><mi>y</mi><mi>n</mi></msub><mo rspace="0.055em" stretchy="false">|</mo></mrow><mo rspace="0.222em">⋅</mo><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">|</mo></mrow></mrow><mo>−</mo><mrow><mrow><mo stretchy="false">|</mo><mi>a</mi><mo rspace="0.055em" stretchy="false">|</mo></mrow><mo rspace="0.222em">⋅</mo><mrow><mo stretchy="false">|</mo><mrow><msub><mi>y</mi><mi>n</mi></msub><mo>−</mo><mi>b</mi></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow><mo>&lt;</mo><mrow><mrow><mi>M</mi><mo>⁢</mo><mi>ε</mi></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">|</mo><mi>a</mi><mo rspace="0.055em" stretchy="false">|</mo></mrow><mo rspace="0.222em">⋅</mo><mi>ε</mi></mrow></mrow><mo>=</mo><mrow><mi>ε</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>M</mi><mo>+</mo><mrow><mo stretchy="false">|</mo><mi>a</mi><mo stretchy="false">|</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">|x_{n}\cdot y_{n}-a\cdot b|=|(x_{n}\cdot y_{n}-a\cdot y_{n})+(a\cdot y_{n}-a%
+\cdot b)|\leq|x_{n}\cdot y_{n}-a\cdot y_{n}|+|a\cdot y_{n}-ab|=\\
+=|y_{n}|\cdot|x_{n}-a|-|a|\cdot|y_{n}-b|&lt;M\varepsilon+|a|\cdot\varepsilon=%
+\varepsilon(M+|a|)\;\forall n\geq n_{0}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Luego <math id="I2.i3.p1.m8" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}(x_%
+{n}\cdot y_{n})=\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}%
+x_{n}\cdot\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}y_{n}" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>x</mi><mi>n</mi></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>y</mi><mi>n</mi></msub></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}(x_%
+{n}\cdot y_{n})=\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}%
+x_{n}\cdot\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}y_{n}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4,5.</span><div id="I2.ix1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">No vistas en clase.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="Thmproposition3" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 8.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Toda sucesión convergente es acotada.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Sea <math id="p3.m1" class="ltx_Math" alttext="\displaystyle\{x_{n}\}^{\infty}_{n=1}\subset\mathbb{R}" display="inline"><semantics><mrow><msubsup><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mo>⊂</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\{x_{n}\}^{\infty}_{n=1}\subset\mathbb{R}</annotation></semantics></math> convergente con <math id="p3.m2" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=a" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=a</annotation></semantics></math> y fijamos <math id="p3.m3" class="ltx_Math" alttext="\displaystyle\varepsilon=1" display="inline"><semantics><mrow><mi>ε</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle\varepsilon=1</annotation></semantics></math>. Entonces existe <math id="p3.m4" class="ltx_Math" alttext="\displaystyle n_{0}\in\mathbb{N}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>0</mn></msub><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n_{0}\in\mathbb{N}</annotation></semantics></math> con <math id="p3.m5" class="ltx_Math" alttext="\displaystyle|x_{n}-a|&lt;1\;\forall n\geq n_{0}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mn>1</mn><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle|x_{n}-a|&lt;1\;\forall n\geq n_{0}</annotation></semantics></math>. Si se aplica la desigualdad del triángulo para <math id="p3.m6" class="ltx_Math" alttext="\displaystyle n\geq n_{0}" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle n\geq n_{0}</annotation></semantics></math>, se obtiene</p>
+<div id="Ex21" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex21.m1" class="ltx_Math" alttext="\displaystyle\left|x_{n}\right|=\left|x_{n}-x+x\right|\leq\left|x_{n}-x\right|%
++\left|x\right|&lt;1+\left|x\right|" display="block"><semantics><mrow><mrow><mo>|</mo><msub><mi>x</mi><mi>n</mi></msub><mo>|</mo></mrow><mo>=</mo><mrow><mo>|</mo><mrow><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>x</mi></mrow><mo>+</mo><mi>x</mi></mrow><mo>|</mo></mrow><mo>≤</mo><mrow><mrow><mo>|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>x</mi></mrow><mo>|</mo></mrow><mo>+</mo><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow></mrow><mo>&lt;</mo><mrow><mn>1</mn><mo>+</mo><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\left|x_{n}\right|=\left|x_{n}-x+x\right|\leq\left|x_{n}-x\right|%
++\left|x\right|&lt;1+\left|x\right|</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Definimos
+<math id="p3.m7" class="ltx_Math" alttext="\displaystyle M\coloneqq\sup\{\left|x_{1}\right|,\left|x_{2}\right|,\ldots,%
+\left|x_{n_{0}-1}\right|,1+\left|x\right|\}" display="inline"><semantics><mrow><mi>M</mi><mo rspace="0.1389em">≔</mo><mrow><mo lspace="0.1389em" movablelimits="false" rspace="0em">sup</mo><mrow><mo stretchy="false">{</mo><mrow><mo>|</mo><msub><mi>x</mi><mn>1</mn></msub><mo>|</mo></mrow><mo>,</mo><mrow><mo>|</mo><msub><mi>x</mi><mn>2</mn></msub><mo>|</mo></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mrow><mrow><mo>|</mo><msub><mi>x</mi><mrow><msub><mi>n</mi><mn>0</mn></msub><mo>−</mo><mn>1</mn></mrow></msub><mo>|</mo></mrow><mo>⁢</mo><mn>,1</mn></mrow><mo>+</mo><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle M\coloneqq\sup\{\left|x_{1}\right|,\left|x_{2}\right|,\ldots,%
+\left|x_{n_{0}-1}\right|,1+\left|x\right|\}</annotation></semantics></math>, de lo que se sigue que <math id="p3.m8" class="ltx_Math" alttext="\displaystyle\left|x_{n}\right|\leq M" display="inline"><semantics><mrow><mrow><mo>|</mo><msub><mi>x</mi><mi>n</mi></msub><mo>|</mo></mrow><mo>≤</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">\displaystyle\left|x_{n}\right|\leq M</annotation></semantics></math> para todo <math id="p3.m9" class="ltx_Math" alttext="\displaystyle n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n\in\mathbb{N}</annotation></semantics></math>. Luego <math id="p3.m10" class="ltx_Math" alttext="\displaystyle\{x_{n}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\displaystyle\{x_{n}\}</annotation></semantics></math> está acotada.
+∎</p>
+</div>
+</div>
+<div id="Thmproposition4" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 8.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Toda sucesión monótona acotada es convergente.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Sea <math id="p4.m1" class="ltx_Math" alttext="\displaystyle\{x_{n}\}^{\infty}_{n=1}" display="inline"><semantics><msubsup><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><annotation encoding="application/x-tex">\displaystyle\{x_{n}\}^{\infty}_{n=1}</annotation></semantics></math> una sucesión monótona acotada. Supongamos que es monótona creciente, siendo análogo si fuese monótona decreciente.
+
+Por el axioma del supremo, existe <math id="p4.m2" class="ltx_Math" alttext="\displaystyle a=\sup\{x_{n}\mid n\in\mathbb{N}\}" display="inline"><semantics><mrow><mi>a</mi><mo rspace="0.1389em">=</mo><mrow><mo lspace="0.1389em" movablelimits="false" rspace="0em">sup</mo><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle a=\sup\{x_{n}\mid n\in\mathbb{N}\}</annotation></semantics></math>. Como <math id="p4.m3" class="ltx_Math" alttext="\displaystyle a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">\displaystyle a</annotation></semantics></math> es el supremo de <math id="p4.m4" class="ltx_Math" alttext="\displaystyle\{x_{n}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\displaystyle\{x_{n}\}</annotation></semantics></math>, dado <math id="p4.m5" class="ltx_Math" alttext="\displaystyle\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\varepsilon&gt;0</annotation></semantics></math> existe <math id="p4.m6" class="ltx_Math" alttext="\displaystyle x_{n_{0}}" display="inline"><semantics><msub><mi>x</mi><msub><mi>n</mi><mn>0</mn></msub></msub><annotation encoding="application/x-tex">\displaystyle x_{n_{0}}</annotation></semantics></math> con <math id="p4.m7" class="ltx_Math" alttext="\displaystyle n_{0}\in\mathbb{N}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>0</mn></msub><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n_{0}\in\mathbb{N}</annotation></semantics></math> tal que <math id="p4.m8" class="ltx_Math" alttext="\displaystyle a-\varepsilon&lt;x_{n_{0}}\leq a" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>−</mo><mi>ε</mi></mrow><mo>&lt;</mo><msub><mi>x</mi><msub><mi>n</mi><mn>0</mn></msub></msub><mo>≤</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">\displaystyle a-\varepsilon&lt;x_{n_{0}}\leq a</annotation></semantics></math>. Puesto que la sucesión es creciente, se tiene para todo <math id="p4.m9" class="ltx_Math" alttext="\displaystyle n\in\mathbb{N},n\geq n_{0}" display="inline"><semantics><mrow><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><mo>,</mo><mrow><mi>n</mi><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle n\in\mathbb{N},n\geq n_{0}</annotation></semantics></math>, con lo que, en efecto, <math id="p4.m10" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=a" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=a</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="Thmtheorem1" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 8.1</span></span><span class="ltx_text ltx_font_bold"> </span>(Teorema de Bolzano-Weierstrass)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Toda sucesión acotada contiene una subsucesión convergente.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Toda sucesión contiene una subsucesión monotona por <a href="S7.html#Thmtheorem1" title="Teorema 7.1. ‣ 7 Sucesiones monótonas y acotadas ‣ Parte II Sucesiones de números reales ‣ Cálculo" class="ltx_ref"><span class="ltx_text ltx_ref_tag">7.1</span></a>. El resultado se sigue de aplicar que toda sucesión monótona acotada es convergente (<a href="#Thmproposition4" title="Proposición 8.4. ‣ 8 Convergencia de sucesiones ‣ Parte II Sucesiones de números reales ‣ Cálculo" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8.4</span></a>).
+∎</p>
+</div>
+</div>
+<div id="Thmtheorem2" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 8.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Si <math id="Thmtheorem2.p1.m1" class="ltx_Math" alttext="\displaystyle(x_{n})^{\infty}_{n=1}" display="inline"><semantics><msubsup><mrow><mo mathvariant="normal" stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo mathvariant="normal" stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo mathvariant="normal">=</mo><mn mathvariant="normal">1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><annotation encoding="application/x-tex">\displaystyle(x_{n})^{\infty}_{n=1}</annotation></semantics></math> es una sucesión acotada y <math id="Thmtheorem2.p1.m2" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}y_{%
+n}=0" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo mathvariant="italic">⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo mathvariant="normal">´</mo></mover><mo mathvariant="italic">⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo mathvariant="normal" stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>y</mi><mi>n</mi></msub></mrow><mo mathvariant="normal">=</mo><mn mathvariant="normal">0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}y_{%
+n}=0</annotation></semantics></math>, entonces la sucesión <math id="Thmtheorem2.p1.m3" class="ltx_Math" alttext="\displaystyle(x_{n}y_{n})" display="inline"><semantics><mrow><mo mathvariant="normal" stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo mathvariant="italic">⁢</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><mo mathvariant="normal" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(x_{n}y_{n})</annotation></semantics></math> es convergente y <math id="Thmtheorem2.p1.m4" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}y_{n}=0" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo mathvariant="italic">⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo mathvariant="normal">´</mo></mover><mo mathvariant="italic">⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo mathvariant="normal" stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>x</mi><mi>n</mi></msub><mo mathvariant="italic">⁢</mo><msub><mi>y</mi><mi>n</mi></msub></mrow></mrow><mo mathvariant="normal">=</mo><mn mathvariant="normal">0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}y_{n}=0</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Como <math id="p6.m1" class="ltx_Math" alttext="\displaystyle(x_{n})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(x_{n})</annotation></semantics></math> es una sucesión acotada, necesariamente existe <math id="p6.m2" class="ltx_Math" alttext="\displaystyle K\in\mathbb{R}" display="inline"><semantics><mrow><mi>K</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle K\in\mathbb{R}</annotation></semantics></math> tal que <math id="p6.m3" class="ltx_Math" alttext="\displaystyle\left|x_{n}\right|&lt;K\;\forall n\in\mathbb{N}" display="inline"><semantics><mrow><mrow><mo>|</mo><msub><mi>x</mi><mi>n</mi></msub><mo>|</mo></mrow><mo>&lt;</mo><mrow><mi>K</mi><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\left|x_{n}\right|&lt;K\;\forall n\in\mathbb{N}</annotation></semantics></math>.
+
+Por otra parte, como <math id="p6.m4" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}y_{%
+n}=0" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>y</mi><mi>n</mi></msub></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}y_{%
+n}=0</annotation></semantics></math>, dado <math id="p6.m5" class="ltx_Math" alttext="\displaystyle\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\varepsilon&gt;0</annotation></semantics></math>, existe <math id="p6.m6" class="ltx_Math" alttext="\displaystyle n_{0}\in\mathbb{N}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>0</mn></msub><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n_{0}\in\mathbb{N}</annotation></semantics></math> tal que <math id="p6.m7" class="ltx_Math" alttext="\displaystyle\left|y_{n}-0\right|&lt;\frac{\varepsilon}{K}\;\forall n\geq n_{0}" display="inline"><semantics><mrow><mrow><mo>|</mo><mrow><msub><mi>y</mi><mi>n</mi></msub><mo>−</mo><mn>0</mn></mrow><mo>|</mo></mrow><mo>&lt;</mo><mrow><mstyle displaystyle="true"><mfrac><mi>ε</mi><mi>K</mi></mfrac></mstyle><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle\left|y_{n}-0\right|&lt;\frac{\varepsilon}{K}\;\forall n\geq n_{0}</annotation></semantics></math>.
+
+Así, obtenemos</p>
+<div id="Ex22" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex22.m1" class="ltx_Math" alttext="\displaystyle\left|x_{n}y_{n}-0\right|=\left|x_{n}y_{n}\right|=\left|x_{n}%
+\right|\cdot\left|y_{n}\right|&lt;K\cdot\frac{\varepsilon}{K}=\varepsilon" display="block"><semantics><mrow><mrow><mo>|</mo><mrow><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>⁢</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><mo>−</mo><mn>0</mn></mrow><mo>|</mo></mrow><mo>=</mo><mrow><mo>|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>⁢</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><mo>|</mo></mrow><mo>=</mo><mrow><mrow><mo>|</mo><msub><mi>x</mi><mi>n</mi></msub><mo rspace="0.055em">|</mo></mrow><mo rspace="0.222em">⋅</mo><mrow><mo>|</mo><msub><mi>y</mi><mi>n</mi></msub><mo>|</mo></mrow></mrow><mo>&lt;</mo><mrow><mi>K</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mi>ε</mi><mi>K</mi></mfrac></mrow><mo>=</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">\displaystyle\left|x_{n}y_{n}-0\right|=\left|x_{n}y_{n}\right|=\left|x_{n}%
+\right|\cdot\left|y_{n}\right|&lt;K\cdot\frac{\varepsilon}{K}=\varepsilon</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Por lo tanto, <math id="p6.m8" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}y_{n}=0" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>⁢</mo><msub><mi>y</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}y_{n}=0</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="Thmproposition5" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 8.5</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sea <math id="Thmproposition5.p1.m1" class="ltx_Math" alttext="\displaystyle(x_{n})^{\infty}_{n=1}\subset\mathbb{R}" display="inline"><semantics><mrow><msubsup><mrow><mo mathvariant="normal" stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo mathvariant="normal" stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo mathvariant="normal">=</mo><mn mathvariant="normal">1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mo mathvariant="normal">⊂</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle(x_{n})^{\infty}_{n=1}\subset\mathbb{R}</annotation></semantics></math>. Entonces</span></p>
+<div id="Ex23" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex23.m1" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=a\Rightarrow\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}|%
+x_{n}|=|a|" display="block"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>a</mi><mo stretchy="false">⇒</mo><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo stretchy="false">|</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">|</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>a</mi><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=a\Rightarrow\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}|%
+x_{n}|=|a|</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Supongamos que <math id="p7.m1" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=a" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=a</annotation></semantics></math>. Sea <math id="p7.m2" class="ltx_Math" alttext="\displaystyle\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\varepsilon&gt;0</annotation></semantics></math>, entonces existe <math id="p7.m3" class="ltx_Math" alttext="\displaystyle n_{0}\in\mathbb{N}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>0</mn></msub><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n_{0}\in\mathbb{N}</annotation></semantics></math> con <math id="p7.m4" class="ltx_Math" alttext="\displaystyle|x_{n}-a|&lt;\varepsilon\;\forall n\geq n_{0}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mrow><mi>ε</mi><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle|x_{n}-a|&lt;\varepsilon\;\forall n\geq n_{0}</annotation></semantics></math>.
+
+Tenemos que ver que <math id="p7.m5" class="ltx_Math" alttext="\displaystyle||x_{n}|-|a||\leq\left|x_{n}-a\right|&lt;\varepsilon\;\forall n\geq n%
+_{0}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><mo stretchy="false">|</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">|</mo></mrow><mo>−</mo><mrow><mo stretchy="false">|</mo><mi>a</mi><mo stretchy="false">|</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mrow><mo>|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo>|</mo></mrow><mo>&lt;</mo><mrow><mi>ε</mi><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle||x_{n}|-|a||\leq\left|x_{n}-a\right|&lt;\varepsilon\;\forall n\geq n%
+_{0}</annotation></semantics></math>, con lo que se tendría el resultado.
+
+Usando las propiedades del valor absoluto vistas en el tema anterior,</p>
+<div id="Ex24" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex24.m1" class="ltx_Math" alttext="\displaystyle|x_{n}|=\left|(x_{n}-a)+a\right|\leq\left|x_{n}-a\right|+\left|a%
+\right|\Rightarrow\left|x_{n}\right|-\left|a\right|\leq\left|x_{n}-a\right|." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mo>|</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mi>a</mi></mrow><mo>|</mo></mrow><mo>≤</mo><mrow><mrow><mo>|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo>|</mo></mrow><mo>+</mo><mrow><mo>|</mo><mi>a</mi><mo>|</mo></mrow></mrow><mo stretchy="false">⇒</mo><mrow><mrow><mo>|</mo><msub><mi>x</mi><mi>n</mi></msub><mo>|</mo></mrow><mo>−</mo><mrow><mo>|</mo><mi>a</mi><mo>|</mo></mrow></mrow><mo>≤</mo><mrow><mo>|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo>|</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle|x_{n}|=\left|(x_{n}-a)+a\right|\leq\left|x_{n}-a\right|+\left|a%
+\right|\Rightarrow\left|x_{n}\right|-\left|a\right|\leq\left|x_{n}-a\right|.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Análogamente, <math id="p7.m6" class="ltx_Math" alttext="\displaystyle\left|a\right|-\left|x_{n}\right|\leq\left|a-x_{n}\right|=\left|-%
+(x_{n}-a)\right|=\left|x_{n}-a\right|" display="inline"><semantics><mrow><mrow><mrow><mo>|</mo><mi>a</mi><mo>|</mo></mrow><mo>−</mo><mrow><mo>|</mo><msub><mi>x</mi><mi>n</mi></msub><mo>|</mo></mrow></mrow><mo>≤</mo><mrow><mo>|</mo><mrow><mi>a</mi><mo>−</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo>|</mo></mrow><mo>=</mo><mrow><mo>|</mo><mrow><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>|</mo></mrow><mo>=</mo><mrow><mo>|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo>|</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\left|a\right|-\left|x_{n}\right|\leq\left|a-x_{n}\right|=\left|-%
+(x_{n}-a)\right|=\left|x_{n}-a\right|</annotation></semantics></math>.
+
+Por tanto, <math id="p7.m7" class="ltx_Math" alttext="\displaystyle\left|\left|x_{n}\right|-\left|a\right|\right|\leq\left|x_{n}-a\right|" display="inline"><semantics><mrow><mrow><mo>|</mo><mrow><mrow><mo>|</mo><msub><mi>x</mi><mi>n</mi></msub><mo>|</mo></mrow><mo>−</mo><mrow><mo>|</mo><mi>a</mi><mo>|</mo></mrow></mrow><mo>|</mo></mrow><mo>≤</mo><mrow><mo>|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo>|</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\left|\left|x_{n}\right|-\left|a\right|\right|\leq\left|x_{n}-a\right|</annotation></semantics></math> y <math id="p7.m8" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}%
+\left|x_{n}\right|=\left|a\right|" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo>|</mo><msub><mi>x</mi><mi>n</mi></msub><mo>|</mo></mrow></mrow><mo>=</mo><mrow><mo>|</mo><mi>a</mi><mo>|</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}%
+\left|x_{n}\right|=\left|a\right|</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="Thmproposition6" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 8.6</span></span><span class="ltx_text ltx_font_bold"> </span>(Regla del sandwich)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sean <math id="Thmproposition6.p1.m1" class="ltx_Math" alttext="\displaystyle(x_{n})^{\infty}_{n=1}" display="inline"><semantics><msubsup><mrow><mo mathvariant="normal" stretchy="false">(</mo><msub><mi>x</mi><mi>n</mi></msub><mo mathvariant="normal" stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo mathvariant="normal">=</mo><mn mathvariant="normal">1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><annotation encoding="application/x-tex">\displaystyle(x_{n})^{\infty}_{n=1}</annotation></semantics></math>, <math id="Thmproposition6.p1.m2" class="ltx_Math" alttext="\displaystyle(y_{n})^{\infty}_{n=1}" display="inline"><semantics><msubsup><mrow><mo mathvariant="normal" stretchy="false">(</mo><msub><mi>y</mi><mi>n</mi></msub><mo mathvariant="normal" stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo mathvariant="normal">=</mo><mn mathvariant="normal">1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><annotation encoding="application/x-tex">\displaystyle(y_{n})^{\infty}_{n=1}</annotation></semantics></math> y <math id="Thmproposition6.p1.m3" class="ltx_Math" alttext="\displaystyle(z_{n})^{\infty}_{n=1}\subset\mathbb{R}" display="inline"><semantics><mrow><msubsup><mrow><mo mathvariant="normal" stretchy="false">(</mo><msub><mi>z</mi><mi>n</mi></msub><mo mathvariant="normal" stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo mathvariant="normal">=</mo><mn mathvariant="normal">1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mo mathvariant="normal">⊂</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle(z_{n})^{\infty}_{n=1}\subset\mathbb{R}</annotation></semantics></math> tales que <math id="Thmproposition6.p1.m4" class="ltx_Math" alttext="\displaystyle x_{n}\leq z_{n}\leq y_{n}\;\forall n\in\mathbb{N}" display="inline"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo mathvariant="normal">≤</mo><msub><mi>z</mi><mi>n</mi></msub><mo mathvariant="normal">≤</mo><mrow><msub><mi>y</mi><mi>n</mi></msub><mo lspace="0.167em" mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo mathvariant="normal">∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle x_{n}\leq z_{n}\leq y_{n}\;\forall n\in\mathbb{N}</annotation></semantics></math> y <math id="Thmproposition6.p1.m5" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}y_{n}=a" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo mathvariant="italic">⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo mathvariant="normal">´</mo></mover><mo mathvariant="italic">⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo mathvariant="normal" stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>x</mi><mi>n</mi></msub></mrow><mo mathvariant="normal">=</mo><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo mathvariant="italic">⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo mathvariant="normal">´</mo></mover><mo mathvariant="italic">⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo mathvariant="normal" stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>y</mi><mi>n</mi></msub></mrow><mo mathvariant="normal">=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}x_{%
+n}=\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}y_{n}=a</annotation></semantics></math>. Entonces, <math id="Thmproposition6.p1.m6" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}z_{%
+n}=a" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo mathvariant="italic">⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo mathvariant="normal">´</mo></mover><mo mathvariant="italic">⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo mathvariant="normal" stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>z</mi><mi>n</mi></msub></mrow><mo mathvariant="normal">=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}z_{%
+n}=a</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Sea <math id="p8.m1" class="ltx_Math" alttext="\displaystyle\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle\varepsilon&gt;0</annotation></semantics></math>, entonces existe <math id="p8.m2" class="ltx_Math" alttext="\displaystyle n_{1}\in\mathbb{N}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n_{1}\in\mathbb{N}</annotation></semantics></math> tal que <math id="p8.m3" class="ltx_Math" alttext="\displaystyle\left|x_{n}-a\right|&lt;\varepsilon\;\forall n\geq n_{1}" display="inline"><semantics><mrow><mrow><mo>|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo>|</mo></mrow><mo>&lt;</mo><mrow><mi>ε</mi><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle\left|x_{n}-a\right|&lt;\varepsilon\;\forall n\geq n_{1}</annotation></semantics></math> y <math id="p8.m4" class="ltx_Math" alttext="\displaystyle n_{2}\in\mathbb{N}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>2</mn></msub><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n_{2}\in\mathbb{N}</annotation></semantics></math> tal que <math id="p8.m5" class="ltx_Math" alttext="\displaystyle\left|y_{n}-a\right|&lt;\varepsilon\;\forall n\geq n_{2}" display="inline"><semantics><mrow><mrow><mo>|</mo><mrow><msub><mi>y</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo>|</mo></mrow><mo>&lt;</mo><mrow><mi>ε</mi><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle\left|y_{n}-a\right|&lt;\varepsilon\;\forall n\geq n_{2}</annotation></semantics></math>. Definimos <math id="p8.m6" class="ltx_Math" alttext="\displaystyle n_{0}=max\{n_{1},n_{2}\}" display="inline"><semantics><mrow><msub><mi>n</mi><mn>0</mn></msub><mo>=</mo><mrow><mi>m</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">{</mo><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle n_{0}=max\{n_{1},n_{2}\}</annotation></semantics></math>. Entonces <math id="p8.m7" class="ltx_Math" alttext="\displaystyle\left|x_{n}-a\right|\;\forall n\geq n_{0}" display="inline"><semantics><mrow><mrow><mrow><mo>|</mo><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo>|</mo></mrow><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle\left|x_{n}-a\right|\;\forall n\geq n_{0}</annotation></semantics></math> y <math id="p8.m8" class="ltx_Math" alttext="\displaystyle\left|y_{n}-a\right|\;\forall n\geq n_{0}" display="inline"><semantics><mrow><mrow><mrow><mo>|</mo><mrow><msub><mi>y</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo>|</mo></mrow><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle\left|y_{n}-a\right|\;\forall n\geq n_{0}</annotation></semantics></math>.
+
+Como <math id="p8.m9" class="ltx_Math" alttext="\displaystyle x_{n}\leq z_{n}\leq y_{n}" display="inline"><semantics><mrow><msub><mi>x</mi><mi>n</mi></msub><mo>≤</mo><msub><mi>z</mi><mi>n</mi></msub><mo>≤</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle x_{n}\leq z_{n}\leq y_{n}</annotation></semantics></math>,</p>
+<div id="Ex25" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex25.m1" class="ltx_Math" alttext="\displaystyle a-\varepsilon&lt;x_{n}\leq z_{n}\leq y_{n}&lt;a+\varepsilon\;\forall n%
+\in\mathbb{N}\Rightarrow z_{n}\in(a-\varepsilon,a+\varepsilon)\;\forall n\geq n%
+_{0}\Rightarrow|z_{n}-a|\leq\varepsilon" display="block"><semantics><mrow><mrow><mi>a</mi><mo>−</mo><mi>ε</mi></mrow><mo>&lt;</mo><msub><mi>x</mi><mi>n</mi></msub><mo>≤</mo><msub><mi>z</mi><mi>n</mi></msub><mo>≤</mo><msub><mi>y</mi><mi>n</mi></msub><mo>&lt;</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>ε</mi><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow></mrow><mo>∈</mo><mi>ℕ</mi><mo stretchy="false">⇒</mo><msub><mi>z</mi><mi>n</mi></msub><mo>∈</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>−</mo><mi>ε</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>+</mo><mi>ε</mi></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mi>n</mi></mrow></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub><mo stretchy="false">⇒</mo><mrow><mo stretchy="false">|</mo><mrow><msub><mi>z</mi><mi>n</mi></msub><mo>−</mo><mi>a</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">\displaystyle a-\varepsilon&lt;x_{n}\leq z_{n}\leq y_{n}&lt;a+\varepsilon\;\forall n%
+\in\mathbb{N}\Rightarrow z_{n}\in(a-\varepsilon,a+\varepsilon)\;\forall n\geq n%
+_{0}\Rightarrow|z_{n}-a|\leq\varepsilon</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">y se tiene que <math id="p8.m10" class="ltx_Math" alttext="\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}z_{%
+n}=a" display="inline"><semantics><mrow><mrow><munder><mrow><mi mathvariant="normal">l</mi><mo>⁢</mo><mover accent="true"><mi mathvariant="normal">ı</mi><mo>´</mo></mover><mo>⁢</mo><mi mathvariant="normal">m</mi></mrow><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><msub><mi>z</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mathop{\operator@font l\acute{{\imath}}m}\limits_{n\to\infty}z_{%
+n}=a</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S7.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S9.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

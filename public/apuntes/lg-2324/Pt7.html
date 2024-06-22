@@ -1,0 +1,694 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Lógica" course="1º Curso" prof="Ángel Pérez" data-pagefind-filter="asignatura[content], curso[course], profesor[prof]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica‣ Lógica</title>
+<!--Generated on Fri Jun  7 11:07:44 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="index.html" title="Lógica">
+<link rel="start" href="index.html" title="Lógica">
+<link rel="prev" href="S25.html" title="25 Consecuencia logica ‣ Parte VI Semantica de la logica de predicados ‣ Lógica">
+<link rel="section" href="Sx1.html" title="Terminología matemática ‣ Lógica">
+<link rel="part" href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="part" href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica">
+<link rel="part" href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="part" href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica">
+<link rel="part" href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="part" href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Lógica" class="ltx_ref" rel="start">Lógica</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Sx1.html" title="Terminología matemática ‣ Lógica" class="ltx_ref">Terminología matemática</a></li>
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>Conjuntos, relaciones y funciones</a></li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Sintaxis de la lógica proposicional</a></li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Semantica de la logica proposicional</a></li>
+<li data-level="IV" data-path="Pt4.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">IV </span></b>Teoria de la demostracion para logica proposicional</a></li>
+<li data-level="V" data-path="Pt5.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">V </span></b>Sintaxis de la logica de predicados</a></li>
+<li data-level="VI" data-path="Pt6.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VI </span></b>Semantica de la logica de predicados</a></li>
+<li data-level="VII" data-path="" class="ltx_tocentry ltx_tocentry_part ltx_ref_self  chapter active"><a href="" title="Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VII </span></b>Teoria de la demostracion en logica de predicados</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Teoria de la demostracion en logica de predicados</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_part ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_part">
+<span class="ltx_tag ltx_tag_part header-section-number">Parte VII</span> Teoria de la demostracion en logica de predicados</h1>
+
+<div id="Thmremarkx40" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx40.p1" class="ltx_para">
+<p class="ltx_p">Los simbolos de funcion no son necesarios para la logica de predicados. Se pueden “simular” con predicados.</p>
+</div>
+</div>
+<div id="Thmexamplex63" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex63.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="Thmexamplex63.p1.m1" class="ltx_Math" alttext="\displaystyle D=\{\text{personas}\}" display="inline"><semantics><mrow><mi>D</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mtext>personas</mtext><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle D=\{\text{personas}\}</annotation></semantics></math></p>
+</div>
+<div id="Thmexamplex63.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="Thmexamplex63.p2.m1" class="ltx_Math" alttext="\displaystyle m(x)\colon" display="inline"><semantics><mrow><mrow><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:</mo><mi></mi></mrow><annotation encoding="application/x-tex">\displaystyle m(x)\colon</annotation></semantics></math> la madre de <math id="Thmexamplex63.p2.m2" class="ltx_Math" alttext="\displaystyle x\rightarrow M(x,y):" display="inline"><semantics><mrow><mrow><mi>x</mi><mo stretchy="false">→</mo><mrow><mi>M</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.278em">:</mo><mi></mi></mrow><annotation encoding="application/x-tex">\displaystyle x\rightarrow M(x,y):</annotation></semantics></math> x es la madre de <math id="Thmexamplex63.p2.m3" class="ltx_Math" alttext="\displaystyle y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">\displaystyle y</annotation></semantics></math>.</p>
+</div>
+<div id="Thmexamplex63.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">“La madre de Antonio es rubia”.</p>
+</div>
+<div id="Thmexamplex63.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="Thmexamplex63.p4.m1" class="ltx_Math" alttext="\displaystyle R(x)\colon" display="inline"><semantics><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:</mo><mi></mi></mrow><annotation encoding="application/x-tex">\displaystyle R(x)\colon</annotation></semantics></math> x es rubio. <math id="Thmexamplex63.p4.m2" class="ltx_Math" alttext="\displaystyle R(m(a))" display="inline"><semantics><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle R(m(a))</annotation></semantics></math>.</p>
+</div>
+<div id="Thmexamplex63.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="Thmexamplex63.p5.m1" class="ltx_Math" alttext="\displaystyle\forall x(M(x,a)\rightarrow R(x))" display="inline"><semantics><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>M</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall x(M(x,a)\rightarrow R(x))</annotation></semantics></math></p>
+</div>
+<div id="Thmexamplex63.p6" class="ltx_para">
+<p class="ltx_p">“Todos los hermanos de Antonio son rubios” <math id="Thmexamplex63.p6.m1" class="ltx_Math" alttext="\displaystyle\Rightarrow\forall x(H(x,a)\rightarrow R(x))" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⇒</mo><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>H</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow\forall x(H(x,a)\rightarrow R(x))</annotation></semantics></math> (que no la puedo hacer con funciones).</p>
+</div>
+</div>
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Vamos a ampliar el sistema de Gentzen para la logica proposicional, añadiendo a las 8 relgas que teniamos 4 nuevas reglas para los cuantificadores. El sistema de demostracion resultante es valido para la logica de predicados sin igualdad (definir un sistema que sea valido para la logica de predicados con igualdad que hemos introducido en los temas 5 y 6 requeriria reglas adicionales y tiene cierto grado de complejidad).</p>
+</div>
+<div id="p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Los nombres de las 4 nuevas reglas de inferencia son:</p>
+</div>
+<figure id="tab1" class="ltx_table"><div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table class="ltx_tabular ltx_centering ltx_align_middle">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t"><math id="m1" class="ltx_Math" alttext="\displaystyle E\forall" display="inline"><semantics><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mo>∀</mo></mrow><annotation encoding="application/x-tex">\displaystyle E\forall</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="m2" class="ltx_Math" alttext="\displaystyle I\forall" display="inline"><semantics><mrow><mi>I</mi><mo lspace="0.167em">⁢</mo><mo>∀</mo></mrow><annotation encoding="application/x-tex">\displaystyle I\forall</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_tt"><math id="m3" class="ltx_Math" alttext="\displaystyle E\exists" display="inline"><semantics><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mo>∃</mo></mrow><annotation encoding="application/x-tex">\displaystyle E\exists</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_tt"><math id="m4" class="ltx_Math" alttext="\displaystyle I\exists" display="inline"><semantics><mrow><mi>I</mi><mo lspace="0.167em">⁢</mo><mo>∃</mo></mrow><annotation encoding="application/x-tex">\displaystyle I\exists</annotation></semantics></math></td>
+</tr>
+</table>
+</div>
+</figure>
+<div id="S25.Thmproposition3" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 25.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S25.Thmproposition3.p1" class="ltx_para">
+<ul id="S25.I4" class="ltx_itemize">
+<li id="S25.I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="S25.I4.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="S25.I4.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi,\psi,\ldots" display="inline"><semantics><mrow><mi>φ</mi><mo>,</mo><mi>ψ</mi><mo>,</mo><mi mathvariant="normal">…</mi></mrow><annotation encoding="application/x-tex">\displaystyle\varphi,\psi,\ldots</annotation></semantics></math><span class="ltx_text ltx_font_italic"> representaran formulas cualesquiera de la logica de predicados.</span></p>
+</div>
+</li>
+<li id="S25.I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="S25.I4.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="S25.I4.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi(x)" display="inline"><semantics><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\varphi(x)</annotation></semantics></math><span class="ltx_text ltx_font_italic"> denotara una formula donde la variable </span><math id="S25.I4.i2.p1.m2" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math><span class="ltx_text ltx_font_italic"> tiene apariciones libres. Si despues escribimos </span><math id="S25.I4.i2.p1.m3" class="ltx_Math" alttext="\displaystyle\varphi(t)" display="inline"><semantics><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\varphi(t)</annotation></semantics></math><span class="ltx_text ltx_font_italic">, donde </span><math id="S25.I4.i2.p1.m4" class="ltx_Math" alttext="\displaystyle t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">\displaystyle t</annotation></semantics></math><span class="ltx_text ltx_font_italic"> puede ser un termino cualquiera, esto representara la formula </span><math id="S25.I4.i2.p1.m5" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math><span class="ltx_text ltx_font_italic"> donde todas las apariciones libres de </span><math id="S25.I4.i2.p1.m6" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math><span class="ltx_text ltx_font_italic"> se han sustituido por </span><math id="S25.I4.i2.p1.m7" class="ltx_Math" alttext="\displaystyle t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">\displaystyle t</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+<li id="S25.I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="S25.I4.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Llamaremos variable fresca a una variable que no ha aparecido previamente en el razonamiento.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="S25.Thmdefinition4" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 25.4</span></span><span class="ltx_text ltx_font_bold"> </span>(Regla de eliminacion del universal, <math id="S25.Thmdefinition4.m1" class="ltx_Math" alttext="\displaystyle E\forall" display="inline"><semantics><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mo>∀</mo></mrow><annotation encoding="application/x-tex">\displaystyle E\forall</annotation></semantics></math>)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S25.Thmdefinition4.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="S25.Thmdefinition4.p1.m1" class="ltx_Math" alttext="\displaystyle t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">\displaystyle t</annotation></semantics></math> un termino cualquiera</p>
+<div id="S25.Ex142" class="ltx_equation ltx_eqn_div">
+<span><math id="S25.Ex142.m1" class="ltx_Math" alttext="\displaystyle\begin{array}[]{c}\forall x\varphi(x)\\
+\hline\cr\varphi(t)\end{array}" display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_border_t"></mtd></mtr><mtr><mtd><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\displaystyle\begin{array}[]{c}\forall x\varphi(x)\\
+\hline\cr\varphi(t)\end{array}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="S25.Thmdefinition5" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 25.5</span></span><span class="ltx_text ltx_font_bold"> </span>(Regla de introduccion del existencial, <math id="S25.Thmdefinition5.m1" class="ltx_Math" alttext="\displaystyle I\exists" display="inline"><semantics><mrow><mi>I</mi><mo lspace="0.167em">⁢</mo><mo>∃</mo></mrow><annotation encoding="application/x-tex">\displaystyle I\exists</annotation></semantics></math>)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S25.Thmdefinition5.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="S25.Thmdefinition5.p1.m1" class="ltx_Math" alttext="\displaystyle t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">\displaystyle t</annotation></semantics></math> un termino cualquiera</p>
+<div id="S25.Ex143" class="ltx_equation ltx_eqn_div">
+<span><math id="S25.Ex143.m1" class="ltx_Math" alttext="\displaystyle\begin{array}[]{c }\varphi(t)\\
+\hline\cr\exists x\varphi(x)\end{array}" display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_border_t"></mtd></mtr><mtr><mtd><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\displaystyle\begin{array}[]{c }\varphi(t)\\
+\hline\cr\exists x\varphi(x)\end{array}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmexamplex64" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex64.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Demostrar la validez de <math id="Thmexamplex64.p1.m1" class="ltx_Math" alttext="\displaystyle\{\forall x(P(x)\to Q(x)),P(a)\}\vdash Q(a)" display="inline"><semantics><mrow><mrow><mo stretchy="false">{</mo><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">}</mo></mrow><mo>⊢</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\{\forall x(P(x)\to Q(x)),P(a)\}\vdash Q(a)</annotation></semantics></math>.</p>
+</div>
+<div id="Thmexamplex64.p2" class="ltx_para">
+<ol id="S25.I5" class="ltx_enumerate">
+<li id="S25.I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="S25.I5.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="S25.I5.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\forall x(P(x)\to Q(x))" display="inline"><semantics><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall x(P(x)\to Q(x))</annotation></semantics></math> Pr</p>
+</div>
+</li>
+<li id="S25.I5.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="S25.I5.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="S25.I5.i2.p1.m1" class="ltx_Math" alttext="\displaystyle P(a)" display="inline"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P(a)</annotation></semantics></math> Pr</p>
+</div>
+</li>
+<li id="S25.I5.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="S25.I5.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="S25.I5.i3.p1.m1" class="ltx_Math" alttext="\displaystyle P(a)\to Q(a)\quad E\forall,1,x=a" display="inline"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mspace width="1em"></mspace><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mn>,1</mn></mrow></mrow></mrow></mrow><mo>,</mo><mrow><mi>x</mi><mo>=</mo><mi>a</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P(a)\to Q(a)\quad E\forall,1,x=a</annotation></semantics></math></p>
+</div>
+</li>
+<li id="S25.I5.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="S25.I5.i4.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="S25.I5.i4.p1.m1" class="ltx_Math" alttext="\displaystyle Q(a)\quad E\rightarrow,2,3" display="inline"><semantics><mrow><mrow><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mspace width="1em"></mspace><mi>E</mi></mrow><mo stretchy="false">→</mo><mn>,2,3</mn></mrow><annotation encoding="application/x-tex">\displaystyle Q(a)\quad E\rightarrow,2,3</annotation></semantics></math></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Thmexamplex65" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex65.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Demostrar la validez de <math id="Thmexamplex65.p1.m1" class="ltx_Math" alttext="\displaystyle\{P(b),\exists xP(x)\to Q(a)\}\vdash Q(a)" display="inline"><semantics><mrow><mrow><mo stretchy="false">{</mo><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo stretchy="false">→</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow><mo>⊢</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\{P(b),\exists xP(x)\to Q(a)\}\vdash Q(a)</annotation></semantics></math>.</p>
+</div>
+<div id="Thmexamplex65.p2" class="ltx_para">
+<ol id="S25.I6" class="ltx_enumerate">
+<li id="S25.I6.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="S25.I6.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="S25.I6.i1.p1.m1" class="ltx_Math" alttext="\displaystyle P(b)" display="inline"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P(b)</annotation></semantics></math> Pr</p>
+</div>
+</li>
+<li id="S25.I6.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="S25.I6.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="S25.I6.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\exists xP(x)toQ(a)" display="inline"><semantics><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\exists xP(x)toQ(a)</annotation></semantics></math> Pr</p>
+</div>
+</li>
+<li id="S25.I6.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="S25.I6.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="S25.I6.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\exists xP(x)\quad I\exists,1" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mn>,1</mn></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\exists xP(x)\quad I\exists,1</annotation></semantics></math></p>
+</div>
+</li>
+<li id="S25.I6.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="S25.I6.i4.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="S25.I6.i4.p1.m1" class="ltx_Math" alttext="\displaystyle Q(a)\quad E\rightarrow,2,3" display="inline"><semantics><mrow><mrow><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mspace width="1em"></mspace><mi>E</mi></mrow><mo stretchy="false">→</mo><mn>,2,3</mn></mrow><annotation encoding="application/x-tex">\displaystyle Q(a)\quad E\rightarrow,2,3</annotation></semantics></math></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="S25.Thmdefinition6" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 25.6</span></span><span class="ltx_text ltx_font_bold"> </span>(Regla de introduccion del universal, <math id="S25.Thmdefinition6.m1" class="ltx_Math" alttext="\displaystyle I\forall" display="inline"><semantics><mrow><mi>I</mi><mo lspace="0.167em">⁢</mo><mo>∀</mo></mrow><annotation encoding="application/x-tex">\displaystyle I\forall</annotation></semantics></math>)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S25.Thmdefinition6.p1" class="ltx_para ltx_minipage ltx_align_center ltx_align_middle" style="width:173.4pt;">
+<div id="S25.Ex144" class="ltx_equation ltx_eqn_div">
+<span><math id="S25.Ex144.m1" class="ltx_Math" alttext="\displaystyle\begin{array}[]{c}\noindent\framebox{\parbox{426.82pt}{
+$\displaystyle y\qquad\qquad\quad\;\text{Variable fresca}$
+\\
+$\displaystyle\vdots$
+\\
+$\displaystyle\varphi(y)$}}\\
+\hline\cr\forall x\varphi(x)\end{array}" display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><semantics class="ltx_parbox"><annotation-xml encoding="text/html" style="display: block;">
+<span class="ltx_inline-block ltx_parbox ltx_align_middle ltx_framed_rectangle" style="padding:9pt;width:426.8pt;">
+<span class="ltx_p"><XMath>
+                              <XMDual>
+                                <XMApp>
+                                  <XMTok meaning="list"></XMTok>
+                                  <XMRef idref="S25.Ex144.m1.m1.1nest"></XMRef>
+                                  <XMRef idref="S25.Ex144.m1.m1.2nest"></XMRef>
+                                </XMApp>
+                                <XMWrap>
+                                  <XMTok font="italic" role="UNKNOWN" id="S25.Ex144.m1.m1.1nest" fragid="S25.Ex144.m1.m1.1nest">y</XMTok>
+                                  <XMHint name="qqqqquad" role="PUNCT" width="52.7777777777778pt"></XMHint>
+                                  <XMText id="S25.Ex144.m1.m1.2nest" fragid="S25.Ex144.m1.m1.2nest">Variable fresca</XMText>
+                                </XMWrap>
+                              </XMDual>
+                            </XMath></span>
+<span class="ltx_p"><XMath>
+                              <XMTok name="vdots" role="ID">⋮</XMTok>
+                            </XMath></span>
+<span class="ltx_p"><XMath>
+                              <XMApp>
+                                <XMTok meaning="times" role="MULOP">⁢</XMTok>
+                                <XMTok font="italic" name="varphi" role="UNKNOWN">φ</XMTok>
+                                <XMDual>
+                                  <XMRef idref="S25.Ex144.m1.m3.1nest"></XMRef>
+                                  <XMWrap>
+                                    <XMTok role="OPEN" stretchy="false">(</XMTok>
+                                    <XMTok font="italic" role="UNKNOWN" id="S25.Ex144.m1.m3.1nest" fragid="S25.Ex144.m1.m3.1nest">y</XMTok>
+                                    <XMTok role="CLOSE" stretchy="false">)</XMTok>
+                                  </XMWrap>
+                                </XMDual>
+                              </XMApp>
+                            </XMath></span>
+</span></annotation-xml></semantics></mtd></mtr><mtr><mtd class="ltx_border_t"></mtd></mtr><mtr><mtd><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\displaystyle\begin{array}[]{c}\noindent\framebox{\parbox{426.82pt}{
+$\displaystyle y\qquad\qquad\quad\;\text{Variable fresca}$
+\\
+$\displaystyle\vdots$
+\\
+$\displaystyle\varphi(y)$}}\\
+\hline\cr\forall x\varphi(x)\end{array}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmremarkx41" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx41.p1" class="ltx_para">
+<p class="ltx_p">Este es el unico caso en el que usamos una demostracion auxiliar que no empieza con una premisa auxiliar, sino con una variable libre y que no sirve para introducir un implica sino un para todo.</p>
+</div>
+</div>
+<div id="Thmexamplex66" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex66.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Demostrar la validez de <math id="Thmexamplex66.p1.m1" class="ltx_Math" alttext="\displaystyle\forall xP(x)\wedge\forall xQ(x)\vdash\forall x(P(x)\wedge Q(x))" display="inline"><semantics><mrow><mrow><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>∧</mo><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>⊢</mo><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall xP(x)\wedge\forall xQ(x)\vdash\forall x(P(x)\wedge Q(x))</annotation></semantics></math></p>
+<ol id="S25.I7" class="ltx_enumerate">
+<li id="S25.I7.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="S25.I7.i1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="S25.I7.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\forall xP(x)\wedge\forall xQ(x)" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>∧</mo><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall xP(x)\wedge\forall xQ(x)</annotation></semantics></math></p>
+</div>
+</li>
+</ol>
+</div>
+<div id="Thmexamplex66.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">
+<span class="ltx_inline-block ltx_parbox ltx_align_middle ltx_framed_rectangle" style="padding:9pt;width:426.8pt;">
+<span id="S25.I8" class="ltx_enumerate">
+<span id="S25.I8.i2" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">2.</span><span id="S25.I8.i2.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I8.i2.p1.m1" class="ltx_Math" alttext="\displaystyle y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">\displaystyle y</annotation></semantics></math> Variable fresca</span></span></span>
+<span id="S25.I8.i3" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">3.</span><span id="S25.I8.i3.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I8.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\forall xP(x)\quad E\wedge,1" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>E</mi><mo>∧</mo><mn>,1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall xP(x)\quad E\wedge,1</annotation></semantics></math></span></span></span>
+<span id="S25.I8.i4" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">4.</span><span id="S25.I8.i4.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I8.i4.p1.m1" class="ltx_Math" alttext="\displaystyle P(y)\quad E\forall,3,x=y" display="inline"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mspace width="1em"></mspace><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mn>,3</mn></mrow></mrow><mo>,</mo><mi>x</mi></mrow><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\displaystyle P(y)\quad E\forall,3,x=y</annotation></semantics></math></span></span></span>
+<span id="S25.I8.i5" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">5.</span><span id="S25.I8.i5.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I8.i5.p1.m1" class="ltx_Math" alttext="\displaystyle\forall xQ(x)\quad E\wedge,1" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>E</mi><mo>∧</mo><mn>,1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall xQ(x)\quad E\wedge,1</annotation></semantics></math></span></span></span>
+<span id="S25.I8.i6" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">6.</span><span id="S25.I8.i6.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I8.i6.p1.m1" class="ltx_Math" alttext="\displaystyle Q(y)\quad E\forall,5,x=y" display="inline"><semantics><mrow><mrow><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mspace width="1em"></mspace><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mn>,5</mn></mrow></mrow><mo>,</mo><mi>x</mi></mrow><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\displaystyle Q(y)\quad E\forall,5,x=y</annotation></semantics></math></span></span></span>
+<span id="S25.I8.i7" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">7.</span><span id="S25.I8.i7.p1" class="ltx_para ltx_noindent">​<span class="ltx_p"><math id="S25.I8.i7.p1.m1" class="ltx_Math" alttext="\displaystyle P(y)\wedge Q(y)" display="inline"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P(y)\wedge Q(y)</annotation></semantics></math></span></span></span>
+</span>
+</span></p>
+<ol id="S25.I9" class="ltx_enumerate">
+<li id="S25.I9.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="S25.I9.ix1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="S25.I9.ix1.p1.m1" class="ltx_Math" alttext="\displaystyle\forall x(P(x)\wedge Q(x))\quad I\forall(2-7)" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo lspace="0.167em">⁢</mo><mrow><mo>∀</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>−</mo><mn>7</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall x(P(x)\wedge Q(x))\quad I\forall(2-7)</annotation></semantics></math></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Thmexamplex67" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex67.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Demostrar la validez de <math id="Thmexamplex67.p1.m1" class="ltx_Math" alttext="\displaystyle\forall x(P(x)\wedge Q(x))\vdash\forall xP(x)\wedge\forall xQ(x)" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>⊢</mo><mrow><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>∧</mo><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall x(P(x)\wedge Q(x))\vdash\forall xP(x)\wedge\forall xQ(x)</annotation></semantics></math>.</p>
+</div>
+<div id="Thmexamplex67.p2" class="ltx_para ltx_noindent">
+<ol id="S25.I10" class="ltx_enumerate">
+<li id="S25.I10.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="S25.I10.i1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="S25.I10.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\forall x(P(x)\wedge Q(x))" display="inline"><semantics><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall x(P(x)\wedge Q(x))</annotation></semantics></math> Pr</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="Thmexamplex67.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">
+<span class="ltx_inline-block ltx_parbox ltx_align_middle ltx_framed_rectangle" style="padding:9pt;width:426.8pt;">
+<span id="S25.I11" class="ltx_enumerate">
+<span id="S25.I11.i2" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">2.</span><span id="S25.I11.i2.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I11.i2.p1.m1" class="ltx_Math" alttext="\displaystyle y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">\displaystyle y</annotation></semantics></math> Variable fresca</span></span></span>
+<span id="S25.I11.i3" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">3.</span><span id="S25.I11.i3.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I11.i3.p1.m1" class="ltx_Math" alttext="\displaystyle P(y)\wedge Q(y)\quad E\forall,1,x=y" display="inline"><semantics><mrow><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mn>,1</mn></mrow></mrow><mo>,</mo><mi>x</mi></mrow><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\displaystyle P(y)\wedge Q(y)\quad E\forall,1,x=y</annotation></semantics></math></span></span></span>
+<span id="S25.I11.i4" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">4.</span><span id="S25.I11.i4.p1" class="ltx_para ltx_noindent">​<span class="ltx_p"><math id="S25.I11.i4.p1.m1" class="ltx_Math" alttext="\displaystyle P(y)\quad E\wedge,3" display="inline"><semantics><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mspace width="1em"></mspace><mrow><mi>E</mi><mo>∧</mo><mn>,3</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P(y)\quad E\wedge,3</annotation></semantics></math></span></span></span>
+</span>
+</span></p>
+<ol id="S25.I12" class="ltx_enumerate">
+<li id="S25.I12.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="S25.I12.ix1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="S25.I12.ix1.p1.m1" class="ltx_Math" alttext="\displaystyle\forall xP(x)\quad I\forall(2-3)" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo lspace="0.167em">⁢</mo><mrow><mo>∀</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall xP(x)\quad I\forall(2-3)</annotation></semantics></math></p>
+</div>
+</li>
+</ol>
+</div>
+<div id="Thmexamplex67.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">
+<span class="ltx_inline-block ltx_parbox ltx_align_middle ltx_framed_rectangle" style="padding:9pt;width:426.8pt;">
+<span id="S25.I13" class="ltx_enumerate">
+<span id="S25.I13.ix1" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">6.</span><span id="S25.I13.ix1.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I13.ix1.p1.m1" class="ltx_Math" alttext="\displaystyle z" display="inline"><semantics><mi>z</mi><annotation encoding="application/x-tex">\displaystyle z</annotation></semantics></math> Variable fresca</span></span></span>
+<span id="S25.I13.ix2" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">7.</span><span id="S25.I13.ix2.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I13.ix2.p1.m1" class="ltx_Math" alttext="\displaystyle P(z)\wedge Q(z)\quad E\forall,1,x=z" display="inline"><semantics><mrow><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mn>,1</mn></mrow></mrow><mo>,</mo><mi>x</mi></mrow><mo>=</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">\displaystyle P(z)\wedge Q(z)\quad E\forall,1,x=z</annotation></semantics></math></span></span></span>
+<span id="S25.I13.ix3" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">8.</span><span id="S25.I13.ix3.p1" class="ltx_para ltx_noindent">​<span class="ltx_p"><math id="S25.I13.ix3.p1.m1" class="ltx_Math" alttext="\displaystyle Q(z)\quad E\wedge,7" display="inline"><semantics><mrow><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mspace width="1em"></mspace><mrow><mi>E</mi><mo>∧</mo><mn>,7</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle Q(z)\quad E\wedge,7</annotation></semantics></math></span></span></span>
+</span>
+</span></p>
+<ol id="S25.I14" class="ltx_enumerate">
+<li id="S25.I14.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span><div id="S25.I14.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="S25.I14.ix1.p1.m1" class="ltx_Math" alttext="\displaystyle\forall xQ(x)\quad I\forall(6-8)" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo lspace="0.167em">⁢</mo><mrow><mo>∀</mo><mrow><mo stretchy="false">(</mo><mrow><mn>6</mn><mo>−</mo><mn>8</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall xQ(x)\quad I\forall(6-8)</annotation></semantics></math></p>
+</div>
+</li>
+<li id="S25.I14.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span><div id="S25.I14.ix2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="S25.I14.ix2.p1.m1" class="ltx_Math" alttext="\displaystyle\forall xP(x)\wedge\forall xQ(x)\quad I\wedge,5,9" display="inline"><semantics><mrow><mrow><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>∧</mo><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo>∧</mo><mn>,5,9</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall xP(x)\wedge\forall xQ(x)\quad I\wedge,5,9</annotation></semantics></math></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="S25.Thmdefinition7" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 25.7</span></span><span class="ltx_text ltx_font_bold"> </span>(Regla de eliminacion del existencial, <math id="S25.Thmdefinition7.m1" class="ltx_Math" alttext="\displaystyle E\exists" display="inline"><semantics><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mo>∃</mo></mrow><annotation encoding="application/x-tex">\displaystyle E\exists</annotation></semantics></math>)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="S25.Thmdefinition7.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="S25.Thmdefinition7.p1.m1" class="ltx_Math" alttext="\displaystyle y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">\displaystyle y</annotation></semantics></math> una variable fresca y que no aparece libre en <math id="S25.Thmdefinition7.p1.m2" class="ltx_Math" alttext="\displaystyle\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\displaystyle\psi</annotation></semantics></math>.</p>
+<div id="S25.Ex145" class="ltx_equation ltx_eqn_div">
+<span><math id="S25.Ex145.m1" class="ltx_Math" alttext="\displaystyle\begin{array}[]{c}\exists x\varphi(x)\\
+\varphi(v)\to\psi\\
+\hline\cr\psi\end{array}" display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd><mrow><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mi>ψ</mi></mrow></mtd></mtr><mtr><mtd class="ltx_border_t"></mtd></mtr><mtr><mtd><mi>ψ</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\displaystyle\begin{array}[]{c}\exists x\varphi(x)\\
+\varphi(v)\to\psi\\
+\hline\cr\psi\end{array}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmremarkx42" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx42.p1" class="ltx_para">
+<p class="ltx_p">Tipicamente la regla <math id="Thmremarkx42.p1.m1" class="ltx_Math" alttext="\displaystyle E\exists" display="inline"><semantics><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mo>∃</mo></mrow><annotation encoding="application/x-tex">\displaystyle E\exists</annotation></semantics></math> se usa cuando se tiene una formula <math id="Thmremarkx42.p1.m2" class="ltx_Math" alttext="\displaystyle\exists x\varphi(x)" display="inline"><semantics><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\exists x\varphi(x)</annotation></semantics></math>, iniciando una demostracion auxiliar que tiene como premisa auxiliar <math id="Thmremarkx42.p1.m3" class="ltx_Math" alttext="\displaystyle\varphi(y)" display="inline"><semantics><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\varphi(y)</annotation></semantics></math> y llegando a una conclusion que no dependa de <math id="Thmremarkx42.p1.m4" class="ltx_Math" alttext="\displaystyle y" display="inline"><semantics><mi>y</mi><annotation encoding="application/x-tex">\displaystyle y</annotation></semantics></math>.</p>
+<span class="ltx_inline-para ltx_minipage ltx_align_center ltx_align_middle" style="width:173.4pt;">
+<span id="Thmremarkx42.p1.p1" class="ltx_para ltx_noindent">
+<span class="ltx_p"><math id="Thmremarkx42.p1.p1.m1" class="ltx_Math" alttext="\displaystyle\exists x\varphi(x)" display="inline"><semantics><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\exists x\varphi(x)</annotation></semantics></math></span>
+<span class="ltx_p">
+<span class="ltx_inline-block ltx_parbox ltx_align_middle ltx_framed_rectangle" style="padding:9pt;width:426.8pt;">
+<span class="ltx_p"><math id="Thmremarkx42.p1.p1.m2" class="ltx_Math" alttext="\displaystyle\varphi(y)\qquad\quad\text{Premisa auxiliar}" display="inline"><semantics><mrow><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mspace width="3em"></mspace><mtext>Premisa auxiliar</mtext></mrow><annotation encoding="application/x-tex">\displaystyle\varphi(y)\qquad\quad\text{Premisa auxiliar}</annotation></semantics></math></span>
+<span class="ltx_p"><math id="Thmremarkx42.p1.p1.m3" class="ltx_Math" alttext="\displaystyle\vdots" display="inline"><semantics><mi mathvariant="normal">⋮</mi><annotation encoding="application/x-tex">\displaystyle\vdots</annotation></semantics></math></span>
+<span class="ltx_p"><math id="Thmremarkx42.p1.p1.m4" class="ltx_Math" alttext="\displaystyle\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\displaystyle\psi</annotation></semantics></math></span>
+</span>
+<math id="Thmremarkx42.p1.p1.m5" class="ltx_Math" alttext="\displaystyle\begin{array}[]{lr}\varphi(y)\rightarrow\psi&amp;I\rightarrow\\
+\psi&amp;E\exists\end{array}" display="inline"><semantics><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi>φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mi>ψ</mi></mrow></mtd><mtd class="ltx_align_right" columnalign="right"><mrow><mi>I</mi><mo stretchy="false">→</mo><mi></mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mi>ψ</mi></mtd><mtd class="ltx_align_right" columnalign="right"><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mo>∃</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\displaystyle\begin{array}[]{lr}\varphi(y)\rightarrow\psi&amp;I\rightarrow\\
+\psi&amp;E\exists\end{array}</annotation></semantics></math></span>
+</span></span>
+</div>
+</div>
+<div id="Thmexamplex68" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex68.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Demostrar la validez de <math id="Thmexamplex68.p1.m1" class="ltx_Math" alttext="\displaystyle\{\forall x(P(x)\to Q(x)),\exists xP(x)\}\vdash\exists xQ(x)" display="inline"><semantics><mrow><mrow><mo stretchy="false">{</mo><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow><mo>⊢</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\{\forall x(P(x)\to Q(x)),\exists xP(x)\}\vdash\exists xQ(x)</annotation></semantics></math>.</p>
+</div>
+<div id="Thmexamplex68.p2" class="ltx_para ltx_noindent">
+<ol id="S25.I15" class="ltx_enumerate">
+<li id="S25.I15.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="S25.I15.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="S25.I15.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\exists xP(x)" display="inline"><semantics><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\exists xP(x)</annotation></semantics></math> Pr</p>
+</div>
+</li>
+<li id="S25.I15.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="S25.I15.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="S25.I15.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\forall x(P(x)\to Q(x))" display="inline"><semantics><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall x(P(x)\to Q(x))</annotation></semantics></math> Pr</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="Thmexamplex68.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">
+<span class="ltx_inline-block ltx_parbox ltx_align_middle ltx_framed_rectangle" style="padding:9pt;width:426.8pt;">
+<span id="S25.I16" class="ltx_enumerate">
+<span id="S25.I16.i3" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">3.</span><span id="S25.I16.i3.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I16.i3.p1.m1" class="ltx_Math" alttext="\displaystyle P(y)" display="inline"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P(y)</annotation></semantics></math> Pr aux (var fresca)</span></span></span>
+<span id="S25.I16.i4" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">4.</span><span id="S25.I16.i4.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I16.i4.p1.m1" class="ltx_Math" alttext="\displaystyle P(y)\to Q(y)\quad E\forall,2,x=y" display="inline"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mspace width="1em"></mspace><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mn>,2</mn></mrow></mrow></mrow></mrow><mo>,</mo><mrow><mi>x</mi><mo>=</mo><mi>y</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P(y)\to Q(y)\quad E\forall,2,x=y</annotation></semantics></math></span></span></span>
+<span id="S25.I16.i5" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">5.</span><span id="S25.I16.i5.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I16.i5.p1.m1" class="ltx_Math" alttext="\displaystyle Q(y)\quad E\to,3,4" display="inline"><semantics><mrow><mrow><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mspace width="1em"></mspace><mi>E</mi></mrow><mo stretchy="false">→</mo><mn>,3,4</mn></mrow><annotation encoding="application/x-tex">\displaystyle Q(y)\quad E\to,3,4</annotation></semantics></math></span></span></span>
+<span id="S25.I16.i6" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">6.</span><span id="S25.I16.i6.p1" class="ltx_para ltx_noindent">​<span class="ltx_p"><math id="S25.I16.i6.p1.m1" class="ltx_Math" alttext="\displaystyle\exists xQ(x)\quad I\exists,5,x=y" display="inline"><semantics><mrow><mrow><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mn>,5</mn></mrow></mrow><mo>,</mo><mi>x</mi></mrow><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\displaystyle\exists xQ(x)\quad I\exists,5,x=y</annotation></semantics></math></span></span></span>
+</span>
+</span></p>
+<ol id="S25.I17" class="ltx_enumerate">
+<li id="S25.I17.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="S25.I17.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="S25.I17.ix1.p1.m1" class="ltx_Math" alttext="\displaystyle P(y)\to\exists xQ(x)\quad I\to(3-6)" display="inline"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>−</mo><mn>6</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P(y)\to\exists xQ(x)\quad I\to(3-6)</annotation></semantics></math></p>
+</div>
+</li>
+<li id="S25.I17.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="S25.I17.ix2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="S25.I17.ix2.p1.m1" class="ltx_Math" alttext="\displaystyle\exists xQ(x)\quad E\exists,1,7" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mn>,1,7</mn></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\exists xQ(x)\quad E\exists,1,7</annotation></semantics></math></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Thmexamplex69" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex69.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Demostrar la validez de <math id="Thmexamplex69.p1.m1" class="ltx_Math" alttext="\displaystyle\{\exists xP(x),\exists xQ(x)\}\vdash\exists x\exists y(P(x)%
+\wedge Q(y))" display="inline"><semantics><mrow><mrow><mo stretchy="false">{</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow><mo>⊢</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\{\exists xP(x),\exists xQ(x)\}\vdash\exists x\exists y(P(x)%
+\wedge Q(y))</annotation></semantics></math>.</p>
+</div>
+<div id="Thmexamplex69.p2" class="ltx_para ltx_noindent">
+<ol id="S25.I18" class="ltx_enumerate">
+<li id="S25.I18.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="S25.I18.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="S25.I18.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\exists xP(x)" display="inline"><semantics><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\exists xP(x)</annotation></semantics></math> Pr</p>
+</div>
+</li>
+<li id="S25.I18.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="S25.I18.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="S25.I18.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\exists xQ(x)" display="inline"><semantics><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\exists xQ(x)</annotation></semantics></math> Pr</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="Thmexamplex69.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">
+<span class="ltx_inline-block ltx_parbox ltx_align_middle ltx_framed_rectangle" style="padding:9pt;width:426.8pt;">
+<span id="S25.I19" class="ltx_enumerate">
+<span id="S25.I19.i3" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">3.</span><span id="S25.I19.i3.p1" class="ltx_para ltx_noindent">​<span class="ltx_p"><math id="S25.I19.i3.p1.m1" class="ltx_Math" alttext="\displaystyle P(z)" display="inline"><semantics><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P(z)</annotation></semantics></math> Pr aux (z var fresca)</span></span></span>
+</span>
+<span class="ltx_p">
+<span class="ltx_inline-block ltx_parbox ltx_align_middle ltx_framed_rectangle" style="padding:9pt;width:426.8pt;">
+<span id="S25.I20" class="ltx_enumerate">
+<span id="S25.I20.ix1" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">4.</span><span id="S25.I20.ix1.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I20.ix1.p1.m1" class="ltx_Math" alttext="\displaystyle Q(t)" display="inline"><semantics><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle Q(t)</annotation></semantics></math> Pr aux (t var fresca)</span></span></span>
+<span id="S25.I20.ix2" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">5.</span><span id="S25.I20.ix2.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I20.ix2.p1.m1" class="ltx_Math" alttext="\displaystyle P(z)\wedge Q(t)\quad I\wedge,3,4" display="inline"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo>∧</mo><mn>,3,4</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P(z)\wedge Q(t)\quad I\wedge,3,4</annotation></semantics></math></span></span></span>
+<span id="S25.I20.ix3" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">6.</span><span id="S25.I20.ix3.p1" class="ltx_para ltx_noindent">​<span class="ltx_p"><math id="S25.I20.ix3.p1.m1" class="ltx_Math" alttext="\displaystyle\exists y(P(z)\wedge Q(y))\quad I\exists,5,y=t" display="inline"><semantics><mrow><mrow><mrow><mo rspace="0.167em">∃</mo><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mn>,5</mn></mrow></mrow><mo>,</mo><mi>y</mi></mrow><mo>=</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">\displaystyle\exists y(P(z)\wedge Q(y))\quad I\exists,5,y=t</annotation></semantics></math></span></span></span>
+</span>
+</span></span>
+<span id="S25.I21" class="ltx_enumerate">
+<span id="S25.I21.ix1" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">7.</span><span id="S25.I21.ix1.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I21.ix1.p1.m1" class="ltx_Math" alttext="\displaystyle Q(t)\to\exists y(P(z)\wedge Q(y))\quad I\to(4-6)" display="inline"><semantics><mrow><mrow><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">(</mo><mrow><mn>4</mn><mo>−</mo><mn>6</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle Q(t)\to\exists y(P(z)\wedge Q(y))\quad I\to(4-6)</annotation></semantics></math></span></span></span>
+<span id="S25.I21.ix2" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">8.</span><span id="S25.I21.ix2.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I21.ix2.p1.m1" class="ltx_Math" alttext="\displaystyle\exists y(P(z)\wedge Q(y))\quad E\exists,2,7" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∃</mo><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mn>,2,7</mn></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\exists y(P(z)\wedge Q(y))\quad E\exists,2,7</annotation></semantics></math></span></span></span>
+<span id="S25.I21.ix3" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">9.</span><span id="S25.I21.ix3.p1" class="ltx_para ltx_noindent">​<span class="ltx_p"><math id="S25.I21.ix3.p1.m1" class="ltx_Math" alttext="\displaystyle\exists x\exists y(P(x)\wedge Q(y))\quad I\exists,8,x=z" display="inline"><semantics><mrow><mrow><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mn>,8</mn></mrow></mrow><mo>,</mo><mi>x</mi></mrow><mo>=</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">\displaystyle\exists x\exists y(P(x)\wedge Q(y))\quad I\exists,8,x=z</annotation></semantics></math></span></span></span>
+</span>
+</span></p>
+<ol id="S25.I22" class="ltx_enumerate">
+<li id="S25.I22.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span><div id="S25.I22.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="S25.I22.ix1.p1.m1" class="ltx_Math" alttext="\displaystyle P(z)\to\exists x\exists y(P(x)\wedge Q(y))\quad I\to(3-9)" display="inline"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>−</mo><mn>9</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle P(z)\to\exists x\exists y(P(x)\wedge Q(y))\quad I\to(3-9)</annotation></semantics></math></p>
+</div>
+</li>
+<li id="S25.I22.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">11.</span><div id="S25.I22.ix2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="S25.I22.ix2.p1.m1" class="ltx_Math" alttext="\displaystyle\exists x\exists y(P(x)\wedge Q(y))\quad E\exists,1,10" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mn>,1,10</mn></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\exists x\exists y(P(x)\wedge Q(y))\quad E\exists,1,10</annotation></semantics></math></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Thmexamplex70" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex70.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Demostrar la validez de <math id="Thmexamplex70.p1.m1" class="ltx_Math" alttext="\displaystyle\exists y\forall xP(x,y)\vdash\forall x\exists yP(x,y)" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∃</mo><mrow><mi>y</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>⊢</mo><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>y</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\exists y\forall xP(x,y)\vdash\forall x\exists yP(x,y)</annotation></semantics></math>.</p>
+</div>
+<div id="Thmexamplex70.p2" class="ltx_para ltx_noindent">
+<ol id="S25.I23" class="ltx_enumerate">
+<li id="S25.I23.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="S25.I23.i1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="S25.I23.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\exists y\forall xP(x,y)" display="inline"><semantics><mrow><mo rspace="0.167em">∃</mo><mrow><mi>y</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\exists y\forall xP(x,y)</annotation></semantics></math> Pr</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="Thmexamplex70.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">
+<span class="ltx_inline-block ltx_parbox ltx_align_middle ltx_framed_rectangle" style="padding:9pt;width:426.8pt;">
+<span id="S25.I24" class="ltx_enumerate">
+<span id="S25.I24.i2" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">2.</span><span id="S25.I24.i2.p1" class="ltx_para ltx_noindent">​<span class="ltx_p"><math id="S25.I24.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\forall xP(x,z)" display="inline"><semantics><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall xP(x,z)</annotation></semantics></math> Pr aux (var fresca)</span></span></span>
+</span>
+<span class="ltx_p">
+<span class="ltx_inline-block ltx_parbox ltx_align_middle ltx_framed_rectangle" style="padding:9pt;width:426.8pt;">
+<span id="S25.I25" class="ltx_enumerate">
+<span id="S25.I25.ix1" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">3.</span><span id="S25.I25.ix1.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I25.ix1.p1.m1" class="ltx_Math" alttext="\displaystyle t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">\displaystyle t</annotation></semantics></math> Var fresca</span></span></span>
+<span id="S25.I25.ix2" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">4.</span><span id="S25.I25.ix2.p1" class="ltx_para">​<span class="ltx_p"><math id="S25.I25.ix2.p1.m1" class="ltx_Math" alttext="\displaystyle P(t,z)\quad E\forall,2,x=t" display="inline"><semantics><mrow><mrow><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mspace width="1em"></mspace><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∀</mo><mn>,2</mn></mrow></mrow><mo>,</mo><mi>x</mi></mrow><mo>=</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">\displaystyle P(t,z)\quad E\forall,2,x=t</annotation></semantics></math></span></span></span>
+<span id="S25.I25.ix3" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">5.</span><span id="S25.I25.ix3.p1" class="ltx_para ltx_noindent">​<span class="ltx_p"><math id="S25.I25.ix3.p1.m1" class="ltx_Math" alttext="\displaystyle\exists yP(x,y)\quad I\exists,4,y=z" display="inline"><semantics><mrow><mrow><mrow><mo rspace="0.167em">∃</mo><mrow><mi>y</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mn>,4</mn></mrow></mrow><mo>,</mo><mi>y</mi></mrow><mo>=</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">\displaystyle\exists yP(x,y)\quad I\exists,4,y=z</annotation></semantics></math></span></span></span>
+</span>
+</span></span>
+<span id="S25.I26" class="ltx_enumerate">
+<span id="S25.I26.ix1" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">6.</span><span id="S25.I26.ix1.p1" class="ltx_para ltx_noindent">​<span class="ltx_p"><math id="S25.I26.ix1.p1.m1" class="ltx_Math" alttext="\displaystyle\forall x\exists yP(x,y)\quad I\forall(3-5)" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>y</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo lspace="0.167em">⁢</mo><mrow><mo>∀</mo><mrow><mo stretchy="false">(</mo><mrow><mn>3</mn><mo>−</mo><mn>5</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall x\exists yP(x,y)\quad I\forall(3-5)</annotation></semantics></math></span></span></span>
+</span>
+</span></p>
+<ol id="S25.I27" class="ltx_enumerate">
+<li id="S25.I27.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">7.</span><div id="S25.I27.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="S25.I27.ix1.p1.m1" class="ltx_Math" alttext="\displaystyle\forall xP(x,z)\to\forall x\exists yP(x,y)\quad I\to(2-6)" display="inline"><semantics><mrow><mrow><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">→</mo><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>y</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>−</mo><mn>6</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall xP(x,z)\to\forall x\exists yP(x,y)\quad I\to(2-6)</annotation></semantics></math></p>
+</div>
+</li>
+<li id="S25.I27.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">8.</span><div id="S25.I27.ix2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="S25.I27.ix2.p1.m1" class="ltx_Math" alttext="\displaystyle\forall x\exists yP(x,y)\quad E\exists,1,7" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>y</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>E</mi><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mn>,1,7</mn></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall x\exists yP(x,y)\quad E\exists,1,7</annotation></semantics></math></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Thmremarkx43" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx43.p1" class="ltx_para">
+<p class="ltx_p">Se puede demostrar que el sistema de Gentzen que hemos introducido es correcto y completo para la logica de predicados. Sin embargo, esta logica no es decidible.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S25.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

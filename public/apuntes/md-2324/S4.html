@@ -1,0 +1,374 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Matemática Discreta" course="1º Curso" prof="Ángel Pérez" prof2="Miguel Romance" data-pagefind-filter="asignatura[content], curso[course], profesor[prof], profesor[prof2]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>4 Extensiones del metodo de induccion matematica ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta</title>
+<!--Generated on Fri Jun  7 11:08:28 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt1.html" title="Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="up up" href="index.html" title="Matemática Discreta">
+<link rel="start" href="index.html" title="Matemática Discreta">
+<link rel="prev" href="S3.html" title="3 El principio de inducción matemática ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="next" href="Pt2.html" title="Parte II Combinatoria ‣ Matemática Discreta">
+<link rel="section" href="S1.html" title="1 Métodos de trabajo en la ciencia ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="section" href="S2.html" title="2 Técnicas de demostración ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="section" href="S3.html" title="3 El principio de inducción matemática ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="part" href="Pt1.html" title="Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="part" href="Pt2.html" title="Parte II Combinatoria ‣ Matemática Discreta">
+<link rel="part" href="Pt3.html" title="Parte III Aritmética entera y modular ‣ Matemática Discreta">
+<link rel="part" href="Pt4.html" title="Parte IV Teoria de grafos ‣ Matemática Discreta">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Matemática Discreta" class="ltx_ref" rel="start">Matemática Discreta</a>
+</li>
+<li class="divider">
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt1.html" title="Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>Fundamentos y el principio de inducción</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="1" data-path="S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S1.html" title="1 Métodos de trabajo en la ciencia ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Métodos de trabajo en la ciencia</a></li>
+<li data-level="2" data-path="S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S2.html" title="2 Técnicas de demostración ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Técnicas de demostración</a></li>
+<li data-level="3" data-path="S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S3.html" title="3 El principio de inducción matemática ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>El principio de inducción matemática</a></li>
+<li data-level="4" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="4 Extensiones del metodo de induccion matematica ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Extensiones del metodo de induccion matematica</a></li>
+</ol>
+</li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt2.html" title="Parte II Combinatoria ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Combinatoria</a></li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt3.html" title="Parte III Aritmética entera y modular ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Aritmética entera y modular</a></li>
+<li data-level="IV" data-path="Pt4.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt4.html" title="Parte IV Teoria de grafos ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">IV </span></b>Teoria de grafos</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Extensiones del metodo de induccion matematica</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">4</span> Extensiones del metodo de induccion matematica</h1>
+
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Para probar algunas propiedades relacionadas con numeros enteros y subconjuntos de numeros naturales debemos emplear algunas extensiones del Principio de Induccion, como por ejemplo:</p>
+</div>
+<div id="p2" class="ltx_para ltx_noindent">
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">Si queremos probar que una cierta propiedad es valida para todo numero natural <math id="I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle n\geq n_{0}" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle n\geq n_{0}</annotation></semantics></math> (siendo <math id="I1.i1.p1.m2" class="ltx_Math" alttext="\displaystyle n_{0}" display="inline"><semantics><msub><mi>n</mi><mn>0</mn></msub><annotation encoding="application/x-tex">\displaystyle n_{0}</annotation></semantics></math> un numero natural fijo) usando el principio de induccion, debemos seguir los siguientes pasos:</p>
+<ol id="I1.i1.I1" class="ltx_enumerate">
+<li id="I1.i1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><em class="ltx_emph ltx_font_italic">a</em>)</span><div id="I1.i1.I1.i1.p1" class="ltx_para">​<p class="ltx_p">Comprobar que el resultado es cierto para <math id="I1.i1.I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle n=n_{0}" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle n=n_{0}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I1.i1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><em class="ltx_emph ltx_font_italic">b</em>)</span><div id="I1.i1.I1.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Suponiendo que el resultado es cierto para un numero natural <math id="I1.i1.I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle n\geq n_{0}" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle n\geq n_{0}</annotation></semantics></math>, demostramos que necesariamente el resultado tambien es cierto para <math id="I1.i1.I1.i2.p1.m2" class="ltx_Math" alttext="\displaystyle n+1" display="inline"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n+1</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">Una vez probado esto, habremos demostrado que el resultado es cierto para todo numero natural <math id="I1.i1.p1.m3" class="ltx_Math" alttext="\displaystyle n\geq n_{0}" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle n\geq n_{0}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Si queremos probar que una cierta propiedades valida para todo numero entero <math id="I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle n\in\mathbb{Z}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n\in\mathbb{Z}</annotation></semantics></math> usando el principio de induccion, debemos seguir los siguientes pasos:</p>
+<ol id="I1.i2.I1" class="ltx_enumerate">
+<li id="I1.i2.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><em class="ltx_emph ltx_font_italic">a</em>)</span><div id="I1.i2.I1.i1.p1" class="ltx_para">​<p class="ltx_p">Comprobar que el resultado es cierto para <math id="I1.i2.I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle n=0" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle n=0</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I1.i2.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><em class="ltx_emph ltx_font_italic">b</em>)</span><div id="I1.i2.I1.i2.p1" class="ltx_para">​<p class="ltx_p">Suponiendo que el resultado es cierto para un numero natural <math id="I1.i2.I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math>, demostramos que necesariamente el resultado tambien es cierto para <math id="I1.i2.I1.i2.p1.m2" class="ltx_Math" alttext="\displaystyle n+1" display="inline"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n+1</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I1.i2.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><em class="ltx_emph ltx_font_italic">c</em>)</span><div id="I1.i2.I1.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Suponiendo que el resultado es cierto para un numero entero negativo <math id="I1.i2.I1.i3.p1.m1" class="ltx_Math" alttext="\displaystyle n\leq 0" display="inline"><semantics><mrow><mi>n</mi><mo>≤</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle n\leq 0</annotation></semantics></math>, demostramos que necesariamente el resultado tambien es cierto para <math id="I1.i2.I1.i3.p1.m2" class="ltx_Math" alttext="\displaystyle n-1" display="inline"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n-1</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div id="Thmexamplex6" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex6.p1" class="ltx_para">
+<p class="ltx_p">Demostrar que si <math id="Thmexamplex6.p1.m1" class="ltx_Math" alttext="\displaystyle n\in\mathbb{Z}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n\in\mathbb{Z}</annotation></semantics></math> entonces <math id="Thmexamplex6.p1.m2" class="ltx_Math" alttext="\displaystyle n^{3}-n" display="inline"><semantics><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>−</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">\displaystyle n^{3}-n</annotation></semantics></math> es multiplo de 3.</p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Lo demostraremos por induccion sobre <math id="p3.m1" class="ltx_Math" alttext="\displaystyle n\in\mathbb{Z}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n\in\mathbb{Z}</annotation></semantics></math>. Para ello, primero probamos que se cumple para <math id="p3.m2" class="ltx_Math" alttext="\displaystyle n=0" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle n=0</annotation></semantics></math>.</p>
+<div id="Ex22" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex22.m1" class="ltx_Math" alttext="\displaystyle n^{3}-n=0^{3}-0=0=3\cdot 0\Rightarrow\text{Es multiplo de 3.}" display="block"><semantics><mrow><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>−</mo><mi>n</mi></mrow><mo>=</mo><mrow><msup><mn>0</mn><mn>3</mn></msup><mo>−</mo><mn>0</mn></mrow><mo>=</mo><mn>0</mn><mo>=</mo><mrow><mn>3</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>0</mn></mrow><mo stretchy="false">⇒</mo><mtext>Es multiplo de 3.</mtext></mrow><annotation encoding="application/x-tex">\displaystyle n^{3}-n=0^{3}-0=0=3\cdot 0\Rightarrow\text{Es multiplo de 3.}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Ahora, comprobamos que si vale para <math id="p3.m3" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> entonces tambien vale para <math id="p3.m4" class="ltx_Math" alttext="\displaystyle n+1" display="inline"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n+1</annotation></semantics></math>.</p>
+<div class="ltx_equation ltx_eqn_div">
+<span><math id="p3.m5" class="ltx_Math" alttext="(n+1)^{3}-(n+1)=n^{3}+3n^{2}+3n+1-n-1=n^{3}-n+3n^{2}+3n\overset{\text{H.I.}}{=%
+}\\
+=3q+3n^{2}+3n=3(q+n^{2}+n)\Rightarrow\text{Es multiplo de 3. }" display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>−</mo><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo>=</mo><mrow><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>−</mo><mi>n</mi></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mover accent="true"><mo>=</mo><mtext>H.I.</mtext></mover></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>q</mi></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>q</mi><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">⇒</mo><mtext>Es multiplo de 3. </mtext></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">(n+1)^{3}-(n+1)=n^{3}+3n^{2}+3n+1-n-1=n^{3}-n+3n^{2}+3n\overset{\text{H.I.}}{=%
+}\\
+=3q+3n^{2}+3n=3(q+n^{2}+n)\Rightarrow\text{Es multiplo de 3. }</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Por ultimo, demostramos que si es cierto para <math id="p3.m6" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> entonces tambien lo es para <math id="p3.m7" class="ltx_Math" alttext="\displaystyle n-1" display="inline"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n-1</annotation></semantics></math>.</p>
+<div class="ltx_equation ltx_eqn_div">
+<span><math id="p3.m8" class="ltx_Math" alttext="(n-1)^{3}-(n-1)=n^{3}-3n^{2}+3n-1-n+1=n^{3}-n-3n^{2}+3n\overset{\text{H.I.}}{=%
+}\\
+=3q-3n^{2}+3n=3(q-n^{2}+n)\Rightarrow\text{Es multiplo de 3.}" display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mo>−</mo><mn>1</mn><mo>−</mo><mi>n</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mrow><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>−</mo><mi>n</mi><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mover accent="true"><mo>=</mo><mtext>H.I.</mtext></mover></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>q</mi></mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>n</mi></mrow></mrow><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>q</mi><mo>−</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mi>n</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">⇒</mo><mtext>Es multiplo de 3.</mtext></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">(n-1)^{3}-(n-1)=n^{3}-3n^{2}+3n-1-n+1=n^{3}-n-3n^{2}+3n\overset{\text{H.I.}}{=%
+}\\
+=3q-3n^{2}+3n=3(q-n^{2}+n)\Rightarrow\text{Es multiplo de 3.}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Por tanto, por el principio de induccion hemos demostrado que se cumple el teorema para todo <math id="p3.m9" class="ltx_Math" alttext="\displaystyle n\in\mathbb{Z}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n\in\mathbb{Z}</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Existe otra extension que se basa en el siguiente principio que se deduce trivialmente del principio de induccion:</p>
+</div>
+<div id="Thmproposition1" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 4.1</span></span><span class="ltx_text ltx_font_bold"> </span>(Principio de induccion completa)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Si <math id="Thmproposition1.p1.m1" class="ltx_Math" alttext="\displaystyle P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">\displaystyle P</annotation></semantics></math> es una cierta propiedad de forma que se cumple simultaneamente:</span></p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">el numero </span><math id="I2.i1.p1.m1" class="ltx_Math" alttext="\displaystyle n=1" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n=1</annotation></semantics></math><span class="ltx_text ltx_font_italic"> cumple la propiedad </span><math id="I2.i1.p1.m2" class="ltx_Math" alttext="\displaystyle P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">\displaystyle P</annotation></semantics></math><span class="ltx_text ltx_font_italic"> y</span></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">siempre que un cierto numero </span><math id="I2.i2.p1.m1" class="ltx_Math" alttext="\displaystyle n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n\in\mathbb{N}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> de forma que todos los numeros menores o iguales que el cumple la propiedad </span><math id="I2.i2.p1.m2" class="ltx_Math" alttext="\displaystyle P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">\displaystyle P</annotation></semantics></math><span class="ltx_text ltx_font_italic">, el siguiente numero tambien cumple la propiedad </span><math id="I2.i2.p1.m3" class="ltx_Math" alttext="\displaystyle P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">\displaystyle P</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ol>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">entonces todos los numeros naturales cumplen la propiedad <math id="Thmproposition1.p1.m2" class="ltx_Math" alttext="\displaystyle P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">\displaystyle P</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Thmexamplex7" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex7.p1" class="ltx_para">
+<p class="ltx_p">Vamos a demostrar el teorema fundamental de la aritmetica, que dice que todo numero natural <math id="Thmexamplex7.p1.m1" class="ltx_Math" alttext="\displaystyle n&gt;1" display="inline"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n&gt;1</annotation></semantics></math> puede expresarse (de forma unica) como producto de potencias de numeros primos, es decir</p>
+<div id="Ex23" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex23.m1" class="ltx_Math" alttext="\displaystyle n=p^{e_{1}}_{1}\cdot p^{e_{2}}_{2}\cdot\ldots\cdot p^{e_{k}}_{k}" display="block"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><msubsup><mi>p</mi><mn>1</mn><msub><mi>e</mi><mn>1</mn></msub></msubsup><mo lspace="0.222em" rspace="0.222em">⋅</mo><msubsup><mi>p</mi><mn>2</mn><msub><mi>e</mi><mn>2</mn></msub></msubsup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi mathvariant="normal">…</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msubsup><mi>p</mi><mi>k</mi><msub><mi>e</mi><mi>k</mi></msub></msubsup></mrow></mrow><annotation encoding="application/x-tex">\displaystyle n=p^{e_{1}}_{1}\cdot p^{e_{2}}_{2}\cdot\ldots\cdot p^{e_{k}}_{k}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">donde <math id="Thmexamplex7.p1.m2" class="ltx_Math" alttext="\displaystyle k\in\mathbb{N}" display="inline"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle k\in\mathbb{N}</annotation></semantics></math>, <math id="Thmexamplex7.p1.m3" class="ltx_Math" alttext="\displaystyle p_{1},\ldots,p_{k}" display="inline"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>p</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle p_{1},\ldots,p_{k}</annotation></semantics></math> son numeros primos y <math id="Thmexamplex7.p1.m4" class="ltx_Math" alttext="\displaystyle e_{1},\ldots,e_{k}\in\mathbb{N}" display="inline"><semantics><mrow><mrow><msub><mi>e</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>e</mi><mi>k</mi></msub></mrow><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle e_{1},\ldots,e_{k}\in\mathbb{N}</annotation></semantics></math>.</p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Lo demostramos por induccion completa sobre <math id="p5.m1" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math>. Para ello, primero comprobamos que el resultado es cierto para <math id="p5.m2" class="ltx_Math" alttext="\displaystyle n=2" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\displaystyle n=2</annotation></semantics></math>.
+
+Como 2 es numero primo, se puede expresar como <math id="p5.m3" class="ltx_Math" alttext="\displaystyle 2=2^{1}" display="inline"><semantics><mrow><mn>2</mn><mo>=</mo><msup><mn>2</mn><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">\displaystyle 2=2^{1}</annotation></semantics></math>.
+
+En segundo lugar, demostramos que si <math id="p5.m4" class="ltx_Math" alttext="\displaystyle 1,2,3,\ldots,n" display="inline"><semantics><mrow><mn>1,2,3</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">\displaystyle 1,2,3,\ldots,n</annotation></semantics></math> cumplen la propiedad, entonces <math id="p5.m5" class="ltx_Math" alttext="\displaystyle n+1" display="inline"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n+1</annotation></semantics></math> cumple la propiedad. Para verlo, hay dos casos:</p>
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p">Si <math id="I3.i1.p1.m1" class="ltx_Math" alttext="\displaystyle n+1" display="inline"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n+1</annotation></semantics></math> es primo, entonces <math id="I3.i1.p1.m2" class="ltx_Math" alttext="\displaystyle n+1=(n+1)^{1}\;(p_{1}=n+1,\,e_{1}=1)" display="inline"><semantics><mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>=</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mrow><mo rspace="0.337em">,</mo><mrow><msub><mi>e</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle n+1=(n+1)^{1}\;(p_{1}=n+1,\,e_{1}=1)</annotation></semantics></math>. Cumple la tesis de induccion.</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I3.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Si <math id="I3.i2.p1.m1" class="ltx_Math" alttext="\displaystyle(n+1)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(n+1)</annotation></semantics></math> no es primo, entonces es divisible por algun numero menor que <math id="I3.i2.p1.m2" class="ltx_Math" alttext="\displaystyle n+1" display="inline"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n+1</annotation></semantics></math>, luego <math id="I3.i2.p1.m3" class="ltx_Math" alttext="\displaystyle n+1=s\cdot t" display="inline"><semantics><mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mrow><mi>s</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>t</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle n+1=s\cdot t</annotation></semantics></math> con <math id="I3.i2.p1.m4" class="ltx_Math" alttext="\displaystyle s,t" display="inline"><semantics><mrow><mi>s</mi><mo>,</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">\displaystyle s,t</annotation></semantics></math> numeros enteros entre 1 y <math id="I3.i2.p1.m5" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math>.
+
+Como <math id="I3.i2.p1.m6" class="ltx_Math" alttext="\displaystyle s" display="inline"><semantics><mi>s</mi><annotation encoding="application/x-tex">\displaystyle s</annotation></semantics></math> y <math id="I3.i2.p1.m7" class="ltx_Math" alttext="\displaystyle t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">\displaystyle t</annotation></semantics></math> son numeros enteros entre 1 y <math id="I3.i2.p1.m8" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math>, usando la hipotesis de induccion <math id="I3.i2.p1.m9" class="ltx_Math" alttext="\displaystyle s=p^{e_{1}}_{1}\cdot\ldots\cdot p^{e_{k}}_{k}" display="inline"><semantics><mrow><mi>s</mi><mo>=</mo><mrow><msubsup><mi>p</mi><mn>1</mn><msub><mi>e</mi><mn>1</mn></msub></msubsup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi mathvariant="normal">…</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msubsup><mi>p</mi><mi>k</mi><msub><mi>e</mi><mi>k</mi></msub></msubsup></mrow></mrow><annotation encoding="application/x-tex">\displaystyle s=p^{e_{1}}_{1}\cdot\ldots\cdot p^{e_{k}}_{k}</annotation></semantics></math> y <math id="I3.i2.p1.m10" class="ltx_Math" alttext="\displaystyle t=q^{f_{1}}_{1}\cdot\ldots\cdot q^{f_{n}}_{n}" display="inline"><semantics><mrow><mi>t</mi><mo>=</mo><mrow><msubsup><mi>q</mi><mn>1</mn><msub><mi>f</mi><mn>1</mn></msub></msubsup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi mathvariant="normal">…</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msubsup><mi>q</mi><mi>n</mi><msub><mi>f</mi><mi>n</mi></msub></msubsup></mrow></mrow><annotation encoding="application/x-tex">\displaystyle t=q^{f_{1}}_{1}\cdot\ldots\cdot q^{f_{n}}_{n}</annotation></semantics></math>. Por tanto,</p>
+<div id="Ex24" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex24.m1" class="ltx_Math" alttext="\displaystyle n+1=s\cdot t=\underbrace{p^{e_{1}}_{1}\cdot\ldots\cdot p^{e_{k}}%
+_{k}\cdot q^{f_{1}}_{1}\cdot\ldots\cdot q^{f_{n}}_{n}}_{\text{Producto de %
+potencias de primos}}" display="block"><semantics><mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mrow><mi>s</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>t</mi></mrow><mo>=</mo><munder><munder accentunder="true"><mrow><msubsup><mi>p</mi><mn>1</mn><msub><mi>e</mi><mn>1</mn></msub></msubsup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi mathvariant="normal">…</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msubsup><mi>p</mi><mi>k</mi><msub><mi>e</mi><mi>k</mi></msub></msubsup><mo lspace="0.222em" rspace="0.222em">⋅</mo><msubsup><mi>q</mi><mn>1</mn><msub><mi>f</mi><mn>1</mn></msub></msubsup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi mathvariant="normal">…</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msubsup><mi>q</mi><mi>n</mi><msub><mi>f</mi><mi>n</mi></msub></msubsup></mrow><mo>⏟</mo></munder><mtext>Producto de potencias de primos</mtext></munder></mrow><annotation encoding="application/x-tex">\displaystyle n+1=s\cdot t=\underbrace{p^{e_{1}}_{1}\cdot\ldots\cdot p^{e_{k}}%
+_{k}\cdot q^{f_{1}}_{1}\cdot\ldots\cdot q^{f_{n}}_{n}}_{\text{Producto de %
+potencias de primos}}</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+</ol>
+<p class="ltx_p">La unicidad está demostrada en <a href="S8.html" title="8 Divisibilidad en ℤ. Algoritmo de Euclides. ‣ Parte III Aritmética entera y modular ‣ Matemática Discreta" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8</span></a>.
+∎</p>
+</div>
+</div>
+<div id="Thmexamplex8" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex8.p1" class="ltx_para">
+<p class="ltx_p">Ejercicio 8 - Probar que la suma de los cubos de tres numeros naturales consecutivos es multiplo de 9.</p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Debemos probar que <math id="p6.m1" class="ltx_Math" alttext="\displaystyle n^{3}+(n+1)^{3}+(n+2)^{3}" display="inline"><semantics><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\displaystyle n^{3}+(n+1)^{3}+(n+2)^{3}</annotation></semantics></math> es multiplo de 9 para todo <math id="p6.m2" class="ltx_Math" alttext="\displaystyle n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n\in\mathbb{N}</annotation></semantics></math>. Lo demostraremos por induccion sobre <math id="p6.m3" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math>.
+
+En primer lugar, comprobamos que es cierto para <math id="p6.m4" class="ltx_Math" alttext="\displaystyle n=1" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n=1</annotation></semantics></math>.</p>
+<div id="Ex25" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex25.m1" class="ltx_Math" alttext="\displaystyle n^{3}+(n+1)^{3}+(n+2)^{3}=1^{3}+2^{3}+3^{3}=1+8+27=36=9\cdot 4" display="block"><semantics><mrow><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mrow><mo>=</mo><mrow><msup><mn>1</mn><mn>3</mn></msup><mo>+</mo><msup><mn>2</mn><mn>3</mn></msup><mo>+</mo><msup><mn>3</mn><mn>3</mn></msup></mrow><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mn>8</mn><mo>+</mo><mn>27</mn></mrow><mo>=</mo><mn>36</mn><mo>=</mo><mrow><mn>9</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>4</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle n^{3}+(n+1)^{3}+(n+2)^{3}=1^{3}+2^{3}+3^{3}=1+8+27=36=9\cdot 4</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Ahora, demostramos que si es cierto para <math id="p6.m5" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> es cierto para <math id="p6.m6" class="ltx_Math" alttext="\displaystyle n+1" display="inline"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n+1</annotation></semantics></math>.</p>
+<div class="ltx_equation ltx_eqn_div">
+<span><math id="p6.m7" class="ltx_Math" alttext="(n+1)^{3}+(n+2)^{3}+(n+3)^{3}=(n+1)^{3}+(n+2)^{3}+(n^{3}+9n^{2}+27n+27)=\\
+=n^{3}+(n+1)^{3}+(n+2)^{3}+9n^{2}+27n+27=9k+9n^{2}+27n+27=\\
+=\boxed{9(k+n^{2}+3n+3)}" display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>9</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>27</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>27</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi></mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi></mi><mo>=</mo><mrow><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup><mo>+</mo><mrow><mn>9</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>27</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>27</mn></mrow><mo>=</mo><mrow><mrow><mn>9</mn><mo>⁢</mo><mi>k</mi></mrow><mo>+</mo><mrow><mn>9</mn><mo>⁢</mo><msup><mi>n</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>27</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>27</mn></mrow><mo>=</mo><mi></mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi></mi><mo>=</mo><menclose notation="box"><mrow><mn>9</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>n</mi></mrow><mo>+</mo><mn>3</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></menclose></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">(n+1)^{3}+(n+2)^{3}+(n+3)^{3}=(n+1)^{3}+(n+2)^{3}+(n^{3}+9n^{2}+27n+27)=\\
+=n^{3}+(n+1)^{3}+(n+2)^{3}+9n^{2}+27n+27=9k+9n^{2}+27n+27=\\
+=\boxed{9(k+n^{2}+3n+3)}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Por el principio de induccion, se cumple para todo <math id="p6.m8" class="ltx_Math" alttext="\displaystyle n\in\mathbb{N}" display="inline"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle n\in\mathbb{N}</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S3.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Pt2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

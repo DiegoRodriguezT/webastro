@@ -1,0 +1,33 @@
+---
+import Card from "./Card.astro";
+import { getCollection } from "astro:content";
+
+const projects = await getCollection("blog", ({ data }) => {
+	return data.project == true;
+});
+// console.log(projects);
+---
+
+<div class="m-auto w-[700px] max-w-full pt-4 pb-8 md:py-16 px-5" id="projects">
+	<h2 class="text-2xl md:text-3xl lg:text-3xl font-extrabold">Proyectos</h2>
+	<div class="flex flex-col m-auto mx-4 mt-4 group">
+		{
+			projects.map((project) => (
+				<Card
+					href={`/blog/${project.slug}`}
+					title={project.data.title}
+					transition:name={project.data.image}
+					body={`${project.data.description}.`}
+					img={project.data.image}
+					date={project.data.date}
+				/>
+			))
+		}
+		<Card
+			href="https://t.me/AutobusMadridBot"
+			title="Autobuses Madrid Bot"
+			body="Bot de Telegram para consultar las horas de llegada de los autobuses interurbanos de Madrid."
+			img="/src/assets/autobus.png"
+		/>
+	</div>
+</div>

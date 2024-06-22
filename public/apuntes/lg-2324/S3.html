@@ -1,0 +1,804 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Lógica" course="1º Curso" prof="Ángel Pérez" data-pagefind-filter="asignatura[content], curso[course], profesor[prof]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>3 Funciones ‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica</title>
+<!--Generated on Fri Jun  7 11:07:44 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="up up" href="index.html" title="Lógica">
+<link rel="start" href="index.html" title="Lógica">
+<link rel="prev" href="S2.html" title="2 Relaciones ‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="next" href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica">
+<link rel="section" href="S1.html" title="1 Conjuntos ‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="section" href="S2.html" title="2 Relaciones ‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="section" href="Sx1.html" title="Terminología matemática ‣ Lógica">
+<link rel="part" href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="part" href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica">
+<link rel="part" href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="part" href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica">
+<link rel="part" href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="part" href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica">
+<link rel="part" href="Pt7.html" title="Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Lógica" class="ltx_ref" rel="start">Lógica</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Sx1.html" title="Terminología matemática ‣ Lógica" class="ltx_ref">Terminología matemática</a></li>
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>Conjuntos, relaciones y funciones</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="1" data-path="S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S1.html" title="1 Conjuntos ‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Conjuntos</a></li>
+<li data-level="2" data-path="S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S2.html" title="2 Relaciones ‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Relaciones</a></li>
+<li data-level="3" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="3 Funciones ‣ Parte I Conjuntos, relaciones y funciones ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Funciones</a></li>
+</ol>
+</li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Sintaxis de la lógica proposicional</a></li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Semantica de la logica proposicional</a></li>
+<li data-level="IV" data-path="Pt4.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">IV </span></b>Teoria de la demostracion para logica proposicional</a></li>
+<li data-level="V" data-path="Pt5.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">V </span></b>Sintaxis de la logica de predicados</a></li>
+<li data-level="VI" data-path="Pt6.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VI </span></b>Semantica de la logica de predicados</a></li>
+<li data-level="VII" data-path="Pt7.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt7.html" title="Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VII </span></b>Teoria de la demostracion en logica de predicados</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Funciones</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">3</span> Funciones</h1>
+
+<div id="Thmdefinition1" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 3.1</span></span><span class="ltx_text ltx_font_bold"> </span>(Función)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition1.p1" class="ltx_para">
+<p class="ltx_p">Sean <math id="Thmdefinition1.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> y <math id="Thmdefinition1.p1.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> conjuntos no vacios. Decimos que <math id="Thmdefinition1.p1.m3" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es una funcion de <math id="Thmdefinition1.p1.m4" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> en <math id="Thmdefinition1.p1.m5" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> si es una relacion binaria entre <math id="Thmdefinition1.p1.m6" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> y <math id="Thmdefinition1.p1.m7" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> tal que cada elemento de <math id="Thmdefinition1.p1.m8" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> esta relacionado con un unico elemento de <math id="Thmdefinition1.p1.m9" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math>. Simbolicamente:</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle f\subseteq A\times B" display="inline"><semantics><mrow><mi>f</mi><mo>⊆</mo><mrow><mi>A</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>B</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\subseteq A\times B</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\forall a\in A\;\exists!b\in B\,/\,afb" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mi>a</mi></mrow><mo>∈</mo><mrow><mi>A</mi><mo lspace="0.447em">⁢</mo><mrow><mrow><mo rspace="0.167em">∃</mo><mo>!</mo></mrow><mo>⁡</mo><mi>b</mi></mrow></mrow><mo>∈</mo><mrow><mrow><mi>B</mi><mo lspace="0.392em" rspace="0.392em">/</mo><mi>a</mi></mrow><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mi>b</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall a\in A\;\exists!b\in B\,/\,afb</annotation></semantics></math></p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Dado cualquier <math id="Thmdefinition1.p1.m10" class="ltx_Math" alttext="\displaystyle a\in A" display="inline"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle a\in A</annotation></semantics></math>, al unico <math id="Thmdefinition1.p1.m11" class="ltx_Math" alttext="\displaystyle b\in B" display="inline"><semantics><mrow><mi>b</mi><mo>∈</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle b\in B</annotation></semantics></math> que esta relacionado con <math id="Thmdefinition1.p1.m12" class="ltx_Math" alttext="\displaystyle a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">\displaystyle a</annotation></semantics></math> lo llamamos imagen de <math id="Thmdefinition1.p1.m13" class="ltx_Math" alttext="\displaystyle a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">\displaystyle a</annotation></semantics></math> por <math id="Thmdefinition1.p1.m14" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> (<math id="Thmdefinition1.p1.m15" class="ltx_Math" alttext="\displaystyle b=f(a)" display="inline"><semantics><mrow><mi>b</mi><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle b=f(a)</annotation></semantics></math>).</p>
+</div>
+</div>
+<div id="Thmremarkx5" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx5.p1" class="ltx_para">
+<p class="ltx_p">Si <math id="Thmremarkx5.p1.m1" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es una funcion, entonces <math id="Thmremarkx5.p1.m2" class="ltx_Math" alttext="\displaystyle dom(f)=A" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle dom(f)=A</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmdefinition2" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 3.2</span></span><span class="ltx_text ltx_font_bold"> </span>(Codominio)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition2.p1" class="ltx_para">
+<p class="ltx_p">Si <math id="Thmdefinition2.p1.m1" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es una funcion de <math id="Thmdefinition2.p1.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> en <math id="Thmdefinition2.p1.m3" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math>, decimos que <math id="Thmdefinition2.p1.m4" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> es el codominio de <math id="Thmdefinition2.p1.m5" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Si <math id="p1.m1" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es una funcion de <math id="p1.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> en <math id="p1.m3" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> es tipico escribir</p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex49" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex49X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex49X.m2" class="ltx_Math" alttext="\displaystyle f\colon A" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle f\colon A</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex49X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow B" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow B</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex49Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex49Xa.m2" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex49Xa.m3" class="ltx_Math" alttext="\displaystyle\mapsto f(x)=y" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">↦</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto f(x)=y</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<div id="Thmexamplex15" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex15.p1" class="ltx_para">
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex50" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex50X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex50X.m2" class="ltx_Math" alttext="\displaystyle f\colon\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle f\colon\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex50X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow\mathbb{R}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex50Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex50Xa.m2" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex50Xa.m3" class="ltx_Math" alttext="\displaystyle\mapsto f(x)=x^{2}-5" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">↦</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mapsto f(x)=x^{2}-5</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p"><math id="Thmexamplex15.p1.m1" class="ltx_Math" alttext="\displaystyle(1,-4)\in f" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>−</mo><mn>4</mn></mrow><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">\displaystyle(1,-4)\in f</annotation></semantics></math>, <math id="Thmexamplex15.p1.m2" class="ltx_Math" alttext="\displaystyle 1f-4" display="inline"><semantics><mrow><mrow><mn>1</mn><mo>⁢</mo><mi>f</mi></mrow><mo>−</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\displaystyle 1f-4</annotation></semantics></math>, <math id="Thmexamplex15.p1.m3" class="ltx_Math" alttext="\displaystyle f(1)=-4" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mn>4</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f(1)=-4</annotation></semantics></math></p>
+</div>
+</div>
+<div id="Thmdefinition3" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 3.3</span></span><span class="ltx_text ltx_font_bold"> </span>(Funcion inyectiva)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition3.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="Thmdefinition3.p1.m1" class="ltx_Math" alttext="\displaystyle f\colon A\to B" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>A</mi><mo stretchy="false">→</mo><mi>B</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\colon A\to B</annotation></semantics></math> una funcion. Decimos que <math id="Thmdefinition3.p1.m2" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es inyectiva si no hay dos elementos que tengan la misma imagen. Simbolicamente:</p>
+<div id="Ex51" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex51.m1" class="ltx_Math" alttext="\displaystyle\forall a,a^{\prime}\in A\;(a\neq a^{\prime}\Rightarrow f(a)\neq f%
+(a^{\prime}))" display="block"><semantics><mrow><mrow><mrow><mo rspace="0.167em">∀</mo><mi>a</mi></mrow><mo>,</mo><msup><mi>a</mi><mo>′</mo></msup></mrow><mo>∈</mo><mrow><mi>A</mi><mo lspace="0.280em">⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>≠</mo><msup><mi>a</mi><mo>′</mo></msup><mo stretchy="false">⇒</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>a</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall a,a^{\prime}\in A\;(a\neq a^{\prime}\Rightarrow f(a)\neq f%
+(a^{\prime}))</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Tambien se puede escribir:</p>
+<div id="Ex52" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex52.m1" class="ltx_Math" alttext="\displaystyle\forall a,a^{\prime}\in A\;(f(a)=f(a^{\prime})\Rightarrow a=a^{%
+\prime})" display="block"><semantics><mrow><mrow><mrow><mo rspace="0.167em">∀</mo><mi>a</mi></mrow><mo>,</mo><msup><mi>a</mi><mo>′</mo></msup></mrow><mo>∈</mo><mrow><mi>A</mi><mo lspace="0.280em">⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>a</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">⇒</mo><mi>a</mi><mo>=</mo><msup><mi>a</mi><mo>′</mo></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall a,a^{\prime}\in A\;(f(a)=f(a^{\prime})\Rightarrow a=a^{%
+\prime})</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmdefinition4" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 3.4</span></span><span class="ltx_text ltx_font_bold"> </span>(Funcion suprayectiva)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition4.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="Thmdefinition4.p1.m1" class="ltx_Math" alttext="\displaystyle f\colon A\to B" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>A</mi><mo stretchy="false">→</mo><mi>B</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\colon A\to B</annotation></semantics></math> una funcion. Decimos que <math id="Thmdefinition4.p1.m2" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es suprayectiva o sobreyectiva si todo elemento de <math id="Thmdefinition4.p1.m3" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> es imagen de algun elemento de <math id="Thmdefinition4.p1.m4" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math>. Simbolicamente:</p>
+<div id="Ex53" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex53.m1" class="ltx_Math" alttext="\displaystyle\forall b\in B\;\exists a\in A/f(a)=b" display="block"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mi>b</mi></mrow><mo>∈</mo><mrow><mi>B</mi><mo lspace="0.447em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><mi>a</mi></mrow></mrow><mo>∈</mo><mrow><mrow><mi>A</mi><mo>/</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\displaystyle\forall b\in B\;\exists a\in A/f(a)=b</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Es decir, <math id="Thmdefinition4.p1.m5" class="ltx_Math" alttext="\displaystyle Im(f)=B" display="inline"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle Im(f)=B</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmdefinition5" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 3.5</span></span><span class="ltx_text ltx_font_bold"> </span>(Funcion biyectiva)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition5.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="Thmdefinition5.p1.m1" class="ltx_Math" alttext="\displaystyle f\colon A\to B" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>A</mi><mo stretchy="false">→</mo><mi>B</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\colon A\to B</annotation></semantics></math> una funcion. Decimos que <math id="Thmdefinition5.p1.m2" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es biyectiva si es inyectiva y suprayectiva a la vez. Por tanto,</p>
+<div id="Ex54" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex54.m1" class="ltx_Math" alttext="\displaystyle\forall b\in B\;\exists!a\in A/f(a)=b" display="block"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mi>b</mi></mrow><mo>∈</mo><mrow><mi>B</mi><mo lspace="0.447em">⁢</mo><mrow><mrow><mo rspace="0.167em">∃</mo><mo>!</mo></mrow><mo>⁡</mo><mi>a</mi></mrow></mrow><mo>∈</mo><mrow><mrow><mi>A</mi><mo>/</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\displaystyle\forall b\in B\;\exists!a\in A/f(a)=b</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmremarkx6" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx6.p1" class="ltx_para">
+<p class="ltx_p">Para que exista una funcion inyectiva entre dos conjuntos finitos es necesario que tengan el mismo cardinal.</p>
+</div>
+</div>
+<div id="Thmremarkx7" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx7.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">“Calcular el dominio de una funcion”.</p>
+</div>
+<div id="Thmremarkx7.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Estamos resolviendo “busca el conjunto mas grande de numeros reales que pueda ser dominio de una funcion con esta expresion”.</p>
+</div>
+<div id="Thmremarkx7.p3" class="ltx_para">
+<p class="ltx_p">Puedo definir una funcion</p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex55" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex55X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex55X.m2" class="ltx_Math" alttext="\displaystyle f\colon\mathbb{R}\setminus\{1,-1\}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo>∖</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mrow><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\colon\mathbb{R}\setminus\{1,-1\}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex55X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow\mathbb{R}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex55Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex55Xa.m2" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex55Xa.m3" class="ltx_Math" alttext="\displaystyle\longmapsto f(x)=\frac{x^{2}}{x^{2}-1}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto f(x)=\frac{x^{2}}{x^{2}-1}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">o tambien</p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex56" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex56X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex56X.m2" class="ltx_Math" alttext="\displaystyle g\colon(2,+\infty)" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle g\colon(2,+\infty)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex56X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow\mathbb{R}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex56Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex56Xa.m2" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex56Xa.m3" class="ltx_Math" alttext="\displaystyle\longmapsto g(x)=\frac{x^{2}}{x^{2}-1}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mstyle displaystyle="true"><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto g(x)=\frac{x^{2}}{x^{2}-1}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="Thmdefinition6" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 3.6</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition6.p1" class="ltx_para">
+<p class="ltx_p">Sean <math id="Thmdefinition6.p1.m1" class="ltx_Math" alttext="\displaystyle f\colon A\to B" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>A</mi><mo stretchy="false">→</mo><mi>B</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\colon A\to B</annotation></semantics></math> y <math id="Thmdefinition6.p1.m2" class="ltx_Math" alttext="\displaystyle g\colon B\to C" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>B</mi><mo stretchy="false">→</mo><mi>C</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle g\colon B\to C</annotation></semantics></math> dos funciones. Se define una nueva funcion, llamada la composicion de <math id="Thmdefinition6.p1.m3" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> con <math id="Thmdefinition6.p1.m4" class="ltx_Math" alttext="\displaystyle g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">\displaystyle g</annotation></semantics></math> como una nueva funcion:</p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex57" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex57X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex57X.m2" class="ltx_Math" alttext="\displaystyle g\circ f\colon A" display="inline"><semantics><mrow><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle g\circ f\colon A</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex57X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow C" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow C</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex57Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex57Xa.m2" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex57Xa.m3" class="ltx_Math" alttext="\displaystyle\longmapsto y=(g\circ f)(x)\coloneqq g(f(x))" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mi>y</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≔</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto y=(g\circ f)(x)\coloneqq g(f(x))</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="Thmexamplex16" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex16.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="Thmexamplex16.p1.m1" class="ltx_Math" alttext="\displaystyle A=\{1,2,3\}" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>1,2,3</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A=\{1,2,3\}</annotation></semantics></math></p>
+</div>
+<div id="Thmexamplex16.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="Thmexamplex16.p2.m1" class="ltx_Math" alttext="\displaystyle B=\{a,b,c,d\}" display="inline"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle B=\{a,b,c,d\}</annotation></semantics></math></p>
+</div>
+<div id="Thmexamplex16.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="Thmexamplex16.p3.m1" class="ltx_Math" alttext="\displaystyle C=\{2,4,6,8\}" display="inline"><semantics><mrow><mi>C</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>2,4,6,8</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle C=\{2,4,6,8\}</annotation></semantics></math></p>
+</div>
+<div id="Thmexamplex16.p4" class="ltx_para ltx_noindent">
+<div id="Ex58" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex58.m1" class="ltx_Math" alttext="\displaystyle\begin{array}[]{lr}\begin{aligned} f\colon A&amp;\longrightarrow B\\
+1&amp;\longmapsto f(1)=a\\
+2&amp;\longmapsto f(2)=a\\
+3&amp;\longmapsto f(3)=d\end{aligned}&amp;\qquad\begin{aligned} g\colon B&amp;%
+\longrightarrow C\\
+a&amp;\longmapsto f(a)=2\\
+b&amp;\longmapsto f(b)=2\\
+c&amp;\longmapsto f(c)=6\\
+d&amp;\longmapsto f(d)=8\end{aligned}\end{array}" display="block"><semantics><mtable columnspacing="5pt" displaystyle="true"><mtr><mtd class="ltx_align_left" columnalign="left"><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>A</mi></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>B</mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mn>1</mn></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>a</mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mn>2</mn></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>a</mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mn>3</mn></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>d</mi></mrow></mtd></mtr></mtable></mtd><mtd class="ltx_align_right" columnalign="right"><mtable columnspacing="0pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>B</mi></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>C</mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mi>a</mi></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>2</mn></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mi>b</mi></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>2</mn></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mi>c</mi></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>6</mn></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mi>d</mi></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>d</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>8</mn></mrow></mtd></mtr></mtable></mtd></mtr></mtable><annotation encoding="application/x-tex">\displaystyle\begin{array}[]{lr}\begin{aligned} f\colon A&amp;\longrightarrow B\\
+1&amp;\longmapsto f(1)=a\\
+2&amp;\longmapsto f(2)=a\\
+3&amp;\longmapsto f(3)=d\end{aligned}&amp;\qquad\begin{aligned} g\colon B&amp;%
+\longrightarrow C\\
+a&amp;\longmapsto f(a)=2\\
+b&amp;\longmapsto f(b)=2\\
+c&amp;\longmapsto f(c)=6\\
+d&amp;\longmapsto f(d)=8\end{aligned}\end{array}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Entonces</p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex59" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex59X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex59X.m2" class="ltx_Math" alttext="\displaystyle g\circ f\colon A" display="inline"><semantics><mrow><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle g\circ f\colon A</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex59X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow C" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow C</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex59Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex59Xa.m2" class="ltx_Math" alttext="\displaystyle 1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">\displaystyle 1</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex59Xa.m3" class="ltx_Math" alttext="\displaystyle\longmapsto 2" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto 2</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex59Xb"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex59Xb.m2" class="ltx_Math" alttext="\displaystyle 2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">\displaystyle 2</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex59Xb.m3" class="ltx_Math" alttext="\displaystyle\longmapsto 2" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto 2</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex59Xc"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex59Xc.m2" class="ltx_Math" alttext="\displaystyle 3" display="inline"><semantics><mn>3</mn><annotation encoding="application/x-tex">\displaystyle 3</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex59Xc.m3" class="ltx_Math" alttext="\displaystyle\longmapsto 8" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto 8</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">La composicion <math id="Thmexamplex16.p4.m1" class="ltx_Math" alttext="\displaystyle f\circ g" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">\displaystyle f\circ g</annotation></semantics></math> no tiene sentido (contraejemplo: <math id="Thmexamplex16.p4.m2" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> no esta definido en 8).</p>
+</div>
+</div>
+<div id="Thmexamplex17" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex17.p1" class="ltx_para ltx_noindent">
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex60" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex60X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex60X.m2" class="ltx_Math" alttext="\displaystyle f\colon\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle f\colon\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex60X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow\mathbb{R}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex60Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex60Xa.m2" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex60Xa.m3" class="ltx_Math" alttext="\displaystyle\longmapsto f(x)=2x+1" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto f(x)=2x+1</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex61" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex61X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex61X.m2" class="ltx_Math" alttext="\displaystyle g\colon\mathbb{R}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle g\colon\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex61X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow\mathbb{R}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex61Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex61Xa.m2" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex61Xa.m3" class="ltx_Math" alttext="\displaystyle\longmapsto g(x)=x^{2}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto g(x)=x^{2}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Por ejemplo: <math id="Thmexamplex17.p1.m1" class="ltx_Math" alttext="\displaystyle(g\circ f)(4)=g(f(4))=g(9)=81" display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>81</mn></mrow><annotation encoding="application/x-tex">\displaystyle(g\circ f)(4)=g(f(4))=g(9)=81</annotation></semantics></math></p>
+</div>
+<div id="Thmexamplex17.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">La expresion general de <math id="Thmexamplex17.p2.m1" class="ltx_Math" alttext="\displaystyle g\circ f" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">\displaystyle g\circ f</annotation></semantics></math> es: <math id="Thmexamplex17.p2.m2" class="ltx_Math" alttext="\displaystyle(g\circ f)(x)=g(f(x))=g(2x+1)=(2x+1)^{2}=4x^{2}+4x+1" display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle(g\circ f)(x)=g(f(x))=g(2x+1)=(2x+1)^{2}=4x^{2}+4x+1</annotation></semantics></math>.</p>
+</div>
+<div id="Thmexamplex17.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">En este caso si tiene sentido <math id="Thmexamplex17.p3.m1" class="ltx_Math" alttext="\displaystyle f\circ g" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">\displaystyle f\circ g</annotation></semantics></math>:</p>
+<div id="Ex62" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex62.m1" class="ltx_Math" alttext="\displaystyle(f\circ g)(x)=f(g(x))=f(x^{2})=2x^{2}+1" display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle(f\circ g)(x)=f(g(x))=f(x^{2})=2x^{2}+1</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Vamos a justificar que <math id="Thmexamplex17.p3.m2" class="ltx_Math" alttext="\displaystyle f\circ g\neq g\circ f" display="inline"><semantics><mrow><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi></mrow><mo>≠</mo><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\circ g\neq g\circ f</annotation></semantics></math>. Hemos visto que <math id="Thmexamplex17.p3.m3" class="ltx_Math" alttext="\displaystyle(g\circ f)(4)=81" display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>81</mn></mrow><annotation encoding="application/x-tex">\displaystyle(g\circ f)(4)=81</annotation></semantics></math>.</p>
+</div>
+<div id="Thmexamplex17.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="Thmexamplex17.p4.m1" class="ltx_Math" alttext="\displaystyle(f\circ g)(4)=2\cdot 4^{2}+1=33" display="inline"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mn>2</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mn>4</mn><mn>2</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mn>33</mn></mrow><annotation encoding="application/x-tex">\displaystyle(f\circ g)(4)=2\cdot 4^{2}+1=33</annotation></semantics></math>.</p>
+</div>
+<div id="Thmexamplex17.p5" class="ltx_para">
+<p class="ltx_p">Luego son funciones distintas.</p>
+</div>
+</div>
+<div id="Thmremarkx8" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx8.p1" class="ltx_para">
+<p class="ltx_p">Para definir la composicion <math id="Thmremarkx8.p1.m1" class="ltx_Math" alttext="\displaystyle g\circ f" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">\displaystyle g\circ f</annotation></semantics></math> para dos funciones cualesquiera es suficiente que <math id="Thmremarkx8.p1.m2" class="ltx_Math" alttext="\displaystyle im(f)\subseteq dom(g)" display="inline"><semantics><mrow><mrow><mi>i</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊆</mo><mrow><mi>d</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle im(f)\subseteq dom(g)</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmdefinition7" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 3.7</span></span><span class="ltx_text ltx_font_bold"> </span>(Funcion identidad)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition7.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Sea <math id="Thmdefinition7.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> un conjunto. Se define la funcion identidad en <math id="Thmdefinition7.p1.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> como</p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex63" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex63X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex63X.m2" class="ltx_Math" alttext="\displaystyle id_{A}\colon A" display="inline"><semantics><mrow><mrow><mi>i</mi><mo>⁢</mo><msub><mi>d</mi><mi>A</mi></msub></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle id_{A}\colon A</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex63X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow A" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow A</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex63Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex63Xa.m2" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex63Xa.m3" class="ltx_Math" alttext="\displaystyle\longmapsto id_{A}(x)=x" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>i</mi><mo>⁢</mo><msub><mi>d</mi><mi>A</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto id_{A}(x)=x</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="Thmdefinition8" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 3.8</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition8.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="Thmdefinition8.p1.m1" class="ltx_Math" alttext="\displaystyle f\colon A\to B" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>A</mi><mo stretchy="false">→</mo><mi>B</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\colon A\to B</annotation></semantics></math> una funcion. Se dice que <math id="Thmdefinition8.p1.m2" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> tiene inversa si exista otra funcion <math id="Thmdefinition8.p1.m3" class="ltx_Math" alttext="\displaystyle g\colon B\to A" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>B</mi><mo stretchy="false">→</mo><mi>A</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle g\colon B\to A</annotation></semantics></math> que cumple:</p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\forall a\in A\;((g\circ f)(a)=a)" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mi>a</mi></mrow><mo>∈</mo><mrow><mi>A</mi><mo lspace="0.280em">⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall a\in A\;((g\circ f)(a)=a)</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\forall b\in B\;((f\circ g)(b)=b)" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mi>b</mi></mrow><mo>∈</mo><mrow><mi>B</mi><mo lspace="0.280em">⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall b\in B\;((f\circ g)(b)=b)</annotation></semantics></math></p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">En ese caso se dice que <math id="Thmdefinition8.p1.m4" class="ltx_Math" alttext="\displaystyle g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">\displaystyle g</annotation></semantics></math> es la funcion inversa de <math id="Thmdefinition8.p1.m5" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> (<math id="Thmdefinition8.p1.m6" class="ltx_Math" alttext="\displaystyle g=f^{-1}" display="inline"><semantics><mrow><mi>g</mi><mo>=</mo><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\displaystyle g=f^{-1}</annotation></semantics></math>).</p>
+</div>
+</div>
+<div id="Thmremarkx9" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx9.p1" class="ltx_para">
+<p class="ltx_p">Las dos condiciones anteriores se pueden reformular como</p>
+<ul id="I3" class="ltx_itemize">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i1.p1.m1" class="ltx_Math" alttext="\displaystyle g\circ f=id_{A}" display="inline"><semantics><mrow><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow><mo>=</mo><mrow><mi>i</mi><mo>⁢</mo><msub><mi>d</mi><mi>A</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle g\circ f=id_{A}</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I3.i2.p1.m1" class="ltx_Math" alttext="\displaystyle f\circ g=id_{B}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi></mrow><mo>=</mo><mrow><mi>i</mi><mo>⁢</mo><msub><mi>d</mi><mi>B</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\circ g=id_{B}</annotation></semantics></math></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Thmremarkx10" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx10.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">No todas las funciones tienen inversa.</p>
+</div>
+<div id="Thmremarkx10.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Ejemplo: Sea <math id="Thmremarkx10.p2.m1" class="ltx_Math" alttext="\displaystyle f\colon\mathbb{R}\to\mathbb{R},\;x\mapsto x^{2}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow><mo rspace="0.447em">,</mo><mrow><mi>x</mi><mo stretchy="false">↦</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\colon\mathbb{R}\to\mathbb{R},\;x\mapsto x^{2}</annotation></semantics></math>.</p>
+</div>
+<div id="Thmremarkx10.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">No existe ningun <math id="Thmremarkx10.p3.m1" class="ltx_Math" alttext="\displaystyle a\in\mathbb{R}" display="inline"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle a\in\mathbb{R}</annotation></semantics></math> tal que <math id="Thmremarkx10.p3.m2" class="ltx_Math" alttext="\displaystyle a^{2}=-3" display="inline"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><mrow><mo>−</mo><mn>3</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle a^{2}=-3</annotation></semantics></math>. Eso me impide que haya inversa.</p>
+</div>
+<div id="Thmremarkx10.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">Ahora, definimos <math id="Thmremarkx10.p4.m1" class="ltx_Math" alttext="\displaystyle g\colon\mathbb{R}\to[0,+\infty],\;x\mapsto x^{2}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo rspace="0.447em">,</mo><mrow><mi>x</mi><mo stretchy="false">↦</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle g\colon\mathbb{R}\to[0,+\infty],\;x\mapsto x^{2}</annotation></semantics></math>.</p>
+</div>
+<div id="Thmremarkx10.p5" class="ltx_para">
+<p class="ltx_p">En este caso, tampoco tiene inversa porque no puedo definir una funcion que vaya bien para 4 (<math id="Thmremarkx10.p5.m1" class="ltx_Math" alttext="\displaystyle f(2)=4" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\displaystyle f(2)=4</annotation></semantics></math> y <math id="Thmremarkx10.p5.m2" class="ltx_Math" alttext="\displaystyle f(-2)=4" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\displaystyle f(-2)=4</annotation></semantics></math>) o cualquier otro numero.</p>
+</div>
+</div>
+<div id="Thmtheorem1" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 3.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sea <math id="Thmtheorem1.p1.m1" class="ltx_Math" alttext="\displaystyle f\colon A\to B" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" mathvariant="normal" rspace="0.278em">:</mo><mrow><mi>A</mi><mo mathvariant="normal" stretchy="false">→</mo><mi>B</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\colon A\to B</annotation></semantics></math> una funcion. Se cumple</span></p>
+<div id="Ex64" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex64.m1" class="ltx_Math" alttext="\displaystyle f\text{ tiene inversa}\Leftrightarrow f\text{ es biyectiva}" display="block"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mtext mathvariant="italic"> tiene inversa</mtext></mrow><mo stretchy="false">⇔</mo><mrow><mi>f</mi><mo>⁢</mo><mtext mathvariant="italic"> es biyectiva</mtext></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\text{ tiene inversa}\Leftrightarrow f\text{ es biyectiva}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="p2.m1" class="ltx_math_unparsed" alttext="\displaystyle\Rightarrow)" display="inline"><semantics><mrow><mo rspace="0em" stretchy="false">⇒</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow)</annotation></semantics></math> Vamos a demostrar que si <math id="p2.m2" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> tiene inversa, entonces <math id="p2.m3" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es biyectiva.</p>
+</div>
+<div id="p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Al ser inversa, <math id="p3.m1" class="ltx_Math" alttext="\displaystyle\exists" display="inline"><semantics><mo>∃</mo><annotation encoding="application/x-tex">\displaystyle\exists</annotation></semantics></math> una funcion <math id="p3.m2" class="ltx_Math" alttext="\displaystyle g\colon B\to A" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>B</mi><mo stretchy="false">→</mo><mi>A</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle g\colon B\to A</annotation></semantics></math> tal que <math id="p3.m3" class="ltx_Math" alttext="\displaystyle f\circ g=id_{A}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>g</mi></mrow><mo>=</mo><mrow><mi>i</mi><mo>⁢</mo><msub><mi>d</mi><mi>A</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\circ g=id_{A}</annotation></semantics></math> y <math id="p3.m4" class="ltx_Math" alttext="\displaystyle g\circ f=id_{B}" display="inline"><semantics><mrow><mrow><mi>g</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>f</mi></mrow><mo>=</mo><mrow><mi>i</mi><mo>⁢</mo><msub><mi>d</mi><mi>B</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle g\circ f=id_{B}</annotation></semantics></math>.</p>
+<ol id="I4" class="ltx_enumerate">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I4.i1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Vamos a ver que <math id="I4.i1.p1.m1" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es inyectiva. Sean <math id="I4.i1.p1.m2" class="ltx_Math" alttext="\displaystyle x,y\in A" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle x,y\in A</annotation></semantics></math> tales que <math id="I4.i1.p1.m3" class="ltx_Math" alttext="\displaystyle f(x)=f(y)" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f(x)=f(y)</annotation></semantics></math>.</p>
+</div>
+<div id="I4.i1.p2" class="ltx_para">
+<p class="ltx_p">Aplico la funcion <math id="I4.i1.p2.m1" class="ltx_Math" alttext="\displaystyle g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">\displaystyle g</annotation></semantics></math> a ambos lados.</p>
+<div id="Ex65" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex65.m1" class="ltx_Math" alttext="\displaystyle\underbrace{g(f(x))}_{=x(id_{A})}=\underbrace{g(f(y))}_{=y(id_{B})}" display="block"><semantics><mrow><munder><munder accentunder="true"><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⏟</mo></munder><mrow><mi></mi><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>i</mi><mo>⁢</mo><msub><mi>d</mi><mi>A</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></munder><mo>=</mo><munder><munder accentunder="true"><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⏟</mo></munder><mrow><mi></mi><mo>=</mo><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>i</mi><mo>⁢</mo><msub><mi>d</mi><mi>B</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></munder></mrow><annotation encoding="application/x-tex">\displaystyle\underbrace{g(f(x))}_{=x(id_{A})}=\underbrace{g(f(y))}_{=y(id_{B})}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Por tanto, <math id="I4.i1.p2.m2" class="ltx_Math" alttext="\displaystyle x=y" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\displaystyle x=y</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I4.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Vamos a ver que <math id="I4.i2.p1.m1" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es suprayectiva. Sea <math id="I4.i2.p1.m2" class="ltx_Math" alttext="\displaystyle b\in B" display="inline"><semantics><mrow><mi>b</mi><mo>∈</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle b\in B</annotation></semantics></math> cualquiera. Tenemos que encontrar una preimagen de <math id="I4.i2.p1.m3" class="ltx_Math" alttext="\displaystyle b" display="inline"><semantics><mi>b</mi><annotation encoding="application/x-tex">\displaystyle b</annotation></semantics></math>, es decir, un <math id="I4.i2.p1.m4" class="ltx_Math" alttext="\displaystyle x\in A" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle x\in A</annotation></semantics></math> tal que <math id="I4.i2.p1.m5" class="ltx_Math" alttext="\displaystyle f(x)=b" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\displaystyle f(x)=b</annotation></semantics></math>.</p>
+</div>
+<div id="I4.i2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Tomo <math id="I4.i2.p2.m1" class="ltx_Math" alttext="\displaystyle x=g(b)" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle x=g(b)</annotation></semantics></math> ya que <math id="I4.i2.p2.m2" class="ltx_Math" alttext="\displaystyle f(x)=f(g(b))=b" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">\displaystyle f(x)=f(g(b))=b</annotation></semantics></math>.</p>
+</div>
+<div id="I4.i2.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Por tanto, <math id="I4.i2.p3.m1" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es biyectiva.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="p4" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="p4.m1" class="ltx_math_unparsed" alttext="\displaystyle\Leftarrow)" display="inline"><semantics><mrow><mo rspace="0em" stretchy="false">⇐</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle\Leftarrow)</annotation></semantics></math> Vamos a demostrar que si <math id="p4.m2" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es biyectiva, entonces tiene inversa.</p>
+</div>
+<div id="p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">Vamos a formalizar la idea de “darle la vuelta a las flechas”.</p>
+</div>
+<div id="p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">Como se escribe <math id="p6.m1" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> si la veo como una relacion? <math id="p6.m2" class="ltx_Math" alttext="\displaystyle f=\{(a,b)\mid a\in A,b=f(a)\}" display="inline"><semantics><mrow><mi>f</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow><mo>,</mo><mrow><mi>b</mi><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f=\{(a,b)\mid a\in A,b=f(a)\}</annotation></semantics></math>.</p>
+</div>
+<div id="p7" class="ltx_para ltx_noindent">
+<p class="ltx_p">Voy a construir la relacion <math id="p7.m1" class="ltx_Math" alttext="\displaystyle g\coloneqq\{(b,a)\mid a\in A,b=f(a)\}" display="inline"><semantics><mrow><mi>g</mi><mo>≔</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow><mo>,</mo><mrow><mi>b</mi><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle g\coloneqq\{(b,a)\mid a\in A,b=f(a)\}</annotation></semantics></math>.</p>
+</div>
+<div id="p8" class="ltx_para ltx_noindent">
+<p class="ltx_p">Basta con comprobar que <math id="p8.m1" class="ltx_Math" alttext="\displaystyle g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">\displaystyle g</annotation></semantics></math> es una funcion.</p>
+</div>
+<div id="p9" class="ltx_para ltx_noindent">
+<p class="ltx_p">Como <math id="p9.m1" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es suprayectiva, tenemos que <math id="p9.m2" class="ltx_Math" alttext="\displaystyle dom(g)=B" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle dom(g)=B</annotation></semantics></math>, es decir, todos los elementos de <math id="p9.m3" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> tienen imagen.</p>
+</div>
+<div id="p10" class="ltx_para ltx_noindent">
+<p class="ltx_p">Como <math id="p10.m1" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> es inyectiva, no hay ningun elemento de <math id="p10.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> que tenga dos imagenes distintas por <math id="p10.m3" class="ltx_Math" alttext="\displaystyle g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">\displaystyle g</annotation></semantics></math>.</p>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">Por construccion, <math id="p11.m1" class="ltx_Math" alttext="\displaystyle g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">\displaystyle g</annotation></semantics></math> que hemos visto que es una funcion, cumple la definicion de ser inversa de <math id="p11.m2" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math>. Por tanto, <math id="p11.m3" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> tiene inversa.
+∎</p>
+</div>
+</div>
+<div id="Thmremarkx11" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx11.p1" class="ltx_para ltx_noindent">
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex66" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex66X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex66X.m2" class="ltx_Math" alttext="\displaystyle f\colon\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle f\colon\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex66X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow\mathbb{R}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex66Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex66Xa.m2" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex66Xa.m3" class="ltx_Math" alttext="\displaystyle\longmapsto f(x)=e^{x}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto f(x)=e^{x}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Como funcion de <math id="Thmremarkx11.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\displaystyle\mathbb{R}</annotation></semantics></math> en <math id="Thmremarkx11.p1.m2" class="ltx_Math" alttext="\displaystyle\mathbb{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\displaystyle\mathbb{R}</annotation></semantics></math>, <math id="Thmremarkx11.p1.m3" class="ltx_Math" alttext="\displaystyle e^{x}" display="inline"><semantics><msup><mi>e</mi><mi>x</mi></msup><annotation encoding="application/x-tex">\displaystyle e^{x}</annotation></semantics></math> no tiene inversa, ya que no es suprayectiva.</p>
+</div>
+<div id="Thmremarkx11.p2" class="ltx_para">
+<p class="ltx_p">En cambio, si consideramos</p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex67" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex67X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex67X.m2" class="ltx_Math" alttext="\displaystyle f\colon\mathbb{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle f\colon\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex67X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow(0,+\infty)" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow(0,+\infty)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex67Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex67Xa.m2" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex67Xa.m3" class="ltx_Math" alttext="\displaystyle\longmapsto f(x)=e^{x}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>e</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto f(x)=e^{x}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Esta funcion si es biyectiva porque el codominio coincide con la imagen. En este caso su inversa es</p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex68" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex68X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex68X.m2" class="ltx_Math" alttext="\displaystyle g\colon(0,+\infty)" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle g\colon(0,+\infty)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex68X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow\mathbb{R}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow\mathbb{R}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex68Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex68Xa.m2" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex68Xa.m3" class="ltx_Math" alttext="\displaystyle\longmapsto g(x)=\ln(x)" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>ln</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto g(x)=\ln(x)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">Asi definidas se cumple <math id="Thmremarkx11.p2.m1" class="ltx_Math" alttext="\displaystyle f^{-1}=g" display="inline"><semantics><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">\displaystyle f^{-1}=g</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmremarkx12" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx12.p1" class="ltx_para">
+<p class="ltx_p">Si <math id="Thmremarkx12.p1.m1" class="ltx_Math" alttext="\displaystyle f^{-1}=g" display="inline"><semantics><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">\displaystyle f^{-1}=g</annotation></semantics></math>, tambien es cierto que <math id="Thmremarkx12.p1.m2" class="ltx_Math" alttext="\displaystyle g^{-1}=f" display="inline"><semantics><mrow><msup><mi>g</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">\displaystyle g^{-1}=f</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmremarkx13" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx13.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">La notacion <math id="Thmremarkx13.p1.m1" class="ltx_Math" alttext="\displaystyle f^{-1}" display="inline"><semantics><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">\displaystyle f^{-1}</annotation></semantics></math> es ambigua. Puede referirse a la inversa de <math id="Thmremarkx13.p1.m2" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math>, en el caso de que esta exista, o la imagen inversa de un conjunto por la relacion <math id="Thmremarkx13.p1.m3" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math>.</p>
+</div>
+<div id="Thmremarkx13.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Ejemplo: Dada <math id="Thmremarkx13.p2.m1" class="ltx_Math" alttext="\displaystyle f\colon\mathbb{R}\to\mathbb{R},\;x\mapsto x^{3}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow><mo rspace="0.447em">,</mo><mrow><mi>x</mi><mo stretchy="false">↦</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\colon\mathbb{R}\to\mathbb{R},\;x\mapsto x^{3}</annotation></semantics></math> (biyectiva y tiene inversa).</p>
+</div>
+<div id="Thmremarkx13.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="Thmremarkx13.p3.m1" class="ltx_Math" alttext="\displaystyle f^{-1}(64)=4" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>64</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\displaystyle f^{-1}(64)=4</annotation></semantics></math>, <math id="Thmremarkx13.p3.m2" class="ltx_Math" alttext="\displaystyle f^{-1}(2)=\sqrt[3]{2}" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mroot><mn>2</mn><mn>3</mn></mroot></mrow><annotation encoding="application/x-tex">\displaystyle f^{-1}(2)=\sqrt[3]{2}</annotation></semantics></math>, <math id="Thmremarkx13.p3.m3" class="ltx_Math" alttext="\displaystyle f^{-1}([8,64])=[2,4]" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">[</mo><mn>8,64</mn><mo stretchy="false">]</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>2,4</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f^{-1}([8,64])=[2,4]</annotation></semantics></math>.</p>
+</div>
+<div id="Thmremarkx13.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">Otro ejemplo es <math id="Thmremarkx13.p4.m1" class="ltx_Math" alttext="\displaystyle f\colon\mathbb{R}\to\mathbb{R},\;x\mapsto x^{2}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow><mo rspace="0.447em">,</mo><mrow><mi>x</mi><mo stretchy="false">↦</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f\colon\mathbb{R}\to\mathbb{R},\;x\mapsto x^{2}</annotation></semantics></math>.</p>
+</div>
+<div id="Thmremarkx13.p5" class="ltx_para">
+<p class="ltx_p"><math id="Thmremarkx13.p5.m1" class="ltx_Math" alttext="\displaystyle f^{-1}(9)" display="inline"><semantics><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>9</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f^{-1}(9)</annotation></semantics></math> no tiene sentido porque <math id="Thmremarkx13.p5.m2" class="ltx_Math" alttext="\displaystyle f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">\displaystyle f</annotation></semantics></math> no es biyectiva y por tanto no tiene inversa. En cambio, <math id="Thmremarkx13.p5.m3" class="ltx_Math" alttext="\displaystyle f^{-1}(\{9\})=\{3,-3\}" display="inline"><semantics><mrow><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mn>9</mn><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>3</mn><mo>,</mo><mrow><mo>−</mo><mn>3</mn></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f^{-1}(\{9\})=\{3,-3\}</annotation></semantics></math> o <math id="Thmremarkx13.p5.m4" class="ltx_math_unparsed" alttext="\displaystyle f^{-1}([25,49])=[5,7]\cup(-7,5]" display="inline"><semantics><mrow><msup><mi>f</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">[</mo><mn>25,49</mn><mo stretchy="false">]</mo></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>5,7</mn><mo stretchy="false">]</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em">−</mo><mn>7,5</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f^{-1}([25,49])=[5,7]\cup(-7,5]</annotation></semantics></math></p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S2.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Pt2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

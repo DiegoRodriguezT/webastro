@@ -1,0 +1,46 @@
+---
+interface Props {
+	title: string;
+	body: string;
+	href: string;
+	img: string;
+	date?: Date;
+}
+
+const { href, title, body, img, date } = Astro.props;
+
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import FormattedDate from "./FormattedDate.astro";
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+	"/src/assets/*.{jpeg,jpg,png,gif}",
+);
+
+console.log(images);
+if (!images[img])
+	throw new Error(`"${img}" no existe en "src/assets/*.{jpeg,jpg,png,gif}"`);
+---
+
+<a href={href}>
+	<div
+		class="flex flex-col gap-y-5 p-4 rounded-xl mt-5 hover:scale-[.98] transition duration-300 bg-gradient-to-t from-gray-100/70 to-white border-2 shadow-lg group-hover:opacity-60 hover:!opacity-100"
+	>
+		<Image
+			src={images[img]()}
+			transition:name={img}
+			alt=""
+			width="600"
+			height="300"
+			class="rounded-xl"
+			loading="eager"
+		/>
+		<div class="mx-5">
+			<div class="flex flex-col md:flex-row">
+				<h3 class="text-xl font-bold">{title}</h3>
+				<!-- <FormattedDate date={date}/> -->
+			</div>
+			<p class="text-lg font-medium">{body}</p>
+		</div>
+	</div>
+</a>

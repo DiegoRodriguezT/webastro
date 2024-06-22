@@ -1,0 +1,388 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Matemática Discreta" course="1º Curso" prof="Ángel Pérez" prof2="Miguel Romance" data-pagefind-filter="asignatura[content], curso[course], profesor[prof], profesor[prof2]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>2 Técnicas de demostración ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta</title>
+<!--Generated on Fri Jun  7 11:08:28 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt1.html" title="Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="up up" href="index.html" title="Matemática Discreta">
+<link rel="start" href="index.html" title="Matemática Discreta">
+<link rel="prev" href="S1.html" title="1 Métodos de trabajo en la ciencia ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="next" href="S3.html" title="3 El principio de inducción matemática ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="section" href="S1.html" title="1 Métodos de trabajo en la ciencia ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="section" href="S3.html" title="3 El principio de inducción matemática ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="section" href="S4.html" title="4 Extensiones del metodo de induccion matematica ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="part" href="Pt1.html" title="Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="part" href="Pt2.html" title="Parte II Combinatoria ‣ Matemática Discreta">
+<link rel="part" href="Pt3.html" title="Parte III Aritmética entera y modular ‣ Matemática Discreta">
+<link rel="part" href="Pt4.html" title="Parte IV Teoria de grafos ‣ Matemática Discreta">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Matemática Discreta" class="ltx_ref" rel="start">Matemática Discreta</a>
+</li>
+<li class="divider">
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt1.html" title="Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>Fundamentos y el principio de inducción</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="1" data-path="S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S1.html" title="1 Métodos de trabajo en la ciencia ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Métodos de trabajo en la ciencia</a></li>
+<li data-level="2" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="2 Técnicas de demostración ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Técnicas de demostración</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="2.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="2.1 Demostracion directa ‣ 2 Técnicas de demostración ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.1 </span></b>Demostracion directa</a></li>
+<li data-level="2.2" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS2" title="2.2 Demostración por contraposición ‣ 2 Técnicas de demostración ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.2 </span></b>Demostración por contraposición</a></li>
+<li data-level="2.3" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS3" title="2.3 Demostracion por reduccion al absurdo ‣ 2 Técnicas de demostración ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.3 </span></b>Demostracion por reduccion al absurdo</a></li>
+<li data-level="2.4" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS4" title="2.4 Contraejemplos ‣ 2 Técnicas de demostración ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.4 </span></b>Contraejemplos</a></li>
+</ol>
+</li>
+<li data-level="3" data-path="S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S3.html" title="3 El principio de inducción matemática ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>El principio de inducción matemática</a></li>
+<li data-level="4" data-path="S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S4.html" title="4 Extensiones del metodo de induccion matematica ‣ Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Extensiones del metodo de induccion matematica</a></li>
+</ol>
+</li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt2.html" title="Parte II Combinatoria ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Combinatoria</a></li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt3.html" title="Parte III Aritmética entera y modular ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Aritmética entera y modular</a></li>
+<li data-level="IV" data-path="Pt4.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt4.html" title="Parte IV Teoria de grafos ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">IV </span></b>Teoria de grafos</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Técnicas de demostración</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">2</span> Técnicas de demostración</h1>
+
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">2.1</span> Demostracion directa</h2>
+
+<div id="SS1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">La <span class="ltx_text ltx_font_bold">demostración directa</span> consiste en probar la tesis directamente a partir de la hipótesis.</p>
+</div>
+<div id="Thmtheorem1" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 2.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Si <math id="Thmtheorem1.p1.m1" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> es un numero entero <math id="Thmtheorem1.p1.m2" class="ltx_Math" alttext="\displaystyle n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo mathvariant="normal">≥</mo><mn mathvariant="normal">1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n\geq 1</annotation></semantics></math>, entonces <math id="Thmtheorem1.p1.m3" class="ltx_Math" alttext="\displaystyle n^{2}+n" display="inline"><semantics><mrow><msup><mi>n</mi><mn mathvariant="normal">2</mn></msup><mo mathvariant="normal">+</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">\displaystyle n^{2}+n</annotation></semantics></math> es par.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="SS1.p2" class="ltx_para">
+<p class="ltx_p">Si <math id="SS1.p2.m1" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> es un numero entero <math id="SS1.p2.m2" class="ltx_Math" alttext="\displaystyle n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle n\geq 1</annotation></semantics></math>, hay dos casos:</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">Si <math id="I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> es par, se puede expresar como <math id="I1.i1.p1.m2" class="ltx_Math" alttext="\displaystyle n=2m" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle n=2m</annotation></semantics></math> con <math id="I1.i1.p1.m3" class="ltx_Math" alttext="\displaystyle m\in\mathbb{Z}" display="inline"><semantics><mrow><mi>m</mi><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle m\in\mathbb{Z}</annotation></semantics></math>. Así, tenemos:</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="\displaystyle n^{2}+n=(2m)^{2}+2m=4m^{2}+2m=\underbrace{2(2m^{2}+m)}_{\text{%
+numero par}}" display="block"><semantics><mrow><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mrow><mo>=</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>m</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow></mrow><mo>=</mo><munder><munder accentunder="true"><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>m</mi><mn>2</mn></msup></mrow><mo>+</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⏟</mo></munder><mtext>numero par</mtext></munder></mrow><annotation encoding="application/x-tex">\displaystyle n^{2}+n=(2m)^{2}+2m=4m^{2}+2m=\underbrace{2(2m^{2}+m)}_{\text{%
+numero par}}</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Si <math id="I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> es impar, se puede expresar como <math id="I1.i2.p1.m2" class="ltx_Math" alttext="\displaystyle n=2m+1" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle n=2m+1</annotation></semantics></math> con <math id="I1.i2.p1.m3" class="ltx_Math" alttext="\displaystyle m\in\mathbb{Z}" display="inline"><semantics><mrow><mi>m</mi><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle m\in\mathbb{Z}</annotation></semantics></math>. Así,</p>
+<div class="ltx_equation ltx_eqn_div">
+<span><math id="I1.i2.p1.m4" class="ltx_Math" alttext="n^{2}+n=(2m+1)^{2}+(2m+1)=4m^{2}+4m+1+2m+1=\\
+=4m^{2}+6m+2=\underbrace{2(2m^{2}+3m+1)}_{\text{numero par}}" display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mi>n</mi></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>m</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>1</mn><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mi></mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi></mi><mo>=</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>m</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>2</mn></mrow><mo>=</mo><munder><munder accentunder="true"><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>m</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>3</mn><mo>⁢</mo><mi>m</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⏟</mo></munder><mtext>numero par</mtext></munder></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">n^{2}+n=(2m+1)^{2}+(2m+1)=4m^{2}+4m+1+2m+1=\\
+=4m^{2}+6m+2=\underbrace{2(2m^{2}+3m+1)}_{\text{numero par}}</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+</ol>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">2.2</span> Demostración por contraposición</h2>
+
+<div id="SS2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Si queremos demostrar por contrarreciproco el teorema <math id="SS2.p1.m1" class="ltx_Math" alttext="\displaystyle A\Rightarrow B" display="inline"><semantics><mrow><mi>A</mi><mo stretchy="false">⇒</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\Rightarrow B</annotation></semantics></math> basta con demostrar el teorema <math id="SS2.p1.m2" class="ltx_Math" alttext="\displaystyle\neg B\Rightarrow\neg A" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>B</mi></mrow><mo stretchy="false">⇒</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>A</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\neg B\Rightarrow\neg A</annotation></semantics></math> generalmente usando la técnica de demostración directa. Es decir, probamos que lo contrario de la tesis implica lo contrario de la hipótesis.</p>
+</div>
+<div id="Thmtheorem2" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 2.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Si <math id="Thmtheorem2.p1.m1" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> es un numero entero de forma que <math id="Thmtheorem2.p1.m2" class="ltx_Math" alttext="\displaystyle n^{2}" display="inline"><semantics><msup><mi>n</mi><mn mathvariant="normal">2</mn></msup><annotation encoding="application/x-tex">\displaystyle n^{2}</annotation></semantics></math> es impar, entonces <math id="Thmtheorem2.p1.m3" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> es impar.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="SS2.p2" class="ltx_para">
+<p class="ltx_p">Lo demostraremos por contraposición.
+
+Supongamos que <math id="SS2.p2.m1" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> es un número par. Entonces <math id="SS2.p2.m2" class="ltx_Math" alttext="\displaystyle n=2c,\,c\in\mathbb{Z}" display="inline"><semantics><mrow><mrow><mi>n</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>c</mi></mrow></mrow><mo rspace="0.337em">,</mo><mrow><mi>c</mi><mo>∈</mo><mi>ℤ</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle n=2c,\,c\in\mathbb{Z}</annotation></semantics></math>. Sustituyendo,</p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="\displaystyle n^{2}=(2c)^{2}=4c^{2}=2(2c^{2})" display="block"><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle n^{2}=(2c)^{2}=4c^{2}=2(2c^{2})</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Luego <math id="SS2.p2.m3" class="ltx_Math" alttext="\displaystyle n^{2}" display="inline"><semantics><msup><mi>n</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\displaystyle n^{2}</annotation></semantics></math> también es un número par. Como <math id="SS2.p2.m4" class="ltx_Math" alttext="\displaystyle\neg B\Rightarrow\neg A" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>B</mi></mrow><mo stretchy="false">⇒</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>A</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\neg B\Rightarrow\neg A</annotation></semantics></math>, se cumple el teorema que queríamos demostrar.
+∎</p>
+</div>
+</div>
+</div>
+</section>
+<section id="SS3" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">2.3</span> Demostracion por reduccion al absurdo</h2>
+
+<div id="SS3.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Si queremos demostrar por reduccion al absurdo el teorema <math id="SS3.p1.m1" class="ltx_Math" alttext="\displaystyle A\Rightarrow B" display="inline"><semantics><mrow><mi>A</mi><mo stretchy="false">⇒</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\Rightarrow B</annotation></semantics></math> basta con que supongamos que se cumpla la hipotesis <math id="SS3.p1.m2" class="ltx_Math" alttext="\displaystyle(A)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(A)</annotation></semantics></math> y lo contrario de la tesis (no B). Si suponemos que se cumple a la vez <math id="SS3.p1.m3" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> y no <math id="SS3.p1.m4" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> haciendo deducciones llegamos a que algo es imposible.</p>
+</div>
+<div id="Thmtheorem3" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 2.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Si <math id="Thmtheorem3.p1.m1" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> es un numero entero de forma que <math id="Thmtheorem3.p1.m2" class="ltx_Math" alttext="\displaystyle n^{2}" display="inline"><semantics><msup><mi>n</mi><mn mathvariant="normal">2</mn></msup><annotation encoding="application/x-tex">\displaystyle n^{2}</annotation></semantics></math> es par, entonces <math id="Thmtheorem3.p1.m3" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> es par.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="SS3.p2" class="ltx_para">
+<p class="ltx_p">Lo demostraremos por reduccion al absurdo. Supongamos que se cumple que <math id="SS3.p2.m1" class="ltx_Math" alttext="\displaystyle n^{2}" display="inline"><semantics><msup><mi>n</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\displaystyle n^{2}</annotation></semantics></math> es par y <math id="SS3.p2.m2" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> es impar.
+
+Como <math id="SS3.p2.m3" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> es impar, entonces <math id="SS3.p2.m4" class="ltx_Math" alttext="\displaystyle n=2c+1,\;c\in\mathbb{Z}" display="inline"><semantics><mrow><mrow><mi>n</mi><mo>=</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>c</mi></mrow><mo>+</mo><mn>1</mn></mrow></mrow><mo rspace="0.447em">,</mo><mrow><mi>c</mi><mo>∈</mo><mi>ℤ</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle n=2c+1,\;c\in\mathbb{Z}</annotation></semantics></math> y llegamos a</p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="\displaystyle n^{2}=(2c+1)^{2}=4c^{2}+4c+1=\underbrace{2(2c^{2}+c)+1}_{\text{%
+numero impar}}" display="block"><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>c</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mrow><mrow><mn>4</mn><mo>⁢</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><mi>c</mi></mrow><mo>+</mo><mn>1</mn></mrow><mo>=</mo><munder><munder accentunder="true"><mrow><mrow><mn>2</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><mo>+</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo>⏟</mo></munder><mtext>numero impar</mtext></munder></mrow><annotation encoding="application/x-tex">\displaystyle n^{2}=(2c+1)^{2}=4c^{2}+4c+1=\underbrace{2(2c^{2}+c)+1}_{\text{%
+numero impar}}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Luego <math id="SS3.p2.m5" class="ltx_Math" alttext="\displaystyle n^{2}" display="inline"><semantics><msup><mi>n</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\displaystyle n^{2}</annotation></semantics></math> es impar, pero por hipótesis hemos supuesto que <math id="SS3.p2.m6" class="ltx_Math" alttext="\displaystyle n^{2}" display="inline"><semantics><msup><mi>n</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\displaystyle n^{2}</annotation></semantics></math> es par. Ningún número es impar y par a la vez, por lo que hemos llegado a una contradiccion.
+
+Así tenemos que, si se cumple que <math id="SS3.p2.m7" class="ltx_Math" alttext="\displaystyle n^{2}" display="inline"><semantics><msup><mi>n</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\displaystyle n^{2}</annotation></semantics></math> es par, entonces obligatoriamente se cumple que <math id="SS3.p2.m8" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> es par.
+∎</p>
+</div>
+</div>
+<div id="Thmtheorem4" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 2.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Existe una cantidad infinita de numeros primos.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="SS3.p3" class="ltx_para">
+<p class="ltx_p">En primer lugar, reescribimos el teorema: Si <math id="SS3.p3.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es el conjunto de todos los numeros primos, entonces su cardinal es infinito.
+
+Lo demostramos por reduccion al absurdo. Suponemos que <math id="SS3.p3.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es el conjunto de todos los numeros primos y que este conjunto es finito.
+
+Como <math id="SS3.p3.m3" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es finito el conjunto de todos los numeros primos es <math id="SS3.p3.m4" class="ltx_Math" alttext="\displaystyle A=\{p_{1},p_{2},\ldots,p_{n}\}" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><msub><mi>p</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>p</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A=\{p_{1},p_{2},\ldots,p_{n}\}</annotation></semantics></math>. Ahora tomamos</p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="\displaystyle x=1+p_{1}p_{2}\cdot\ldots\cdot p_{n}" display="block"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mrow><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>p</mi><mn>2</mn></msub></mrow><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi mathvariant="normal">…</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>p</mi><mi>n</mi></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle x=1+p_{1}p_{2}\cdot\ldots\cdot p_{n}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><math id="SS3.p3.m5" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math> es un numero entero (suma y producto de numeros enteros) y no puede ser un numero primo porque es mayor que todos los numeros que pertenecen a <math id="SS3.p3.m6" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> ya que si tomamos <math id="SS3.p3.m7" class="ltx_Math" alttext="\displaystyle p_{j}" display="inline"><semantics><msub><mi>p</mi><mi>j</mi></msub><annotation encoding="application/x-tex">\displaystyle p_{j}</annotation></semantics></math> en <math id="SS3.p3.m8" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math>:</p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="\displaystyle x=1+\underbrace{p_{1}p_{2}}_{\geq 1}\cdot\ldots\cdot p_{j}\cdot%
+\ldots\cdot\underbrace{p_{n}}_{\geq 1}\geq 1+p_{j}&gt;p_{j}" display="block"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mrow><munder><munder accentunder="true"><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>p</mi><mn>2</mn></msub></mrow><mo>⏟</mo></munder><mrow><mi></mi><mo>≥</mo><mn>1</mn></mrow></munder><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi mathvariant="normal">…</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>p</mi><mi>j</mi></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi mathvariant="normal">…</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><munder><munder accentunder="true"><msub><mi>p</mi><mi>n</mi></msub><mo>⏟</mo></munder><mrow><mi></mi><mo>≥</mo><mn>1</mn></mrow></munder></mrow></mrow><mo>≥</mo><mrow><mn>1</mn><mo>+</mo><msub><mi>p</mi><mi>j</mi></msub></mrow><mo>&gt;</mo><msub><mi>p</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle x=1+\underbrace{p_{1}p_{2}}_{\geq 1}\cdot\ldots\cdot p_{j}\cdot%
+\ldots\cdot\underbrace{p_{n}}_{\geq 1}\geq 1+p_{j}&gt;p_{j}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Ademas, <math id="SS3.p3.m9" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math> no es divisible por ninguno de los primos. Supongamos que <math id="SS3.p3.m10" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math> es divisible por <math id="SS3.p3.m11" class="ltx_Math" alttext="\displaystyle p_{1}" display="inline"><semantics><msub><mi>p</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\displaystyle p_{1}</annotation></semantics></math>. Entonces</p>
+<div id="Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex6.m1" class="ltx_Math" alttext="\displaystyle x=cp_{1}=1+p_{1}p_{2}\cdots p_{n}\Rightarrow 1=cp_{1}-p_{1}p_{2}%
+\cdots p_{n}=p_{1}(c-p_{2}\cdots p_{n})" display="block"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><msub><mi>p</mi><mn>1</mn></msub></mrow><mo>=</mo><mrow><mn>1</mn><mo>+</mo><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>p</mi><mn>2</mn></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mi>p</mi><mi>n</mi></msub></mrow></mrow><mo stretchy="false">⇒</mo><mn>1</mn><mo>=</mo><mrow><mrow><mi>c</mi><mo>⁢</mo><msub><mi>p</mi><mn>1</mn></msub></mrow><mo>−</mo><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>p</mi><mn>2</mn></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mi>p</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>c</mi><mo>−</mo><mrow><msub><mi>p</mi><mn>2</mn></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mi>p</mi><mi>n</mi></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle x=cp_{1}=1+p_{1}p_{2}\cdots p_{n}\Rightarrow 1=cp_{1}-p_{1}p_{2}%
+\cdots p_{n}=p_{1}(c-p_{2}\cdots p_{n})</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Por tanto, 1 es múltiplo de <math id="SS3.p3.m12" class="ltx_Math" alttext="\displaystyle p_{1}" display="inline"><semantics><msub><mi>p</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\displaystyle p_{1}</annotation></semantics></math>. Esto es imposible, pues el <math id="SS3.p3.m13" class="ltx_Math" alttext="\displaystyle 1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">\displaystyle 1</annotation></semantics></math> solo es múltiplo de si mismo. Esto se repite para el resto de los numeros del conjunto <math id="SS3.p3.m14" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math>.
+
+Es decir, <math id="SS3.p3.m15" class="ltx_Math" alttext="\displaystyle x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">\displaystyle x</annotation></semantics></math> es un numero entero que no es primo y tampoco es divisible por ningun numero primo. Como es imposible, llegamos a que el conjunto de los numeros primos no puede ser finito.
+∎</p>
+</div>
+</div>
+</div>
+</section>
+<section id="SS4" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">2.4</span> Contraejemplos</h2>
+
+<div id="SS4.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Los <span class="ltx_text ltx_font_bold">contraejemplos</span> no son un método de demostración, sino una técnica para demostrar que un teorema es falso.</p>
+</div>
+<div id="SS4.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Basta con encontrar un caso particular (contraejemplo) en el que se cumplen las hipotesis pero no la tesis para probar que el teorema es falso.</p>
+</div>
+<div id="Thmexamplex1" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex1.p1" class="ltx_para">
+<p class="ltx_p">Pierre de Fermat conjeturó en 1650 que todos los numeros de la forma <math id="Thmexamplex1.p1.m1" class="ltx_Math" alttext="\displaystyle F_{n}=2^{2^{n}}+1" display="inline"><semantics><mrow><msub><mi>F</mi><mi>n</mi></msub><mo>=</mo><mrow><msup><mn>2</mn><msup><mn>2</mn><mi>n</mi></msup></msup><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle F_{n}=2^{2^{n}}+1</annotation></semantics></math> son primos, cosa que es cierta si <math id="Thmexamplex1.p1.m2" class="ltx_Math" alttext="\displaystyle n=0,1,2,3" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0,1,2,3</mn></mrow><annotation encoding="application/x-tex">\displaystyle n=0,1,2,3</annotation></semantics></math> y <math id="Thmexamplex1.p1.m3" class="ltx_Math" alttext="\displaystyle 4" display="inline"><semantics><mn>4</mn><annotation encoding="application/x-tex">\displaystyle 4</annotation></semantics></math>, pero Leonard Euler demostró que si <math id="Thmexamplex1.p1.m4" class="ltx_Math" alttext="\displaystyle n=5" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\displaystyle n=5</annotation></semantics></math>, el numero resultante no es primo. Asi, se demostró que la conjetura anterior era falsa.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Lógica" course="1º Curso" prof="Ángel Pérez" data-pagefind-filter="asignatura[content], curso[course], profesor[prof]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>18 Correccion, completitud y decidibilidad ‣ Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica‣ Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica</title>
+<!--Generated on Fri Jun  7 11:07:44 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica">
+<link rel="up up" href="index.html" title="Lógica">
+<link rel="start" href="index.html" title="Lógica">
+<link rel="prev" href="S17.html" title="17 Reglas derivadas en el sistema de Gentzen ‣ Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica">
+<link rel="next" href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="section" href="S14.html" title="14 Sistemas formales de demostracion ‣ Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica">
+<link rel="section" href="S15.html" title="15 El sistema de Gentzen para la logica proposicional ‣ Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica">
+<link rel="section" href="S16.html" title="16 Teorema de la deduccion ‣ Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica">
+<link rel="section" href="S17.html" title="17 Reglas derivadas en el sistema de Gentzen ‣ Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica">
+<link rel="section" href="Sx1.html" title="Terminología matemática ‣ Lógica">
+<link rel="part" href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="part" href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica">
+<link rel="part" href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="part" href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica">
+<link rel="part" href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="part" href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica">
+<link rel="part" href="Pt7.html" title="Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Lógica" class="ltx_ref" rel="start">Lógica</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Sx1.html" title="Terminología matemática ‣ Lógica" class="ltx_ref">Terminología matemática</a></li>
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>Conjuntos, relaciones y funciones</a></li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Sintaxis de la lógica proposicional</a></li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Semantica de la logica proposicional</a></li>
+<li data-level="IV" data-path="Pt4.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">IV </span></b>Teoria de la demostracion para logica proposicional</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="14" data-path="S14.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S14.html" title="14 Sistemas formales de demostracion ‣ Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">14 </span></b>Sistemas formales de demostracion</a></li>
+<li data-level="15" data-path="S15.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S15.html" title="15 El sistema de Gentzen para la logica proposicional ‣ Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">15 </span></b>El sistema de Gentzen para la logica proposicional</a></li>
+<li data-level="16" data-path="S16.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S16.html" title="16 Teorema de la deduccion ‣ Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">16 </span></b>Teorema de la deduccion</a></li>
+<li data-level="17" data-path="S17.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S17.html" title="17 Reglas derivadas en el sistema de Gentzen ‣ Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">17 </span></b>Reglas derivadas en el sistema de Gentzen</a></li>
+<li data-level="18" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="18 Correccion, completitud y decidibilidad ‣ Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">18 </span></b>Correccion, completitud y decidibilidad</a></li>
+</ol>
+</li>
+<li data-level="V" data-path="Pt5.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">V </span></b>Sintaxis de la logica de predicados</a></li>
+<li data-level="VI" data-path="Pt6.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VI </span></b>Semantica de la logica de predicados</a></li>
+<li data-level="VII" data-path="Pt7.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt7.html" title="Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VII </span></b>Teoria de la demostracion en logica de predicados</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Correccion, completitud y decidibilidad</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">18</span> Correccion, completitud y decidibilidad</h1>
+
+<div id="Thmdefinition1" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 18.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition1.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Todo sistema de demostracino formal se puede ver como un modelo formal de cierto ambito (usualmente formado por objetos matematicos).</p>
+</div>
+<div id="Thmdefinition1.p2" class="ltx_para">
+<p class="ltx_p">Decimos que un sistema formal es</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">Correcto si todo teorema del sistema formal es una afirmacion verdadera en el ambito que se esta modelando.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p">Completo si toda afirmacion verdadera en el ambito que se esta modelando es un teorema del sistema formal.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Decidible si existe un procedimiento algoritmico finito para determinar si una formula es un teorema del sistema formal.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Thmexamplex48" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex48.p1" class="ltx_para">
+<p class="ltx_p">El sistema formal de Gentzen es un modelo formal de la logica proposicional, vista en el Tema 3 (sin incluir los simbolos <math id="Thmexamplex48.p1.m1" class="ltx_Math" alttext="\displaystyle\top" display="inline"><semantics><mo>⊤</mo><annotation encoding="application/x-tex">\displaystyle\top</annotation></semantics></math> y <math id="Thmexamplex48.p1.m2" class="ltx_Math" alttext="\displaystyle\perp" display="inline"><semantics><mo>⟂</mo><annotation encoding="application/x-tex">\displaystyle\perp</annotation></semantics></math>).</p>
+</div>
+</div>
+<div id="Thmtheorem1" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 18.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">El sistema de Gentzen es correcto: todo teorema del sistema de Gentzen es una tautologia de la logica proposicional.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p1" class="ltx_para">
+<p class="ltx_p">No la hacemos con detalle. Es facil: se debe, basicamente, a que todas las 8 reglas de inferencia son razonamientos validos en logica proposicional.
+∎</p>
+</div>
+</div>
+<div id="Thmtheorem2" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 18.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">El sistema de Gentzen es completo: toda tautologia de la logica proposicional es un teorema del sistema de Gentzen.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">No la hacemos.
+∎</p>
+</div>
+</div>
+<div id="Thmtheorem3" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 18.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">El sistema de Gentzen es decidible.</span></p>
+</div>
+</div>
+<div id="Thmexamplex49" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex49.p1" class="ltx_para">
+<p class="ltx_p">El sistema formado por la sintaxis de la logica proposicional, sin axiomas y con las reglas de inferencia:</p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_math_unparsed" alttext="\displaystyle I\neg,E\neg,I\wedge,E\wedge,I\vee,I\to,E\to" display="inline"><semantics><mrow><mi>I</mi><mi mathvariant="normal">¬</mi><mo>,</mo><mi>E</mi><mi mathvariant="normal">¬</mi><mo>,</mo><mi>I</mi><mo rspace="0em">∧</mo><mo>,</mo><mi>E</mi><mo rspace="0em">∧</mo><mo>,</mo><mi>I</mi><mo rspace="0em">∨</mo><mo>,</mo><mi>I</mi><mo rspace="0em" stretchy="false">→</mo><mo>,</mo><mi>E</mi><mo stretchy="false">→</mo></mrow><annotation encoding="application/x-tex">\displaystyle I\neg,E\neg,I\wedge,E\wedge,I\vee,I\to,E\to</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="\displaystyle E\vee^{\prime}:\{A\vee B\}\vdash A,\{A\vee B\}\vdash B" display="inline"><semantics><mrow><mrow><mi>E</mi><msup><mo rspace="0em">∨</mo><mo>′</mo></msup></mrow><mo rspace="0.278em">:</mo><mrow><mo stretchy="false">{</mo><mrow><mi>A</mi><mo>∨</mo><mi>B</mi></mrow><mo stretchy="false">}</mo></mrow><mo>⊢</mo><mrow><mi>A</mi><mo>,</mo><mrow><mo stretchy="false">{</mo><mrow><mi>A</mi><mo>∨</mo><mi>B</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>⊢</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle E\vee^{\prime}:\{A\vee B\}\vdash A,\{A\vee B\}\vdash B</annotation></semantics></math></p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">no es correcto.</p>
+</div>
+</div>
+<div id="Thmexamplex50" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex50.p1" class="ltx_para">
+<p class="ltx_p">El sistema formado por la sintaxis de la logica proposicional, sin axiomas y con las reglas de inferencia:</p>
+<ul id="I3" class="ltx_itemize">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I3.i1.p1.m1" class="ltx_math_unparsed" alttext="\displaystyle I\neg,E\neg,I\wedge,E\wedge,I\vee,I\to,E\to" display="inline"><semantics><mrow><mi>I</mi><mi mathvariant="normal">¬</mi><mo>,</mo><mi>E</mi><mi mathvariant="normal">¬</mi><mo>,</mo><mi>I</mi><mo rspace="0em">∧</mo><mo>,</mo><mi>E</mi><mo rspace="0em">∧</mo><mo>,</mo><mi>I</mi><mo rspace="0em">∨</mo><mo>,</mo><mi>I</mi><mo rspace="0em" stretchy="false">→</mo><mo>,</mo><mi>E</mi><mo stretchy="false">→</mo></mrow><annotation encoding="application/x-tex">\displaystyle I\neg,E\neg,I\wedge,E\wedge,I\vee,I\to,E\to</annotation></semantics></math></p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">no es completo.</p>
+</div>
+</div>
+<div id="Thmexamplex51" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex51.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Asumamos que ya sabemos que el sistema de Gentzen es correcto y completo. Demostrar que el siguiente sistema es completo:</p>
+</div>
+<div id="Thmexamplex51.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">El sistema formado por la sintaxis de la logica proposicional, sin axiomas y con las reglas de inferencia:</p>
+<ul id="I4" class="ltx_itemize">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I4.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i1.p1.m1" class="ltx_math_unparsed" alttext="\displaystyle I\neg,E\neg,I\wedge,E\wedge,I\vee,I\to,E\to" display="inline"><semantics><mrow><mi>I</mi><mi mathvariant="normal">¬</mi><mo>,</mo><mi>E</mi><mi mathvariant="normal">¬</mi><mo>,</mo><mi>I</mi><mo rspace="0em">∧</mo><mo>,</mo><mi>E</mi><mo rspace="0em">∧</mo><mo>,</mo><mi>I</mi><mo rspace="0em">∨</mo><mo>,</mo><mi>I</mi><mo rspace="0em" stretchy="false">→</mo><mo>,</mo><mi>E</mi><mo stretchy="false">→</mo></mrow><annotation encoding="application/x-tex">\displaystyle I\neg,E\neg,I\wedge,E\wedge,I\vee,I\to,E\to</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I4.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I4.i2.p1.m1" class="ltx_Math" alttext="\displaystyle TP:\{A\vee B,\neg B\}\vdash A,\{A\vee B,\neg A\}\vdash B" display="inline"><semantics><mrow><mrow><mi>T</mi><mo>⁢</mo><mi>P</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mo stretchy="false">{</mo><mrow><mi>A</mi><mo>∨</mo><mi>B</mi></mrow><mo>,</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>B</mi></mrow><mo stretchy="false">}</mo></mrow><mo>⊢</mo><mrow><mi>A</mi><mo>,</mo><mrow><mo stretchy="false">{</mo><mrow><mi>A</mi><mo>∨</mo><mi>B</mi></mrow><mo>,</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>A</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>⊢</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle TP:\{A\vee B,\neg B\}\vdash A,\{A\vee B,\neg A\}\vdash B</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="Thmexamplex51.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Obs: el sistema de con las 7 reglas y TP es correcto. Si fuera incorrecto, podria demostrar un teorema que no fuera tautologia usando esas reglas, pero como TP es demostrar en Gentzen, eso implicaria que Gentzen es incorrecto.</p>
+</div>
+<div id="Thmexamplex51.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">Tenemos que ver que el sistema propuesto es completo. Para ello, basta con ver que <math id="Thmexamplex51.p4.m1" class="ltx_Math" alttext="\displaystyle E\vee" display="inline"><semantics><mrow><mi>E</mi><mo>∨</mo></mrow><annotation encoding="application/x-tex">\displaystyle E\vee</annotation></semantics></math> se puede demostrar en este sistema y luego usar que Gentzen es completo.</p>
+</div>
+<div id="Thmexamplex51.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">En el sistema nuevo:</p>
+<ol id="I5" class="ltx_enumerate">
+<li id="I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I5.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i1.p1.m1" class="ltx_Math" alttext="\displaystyle A\rightarrow C" display="inline"><semantics><mrow><mi>A</mi><mo stretchy="false">→</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\rightarrow C</annotation></semantics></math> Pr</p>
+</div>
+</li>
+<li id="I5.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I5.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i2.p1.m1" class="ltx_Math" alttext="\displaystyle B\rightarrow C" display="inline"><semantics><mrow><mi>B</mi><mo stretchy="false">→</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\displaystyle B\rightarrow C</annotation></semantics></math> Pr</p>
+</div>
+</li>
+<li id="I5.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I5.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I5.i3.p1.m1" class="ltx_Math" alttext="\displaystyle A\vee B" display="inline"><semantics><mrow><mi>A</mi><mo>∨</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle A\vee B</annotation></semantics></math> Pr</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="Thmexamplex51.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">
+<span class="ltx_inline-block ltx_parbox ltx_align_middle ltx_framed_rectangle" style="padding:9pt;width:426.8pt;">
+<span id="I6" class="ltx_enumerate">
+<span id="I6.i4" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">4.</span><span id="I6.i4.p1" class="ltx_para">​<span class="ltx_p"><math id="I6.i4.p1.m1" class="ltx_Math" alttext="\displaystyle\neg C" display="inline"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\displaystyle\neg C</annotation></semantics></math> Pr aux</span></span></span>
+<span id="I6.i5" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">5.</span><span id="I6.i5.p1" class="ltx_para">​<span class="ltx_p"><math id="I6.i5.p1.m1" class="ltx_Math" alttext="\displaystyle\neg A\quad MT4,1" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>A</mi></mrow><mspace width="1em"></mspace><mrow><mi>M</mi><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mn>4,1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\neg A\quad MT4,1</annotation></semantics></math> (MT es valido en el sistema nuevo)</span></span></span>
+<span id="I6.i6" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">6.</span><span id="I6.i6.p1" class="ltx_para">​<span class="ltx_p"><math id="I6.i6.p1.m1" class="ltx_Math" alttext="\displaystyle B\quad TP,3,5" display="inline"><semantics><mrow><mi>B</mi><mspace width="1em"></mspace><mrow><mi>T</mi><mo>⁢</mo><mi>P</mi><mo>⁢</mo><mn>,3,5</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle B\quad TP,3,5</annotation></semantics></math></span></span></span>
+<span id="I6.i7" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">7.</span><span id="I6.i7.p1" class="ltx_para">​<span class="ltx_p"><math id="I6.i7.p1.m1" class="ltx_Math" alttext="\displaystyle C\quad E\rightarrow,6,2" display="inline"><semantics><mrow><mrow><mi>C</mi><mspace width="1em"></mspace><mi>E</mi></mrow><mo stretchy="false">→</mo><mn>,6,2</mn></mrow><annotation encoding="application/x-tex">\displaystyle C\quad E\rightarrow,6,2</annotation></semantics></math></span></span></span>
+<span id="I6.i8" class="ltx_item" style="list-style-type:none;"><span class="ltx_tag ltx_tag_item">8.</span><span id="I6.i8.p1" class="ltx_para ltx_noindent">​<span class="ltx_p"><math id="I6.i8.p1.m1" class="ltx_Math" alttext="\displaystyle C\wedge\neg C\quad I\wedge,4,7" display="inline"><semantics><mrow><mrow><mi>C</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>C</mi></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo>∧</mo><mn>,4,7</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle C\wedge\neg C\quad I\wedge,4,7</annotation></semantics></math></span></span></span>
+</span>
+</span></p>
+<ol id="I7" class="ltx_enumerate">
+<li id="I7.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">9.</span><div id="I7.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="I7.ix1.p1.m1" class="ltx_Math" alttext="\displaystyle\neg C\rightarrow C\wedge\neg C\quad I\rightarrow(4-8)" display="inline"><semantics><mrow><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>C</mi></mrow><mo stretchy="false">→</mo><mrow><mi>C</mi><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>C</mi></mrow></mrow></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">(</mo><mrow><mn>4</mn><mo>−</mo><mn>8</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\neg C\rightarrow C\wedge\neg C\quad I\rightarrow(4-8)</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I7.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">10.</span><div id="I7.ix2.p1" class="ltx_para">​<p class="ltx_p"><math id="I7.ix2.p1.m1" class="ltx_Math" alttext="\displaystyle\neg\neg C\quad I\neg,9" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>C</mi></mrow><mspace width="1em"></mspace><mrow><mi>I</mi><mo>⁢</mo><mi mathvariant="normal">¬</mi><mo>⁢</mo><mn>,9</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\neg\neg C\quad I\neg,9</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I7.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">11.</span><div id="I7.ix3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I7.ix3.p1.m1" class="ltx_Math" alttext="\displaystyle C\quad E\neg,10" display="inline"><semantics><mrow><mi>C</mi><mspace width="1em"></mspace><mrow><mi>E</mi><mo>⁢</mo><mi mathvariant="normal">¬</mi><mo>⁢</mo><mn>,10</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle C\quad E\neg,10</annotation></semantics></math></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S17.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Pt5.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

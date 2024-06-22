@@ -1,0 +1,580 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Estructuras Algebraicas" course="1º Curso" prof="Esther García" prof2="Ángel Pérez" data-pagefind-filter="asignatura[content], curso[course], profesor[prof], profesor[prof2]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>4 Mas ejemplos de anillos. DFU, DIP y DE. ‣ Parte I Anillos ‣ Estructuras Algebraicas‣ Parte I Anillos ‣ Estructuras Algebraicas</title>
+<!--Generated on Fri Jun  7 11:05:38 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt1.html" title="Parte I Anillos ‣ Estructuras Algebraicas">
+<link rel="up up" href="index.html" title="Estructuras Algebraicas">
+<link rel="start" href="index.html" title="Estructuras Algebraicas">
+<link rel="prev" href="S3.html" title="3 Anillos de polinomios ‣ Parte I Anillos ‣ Estructuras Algebraicas">
+<link rel="next" href="Pt2.html" title="Parte II Grupos ‣ Estructuras Algebraicas">
+<link rel="section" href="S1.html" title="1 Anillos. Generalidades. ‣ Parte I Anillos ‣ Estructuras Algebraicas">
+<link rel="section" href="S2.html" title="2 Ideales y anillos cociente. Teoremas de isomorfía ‣ Parte I Anillos ‣ Estructuras Algebraicas">
+<link rel="section" href="S3.html" title="3 Anillos de polinomios ‣ Parte I Anillos ‣ Estructuras Algebraicas">
+<link rel="part" href="Pt1.html" title="Parte I Anillos ‣ Estructuras Algebraicas">
+<link rel="part" href="Pt2.html" title="Parte II Grupos ‣ Estructuras Algebraicas">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Estructuras Algebraicas" class="ltx_ref" rel="start">Estructuras Algebraicas</a>
+</li>
+<li class="divider">
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt1.html" title="Parte I Anillos ‣ Estructuras Algebraicas" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>Anillos</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="1" data-path="S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S1.html" title="1 Anillos. Generalidades. ‣ Parte I Anillos ‣ Estructuras Algebraicas" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Anillos. Generalidades.</a></li>
+<li data-level="2" data-path="S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S2.html" title="2 Ideales y anillos cociente. Teoremas de isomorfía ‣ Parte I Anillos ‣ Estructuras Algebraicas" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Ideales y anillos cociente. Teoremas de isomorfía</a></li>
+<li data-level="3" data-path="S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S3.html" title="3 Anillos de polinomios ‣ Parte I Anillos ‣ Estructuras Algebraicas" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>Anillos de polinomios</a></li>
+<li data-level="4" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active">
+<a href="" title="4 Mas ejemplos de anillos. DFU, DIP y DE. ‣ Parte I Anillos ‣ Estructuras Algebraicas" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Mas ejemplos de anillos. DFU, DIP y DE.</a>
+<ol class="ltx_toclist ltx_toclist_section">
+<li data-level="4.1" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS1" title="4.1 Cuerpo de fracciones de un anillo ‣ 4 Mas ejemplos de anillos. DFU, DIP y DE. ‣ Parte I Anillos ‣ Estructuras Algebraicas" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.1 </span></b>Cuerpo de fracciones de un anillo</a></li>
+<li data-level="4.2" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS2" title="4.2 Los anillos 𝐴⁢[𝑏], 𝐾⁢(𝑏) ‣ 4 Mas ejemplos de anillos. DFU, DIP y DE. ‣ Parte I Anillos ‣ Estructuras Algebraicas" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.2 </span></b>Los anillos <math class="ltx_Math" alttext="\displaystyle A[b]" display="inline"><semantics><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A[b]</annotation></semantics></math>, <math class="ltx_Math" alttext="\displaystyle K(b)" display="inline"><semantics><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle K(b)</annotation></semantics></math></a></li>
+<li data-level="4.3" data-path="" class="ltx_tocentry ltx_tocentry_subsection  chapter "><a href="#SS3" title="4.3 DFU, DIP, DE ‣ 4 Mas ejemplos de anillos. DFU, DIP y DE. ‣ Parte I Anillos ‣ Estructuras Algebraicas" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.3 </span></b>DFU, DIP, DE</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt2.html" title="Parte II Grupos ‣ Estructuras Algebraicas" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Grupos</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Mas ejemplos de anillos. DFU, DIP y DE.</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">4</span> Mas ejemplos de anillos. DFU, DIP y DE.</h1>
+
+<section id="SS1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">4.1</span> Cuerpo de fracciones de un anillo</h2>
+
+<div id="Thmproposition1" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 4.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sea <math id="Thmproposition1.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> un dominio de integridad. Consideramos el conjunto</span></p>
+<div id="Ex86" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex86.m1" class="ltx_math_unparsed" alttext="\displaystyle S=\{(a,b)/a,b\in A,b\neq 0_{A}\}" display="block"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>/</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mi>A</mi><mo>,</mo><mi>b</mi><mo>≠</mo><msub><mn>0</mn><mi>A</mi></msub><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle S=\{(a,b)/a,b\in A,b\neq 0_{A}\}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">junto con la relacion <math id="Thmproposition1.p1.m2" class="ltx_Math" alttext="\displaystyle(a,b)\thicksim(c,d)" display="inline"><semantics><mrow><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>a</mi><mo mathvariant="normal">,</mo><mi>b</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow><mo mathvariant="normal">∼</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>c</mi><mo mathvariant="normal">,</mo><mi>d</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle(a,b)\thicksim(c,d)</annotation></semantics></math> si y solo si <math id="Thmproposition1.p1.m3" class="ltx_Math" alttext="\displaystyle ad=bc" display="inline"><semantics><mrow><mrow><mi>a</mi><mo mathvariant="italic">⁢</mo><mi>d</mi></mrow><mo mathvariant="normal">=</mo><mrow><mi>b</mi><mo mathvariant="italic">⁢</mo><mi>c</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle ad=bc</annotation></semantics></math>. Esta relacion es de equivalencia.</span></p>
+</div>
+</div>
+<div id="Thmproposition2" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 4.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Consideramos el conjunto cociente <math id="Thmproposition2.p1.m1" class="ltx_math_unparsed" alttext="\displaystyle K=S/\thicksim" display="inline"><semantics><mrow><mi>K</mi><mo mathvariant="normal">=</mo><mi>S</mi><mo mathvariant="normal" rspace="0em">/</mo><mo lspace="0em" mathvariant="normal">∼</mo></mrow><annotation encoding="application/x-tex">\displaystyle K=S/\thicksim</annotation></semantics></math>. Para la clase de equivalencia de un elemento, utilizaremos la notacion</span></p>
+<div id="Ex87" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex87.m1" class="ltx_Math" alttext="\displaystyle[(a,b)]_{\thicksim}=\frac{a}{b}" display="block"><semantics><mrow><msub><mrow><mo stretchy="false">[</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">]</mo></mrow><mo>∼</mo></msub><mo>=</mo><mfrac><mi>a</mi><mi>b</mi></mfrac></mrow><annotation encoding="application/x-tex">\displaystyle[(a,b)]_{\thicksim}=\frac{a}{b}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Definimos en <math id="Thmproposition2.p1.m2" class="ltx_Math" alttext="\displaystyle K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">\displaystyle K</annotation></semantics></math> las siguientes dos operaciones:</span></p>
+<div id="Ex88" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex88.m1" class="ltx_math_unparsed" alttext="\displaystyle\frac{a}{b}+\frac{c}{d}\coloneqq\frac{ad+bc}{bd}\;\forall\frac{a}%
+{b},\frac{c}{d}\in S/\thicksim" display="block"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>+</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>≔</mo><mfrac><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>d</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></mrow><mrow><mi>b</mi><mo>⁢</mo><mi>d</mi></mrow></mfrac><mo lspace="0.447em" rspace="0.167em">∀</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>,</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>∈</mo><mi>S</mi><mo rspace="0em">/</mo><mo lspace="0em">∼</mo></mrow><annotation encoding="application/x-tex">\displaystyle\frac{a}{b}+\frac{c}{d}\coloneqq\frac{ad+bc}{bd}\;\forall\frac{a}%
+{b},\frac{c}{d}\in S/\thicksim</annotation></semantics></math></span>
+</div>
+<div id="Ex89" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex89.m1" class="ltx_math_unparsed" alttext="\displaystyle\frac{a}{b}\cdot\frac{c}{d}\coloneqq\frac{ad}{bc}\forall\frac{a}{%
+b},\frac{c}{d}\in S/\thicksim" display="block"><semantics><mrow><mfrac><mi>a</mi><mi>b</mi></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>≔</mo><mfrac><mrow><mi>a</mi><mo>⁢</mo><mi>d</mi></mrow><mrow><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow></mfrac><mo lspace="0.167em" rspace="0.167em">∀</mo><mfrac><mi>a</mi><mi>b</mi></mfrac><mo>,</mo><mfrac><mi>c</mi><mi>d</mi></mfrac><mo>∈</mo><mi>S</mi><mo rspace="0em">/</mo><mo lspace="0em">∼</mo></mrow><annotation encoding="application/x-tex">\displaystyle\frac{a}{b}\cdot\frac{c}{d}\coloneqq\frac{ad}{bc}\forall\frac{a}{%
+b},\frac{c}{d}\in S/\thicksim</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Estas operaciones estan bien definidas (no dependen de la eleccion de representantes).</span></p>
+</div>
+</div>
+<div id="Thmproposition3" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 4.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition3.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmproposition3.p1.m1" class="ltx_Math" alttext="\displaystyle K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">\displaystyle K</annotation></semantics></math><span class="ltx_text ltx_font_italic"> dotado de las dos operaciones anteriores es un cuerpo.
+
+El conjunto <math id="Thmproposition3.p1.m2" class="ltx_Math" alttext="\displaystyle K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">\displaystyle K</annotation></semantics></math> recibe el nombre de <span class="ltx_text ltx_font_bold">cuerpo de fracciones</span> de <math id="Thmproposition3.p1.m3" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math>. Se denota <math id="Thmproposition3.p1.m4" class="ltx_Math" alttext="\displaystyle K=cdf(A)" display="inline"><semantics><mrow><mi>K</mi><mo mathvariant="normal">=</mo><mrow><mi>c</mi><mo mathvariant="italic">⁢</mo><mi>d</mi><mo mathvariant="italic">⁢</mo><mi>f</mi><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>A</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle K=cdf(A)</annotation></semantics></math>.
+
+Ademas, existe un monomorfismo de anillos unitarios <math id="Thmproposition3.p1.m5" class="ltx_Math" alttext="\displaystyle\varphi\colon A\to cdf(A),\;a\mapsto\frac{a}{1}" display="inline"><semantics><mrow><mi>φ</mi><mo lspace="0.278em" mathvariant="normal" rspace="0.278em">:</mo><mrow><mrow><mi>A</mi><mo mathvariant="normal" stretchy="false">→</mo><mrow><mi>c</mi><mo mathvariant="italic">⁢</mo><mi>d</mi><mo mathvariant="italic">⁢</mo><mi>f</mi><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>A</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow></mrow><mo mathvariant="normal" rspace="0.447em">,</mo><mrow><mi>a</mi><mo mathvariant="normal" stretchy="false">↦</mo><mstyle displaystyle="true"><mfrac><mi>a</mi><mn mathvariant="normal">1</mn></mfrac></mstyle></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\varphi\colon A\to cdf(A),\;a\mapsto\frac{a}{1}</annotation></semantics></math>. Mas aun, si <math id="Thmproposition3.p1.m6" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es un cuerpo entonces <math id="Thmproposition3.p1.m7" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> es un isomorfismo: <math id="Thmproposition3.p1.m8" class="ltx_Math" alttext="\displaystyle A\cong cdf(A)" display="inline"><semantics><mrow><mi>A</mi><mo mathvariant="normal">≅</mo><mrow><mi>c</mi><mo mathvariant="italic">⁢</mo><mi>d</mi><mo mathvariant="italic">⁢</mo><mi>f</mi><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>A</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A\cong cdf(A)</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Thmexamplex17" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex17.p1" class="ltx_para">
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">Si <math id="I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle A=\mathbb{Z}" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle A=\mathbb{Z}</annotation></semantics></math>, entonces <math id="I1.i1.p1.m2" class="ltx_Math" alttext="\displaystyle cdf(A)=\mathbb{Q}" display="inline"><semantics><mrow><mrow><mi>c</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>ℚ</mi></mrow><annotation encoding="application/x-tex">\displaystyle cdf(A)=\mathbb{Q}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Si <math id="I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle A=K[x]" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A=K[x]</annotation></semantics></math> (sirve con que <math id="I1.i2.p1.m2" class="ltx_Math" alttext="\displaystyle K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">\displaystyle K</annotation></semantics></math> sea DI), <math id="I1.i2.p1.m3" class="ltx_math_unparsed" alttext="\displaystyle cdf(A)=\{\underbrace{\frac{p(x)}{q(x)}}_{\text{(clases)}}/p(x),q%
+(x)\in A,q(x)\neq 0\}" display="inline"><semantics><mrow><mi>c</mi><mi>d</mi><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><munder><munder accentunder="true"><mstyle displaystyle="true"><mfrac><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⏟</mo></munder><mtext>(clases)</mtext></munder><mo>/</mo><mi>p</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mi>q</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mi>A</mi><mo>,</mo><mi>q</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>≠</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle cdf(A)=\{\underbrace{\frac{p(x)}{q(x)}}_{\text{(clases)}}/p(x),q%
+(x)\in A,q(x)\neq 0\}</annotation></semantics></math>. En este caso <math id="I1.i2.p1.m4" class="ltx_Math" alttext="\displaystyle cdf(A)=K(x)" display="inline"><semantics><mrow><mrow><mi>c</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle cdf(A)=K(x)</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="SS2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">4.2</span> Los anillos <math id="SS2.m1" class="ltx_Math" alttext="\displaystyle A[b]" display="inline"><semantics><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A[b]</annotation></semantics></math>, <math id="SS2.m2" class="ltx_Math" alttext="\displaystyle K(b)" display="inline"><semantics><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle K(b)</annotation></semantics></math>
+</h2>
+
+<div id="SS2.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Vamos a ver otros dominios de integridad de los que podemos hallar su cuerpo de fracciones.</p>
+</div>
+<div id="Thmproposition4" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 4.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sea <math id="Thmproposition4.p1.m1" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> un a.c.c.u., <math id="Thmproposition4.p1.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> un subanillo de <math id="Thmproposition4.p1.m3" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math>, <math id="Thmproposition4.p1.m4" class="ltx_Math" alttext="\displaystyle b\in B" display="inline"><semantics><mrow><mi>b</mi><mo mathvariant="normal">∈</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle b\in B</annotation></semantics></math> y la funcion</span></p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex90" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex90X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex90X.m2" class="ltx_Math" alttext="\displaystyle f_{b}\colon A[x]" display="inline"><semantics><mrow><msub><mi>f</mi><mi>b</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f_{b}\colon A[x]</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex90X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow B" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow B</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex90Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex90Xa.m2" class="ltx_Math" alttext="\displaystyle p(x)" display="inline"><semantics><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle p(x)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex90Xa.m3" class="ltx_Math" alttext="\displaystyle\longmapsto f_{b}(p(x))=p(b)" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><msub><mi>f</mi><mi>b</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto f_{b}(p(x))=p(b)</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Entonces <math id="Thmproposition4.p1.m5" class="ltx_Math" alttext="\displaystyle f_{b}" display="inline"><semantics><msub><mi>f</mi><mi>b</mi></msub><annotation encoding="application/x-tex">\displaystyle f_{b}</annotation></semantics></math> es un homomorfismo de anillos.</span></p>
+</div>
+</div>
+<div id="Thmdefinition1" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 4.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition1.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmdefinition1.p1.m1" class="ltx_Math" alttext="\displaystyle A[b]\coloneqq im(f_{b})=\{p(b)\mid p\in A[x]\}" display="inline"><semantics><mrow><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow><mo>≔</mo><mrow><mi>i</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>b</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mi>p</mi><mo>∈</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A[b]\coloneqq im(f_{b})=\{p(b)\mid p\in A[x]\}</annotation></semantics></math></p>
+</div>
+</div>
+<div id="Thmcorollary1" class="ltx_theorem ltx_theorem_corollary">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Corolario 4.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmcorollary1.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmcorollary1.p1.m1" class="ltx_Math" alttext="\displaystyle A[b]" display="inline"><semantics><mrow><mi>A</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A[b]</annotation></semantics></math><span class="ltx_text ltx_font_italic"> es un subanillo de <math id="Thmcorollary1.p1.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Thmexamplex18" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex18.p1" class="ltx_para">
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{R}[i]=\{p(i)\mid p(x)\in\mathbb{R}[x]\}\overset{i^{2}=-1}%
+{=}\{a+bi\mid a,b\in\mathbb{R}\}=\mathbb{C}" display="inline"><semantics><mrow><mrow><mi>ℝ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">{</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><mi>ℝ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow><mo>⁢</mo><mover accent="true"><mo>=</mo><mrow><msup><mi>i</mi><mn>2</mn></msup><mo>=</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></mover><mo>⁢</mo><mrow><mo stretchy="false">{</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>i</mi></mrow></mrow><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>=</mo><mi>ℂ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{R}[i]=\{p(i)\mid p(x)\in\mathbb{R}[x]\}\overset{i^{2}=-1}%
+{=}\{a+bi\mid a,b\in\mathbb{R}\}=\mathbb{C}</annotation></semantics></math>.
+
+Por ejemplo, <math id="I2.i1.p1.m2" class="ltx_Math" alttext="\displaystyle 3x^{3}+x^{2}+x+2=p(x)\rightarrow p(i)=-3i-1+i+2=-2i+1\in\mathbb{%
+R}[i]" display="inline"><semantics><mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mo>=</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo>−</mo><mrow><mn>3</mn><mo>⁢</mo><mi>i</mi></mrow></mrow><mo>−</mo><mn>1</mn></mrow><mo>+</mo><mi>i</mi><mo>+</mo><mn>2</mn></mrow><mo>=</mo><mrow><mrow><mo>−</mo><mrow><mn>2</mn><mo>⁢</mo><mi>i</mi></mrow></mrow><mo>+</mo><mn>1</mn></mrow><mo>∈</mo><mrow><mi>ℝ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle 3x^{3}+x^{2}+x+2=p(x)\rightarrow p(i)=-3i-1+i+2=-2i+1\in\mathbb{%
+R}[i]</annotation></semantics></math>.
+
+Ademas, se tiene que <math id="I2.i1.p1.m3" class="ltx_Math" alttext="\displaystyle x^{2}+1" display="inline"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle x^{2}+1</annotation></semantics></math> es el polinomio minimo de <math id="I2.i1.p1.m4" class="ltx_Math" alttext="\displaystyle i" display="inline"><semantics><mi>i</mi><annotation encoding="application/x-tex">\displaystyle i</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{Z}[\sqrt{2}]=\{p(\sqrt{2})\mid p\in\mathbb{Z}[x]\}=\{a+b%
+\sqrt{2}\mid a,b\in\mathbb{Z}\}\subseteq\mathbb{R}" display="inline"><semantics><mrow><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false">)</mo></mrow></mrow><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mi>p</mi><mo>∈</mo><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msqrt><mn>2</mn></msqrt></mrow></mrow><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℤ</mi></mrow><mo stretchy="false">}</mo></mrow><mo>⊆</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}[\sqrt{2}]=\{p(\sqrt{2})\mid p\in\mathbb{Z}[x]\}=\{a+b%
+\sqrt{2}\mid a,b\in\mathbb{Z}\}\subseteq\mathbb{R}</annotation></semantics></math>.
+
+<math id="I2.i2.p1.m2" class="ltx_Math" alttext="\displaystyle\mathbb{Z}[x]\Rightarrow p(x)=(x^{2}-2)q(x)+\underbrace{r(x)}_{a+bx}" display="inline"><semantics><mrow><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">⇒</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><munder><munder accentunder="true"><mrow><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⏟</mo></munder><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></munder></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}[x]\Rightarrow p(x)=(x^{2}-2)q(x)+\underbrace{r(x)}_{a+bx}</annotation></semantics></math>.
+
+Al evaluarlo en <math id="I2.i2.p1.m3" class="ltx_Math" alttext="\displaystyle\sqrt{2},p(\sqrt{2})=((\sqrt{2})^{2}-2)q(x)+r(\sqrt{2})=r(\sqrt{2%
+})=a+b\sqrt{2}" display="inline"><semantics><mrow><mrow><msqrt><mn>2</mn></msqrt><mo>,</mo><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msup><mrow><mo stretchy="false">(</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>−</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msqrt><mn>2</mn></msqrt></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\sqrt{2},p(\sqrt{2})=((\sqrt{2})^{2}-2)q(x)+r(\sqrt{2})=r(\sqrt{2%
+})=a+b\sqrt{2}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{Q}[\sqrt{2}]=\{a+b\sqrt{2}\mid a,b\in\mathbb{Q}\}%
+\subseteq\mathbb{R}" display="inline"><semantics><mrow><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msqrt><mn>2</mn></msqrt></mrow></mrow><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℚ</mi></mrow><mo stretchy="false">}</mo></mrow><mo>⊆</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{Q}[\sqrt{2}]=\{a+b\sqrt{2}\mid a,b\in\mathbb{Q}\}%
+\subseteq\mathbb{R}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i4.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{Q}[\sqrt[3]{2}]=\{a+b\sqrt[3]{2}\mid a,b\in\mathbb{Q}\}" display="inline"><semantics><mrow><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mroot><mn>2</mn><mn>3</mn></mroot><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mroot><mn>2</mn><mn>3</mn></mroot></mrow></mrow><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℚ</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{Q}[\sqrt[3]{2}]=\{a+b\sqrt[3]{2}\mid a,b\in\mathbb{Q}\}</annotation></semantics></math>. El polinomio minimo es <math id="I2.i4.p1.m2" class="ltx_Math" alttext="\displaystyle x^{3}-2" display="inline"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\displaystyle x^{3}-2</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i5.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I2.i5.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{Z}[i]=\{a+bi\mid a,b\in\mathbb{Z}\}\subseteq\mathbb{C}" display="inline"><semantics><mrow><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>i</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>a</mi><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>i</mi></mrow></mrow><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℤ</mi></mrow><mo stretchy="false">}</mo></mrow><mo>⊆</mo><mi>ℂ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}[i]=\{a+bi\mid a,b\in\mathbb{Z}\}\subseteq\mathbb{C}</annotation></semantics></math> (enteros de Gauss).</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Thmdefinition2" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 4.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition2.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="Thmdefinition2.p1.m1" class="ltx_Math" alttext="\displaystyle K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">\displaystyle K</annotation></semantics></math> un cuerpo.</p>
+<div id="Ex91" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex91.m1" class="ltx_Math" alttext="\displaystyle K(x)\coloneqq cdf(K[x])=\{\frac{p(x)}{q(x)}\mid p,q\in K[x],q%
+\neq 0\}" display="block"><semantics><mrow><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≔</mo><mrow><mi>c</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mfrac><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mrow><mrow><mi>p</mi><mo>,</mo><mi>q</mi></mrow><mo>∈</mo><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>,</mo><mrow><mi>q</mi><mo>≠</mo><mn>0</mn></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle K(x)\coloneqq cdf(K[x])=\{\frac{p(x)}{q(x)}\mid p,q\in K[x],q%
+\neq 0\}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmdefinition3" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 4.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition3.p1" class="ltx_para">
+<p class="ltx_p">Sean <math id="Thmdefinition3.p1.m1" class="ltx_Math" alttext="\displaystyle L" display="inline"><semantics><mi>L</mi><annotation encoding="application/x-tex">\displaystyle L</annotation></semantics></math> otro cuerpo tal que <math id="Thmdefinition3.p1.m2" class="ltx_Math" alttext="\displaystyle K\subseteq L" display="inline"><semantics><mrow><mi>K</mi><mo>⊆</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">\displaystyle K\subseteq L</annotation></semantics></math> y <math id="Thmdefinition3.p1.m3" class="ltx_Math" alttext="\displaystyle b\in L" display="inline"><semantics><mrow><mi>b</mi><mo>∈</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">\displaystyle b\in L</annotation></semantics></math>.</p>
+<div id="Ex92" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex92.m1" class="ltx_Math" alttext="\displaystyle K(b)\coloneqq cdf(K[b])=\left\{\frac{p(b)}{q(b)}\mid p,q\in K[x]%
+,q(b)\neq 0\right\}" display="block"><semantics><mrow><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≔</mo><mrow><mi>c</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mfrac><mrow><mi>p</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mrow><mrow><mi>p</mi><mo>,</mo><mi>q</mi></mrow><mo>∈</mo><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>,</mo><mrow><mrow><mi>q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></mrow><mo>}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle K(b)\coloneqq cdf(K[b])=\left\{\frac{p(b)}{q(b)}\mid p,q\in K[x]%
+,q(b)\neq 0\right\}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmremarkx26" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx26.p1" class="ltx_para">
+<p class="ltx_p">Si <math id="Thmremarkx26.p1.m1" class="ltx_Math" alttext="\displaystyle K[b]" display="inline"><semantics><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle K[b]</annotation></semantics></math> es cuerpo, entonces <math id="Thmremarkx26.p1.m2" class="ltx_Math" alttext="\displaystyle K[b]=K(b)" display="inline"><semantics><mrow><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle K[b]=K(b)</annotation></semantics></math>.
+
+Por ejemplo <math id="Thmremarkx26.p1.m3" class="ltx_Math" alttext="\displaystyle\mathbb{Q}[\sqrt{2}]=\mathbb{Q}(\sqrt{2})" display="inline"><semantics><mrow><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>ℚ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{Q}[\sqrt{2}]=\mathbb{Q}(\sqrt{2})</annotation></semantics></math>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="SS3" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection header-section-number">4.3</span> DFU, DIP, DE</h2>
+
+<div id="Thmdefinition4" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 4.4</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition4.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="Thmdefinition4.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> un anillo con unidad.</p>
+<div id="Ex93" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex93.m1" class="ltx_Math" alttext="\displaystyle A^{*}\coloneqq\{a\in A\mid a\text{ es invertible}\}" display="block"><semantics><mrow><msup><mi>A</mi><mo>∗</mo></msup><mo>≔</mo><mrow><mo stretchy="false">{</mo><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mi>a</mi><mo>⁢</mo><mtext> es invertible</mtext></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle A^{*}\coloneqq\{a\in A\mid a\text{ es invertible}\}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmdefinition5" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 4.5</span></span><span class="ltx_text ltx_font_bold"> </span>(Elemento irreducible)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition5.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="Thmdefinition5.p1.m1" class="ltx_Math" alttext="\displaystyle a\in A\setminus A^{*},a\neq 0" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>∈</mo><mrow><mi>A</mi><mo>∖</mo><msup><mi>A</mi><mo>∗</mo></msup></mrow></mrow><mo>,</mo><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle a\in A\setminus A^{*},a\neq 0</annotation></semantics></math>. Decimos que <math id="Thmdefinition5.p1.m2" class="ltx_Math" alttext="\displaystyle a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">\displaystyle a</annotation></semantics></math> es irreducible si sus unicos divisores son elementos invertibles y asociados de <math id="Thmdefinition5.p1.m3" class="ltx_Math" alttext="\displaystyle a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">\displaystyle a</annotation></semantics></math>. En caso contrario decimos que <math id="Thmdefinition5.p1.m4" class="ltx_Math" alttext="\displaystyle a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">\displaystyle a</annotation></semantics></math> es reducible.</p>
+</div>
+</div>
+<div id="Thmdefinition6" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 4.6</span></span><span class="ltx_text ltx_font_bold"> </span>(DFU)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition6.p1" class="ltx_para">
+<p class="ltx_p">Sean <math id="Thmdefinition6.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> un DI. Decimos que <math id="Thmdefinition6.p1.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es dominio de factorizacion unica (DFU) si todo elemento <math id="Thmdefinition6.p1.m3" class="ltx_Math" alttext="\displaystyle a\in A\setminus A^{*},a\neq 0" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>∈</mo><mrow><mi>A</mi><mo>∖</mo><msup><mi>A</mi><mo>∗</mo></msup></mrow></mrow><mo>,</mo><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle a\in A\setminus A^{*},a\neq 0</annotation></semantics></math>, factoriza como producto de elementos irreducibles de manera unica (salvo reordenacion y asociados).</p>
+</div>
+</div>
+<div id="Thmexamplex19" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex19.p1" class="ltx_para">
+<ul id="I3" class="ltx_itemize">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i1.p1.m1" class="ltx_Math" alttext="\displaystyle K[x]" display="inline"><semantics><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle K[x]</annotation></semantics></math> es un DFU.</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I3.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{Z}" display="inline"><semantics><mi>ℤ</mi><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}</annotation></semantics></math> es un DFU (teorema fundamental de la aritmetica).</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Thmdefinition7" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 4.7</span></span><span class="ltx_text ltx_font_bold"> </span>(DIP)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition7.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="Thmdefinition7.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> un DI. Decimos que <math id="Thmdefinition7.p1.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es dominio de ideales principales (DIP) si todo ideal de <math id="Thmdefinition7.p1.m3" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es principal, es decir, <math id="Thmdefinition7.p1.m4" class="ltx_Math" alttext="\displaystyle\forall I" display="inline"><semantics><mrow><mo rspace="0.167em">∀</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">\displaystyle\forall I</annotation></semantics></math> ideal de <math id="Thmdefinition7.p1.m5" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> existe <math id="Thmdefinition7.p1.m6" class="ltx_Math" alttext="\displaystyle a\in A" display="inline"><semantics><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle a\in A</annotation></semantics></math> tal que <math id="Thmdefinition7.p1.m7" class="ltx_Math" alttext="\displaystyle I=(a)" display="inline"><semantics><mrow><mi>I</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle I=(a)</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmexamplex20" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex20.p1" class="ltx_para">
+<ul id="I4" class="ltx_itemize">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I4.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{Z}" display="inline"><semantics><mi>ℤ</mi><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}</annotation></semantics></math> es DIP. Todos los ideales de <math id="I4.i1.p1.m2" class="ltx_Math" alttext="\displaystyle\mathbb{Z}" display="inline"><semantics><mi>ℤ</mi><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}</annotation></semantics></math> son de la forma <math id="I4.i1.p1.m3" class="ltx_Math" alttext="\displaystyle m\mathbb{Z}" display="inline"><semantics><mrow><mi>m</mi><mo>⁢</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle m\mathbb{Z}</annotation></semantics></math> para algun <math id="I4.i1.p1.m4" class="ltx_Math" alttext="\displaystyle m\in\mathbb{Z}" display="inline"><semantics><mrow><mi>m</mi><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle m\in\mathbb{Z}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I4.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I4.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I4.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{Z}[x]" display="inline"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}[x]</annotation></semantics></math> no es DIP.</p>
+</div>
+</li>
+<li id="I4.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I4.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I4.i3.p1.m1" class="ltx_Math" alttext="\displaystyle K[x]" display="inline"><semantics><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle K[x]</annotation></semantics></math> es DIP.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Thmdefinition8" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 4.8</span></span><span class="ltx_text ltx_font_bold"> </span>(DE)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition8.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="Thmdefinition8.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> un DI. Decimos que <math id="Thmdefinition8.p1.m2" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math> es <span class="ltx_text ltx_font_bold">dominio euclideo</span> (DE) si existe una funcion, llamada <span class="ltx_text ltx_font_bold">norma</span>, <math id="Thmdefinition8.p1.m3" class="ltx_Math" alttext="\displaystyle\delta\colon A\setminus\{0_{A}\}\rightarrow\mathbb{N}\cup\{0\}" display="inline"><semantics><mrow><mi>δ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi>A</mi><mo>∖</mo><mrow><mo stretchy="false">{</mo><msub><mn>0</mn><mi>A</mi></msub><mo stretchy="false">}</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mi>ℕ</mi><mo>∪</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\delta\colon A\setminus\{0_{A}\}\rightarrow\mathbb{N}\cup\{0\}</annotation></semantics></math> tal que
+</p>
+<ol id="I5" class="ltx_enumerate">
+<li id="I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I5.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\forall a,b\in A\setminus\{0_{A}\}" display="inline"><semantics><mrow><mrow><mrow><mo rspace="0.167em">∀</mo><mi>a</mi></mrow><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mrow><mi>A</mi><mo>∖</mo><mrow><mo stretchy="false">{</mo><msub><mn>0</mn><mi>A</mi></msub><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall a,b\in A\setminus\{0_{A}\}</annotation></semantics></math> se tiene que <math id="I5.i1.p1.m2" class="ltx_Math" alttext="\displaystyle\delta(a)\leq\delta(ab)" display="inline"><semantics><mrow><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>⁢</mo><mi>b</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\delta(a)\leq\delta(ab)</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I5.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I5.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I5.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\forall a,b\in A,b\neq 0_{A}" display="inline"><semantics><mrow><mrow><mrow><mrow><mo rspace="0.167em">∀</mo><mi>a</mi></mrow><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>A</mi></mrow><mo>,</mo><mrow><mi>b</mi><mo>≠</mo><msub><mn>0</mn><mi>A</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall a,b\in A,b\neq 0_{A}</annotation></semantics></math>, <math id="I5.i2.p1.m2" class="ltx_Math" alttext="\displaystyle\exists q,r\in A" display="inline"><semantics><mrow><mrow><mrow><mo rspace="0.167em">∃</mo><mi>q</mi></mrow><mo>,</mo><mi>r</mi></mrow><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle\exists q,r\in A</annotation></semantics></math> tales que <math id="I5.i2.p1.m3" class="ltx_Math" alttext="\displaystyle a=bq+r" display="inline"><semantics><mrow><mi>a</mi><mo>=</mo><mrow><mrow><mi>b</mi><mo>⁢</mo><mi>q</mi></mrow><mo>+</mo><mi>r</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle a=bq+r</annotation></semantics></math> y <math id="I5.i2.p1.m4" class="ltx_Math" alttext="\displaystyle r" display="inline"><semantics><mi>r</mi><annotation encoding="application/x-tex">\displaystyle r</annotation></semantics></math> cumple que <math id="I5.i2.p1.m5" class="ltx_Math" alttext="\displaystyle\delta(r)&lt;\delta(b)" display="inline"><semantics><mrow><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\delta(r)&lt;\delta(b)</annotation></semantics></math> o bien <math id="I5.i2.p1.m6" class="ltx_Math" alttext="\displaystyle r=0_{A}" display="inline"><semantics><mrow><mi>r</mi><mo>=</mo><msub><mn>0</mn><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle r=0_{A}</annotation></semantics></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Thmexamplex21" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex21.p1" class="ltx_para">
+<ul id="I6" class="ltx_itemize">
+<li id="I6.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I6.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I6.i1.p1.m1" class="ltx_Math" alttext="\displaystyle K[x]" display="inline"><semantics><mrow><mi>K</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle K[x]</annotation></semantics></math> es un DE con <math id="I6.i1.p1.m2" class="ltx_Math" alttext="\displaystyle\delta=" display="inline"><semantics><mrow><mi>δ</mi><mo>=</mo><mi></mi></mrow><annotation encoding="application/x-tex">\displaystyle\delta=</annotation></semantics></math> grado.</p>
+</div>
+</li>
+<li id="I6.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I6.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I6.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{Z}" display="inline"><semantics><mi>ℤ</mi><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}</annotation></semantics></math> con <math id="I6.i2.p1.m2" class="ltx_Math" alttext="\displaystyle\delta=" display="inline"><semantics><mrow><mi>δ</mi><mo>=</mo><mi></mi></mrow><annotation encoding="application/x-tex">\displaystyle\delta=</annotation></semantics></math> “valor absoluto” tambien es DE.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Thmtheorem1" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 4.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem1.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmtheorem1.p1.m1" class="ltx_Math" alttext="\displaystyle A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">\displaystyle A</annotation></semantics></math><span class="ltx_text ltx_font_italic"> DE <math id="Thmtheorem1.p1.m2" class="ltx_Math" alttext="\displaystyle\Rightarrow A" display="inline"><semantics><mrow><mi></mi><mo mathvariant="normal" stretchy="false">⇒</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow A</annotation></semantics></math> DIP <math id="Thmtheorem1.p1.m3" class="ltx_Math" alttext="\displaystyle\Rightarrow A" display="inline"><semantics><mrow><mi></mi><mo mathvariant="normal" stretchy="false">⇒</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow A</annotation></semantics></math> DFU <math id="Thmtheorem1.p1.m4" class="ltx_Math" alttext="\displaystyle\Rightarrow A\text{ DI }" display="inline"><semantics><mrow><mi></mi><mo mathvariant="normal" stretchy="false">⇒</mo><mrow><mi>A</mi><mo mathvariant="italic">⁢</mo><mtext mathvariant="italic"> DI </mtext></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow A\text{ DI }</annotation></semantics></math></span></p>
+</div>
+</div>
+<div id="Thmexamplex22" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex22.p1" class="ltx_para">
+<p class="ltx_p">Contraejemplos a los reciprocos:</p>
+<ul id="I7" class="ltx_itemize">
+<li id="I7.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I7.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I7.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{Z}[\sqrt{-5}]" display="inline"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msqrt><mrow><mo>−</mo><mn>5</mn></mrow></msqrt><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}[\sqrt{-5}]</annotation></semantics></math> es DI pero no DFU.</p>
+</div>
+</li>
+<li id="I7.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I7.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I7.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{Z}[x]" display="inline"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}[x]</annotation></semantics></math> es DFU pero no DIP.</p>
+</div>
+</li>
+<li id="I7.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I7.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I7.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\mathbb{Z}\left[\frac{n+\sqrt{-19}}{2}\right]" display="inline"><semantics><mrow><mi>ℤ</mi><mo>⁢</mo><mrow><mo>[</mo><mstyle displaystyle="true"><mfrac><mrow><mi>n</mi><mo>+</mo><msqrt><mrow><mo>−</mo><mn>19</mn></mrow></msqrt></mrow><mn>2</mn></mfrac></mstyle><mo>]</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}\left[\frac{n+\sqrt{-19}}{2}\right]</annotation></semantics></math></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S3.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Pt2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

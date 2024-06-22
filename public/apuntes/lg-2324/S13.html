@@ -1,0 +1,462 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Lógica" course="1º Curso" prof="Ángel Pérez" data-pagefind-filter="asignatura[content], curso[course], profesor[prof]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>13 Equivalencia de formulas ‣ Parte III Semantica de la logica proposicional ‣ Lógica‣ Parte III Semantica de la logica proposicional ‣ Lógica</title>
+<!--Generated on Fri Jun  7 11:07:44 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="up up" href="index.html" title="Lógica">
+<link rel="start" href="index.html" title="Lógica">
+<link rel="prev" href="S12.html" title="12 Consecuencia logica ‣ Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="next" href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica">
+<link rel="section" href="S10.html" title="10 Evaluacion semantica de formulas (valores de verdad) ‣ Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="section" href="S11.html" title="11 Modelos y contraejemplos. Clasificacion de formulas ‣ Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="section" href="S12.html" title="12 Consecuencia logica ‣ Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="section" href="Sx1.html" title="Terminología matemática ‣ Lógica">
+<link rel="part" href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="part" href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica">
+<link rel="part" href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="part" href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica">
+<link rel="part" href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="part" href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica">
+<link rel="part" href="Pt7.html" title="Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Lógica" class="ltx_ref" rel="start">Lógica</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Sx1.html" title="Terminología matemática ‣ Lógica" class="ltx_ref">Terminología matemática</a></li>
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>Conjuntos, relaciones y funciones</a></li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Sintaxis de la lógica proposicional</a></li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Semantica de la logica proposicional</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="10" data-path="S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S10.html" title="10 Evaluacion semantica de formulas (valores de verdad) ‣ Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Evaluacion semantica de formulas (valores de verdad)</a></li>
+<li data-level="11" data-path="S11.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S11.html" title="11 Modelos y contraejemplos. Clasificacion de formulas ‣ Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Modelos y contraejemplos. Clasificacion de formulas</a></li>
+<li data-level="12" data-path="S12.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S12.html" title="12 Consecuencia logica ‣ Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">12 </span></b>Consecuencia logica</a></li>
+<li data-level="13" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="13 Equivalencia de formulas ‣ Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">13 </span></b>Equivalencia de formulas</a></li>
+</ol>
+</li>
+<li data-level="IV" data-path="Pt4.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">IV </span></b>Teoria de la demostracion para logica proposicional</a></li>
+<li data-level="V" data-path="Pt5.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">V </span></b>Sintaxis de la logica de predicados</a></li>
+<li data-level="VI" data-path="Pt6.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VI </span></b>Semantica de la logica de predicados</a></li>
+<li data-level="VII" data-path="Pt7.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt7.html" title="Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VII </span></b>Teoria de la demostracion en logica de predicados</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Equivalencia de formulas</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">13</span> Equivalencia de formulas</h1>
+
+<div id="Thmdefinition1" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 13.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition1.p1" class="ltx_para">
+<p class="ltx_p">Sean <math id="Thmdefinition1.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> y <math id="Thmdefinition1.p1.m2" class="ltx_Math" alttext="\displaystyle\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\displaystyle\psi</annotation></semantics></math> dos formulas. Decimos que son equivalentes si se cumple simultaneamente:</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi\models\psi" display="inline"><semantics><mrow><mi>φ</mi><mo>⊧</mo><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\varphi\models\psi</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\psi\models\varphi" display="inline"><semantics><mrow><mi>ψ</mi><mo>⊧</mo><mi>φ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\psi\models\varphi</annotation></semantics></math></p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Notacion: <math id="Thmdefinition1.p1.m3" class="ltx_Math" alttext="\displaystyle\varphi\equiv\psi" display="inline"><semantics><mrow><mi>φ</mi><mo>≡</mo><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\varphi\equiv\psi</annotation></semantics></math></p>
+</div>
+</div>
+<div id="Thmproposition1" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 13.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sean <math id="Thmproposition1.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> y <math id="Thmproposition1.p1.m2" class="ltx_Math" alttext="\displaystyle\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\displaystyle\psi</annotation></semantics></math> dos formulas. Las siguientes dos afirmaciones son equivalentes.</span></p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi\equiv\psi" display="inline"><semantics><mrow><mi>φ</mi><mo>≡</mo><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\varphi\equiv\psi</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi\leftrightarrow\psi" display="inline"><semantics><mrow><mi>φ</mi><mo stretchy="false">↔</mo><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\varphi\leftrightarrow\psi</annotation></semantics></math><span class="ltx_text ltx_font_italic"> es una tautologia</span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Ambas afirmaciones son equivalentes a que todo modelo de <math id="p1.m1" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> tambien lo es de <math id="p1.m2" class="ltx_Math" alttext="\displaystyle\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\displaystyle\psi</annotation></semantics></math> y viceversa.
+∎</p>
+</div>
+</div>
+<div id="Thmproposition2" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 13.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">La relacion <math id="Thmproposition2.p1.m1" class="ltx_Math" alttext="\displaystyle\equiv" display="inline"><semantics><mo mathvariant="normal">≡</mo><annotation encoding="application/x-tex">\displaystyle\equiv</annotation></semantics></math> de equivalencia de formulas es una relacion de equivalencia en <math id="Thmproposition2.p1.m2" class="ltx_Math" alttext="\displaystyle\mathcal{{F}}_{0}" display="inline"><semantics><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn mathvariant="normal">0</mn></msub><annotation encoding="application/x-tex">\displaystyle\mathcal{{F}}_{0}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p2" class="ltx_para">
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I3.i1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Reflexiva: <math id="I3.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\forall\varphi" display="inline"><semantics><mrow><mo rspace="0.167em">∀</mo><mi>φ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\forall\varphi</annotation></semantics></math>, <math id="I3.i1.p1.m2" class="ltx_Math" alttext="\displaystyle\varphi=\varphi?" display="inline"><semantics><mrow><mi>φ</mi><mo>=</mo><mrow><mi>φ</mi><mo>⁢</mo><mi mathvariant="normal">?</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\varphi=\varphi?</annotation></semantics></math></p>
+</div>
+<div id="I3.i1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Si <math id="I3.i1.p2.m1" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> tiene los mismos modelos y los mismos contraejemplos que <math id="I3.i1.p2.m2" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I3.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I3.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\forall\varphi,\psi" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mi>φ</mi></mrow><mo>,</mo><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\forall\varphi,\psi</annotation></semantics></math> Si <math id="I3.i2.p1.m2" class="ltx_Math" alttext="\displaystyle\varphi\equiv\psi\Rightarrow\psi\equiv\varphi?" display="inline"><semantics><mrow><mi>φ</mi><mo>≡</mo><mi>ψ</mi><mo stretchy="false">⇒</mo><mi>ψ</mi><mo>≡</mo><mrow><mi>φ</mi><mo>⁢</mo><mi mathvariant="normal">?</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\varphi\equiv\psi\Rightarrow\psi\equiv\varphi?</annotation></semantics></math>.</p>
+</div>
+<div id="I3.i2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Si <math id="I3.i2.p2.m1" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> y <math id="I3.i2.p2.m2" class="ltx_Math" alttext="\displaystyle\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\displaystyle\psi</annotation></semantics></math> tienen los mismos modelos y contraejemplos <math id="I3.i2.p2.m3" class="ltx_Math" alttext="\displaystyle\Rightarrow\psi" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⇒</mo><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow\psi</annotation></semantics></math> y <math id="I3.i2.p2.m4" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> tienen los mismos modelos y contraejemplos.</p>
+</div>
+</li>
+<li id="I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I3.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I3.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\forall\varphi,\psi,\alpha" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">∀</mo><mi>φ</mi></mrow><mo>,</mo><mi>ψ</mi><mo>,</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\displaystyle\forall\varphi,\psi,\alpha</annotation></semantics></math></p>
+<div id="Ex92" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex92.m1" class="ltx_Math" alttext="\displaystyle\begin{rcases}\varphi\equiv\psi\\
+\psi\equiv\alpha\end{rcases}\overset{?}{\Rightarrow}\varphi\equiv\alpha" display="block"><semantics><mrow><mrow><mrow><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>φ</mi><mo>≡</mo><mi>ψ</mi></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>ψ</mi><mo>≡</mo><mi>α</mi></mrow></mtd><mtd></mtd></mtr></mtable><mo>}</mo></mrow><mo>⁢</mo><mover accent="true"><mo stretchy="false">⇒</mo><mo>?</mo></mover><mo>⁢</mo><mi>φ</mi></mrow><mo>≡</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\displaystyle\begin{rcases}\varphi\equiv\psi\\
+\psi\equiv\alpha\end{rcases}\overset{?}{\Rightarrow}\varphi\equiv\alpha</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Si <math id="I3.i3.p1.m2" class="ltx_Math" alttext="\displaystyle\varphi,\psi" display="inline"><semantics><mrow><mi>φ</mi><mo>,</mo><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\varphi,\psi</annotation></semantics></math> tienen los mismos modelos y contraejemplos y <math id="I3.i3.p1.m3" class="ltx_Math" alttext="\displaystyle\varphi,\alpha" display="inline"><semantics><mrow><mi>φ</mi><mo>,</mo><mi>α</mi></mrow><annotation encoding="application/x-tex">\displaystyle\varphi,\alpha</annotation></semantics></math> tienen los mismos modelos y contraejemplos, entonces <math id="I3.i3.p1.m4" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> y <math id="I3.i3.p1.m5" class="ltx_Math" alttext="\displaystyle\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\displaystyle\alpha</annotation></semantics></math> tienen los mismos modelos y contraejemplos.</p>
+</div>
+</li>
+</ol>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="Thmexamplex37" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex37.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Asociatividad de conectivas binarias.</p>
+<ul id="I4" class="ltx_itemize">
+<li id="I4.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I4.i1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I4.i1.p1.m1" class="ltx_math_unparsed" alttext="\displaystyle(\varphi\leftrightarrow\psi)\leftrightarrow\omega\equiv\varphi%
+\leftrightarrow(\psi\leftrightarrow\omega)" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">↔</mo><mi>ψ</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">↔</mo><mi>ω</mi><mo>≡</mo><mi>φ</mi><mo stretchy="false">↔</mo><mrow><mo stretchy="false">(</mo><mi>ψ</mi><mo stretchy="false">↔</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle(\varphi\leftrightarrow\psi)\leftrightarrow\omega\equiv\varphi%
+\leftrightarrow(\psi\leftrightarrow\omega)</annotation></semantics></math></p>
+</div>
+<figure id="I4.i1.tab1" class="ltx_table"><div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table class="ltx_tabular ltx_centering ltx_align_middle">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t"><math id="I4.i1.m1" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="I4.i1.m2" class="ltx_Math" alttext="\displaystyle\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\displaystyle\psi</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="I4.i1.m3" class="ltx_Math" alttext="\displaystyle\omega" display="inline"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\displaystyle\omega</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="I4.i1.m4" class="ltx_Math" alttext="\displaystyle(\varphi\leftrightarrow\psi)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mrow><mi>φ</mi><mo stretchy="false">↔</mo><mi>ψ</mi></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(\varphi\leftrightarrow\psi)</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="I4.i1.m5" class="ltx_math_unparsed" alttext="\displaystyle(\varphi\leftrightarrow\psi)\leftrightarrow\omega" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">↔</mo><mi>ψ</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">↔</mo><mi>ω</mi></mrow><annotation encoding="application/x-tex">\displaystyle(\varphi\leftrightarrow\psi)\leftrightarrow\omega</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="I4.i1.m6" class="ltx_Math" alttext="\displaystyle\psi\leftrightarrow\omega" display="inline"><semantics><mrow><mi>ψ</mi><mo stretchy="false">↔</mo><mi>ω</mi></mrow><annotation encoding="application/x-tex">\displaystyle\psi\leftrightarrow\omega</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="I4.i1.m7" class="ltx_math_unparsed" alttext="\displaystyle\varphi\leftrightarrow(\psi\leftrightarrow\omega)" display="inline"><semantics><mrow><mi>φ</mi><mo stretchy="false">↔</mo><mrow><mo stretchy="false">(</mo><mi>ψ</mi><mo stretchy="false">↔</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\varphi\leftrightarrow(\psi\leftrightarrow\omega)</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_tt">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">0</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">1</td>
+</tr>
+</table>
+</div>
+</figure>
+</li>
+</ul>
+<p class="ltx_p">Obs: la implicacion no es conmutativa ni asociativa en general.</p>
+</div>
+<div id="Thmexamplex37.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Contraejemplos: <math id="Thmexamplex37.p2.m1" class="ltx_Math" alttext="\displaystyle p\rightarrow q\cancel{\Rightarrow}q\rightarrow p" display="inline"><semantics><mrow><mi>p</mi><mo stretchy="false">→</mo><mrow><mi>q</mi><mo>⁢</mo><menclose notation="updiagonalstrike"><mo stretchy="false">⇒</mo></menclose><mo>⁢</mo><mi>q</mi></mrow><mo stretchy="false">→</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\displaystyle p\rightarrow q\cancel{\Rightarrow}q\rightarrow p</annotation></semantics></math>.</p>
+</div>
+<div id="Thmexamplex37.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">Para justificarlo encuentro una valoracion que haga una verdadera y otra falsa.</p>
+</div>
+<div id="Thmexamplex37.p4" class="ltx_para ltx_noindent">
+<div id="Ex93" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex93.m1" class="ltx_Math" alttext="\displaystyle u\begin{dcases}p=1\\
+q=0\end{dcases}\Rightarrow p\rightarrow q=0,q\rightarrow p=1" display="block"><semantics><mrow><mrow><mrow><mi>u</mi><mo>⁢</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>p</mi><mo>=</mo><mn>1</mn></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>q</mi><mo>=</mo><mn>0</mn></mrow></mtd><mtd></mtd></mtr></mtable></mrow></mrow><mo stretchy="false">⇒</mo><mi>p</mi><mo stretchy="false">→</mo><mi>q</mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo><mrow><mi>q</mi><mo stretchy="false">→</mo><mi>p</mi><mo>=</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle u\begin{dcases}p=1\\
+q=0\end{dcases}\Rightarrow p\rightarrow q=0,q\rightarrow p=1</annotation></semantics></math></span>
+</div>
+</div>
+<div id="Thmexamplex37.p5" class="ltx_para">
+<p class="ltx_p"><math id="Thmexamplex37.p5.m1" class="ltx_Math" alttext="\displaystyle p\rightarrow(q\rightarrow r)\cancel{\equiv}(p\rightarrow q)\rightarrow
+r" display="inline"><semantics><mrow><mi>p</mi><mo stretchy="false">→</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>q</mi><mo stretchy="false">→</mo><mi>r</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><menclose notation="updiagonalstrike"><mo>≡</mo></menclose><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo stretchy="false">→</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">\displaystyle p\rightarrow(q\rightarrow r)\cancel{\equiv}(p\rightarrow q)\rightarrow
+r</annotation></semantics></math> con la valoracion <math id="Thmexamplex37.p5.m2" class="ltx_Math" alttext="\displaystyle u:p=1,q=1,r=0" display="inline"><semantics><mrow><mi>u</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi>p</mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mrow><mi>q</mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>r</mi><mo>=</mo><mn>0</mn></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle u:p=1,q=1,r=0</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmdefinition2" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 13.2</span></span><span class="ltx_text ltx_font_bold"> </span>(Subformula)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition2.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="Thmdefinition2.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> una formula. Decimos que <math id="Thmdefinition2.p1.m2" class="ltx_Math" alttext="\displaystyle\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\displaystyle\sigma</annotation></semantics></math> es subformula de <math id="Thmdefinition2.p1.m3" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> si <math id="Thmdefinition2.p1.m4" class="ltx_Math" alttext="\displaystyle\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\displaystyle\sigma</annotation></semantics></math> es una cadena de simbolos consecutivos que aparecen dentro de la formula <math id="Thmdefinition2.p1.m5" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> y que es, a su vez, una formula.</p>
+</div>
+</div>
+<div id="Thmtheorem1" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 13.1</span></span><span class="ltx_text ltx_font_bold"> </span>(de sustitucion)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sean</span></p>
+<ul id="I5" class="ltx_itemize">
+<li id="I5.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I5.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math><span class="ltx_text ltx_font_italic"> una formula</span></p>
+</div>
+</li>
+<li id="I5.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I5.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\displaystyle\sigma</annotation></semantics></math><span class="ltx_text ltx_font_italic"> una subformula de </span><math id="I5.i2.p1.m2" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I5.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I5.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I5.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\rho" display="inline"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\displaystyle\rho</annotation></semantics></math><span class="ltx_text ltx_font_italic"> una formula tal que </span><math id="I5.i3.p1.m2" class="ltx_Math" alttext="\displaystyle\varphi\equiv\rho" display="inline"><semantics><mrow><mi>φ</mi><mo>≡</mo><mi>ρ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\varphi\equiv\rho</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I5.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I5.i4.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I5.i4.p1.m1" class="ltx_Math" alttext="\displaystyle\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\displaystyle\psi</annotation></semantics></math><span class="ltx_text ltx_font_italic"> el resultado de sustituir en </span><math id="I5.i4.p1.m2" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math><span class="ltx_text ltx_font_italic"> la subformula </span><math id="I5.i4.p1.m3" class="ltx_Math" alttext="\displaystyle\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\displaystyle\sigma</annotation></semantics></math><span class="ltx_text ltx_font_italic"> por </span><math id="I5.i4.p1.m4" class="ltx_Math" alttext="\displaystyle\rho" display="inline"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\displaystyle\rho</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+</ul>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Entonces <math id="Thmtheorem1.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi\equiv\psi" display="inline"><semantics><mrow><mi>φ</mi><mo mathvariant="normal">≡</mo><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\varphi\equiv\psi</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Obvio.
+∎</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S12.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Pt4.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

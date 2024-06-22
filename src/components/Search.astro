@@ -1,0 +1,41 @@
+<div id="search"></div>
+<script>
+  window.addEventListener("DOMContentLoaded", (event) => {
+    // @ts-ignore
+    new PagefindUI({
+      element: "#search",
+      translations: {
+        placeholder: "Buscar",
+        clear_search: "Limpiar",
+        load_more: "Ver más resultados",
+        search_label: "Buscar en este sitio",
+        filters_label: "Filtros",
+        zero_results: "No se encontraron resultados para [SEARCH_TERM]",
+        many_results: "[COUNT] resultados encontrados para [SEARCH_TERM]",
+        one_result: "[COUNT] resultado encontrado para [SEARCH_TERM]",
+        alt_search:
+          "No se encontraron resultados para [SEARCH_TERM]. Mostrando en su lugar resultados para [DIFFERENT_TERM]",
+        search_suggestion:
+          "No se encontraron resultados para [SEARCH_TERM]. Prueba una de las siguientes búsquedas:",
+        searching: "Buscando [SEARCH_TERM]...",
+      },
+      showSubResults: true,
+      baseUrl: "apuntes/",
+      showImages: false,
+      autofocus: false,
+      pageSize: 10,
+      highlightParam: "highlight",
+      excerpLength: 30,
+      processResult: function (result) {
+        if (!result.raw_title) {
+          result.raw_title = result.meta.title;
+        }
+        // Add the page type to the title
+        result.meta.title = `${result.filters["asignatura"]} ▸ ${result.raw_title}`;
+
+        return result;
+      },
+      showEmptyFilters: false,
+    });
+  });
+</script>

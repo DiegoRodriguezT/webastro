@@ -1,0 +1,480 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Lógica" course="1º Curso" prof="Ángel Pérez" data-pagefind-filter="asignatura[content], curso[course], profesor[prof]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>12 Consecuencia logica ‣ Parte III Semantica de la logica proposicional ‣ Lógica‣ Parte III Semantica de la logica proposicional ‣ Lógica</title>
+<!--Generated on Fri Jun  7 11:07:44 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="up up" href="index.html" title="Lógica">
+<link rel="start" href="index.html" title="Lógica">
+<link rel="prev" href="S11.html" title="11 Modelos y contraejemplos. Clasificacion de formulas ‣ Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="next" href="S13.html" title="13 Equivalencia de formulas ‣ Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="section" href="S10.html" title="10 Evaluacion semantica de formulas (valores de verdad) ‣ Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="section" href="S11.html" title="11 Modelos y contraejemplos. Clasificacion de formulas ‣ Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="section" href="S13.html" title="13 Equivalencia de formulas ‣ Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="section" href="Sx1.html" title="Terminología matemática ‣ Lógica">
+<link rel="part" href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="part" href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica">
+<link rel="part" href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="part" href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica">
+<link rel="part" href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="part" href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica">
+<link rel="part" href="Pt7.html" title="Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Lógica" class="ltx_ref" rel="start">Lógica</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Sx1.html" title="Terminología matemática ‣ Lógica" class="ltx_ref">Terminología matemática</a></li>
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>Conjuntos, relaciones y funciones</a></li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Sintaxis de la lógica proposicional</a></li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Semantica de la logica proposicional</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="10" data-path="S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S10.html" title="10 Evaluacion semantica de formulas (valores de verdad) ‣ Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>Evaluacion semantica de formulas (valores de verdad)</a></li>
+<li data-level="11" data-path="S11.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S11.html" title="11 Modelos y contraejemplos. Clasificacion de formulas ‣ Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>Modelos y contraejemplos. Clasificacion de formulas</a></li>
+<li data-level="12" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="12 Consecuencia logica ‣ Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">12 </span></b>Consecuencia logica</a></li>
+<li data-level="13" data-path="S13.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S13.html" title="13 Equivalencia de formulas ‣ Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">13 </span></b>Equivalencia de formulas</a></li>
+</ol>
+</li>
+<li data-level="IV" data-path="Pt4.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">IV </span></b>Teoria de la demostracion para logica proposicional</a></li>
+<li data-level="V" data-path="Pt5.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">V </span></b>Sintaxis de la logica de predicados</a></li>
+<li data-level="VI" data-path="Pt6.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VI </span></b>Semantica de la logica de predicados</a></li>
+<li data-level="VII" data-path="Pt7.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt7.html" title="Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VII </span></b>Teoria de la demostracion en logica de predicados</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Consecuencia logica</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">12</span> Consecuencia logica</h1>
+
+<div id="Thmdefinition1" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 12.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition1.p1" class="ltx_para">
+<p class="ltx_p">Sea <math id="Thmdefinition1.p1.m1" class="ltx_Math" alttext="\displaystyle\Phi=\{\varphi_{1},\varphi_{2},\ldots,\varphi_{n}\}" display="inline"><semantics><mrow><mi mathvariant="normal">Φ</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>φ</mi><mn>1</mn></msub><mo>,</mo><msub><mi>φ</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>φ</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\Phi=\{\varphi_{1},\varphi_{2},\ldots,\varphi_{n}\}</annotation></semantics></math> un conjintp de formulas y <math id="Thmdefinition1.p1.m2" class="ltx_Math" alttext="\displaystyle u" display="inline"><semantics><mi>u</mi><annotation encoding="application/x-tex">\displaystyle u</annotation></semantics></math> una valoracion. Decimos que <math id="Thmdefinition1.p1.m3" class="ltx_Math" alttext="\displaystyle u" display="inline"><semantics><mi>u</mi><annotation encoding="application/x-tex">\displaystyle u</annotation></semantics></math> es modelo de <math id="Thmdefinition1.p1.m4" class="ltx_Math" alttext="\displaystyle\Phi" display="inline"><semantics><mi mathvariant="normal">Φ</mi><annotation encoding="application/x-tex">\displaystyle\Phi</annotation></semantics></math> si <math id="Thmdefinition1.p1.m5" class="ltx_Math" alttext="\displaystyle\forall i(u\models\varphi_{i})" display="inline"><semantics><mrow><mo rspace="0.167em">∀</mo><mrow><mi>i</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>u</mi><mo>⊧</mo><msub><mi>φ</mi><mi>i</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall i(u\models\varphi_{i})</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmdefinition2" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 12.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition2.p1" class="ltx_para">
+<p class="ltx_p">Sean <math id="Thmdefinition2.p1.m1" class="ltx_Math" alttext="\displaystyle\Phi=\{\varphi_{1},\ldots,\varphi_{n}\}" display="inline"><semantics><mrow><mi mathvariant="normal">Φ</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>φ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>φ</mi><mi>n</mi></msub><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\Phi=\{\varphi_{1},\ldots,\varphi_{n}\}</annotation></semantics></math> un conjunto de formulas y <math id="Thmdefinition2.p1.m2" class="ltx_Math" alttext="\displaystyle\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\displaystyle\psi</annotation></semantics></math> otra formula. Decimos que <math id="Thmdefinition2.p1.m3" class="ltx_Math" alttext="\displaystyle\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\displaystyle\psi</annotation></semantics></math> es consecuencia logica de <math id="Thmdefinition2.p1.m4" class="ltx_Math" alttext="\displaystyle\Phi" display="inline"><semantics><mi mathvariant="normal">Φ</mi><annotation encoding="application/x-tex">\displaystyle\Phi</annotation></semantics></math> si todo modelo de <math id="Thmdefinition2.p1.m5" class="ltx_Math" alttext="\displaystyle\Phi" display="inline"><semantics><mi mathvariant="normal">Φ</mi><annotation encoding="application/x-tex">\displaystyle\Phi</annotation></semantics></math> tambien es modelo de <math id="Thmdefinition2.p1.m6" class="ltx_Math" alttext="\displaystyle\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\displaystyle\psi</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmremarkx27" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx27.p1" class="ltx_para">
+<p class="ltx_p">Si <math id="Thmremarkx27.p1.m1" class="ltx_Math" alttext="\displaystyle\Phi=\{\varphi\}" display="inline"><semantics><mrow><mi mathvariant="normal">Φ</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mi>φ</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\Phi=\{\varphi\}</annotation></semantics></math> consta de una unica formula y <math id="Thmremarkx27.p1.m2" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> es otra formula, en lugar de</p>
+</div>
+</div>
+<div id="Thmdefinition3" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 12.3</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition3.p1" class="ltx_para">
+<p class="ltx_p">Recordemos que un razonamiento es una formula de tipo</p>
+<div id="Ex87" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex87.m1" class="ltx_Math" alttext="\displaystyle\varphi_{1}\wedge\varphi_{2}\wedge\cdots\wedge\varphi_{n}" display="block"><semantics><mrow><msub><mi>φ</mi><mn>1</mn></msub><mo>∧</mo><msub><mi>φ</mi><mn>2</mn></msub><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><msub><mi>φ</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle\varphi_{1}\wedge\varphi_{2}\wedge\cdots\wedge\varphi_{n}</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmexamplex34" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex34.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Estudia si la siguiente implicacion logica es cierta</p>
+<div id="Ex88" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex88.m1" class="ltx_Math" alttext="\displaystyle\{p\rightarrow q,q\rightarrow r,\neg r\}\models\neg p" display="block"><semantics><mrow><mrow><mo stretchy="false">{</mo><mrow><mrow><mi>p</mi><mo stretchy="false">→</mo><mi>q</mi></mrow><mo>,</mo><mrow><mi>q</mi><mo stretchy="false">→</mo><mrow><mi>r</mi><mo>,</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>r</mi></mrow></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow><mo>⊧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\{p\rightarrow q,q\rightarrow r,\neg r\}\models\neg p</annotation></semantics></math></span>
+</div>
+</div>
+<figure id="Thmexamplex34.tab1" class="ltx_table"><div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table class="ltx_tabular ltx_centering ltx_align_middle">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">p</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">q</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">r</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Thmexamplex34.m1" class="ltx_Math" alttext="\displaystyle p\rightarrow q" display="inline"><semantics><mrow><mi>p</mi><mo stretchy="false">→</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">\displaystyle p\rightarrow q</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Thmexamplex34.m2" class="ltx_Math" alttext="\displaystyle q\rightarrow r" display="inline"><semantics><mrow><mi>q</mi><mo stretchy="false">→</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">\displaystyle q\rightarrow r</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Thmexamplex34.m3" class="ltx_Math" alttext="\displaystyle\neg r" display="inline"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">\displaystyle\neg r</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Thmexamplex34.m4" class="ltx_Math" alttext="\displaystyle\neg p" display="inline"><semantics><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\displaystyle\neg p</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Thmexamplex34.m5" class="ltx_Math" alttext="\displaystyle\varphi_{1}\wedge\varphi_{2}\wedge\varphi_{3}" display="inline"><semantics><mrow><msub><mi>φ</mi><mn>1</mn></msub><mo>∧</mo><msub><mi>φ</mi><mn>2</mn></msub><mo>∧</mo><msub><mi>φ</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle\varphi_{1}\wedge\varphi_{2}\wedge\varphi_{3}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t"><math id="Thmexamplex34.m6" class="ltx_Math" alttext="\displaystyle(\varphi_{1}\wedge\varphi_{2}\wedge\varphi_{3})\rightarrow\psi" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>φ</mi><mn>1</mn></msub><mo>∧</mo><msub><mi>φ</mi><mn>2</mn></msub><mo>∧</mo><msub><mi>φ</mi><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\displaystyle(\varphi_{1}\wedge\varphi_{2}\wedge\varphi_{3})\rightarrow\psi</annotation></semantics></math></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_tt">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_tt">0</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">1</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">1</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">0</td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">1</td>
+</tr>
+</table>
+</div>
+</figure>
+<div id="Thmexamplex34.p2" class="ltx_para">
+<p class="ltx_p"><math id="Thmexamplex34.p2.m1" class="ltx_Math" alttext="\displaystyle\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\displaystyle\psi</annotation></semantics></math> es consecuencia logica del compuesto de formulas <math id="Thmexamplex34.p2.m2" class="ltx_Math" alttext="\displaystyle\{\varphi_{1},\varphi_{2},\varphi_{3}\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><msub><mi>φ</mi><mn>1</mn></msub><mo>,</mo><msub><mi>φ</mi><mn>2</mn></msub><mo>,</mo><msub><mi>φ</mi><mn>3</mn></msub><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\displaystyle\{\varphi_{1},\varphi_{2},\varphi_{3}\}</annotation></semantics></math>.
+Contradiccion…</p>
+</div>
+</div>
+<div id="Thmproposition1" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 12.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sean <math id="Thmproposition1.p1.m1" class="ltx_Math" alttext="\displaystyle\Phi=\{\varphi_{1},\ldots,\varphi_{n}\}" display="inline"><semantics><mrow><mi mathvariant="normal">Φ</mi><mo mathvariant="normal">=</mo><mrow><mo mathvariant="normal" stretchy="false">{</mo><msub><mi>φ</mi><mn mathvariant="normal">1</mn></msub><mo mathvariant="normal">,</mo><mi mathvariant="normal">…</mi><mo mathvariant="normal">,</mo><msub><mi>φ</mi><mi>n</mi></msub><mo mathvariant="normal" stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\Phi=\{\varphi_{1},\ldots,\varphi_{n}\}</annotation></semantics></math> un conjunto de formulas y <math id="Thmproposition1.p1.m2" class="ltx_Math" alttext="\displaystyle\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\displaystyle\psi</annotation></semantics></math> otra formula. Entonces las siguientes afirmaciones son equivalentes:</span></p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\Phi\models\psi" display="inline"><semantics><mrow><mi mathvariant="normal">Φ</mi><mo>⊧</mo><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\Phi\models\psi</annotation></semantics></math><span class="ltx_text ltx_font_italic"></span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">El razonamiento </span><math id="I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi_{1}\wedge\varphi_{2}\wedge\cdots\wedge\varphi_{n}" display="inline"><semantics><mrow><msub><mi>φ</mi><mn>1</mn></msub><mo>∧</mo><msub><mi>φ</mi><mn>2</mn></msub><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><msub><mi>φ</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle\varphi_{1}\wedge\varphi_{2}\wedge\cdots\wedge\varphi_{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> </span><math id="I1.i2.p1.m2" class="ltx_Math" alttext="\displaystyle\rightarrow\psi" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">→</mo><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\rightarrow\psi</annotation></semantics></math><span class="ltx_text ltx_font_italic"> es correcto.</span></p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">La formula </span><math id="I1.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi_{1}\wedge\varphi_{2}\wedge\cdots\wedge\varphi_{n}\wedge\neg\psi" display="inline"><semantics><mrow><msub><mi>φ</mi><mn>1</mn></msub><mo>∧</mo><msub><mi>φ</mi><mn>2</mn></msub><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><msub><mi>φ</mi><mi>n</mi></msub><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>ψ</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\varphi_{1}\wedge\varphi_{2}\wedge\cdots\wedge\varphi_{n}\wedge\neg\psi</annotation></semantics></math><span class="ltx_text ltx_font_italic"> es una contradiccion.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Los tres puntos son equivalentes a decir que, para toda valoracion <math id="p1.m1" class="ltx_Math" alttext="\displaystyle v" display="inline"><semantics><mi>v</mi><annotation encoding="application/x-tex">\displaystyle v</annotation></semantics></math> que cumpla que</p>
+<div id="Ex89" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex89.m1" class="ltx_Math" alttext="\displaystyle\varphi^{v}_{1}=1,\varphi^{v}_{2}=1,\ldots,\varphi^{v}_{n}=1" display="block"><semantics><mrow><mrow><msubsup><mi>φ</mi><mn>1</mn><mi>v</mi></msubsup><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mrow><msubsup><mi>φ</mi><mn>2</mn><mi>v</mi></msubsup><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo><mrow><msubsup><mi>φ</mi><mi>n</mi><mi>v</mi></msubsup><mo>=</mo><mn>1</mn></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\varphi^{v}_{1}=1,\varphi^{v}_{2}=1,\ldots,\varphi^{v}_{n}=1</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Si cumple inversamente que <math id="p1.m2" class="ltx_Math" alttext="\displaystyle\psi^{v}=1" display="inline"><semantics><mrow><msup><mi>ψ</mi><mi>v</mi></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle\psi^{v}=1</annotation></semantics></math>
+∎</p>
+</div>
+</div>
+<div id="Thmexamplex35" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex35.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Estudia si el razonamiento:
+“Si llueve hace viento. No hace viento a menos que haga frio. No hace frio. Por tanto, no llueve.”</p>
+</div>
+<div id="Thmexamplex35.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">formalizado mediante la formula</p>
+</div>
+<div id="Thmexamplex35.p3" class="ltx_para ltx_noindent">
+<div id="Ex90" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex90.m1" class="ltx_Math" alttext="\displaystyle(l\rightarrow v)\wedge(\neg f\rightarrow\neg v)\wedge\neg f%
+\rightarrow\neg l" display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo stretchy="false">→</mo><mi>v</mi></mrow><mo stretchy="false">)</mo></mrow><mo>∧</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>f</mi></mrow><mo stretchy="false">→</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>v</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>∧</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>f</mi></mrow></mrow><mo stretchy="false">→</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>l</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle(l\rightarrow v)\wedge(\neg f\rightarrow\neg v)\wedge\neg f%
+\rightarrow\neg l</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">es correcto.</p>
+</div>
+<div id="Thmexamplex35.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p">Supongamos que el razonamiento es incorrecto, es decir, que existe una valoracion <math id="Thmexamplex35.p4.m1" class="ltx_Math" alttext="\displaystyle u" display="inline"><semantics><mi>u</mi><annotation encoding="application/x-tex">\displaystyle u</annotation></semantics></math> que hace ciertas las premisas y falsa la conclusion, es decir,</p>
+</div>
+<div id="Thmexamplex35.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="Thmexamplex35.p5.m1" class="ltx_Math" alttext="\displaystyle(l\rightarrow v)^{u}=1" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo stretchy="false">→</mo><mi>v</mi></mrow><mo stretchy="false">)</mo></mrow><mi>u</mi></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle(l\rightarrow v)^{u}=1</annotation></semantics></math> (1), <math id="Thmexamplex35.p5.m2" class="ltx_Math" alttext="\displaystyle(\neg f\rightarrow\neg v)=1" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>f</mi></mrow><mo stretchy="false">→</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>v</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle(\neg f\rightarrow\neg v)=1</annotation></semantics></math> (2), <math id="Thmexamplex35.p5.m3" class="ltx_Math" alttext="\displaystyle(\neg f)^{u}=1" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>f</mi></mrow><mo stretchy="false">)</mo></mrow><mi>u</mi></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle(\neg f)^{u}=1</annotation></semantics></math> (3), <math id="Thmexamplex35.p5.m4" class="ltx_Math" alttext="\displaystyle(\neg l)^{u}=0" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>l</mi></mrow><mo stretchy="false">)</mo></mrow><mi>u</mi></msup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle(\neg l)^{u}=0</annotation></semantics></math> (4).</p>
+</div>
+<div id="Thmexamplex35.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="Thmexamplex35.p6.m1" class="ltx_Math" alttext="\displaystyle(4)\Rightarrow u(l)=1\Rightarrow u(v)=1\Rightarrow(\neg v)^{u}=0%
+\Rightarrow(\neg f\Rightarrow\neg v)^{u}=0" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mo stretchy="false">⇒</mo><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>l</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn><mo stretchy="false">⇒</mo><mrow><mi>u</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn><mo stretchy="false">⇒</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>v</mi></mrow><mo stretchy="false">)</mo></mrow><mi>u</mi></msup><mo>=</mo><mn>0</mn><mo stretchy="false">⇒</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>f</mi></mrow><mo stretchy="false">⇒</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>v</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mi>u</mi></msup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle(4)\Rightarrow u(l)=1\Rightarrow u(v)=1\Rightarrow(\neg v)^{u}=0%
+\Rightarrow(\neg f\Rightarrow\neg v)^{u}=0</annotation></semantics></math>.</p>
+</div>
+<div id="Thmexamplex35.p7" class="ltx_para ltx_noindent">
+<p class="ltx_p">Contradiccion porque <math id="Thmexamplex35.p7.m1" class="ltx_Math" alttext="\displaystyle\neg f\rightarrow\neg v" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>f</mi></mrow><mo stretchy="false">→</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>v</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\neg f\rightarrow\neg v</annotation></semantics></math> es a la vez verdadera y falsa.</p>
+</div>
+<div id="Thmexamplex35.p8" class="ltx_para">
+<p class="ltx_p">Luego el razonamiento es correcto.</p>
+</div>
+</div>
+<div id="Thmexamplex36" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex36.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Estudia si el razonamiento del ejercicio 14 de la hoja 2:</p>
+</div>
+<div id="Thmexamplex36.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">“Si llueve las calles estaran vacias. Si las calles estan vacias, el comercio obtiene perdidas. Los musicos no podrian sobrevivir si los comerciantes no les contratasen para componer canciones para publicidad. Los comerciantes invierten en canciones publicitarias cuando tienen perdidas. Por tanto, si llueve, los musicos pueden sobrevivir”</p>
+</div>
+<div id="Thmexamplex36.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p">formalizado mediante la formula</p>
+<div id="Ex91" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex91.m1" class="ltx_Math" alttext="\displaystyle(l\rightarrow v)\wedge(v\rightarrow p)\wedge(\neg c\rightarrow%
+\neg m)\wedge(p\rightarrow c)\rightarrow(l\rightarrow m)" display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo stretchy="false">→</mo><mi>v</mi></mrow><mo stretchy="false">)</mo></mrow><mo>∧</mo><mrow><mo stretchy="false">(</mo><mrow><mi>v</mi><mo stretchy="false">→</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mo>∧</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>c</mi></mrow><mo stretchy="false">→</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>m</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>∧</mo><mrow><mo stretchy="false">(</mo><mrow><mi>p</mi><mo stretchy="false">→</mo><mi>c</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo stretchy="false">→</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle(l\rightarrow v)\wedge(v\rightarrow p)\wedge(\neg c\rightarrow%
+\neg m)\wedge(p\rightarrow c)\rightarrow(l\rightarrow m)</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">es correcto.</p>
+</div>
+<div id="Thmexamplex36.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="Thmexamplex36.p4.m1" class="ltx_Math" alttext="\displaystyle l\rightarrow v\;(1)" display="inline"><semantics><mrow><mi>l</mi><mo stretchy="false">→</mo><mrow><mi>v</mi><mo lspace="0.280em">⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle l\rightarrow v\;(1)</annotation></semantics></math>, <math id="Thmexamplex36.p4.m2" class="ltx_Math" alttext="\displaystyle v\rightarrow p" display="inline"><semantics><mrow><mi>v</mi><mo stretchy="false">→</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\displaystyle v\rightarrow p</annotation></semantics></math> (2), <math id="Thmexamplex36.p4.m3" class="ltx_Math" alttext="\displaystyle\neg c\rightarrow\neg m" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>c</mi></mrow><mo stretchy="false">→</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>m</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\neg c\rightarrow\neg m</annotation></semantics></math> (3), <math id="Thmexamplex36.p4.m4" class="ltx_Math" alttext="\displaystyle p\rightarrow c" display="inline"><semantics><mrow><mi>p</mi><mo stretchy="false">→</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\displaystyle p\rightarrow c</annotation></semantics></math> (4)</p>
+</div>
+<div id="Thmexamplex36.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">Conclusion: <math id="Thmexamplex36.p5.m1" class="ltx_Math" alttext="\displaystyle l\rightarrow m" display="inline"><semantics><mrow><mi>l</mi><mo stretchy="false">→</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">\displaystyle l\rightarrow m</annotation></semantics></math> (5).</p>
+</div>
+<div id="Thmexamplex36.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">Supongamos que el razonamiento es incorrecto, es decir, existe una valoracion u tal que</p>
+</div>
+<div id="Thmexamplex36.p7" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="Thmexamplex36.p7.m1" class="ltx_Math" alttext="\displaystyle(l\rightarrow v)=1" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>l</mi><mo stretchy="false">→</mo><mi>v</mi></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle(l\rightarrow v)=1</annotation></semantics></math>, <math id="Thmexamplex36.p7.m2" class="ltx_Math" alttext="\displaystyle(v\rightarrow p)=1" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>v</mi><mo stretchy="false">→</mo><mi>p</mi></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle(v\rightarrow p)=1</annotation></semantics></math>, <math id="Thmexamplex36.p7.m3" class="ltx_Math" alttext="\displaystyle(\neg c\rightarrow\neg m)=1" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>c</mi></mrow><mo stretchy="false">→</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>m</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle(\neg c\rightarrow\neg m)=1</annotation></semantics></math>, <math id="Thmexamplex36.p7.m4" class="ltx_Math" alttext="\displaystyle p\rightarrow c=1" display="inline"><semantics><mrow><mi>p</mi><mo stretchy="false">→</mo><mi>c</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle p\rightarrow c=1</annotation></semantics></math>, <math id="Thmexamplex36.p7.m5" class="ltx_Math" alttext="\displaystyle l\rightarrow m=0\Rightarrow l=1,m=0" display="inline"><semantics><mrow><mrow><mi>l</mi><mo stretchy="false">→</mo><mi>m</mi><mo>=</mo><mn>0</mn><mo stretchy="false">⇒</mo><mi>l</mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle l\rightarrow m=0\Rightarrow l=1,m=0</annotation></semantics></math></p>
+</div>
+<div id="Thmexamplex36.p8" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="Thmexamplex36.p8.m1" class="ltx_Math" alttext="\displaystyle l=1\Rightarrow v=1(1)\Rightarrow p=1(2)\Rightarrow c=1(4)" display="inline"><semantics><mrow><mi>l</mi><mo>=</mo><mn>1</mn><mo stretchy="false">⇒</mo><mi>v</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">⇒</mo><mi>p</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">⇒</mo><mi>c</mi><mo>=</mo><mrow><mn>1</mn><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>4</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle l=1\Rightarrow v=1(1)\Rightarrow p=1(2)\Rightarrow c=1(4)</annotation></semantics></math></p>
+</div>
+<div id="Thmexamplex36.p9" class="ltx_para ltx_noindent">
+<p class="ltx_p">Con esta valoracion, <math id="Thmexamplex36.p9.m1" class="ltx_Math" alttext="\displaystyle l=1,m=0,v=1,p=1" display="inline"><semantics><mrow><mrow><mi>l</mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow><mo>,</mo><mrow><mrow><mi>v</mi><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>p</mi><mo>=</mo><mn>1</mn></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle l=1,m=0,v=1,p=1</annotation></semantics></math> y <math id="Thmexamplex36.p9.m2" class="ltx_Math" alttext="\displaystyle c=1" display="inline"><semantics><mrow><mi>c</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle c=1</annotation></semantics></math> se tiene que (3) es verdadera.</p>
+</div>
+<div id="Thmexamplex36.p10" class="ltx_para">
+<p class="ltx_p">Luego esta valoracion es un contraejemplo al razonamiento y, por tanto, el razonamiento es incorrecto.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S11.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S13.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Lógica" course="1º Curso" prof="Ángel Pérez" data-pagefind-filter="asignatura[content], curso[course], profesor[prof]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>21 Arbol estructural, recursion, induccion ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica‣ Parte V Sintaxis de la logica de predicados ‣ Lógica</title>
+<!--Generated on Fri Jun  7 11:07:44 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="up up" href="index.html" title="Lógica">
+<link rel="start" href="index.html" title="Lógica">
+<link rel="prev" href="S20.html" title="20 Alfabeto y reglas de formacion de formulas ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="next" href="S22.html" title="22 Variables libres y variables ligadas ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="section" href="S19.html" title="19 Introduccion intuitiva a la formalizacion ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="section" href="S20.html" title="20 Alfabeto y reglas de formacion de formulas ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="section" href="S22.html" title="22 Variables libres y variables ligadas ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="section" href="Sx1.html" title="Terminología matemática ‣ Lógica">
+<link rel="part" href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica">
+<link rel="part" href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica">
+<link rel="part" href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica">
+<link rel="part" href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica">
+<link rel="part" href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica">
+<link rel="part" href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica">
+<link rel="part" href="Pt7.html" title="Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Lógica" class="ltx_ref" rel="start">Lógica</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Sx1.html" title="Terminología matemática ‣ Lógica" class="ltx_ref">Terminología matemática</a></li>
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt1.html" title="Parte I Conjuntos, relaciones y funciones ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>Conjuntos, relaciones y funciones</a></li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt2.html" title="Parte II Sintaxis de la lógica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Sintaxis de la lógica proposicional</a></li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt3.html" title="Parte III Semantica de la logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Semantica de la logica proposicional</a></li>
+<li data-level="IV" data-path="Pt4.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt4.html" title="Parte IV Teoria de la demostracion para logica proposicional ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">IV </span></b>Teoria de la demostracion para logica proposicional</a></li>
+<li data-level="V" data-path="Pt5.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt5.html" title="Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">V </span></b>Sintaxis de la logica de predicados</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="19" data-path="S19.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S19.html" title="19 Introduccion intuitiva a la formalizacion ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">19 </span></b>Introduccion intuitiva a la formalizacion</a></li>
+<li data-level="20" data-path="S20.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S20.html" title="20 Alfabeto y reglas de formacion de formulas ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">20 </span></b>Alfabeto y reglas de formacion de formulas</a></li>
+<li data-level="21" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="21 Arbol estructural, recursion, induccion ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">21 </span></b>Arbol estructural, recursion, induccion</a></li>
+<li data-level="22" data-path="S22.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S22.html" title="22 Variables libres y variables ligadas ‣ Parte V Sintaxis de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">22 </span></b>Variables libres y variables ligadas</a></li>
+</ol>
+</li>
+<li data-level="VI" data-path="Pt6.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt6.html" title="Parte VI Semantica de la logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VI </span></b>Semantica de la logica de predicados</a></li>
+<li data-level="VII" data-path="Pt7.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt7.html" title="Parte VII Teoria de la demostracion en logica de predicados ‣ Lógica" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">VII </span></b>Teoria de la demostracion en logica de predicados</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Arbol estructural, recursion, induccion</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">21</span> Arbol estructural, recursion, induccion</h1>
+
+<div id="Thmremarkx34" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+</div>
+<div id="Thmexamplex53" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex53.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Dibujar el arbol estructural de la formula:</p>
+<div id="Ex123" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex123.m1" class="ltx_math_unparsed" alttext="\displaystyle\forall x(P(a,f(x))\wedge Q(f(a)))\rightarrow(p\vee P(g(b,y),a)%
+\leftrightarrow\exists y(Q(y)\wedge(g(a,a)=x)))" display="block"><semantics><mrow><mo rspace="0.167em">∀</mo><mi>x</mi><mrow><mo stretchy="false">(</mo><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo>∧</mo><mi>Q</mi><mrow><mo stretchy="false">(</mo><mi>f</mi><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>∨</mo><mi>P</mi><mrow><mo stretchy="false">(</mo><mi>g</mi><mrow><mo stretchy="false">(</mo><mi>b</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">↔</mo><mo rspace="0.167em">∃</mo><mi>y</mi><mrow><mo stretchy="false">(</mo><mi>Q</mi><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∧</mo><mrow><mo stretchy="false">(</mo><mi>g</mi><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\forall x(P(a,f(x))\wedge Q(f(a)))\rightarrow(p\vee P(g(b,y),a)%
+\leftrightarrow\exists y(Q(y)\wedge(g(a,a)=x)))</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmexamplex54" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex54.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Recursion. Definir por recursion una fubcion que, dada una formula cualquiera de la logica de predicados, devuelva el numero de conectivas que aparecen en la formula.</p>
+</div>
+<div id="Thmexamplex54.p2" class="ltx_para ltx_noindent">
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex124" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex124X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex124X.m2" class="ltx_Math" alttext="\displaystyle f\colon\mathcal{{F}}_{1}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle f\colon\mathcal{{F}}_{1}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex124X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow\mathbb{N}\cup\{0\}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mrow><mi>ℕ</mi><mo>∪</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow\mathbb{N}\cup\{0\}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex124Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex124Xa.m2" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex124Xa.m3" class="ltx_Math" alttext="\displaystyle\longmapsto f(\varphi)=\text{ num conectivas }" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mtext> num conectivas</mtext></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto f(\varphi)=\text{ num conectivas }</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<div id="Thmexamplex54.p3" class="ltx_para">
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I1.i1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Para formulas atomicas, <math id="I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle f(\top)=1" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⊤</mo><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle f(\top)=1</annotation></semantics></math>, <math id="I1.i1.p1.m2" class="ltx_Math" alttext="\displaystyle f(\perp)=1" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⟂</mo><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle f(\perp)=1</annotation></semantics></math>. Si <math id="I1.i1.p1.m3" class="ltx_Math" alttext="\displaystyle p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">\displaystyle p</annotation></semantics></math> es un simbolo de proposicion atomica, <math id="I1.i1.p1.m4" class="ltx_Math" alttext="\displaystyle f(p)=0" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle f(p)=0</annotation></semantics></math>. <math id="I1.i1.p1.m5" class="ltx_Math" alttext="\displaystyle f(P(t_{1},\ldots,t_{n}))=0" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>t</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle f(P(t_{1},\ldots,t_{n}))=0</annotation></semantics></math>, <math id="I1.i1.p1.m6" class="ltx_Math" alttext="\displaystyle f(t_{1}=b_{1})=0" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>=</mo><msub><mi>b</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\displaystyle f(t_{1}=b_{1})=0</annotation></semantics></math></p>
+</div>
+<div id="I1.i1.p2" class="ltx_para">
+<p class="ltx_p">Alternativamente si <math id="I1.i1.p2.m1" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> es atomica,</p>
+<div id="Ex125" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex125.m1" class="ltx_Math" alttext="\displaystyle f(\varphi)=\begin{dcases}1\text{ si }\varphi=\top,\perp\\
+0\text{ en el resto de casos}\end{dcases}" display="block"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mn>1</mn><mo>⁢</mo><mtext> si </mtext><mo>⁢</mo><mi>φ</mi></mrow><mo rspace="0em">=</mo><mrow><mo lspace="0em" rspace="0em">⊤</mo><mo>,</mo><mo lspace="0em">⟂</mo></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mn>0</mn><mo>⁢</mo><mtext> en el resto de casos</mtext></mrow></mtd><mtd></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f(\varphi)=\begin{dcases}1\text{ si }\varphi=\top,\perp\\
+0\text{ en el resto de casos}\end{dcases}</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p">Si <math id="I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi\in\mathcal{{F}}_{1}" display="inline"><semantics><mrow><mi>φ</mi><mo>∈</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle\varphi\in\mathcal{{F}}_{1}</annotation></semantics></math>, entonces <math id="I1.i2.p1.m2" class="ltx_Math" alttext="\displaystyle f(\neg\varphi)=f(\varphi)+1" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>φ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f(\neg\varphi)=f(\varphi)+1</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I1.i3.p1" class="ltx_para">​<p class="ltx_p">Si <math id="I1.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi,\psi\in\mathcal{{F}}_{1}\Rightarrow f((\varphi\circ\psi))%
+=f(\varphi)+f(\psi)+1" display="inline"><semantics><mrow><mrow><mi>φ</mi><mo>,</mo><mi>ψ</mi></mrow><mo>∈</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>1</mn></msub><mo stretchy="false">⇒</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">(</mo><mrow><mi>φ</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>ψ</mi></mrow><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ψ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\varphi,\psi\in\mathcal{{F}}_{1}\Rightarrow f((\varphi\circ\psi))%
+=f(\varphi)+f(\psi)+1</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I1.i4.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i4.p1.m1" class="ltx_Math" alttext="\displaystyle f(\forall x\varphi)=f(\varphi)" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>φ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f(\forall x\varphi)=f(\varphi)</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">5.</span><div id="I1.i5.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I1.i5.p1.m1" class="ltx_Math" alttext="\displaystyle f(\exists x\varphi)=f(\varphi)" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>φ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f(\exists x\varphi)=f(\varphi)</annotation></semantics></math></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Thmexamplex55" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex55.p1" class="ltx_para ltx_noindent">
+<p class="ltx_p">Definir por recursion una funcion que, dada una formula cualquiera de la logica de predicados, devuelva el numero de simbolos no auxiliares que aparecen en esa formula.</p>
+</div>
+<div id="Thmexamplex55.p2" class="ltx_para ltx_noindent">
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex126" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex126X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex126X.m2" class="ltx_Math" alttext="\displaystyle f\colon\mathcal{{F}}_{1}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle f\colon\mathcal{{F}}_{1}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex126X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow\mathbb{N}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow\mathbb{N}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex126Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex126Xa.m2" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex126Xa.m3" class="ltx_Math" alttext="\displaystyle\longmapsto f(\varphi)=\text{num simbolos no aux }" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mtext>num simbolos no aux</mtext></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto f(\varphi)=\text{num simbolos no aux }</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+</div>
+<div id="Thmexamplex55.p3" class="ltx_para">
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Si <math id="I2.i1.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi" display="inline"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\displaystyle\varphi</annotation></semantics></math> es atomica,</p>
+</div>
+<div id="I2.i1.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="I2.i1.p2.m1" class="ltx_Math" alttext="\displaystyle f(\top)=1" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⊤</mo><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle f(\top)=1</annotation></semantics></math></p>
+</div>
+<div id="I2.i1.p3" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="I2.i1.p3.m1" class="ltx_Math" alttext="\displaystyle f(\perp)=1" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mo lspace="0em" rspace="0em">⟂</mo><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle f(\perp)=1</annotation></semantics></math></p>
+</div>
+<div id="I2.i1.p4" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="I2.i1.p4.m1" class="ltx_Math" alttext="\displaystyle p" display="inline"><semantics><mi>p</mi><annotation encoding="application/x-tex">\displaystyle p</annotation></semantics></math> simb de prop atomica <math id="I2.i1.p4.m2" class="ltx_Math" alttext="\displaystyle\Rightarrow f(p)=1" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⇒</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow f(p)=1</annotation></semantics></math></p>
+</div>
+<div id="I2.i1.p5" class="ltx_para ltx_noindent">
+<p class="ltx_p">Sea <math id="I2.i1.p5.m1" class="ltx_Math" alttext="\displaystyle P" display="inline"><semantics><mi>P</mi><annotation encoding="application/x-tex">\displaystyle P</annotation></semantics></math> es un pred. de aridad <math id="I2.i1.p5.m2" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> con <math id="I2.i1.p5.m3" class="ltx_Math" alttext="\displaystyle t_{1},\ldots,t_{n}" display="inline"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>t</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle t_{1},\ldots,t_{n}</annotation></semantics></math> terminos.</p>
+</div>
+<div id="I2.i1.p6" class="ltx_para ltx_noindent">
+<p class="ltx_p">Necesito una funcion nueva que cuente el numero de simbolos no auxiliares de un termino, que vamos a definir tambien por recursion.</p>
+<div style="max-width: 100%; overflow-x: auto; overflow-y: hidden;">
+<table id="Ex127" class="ltx_equationgroup ltx_eqn_table">
+
+<tbody id="Ex127X"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex127X.m2" class="ltx_Math" alttext="\displaystyle g\colon\mathcal{{T}}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mi class="ltx_font_mathcaligraphic">𝒯</mi></mrow><annotation encoding="application/x-tex">\displaystyle g\colon\mathcal{{T}}</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex127X.m3" class="ltx_Math" alttext="\displaystyle\longrightarrow\mathbb{N}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟶</mo><mi>ℕ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\longrightarrow\mathbb{N}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex127Xa"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Ex127Xa.m2" class="ltx_Math" alttext="\displaystyle t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">\displaystyle t</annotation></semantics></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Ex127Xa.m3" class="ltx_Math" alttext="\displaystyle\longmapsto g(t)=\text{ num simbolos no aux }" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⟼</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mtext> num simbolos no aux</mtext></mrow><annotation encoding="application/x-tex">\displaystyle\longmapsto g(t)=\text{ num simbolos no aux }</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<ol id="I2.i1.I1" class="ltx_enumerate">
+<li id="I2.i1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><em class="ltx_emph ltx_font_italic">a</em>)</span><div id="I2.i1.I1.i1.p1" class="ltx_para">​<p class="ltx_p">Si <math id="I2.i1.I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">\displaystyle t</annotation></semantics></math> es termino atomico, <math id="I2.i1.I1.i1.p1.m2" class="ltx_Math" alttext="\displaystyle g(t)=1" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle g(t)=1</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><em class="ltx_emph ltx_font_italic">b</em>)</span><div id="I2.i1.I1.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Terminos compuestos:</p>
+</div>
+<div id="I2.i1.I1.i2.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p">Sea <math id="I2.i1.I1.i2.p2.m1" class="ltx_Math" alttext="\displaystyle h" display="inline"><semantics><mi>h</mi><annotation encoding="application/x-tex">\displaystyle h</annotation></semantics></math> un simbolo de funcion de aridad <math id="I2.i1.I1.i2.p2.m2" class="ltx_Math" alttext="\displaystyle n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">\displaystyle n</annotation></semantics></math> y <math id="I2.i1.I1.i2.p2.m3" class="ltx_Math" alttext="\displaystyle t_{1},\ldots,t_{n}" display="inline"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>t</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle t_{1},\ldots,t_{n}</annotation></semantics></math> terminos: <math id="I2.i1.I1.i2.p2.m4" class="ltx_Math" alttext="\displaystyle g(h(t_{1},\ldots,t_{n}))=g(t_{1})+g(t_{2})+\cdots+g(t_{n})+1" display="inline"><semantics><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>h</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>t</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle g(h(t_{1},\ldots,t_{n}))=g(t_{1})+g(t_{2})+\cdots+g(t_{n})+1</annotation></semantics></math></p>
+</div>
+</li>
+</ol>
+</div>
+<div id="I2.i1.p7" class="ltx_para ltx_noindent">
+<p class="ltx_p">Luego <math id="I2.i1.p7.m1" class="ltx_Math" alttext="\displaystyle f(P(t_{1},t_{2},\ldots,t_{n}))=g(t_{1})+g(t_{2})+\cdots+g(t_{n})+1" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>P</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>t</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f(P(t_{1},t_{2},\ldots,t_{n}))=g(t_{1})+g(t_{2})+\cdots+g(t_{n})+1</annotation></semantics></math></p>
+</div>
+<div id="I2.i1.p8" class="ltx_para ltx_noindent">
+<p class="ltx_p">Si <math id="I2.i1.p8.m1" class="ltx_Math" alttext="\displaystyle t_{1},t_{2}" display="inline"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle t_{1},t_{2}</annotation></semantics></math> son terminos, <math id="I2.i1.p8.m2" class="ltx_Math" alttext="\displaystyle f((t_{1}=t_{2}))=g(t_{1})+g(t_{2})+1" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>=</mo><msub><mi>t</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f((t_{1}=t_{2}))=g(t_{1})+g(t_{2})+1</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p">Sea <math id="I2.i2.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi\in\mathcal{{F}}_{1}\Rightarrow f(\neg\varphi)=f(\varphi)+1" display="inline"><semantics><mrow><mi>φ</mi><mo>∈</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>1</mn></msub><mo stretchy="false">⇒</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">¬</mi><mo>⁢</mo><mi>φ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\varphi\in\mathcal{{F}}_{1}\Rightarrow f(\neg\varphi)=f(\varphi)+1</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p">Sea <math id="I2.i3.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi,\psi\in\mathcal{{F}}_{1}" display="inline"><semantics><mrow><mrow><mi>φ</mi><mo>,</mo><mi>ψ</mi></mrow><mo>∈</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle\varphi,\psi\in\mathcal{{F}}_{1}</annotation></semantics></math> <math id="I2.i3.p1.m2" class="ltx_Math" alttext="\displaystyle\Rightarrow f((\varphi\circ\psi))=f(\varphi)+f(\psi)+1" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⇒</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">(</mo><mrow><mi>φ</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>ψ</mi></mrow><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ψ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow f((\varphi\circ\psi))=f(\varphi)+f(\psi)+1</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">4.</span><div id="I2.i4.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Sea <math id="I2.i4.p1.m1" class="ltx_Math" alttext="\displaystyle\varphi\in\mathcal{{F}}_{1}" display="inline"><semantics><mrow><mi>φ</mi><mo>∈</mo><msub><mi class="ltx_font_mathcaligraphic">ℱ</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle\varphi\in\mathcal{{F}}_{1}</annotation></semantics></math></p>
+</div>
+<div id="I2.i4.p2" class="ltx_para ltx_noindent">
+<p class="ltx_p"><math id="I2.i4.p2.m1" class="ltx_Math" alttext="\displaystyle f(\forall x\varphi)=f(\varphi)+2" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo rspace="0.167em">∀</mo><mrow><mi>x</mi><mo>⁢</mo><mi>φ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>2</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f(\forall x\varphi)=f(\varphi)+2</annotation></semantics></math>
+<math id="I2.i4.p2.m2" class="ltx_Math" alttext="\displaystyle f(\exists x\varphi)=f(\varphi)+2" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo rspace="0.167em">∃</mo><mrow><mi>x</mi><mo>⁢</mo><mi>φ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>φ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mn>2</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle f(\exists x\varphi)=f(\varphi)+2</annotation></semantics></math></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S20.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S22.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

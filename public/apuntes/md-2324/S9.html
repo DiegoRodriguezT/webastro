@@ -1,0 +1,378 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Matemática Discreta" course="1º Curso" prof="Ángel Pérez" prof2="Miguel Romance" data-pagefind-filter="asignatura[content], curso[course], profesor[prof], profesor[prof2]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>9 Ecuaciones diofanticas lineales ‣ Parte III Aritmética entera y modular ‣ Matemática Discreta‣ Parte III Aritmética entera y modular ‣ Matemática Discreta</title>
+<!--Generated on Fri Jun  7 11:08:28 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt3.html" title="Parte III Aritmética entera y modular ‣ Matemática Discreta">
+<link rel="up up" href="index.html" title="Matemática Discreta">
+<link rel="start" href="index.html" title="Matemática Discreta">
+<link rel="prev" href="S8.html" title="8 Divisibilidad en ℤ. Algoritmo de Euclides. ‣ Parte III Aritmética entera y modular ‣ Matemática Discreta">
+<link rel="next" href="S10.html" title="10 La relacion de congruencia en ℤ ‣ Parte III Aritmética entera y modular ‣ Matemática Discreta">
+<link rel="section" href="S8.html" title="8 Divisibilidad en ℤ. Algoritmo de Euclides. ‣ Parte III Aritmética entera y modular ‣ Matemática Discreta">
+<link rel="section" href="S10.html" title="10 La relacion de congruencia en ℤ ‣ Parte III Aritmética entera y modular ‣ Matemática Discreta">
+<link rel="section" href="S11.html" title="11 La ecuacion lineal en ℤ_𝑛 ‣ Parte III Aritmética entera y modular ‣ Matemática Discreta">
+<link rel="section" href="S12.html" title="12 Sistemas de ecuaciones lineales modulo n ‣ Parte III Aritmética entera y modular ‣ Matemática Discreta">
+<link rel="part" href="Pt1.html" title="Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="part" href="Pt2.html" title="Parte II Combinatoria ‣ Matemática Discreta">
+<link rel="part" href="Pt3.html" title="Parte III Aritmética entera y modular ‣ Matemática Discreta">
+<link rel="part" href="Pt4.html" title="Parte IV Teoria de grafos ‣ Matemática Discreta">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Matemática Discreta" class="ltx_ref" rel="start">Matemática Discreta</a>
+</li>
+<li class="divider">
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt1.html" title="Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>Fundamentos y el principio de inducción</a></li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt2.html" title="Parte II Combinatoria ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Combinatoria</a></li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt3.html" title="Parte III Aritmética entera y modular ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Aritmética entera y modular</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="8" data-path="S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S8.html" title="8 Divisibilidad en ℤ. Algoritmo de Euclides. ‣ Parte III Aritmética entera y modular ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">8 </span></b>Divisibilidad en <math class="ltx_Math" alttext="\displaystyle\mathbb{Z}" display="inline"><semantics><mi>ℤ</mi><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}</annotation></semantics></math>. Algoritmo de Euclides.</a></li>
+<li data-level="9" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="9 Ecuaciones diofanticas lineales ‣ Parte III Aritmética entera y modular ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">9 </span></b>Ecuaciones diofanticas lineales</a></li>
+<li data-level="10" data-path="S10.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S10.html" title="10 La relacion de congruencia en ℤ ‣ Parte III Aritmética entera y modular ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">10 </span></b>La relacion de congruencia en <math class="ltx_Math" alttext="\displaystyle\mathbb{Z}" display="inline"><semantics><mi>ℤ</mi><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}</annotation></semantics></math></a></li>
+<li data-level="11" data-path="S11.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S11.html" title="11 La ecuacion lineal en ℤ_𝑛 ‣ Parte III Aritmética entera y modular ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">11 </span></b>La ecuacion lineal en <math class="ltx_Math" alttext="\displaystyle\mathbb{Z}_{n}" display="inline"><semantics><msub><mi>ℤ</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}_{n}</annotation></semantics></math></a></li>
+<li data-level="12" data-path="S12.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S12.html" title="12 Sistemas de ecuaciones lineales modulo n ‣ Parte III Aritmética entera y modular ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">12 </span></b>Sistemas de ecuaciones lineales modulo n</a></li>
+</ol>
+</li>
+<li data-level="IV" data-path="Pt4.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt4.html" title="Parte IV Teoria de grafos ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">IV </span></b>Teoria de grafos</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Ecuaciones diofanticas lineales</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">9</span> Ecuaciones diofanticas lineales</h1>
+
+<div id="Thmdefinition1" class="ltx_theorem ltx_theorem_definition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definición 9.1</span></span><span class="ltx_text ltx_font_bold"> </span>(Ecuacion diofantica lineal)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmdefinition1.p1" class="ltx_para">
+<p class="ltx_p">Una ecuacion diofantica lineal con dos incognitas es una ecuacion del tipo</p>
+<div id="Ex72" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex72.m1" class="ltx_Math" alttext="\displaystyle ax+by=c" display="block"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\displaystyle ax+by=c</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">donde</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\displaystyle a,b,c\in\mathbb{Z}" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle a,b,c\in\mathbb{Z}</annotation></semantics></math> son los coeficientes</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="\displaystyle x,y" display="inline"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\displaystyle x,y</annotation></semantics></math> son las incognitas que pueden tomar valores en <math id="I1.i2.p1.m2" class="ltx_Math" alttext="\displaystyle\mathbb{Z}" display="inline"><semantics><mi>ℤ</mi><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Thmtheorem1" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 9.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sean <math id="Thmtheorem1.p1.m1" class="ltx_Math" alttext="\displaystyle a,b,c\in\mathbb{Z}" display="inline"><semantics><mrow><mrow><mi>a</mi><mo mathvariant="normal">,</mo><mi>b</mi><mo mathvariant="normal">,</mo><mi>c</mi></mrow><mo mathvariant="normal">∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle a,b,c\in\mathbb{Z}</annotation></semantics></math> con <math id="Thmtheorem1.p1.m2" class="ltx_Math" alttext="\displaystyle a,b\neq 0" display="inline"><semantics><mrow><mrow><mi>a</mi><mo mathvariant="normal">,</mo><mi>b</mi></mrow><mo mathvariant="normal">≠</mo><mn mathvariant="normal">0</mn></mrow><annotation encoding="application/x-tex">\displaystyle a,b\neq 0</annotation></semantics></math>, sea <math id="Thmtheorem1.p1.m3" class="ltx_Math" alttext="\displaystyle d=\mathrm{m.c.d.}(a,b)" display="inline"><semantics><mrow><mrow><mi>d</mi><mo mathvariant="normal">=</mo><mi mathvariant="normal">m</mi></mrow><mo lspace="0em" mathvariant="normal" rspace="0.167em">.</mo><mi mathvariant="normal">c</mi><mo lspace="0em" mathvariant="normal" rspace="0.167em">.</mo><mi mathvariant="normal">d</mi><mo lspace="0em" mathvariant="normal" rspace="0.167em">.</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>a</mi><mo mathvariant="normal">,</mo><mi>b</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle d=\mathrm{m.c.d.}(a,b)</annotation></semantics></math> y consideremos la ecuacion</span></p>
+<div id="Ex73" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex73.m1" class="ltx_Math" alttext="\displaystyle ax+by=c" display="block"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\displaystyle ax+by=c</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">La ecuacion tiene solucion si y solo si <math id="Thmtheorem1.p1.m4" class="ltx_Math" alttext="\displaystyle d\mid c" display="inline"><semantics><mrow><mi>d</mi><mo mathvariant="normal">∣</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\displaystyle d\mid c</annotation></semantics></math>.
+
+Ademas, si <math id="Thmtheorem1.p1.m5" class="ltx_Math" alttext="\displaystyle(x_{0},y_{0})" display="inline"><semantics><mrow><mo mathvariant="normal" stretchy="false">(</mo><msub><mi>x</mi><mn mathvariant="normal">0</mn></msub><mo mathvariant="normal">,</mo><msub><mi>y</mi><mn mathvariant="normal">0</mn></msub><mo mathvariant="normal" stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(x_{0},y_{0})</annotation></semantics></math> es una solucion de la ecuacion, entonces el conjunto de todas las soluciones</span></p>
+<div id="Ex74" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex74.m1" class="ltx_Math" alttext="\displaystyle\begin{dcases}x=x_{0}+\frac{b}{d}t\\
+y=y_{0}-\frac{a}{d}t\end{dcases}" display="block"><semantics><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>x</mi><mo>=</mo><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><mrow><mfrac><mi>b</mi><mi>d</mi></mfrac><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>y</mi><mo>=</mo><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>−</mo><mrow><mfrac><mi>a</mi><mi>d</mi></mfrac><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr></mtable></mrow><annotation encoding="application/x-tex">\displaystyle\begin{dcases}x=x_{0}+\frac{b}{d}t\\
+y=y_{0}-\frac{a}{d}t\end{dcases}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">con <math id="Thmtheorem1.p1.m6" class="ltx_Math" alttext="\displaystyle t\in\mathbb{Z}" display="inline"><semantics><mrow><mi>t</mi><mo mathvariant="normal">∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle t\in\mathbb{Z}</annotation></semantics></math> un parametro que recorre todo <math id="Thmtheorem1.p1.m7" class="ltx_Math" alttext="\displaystyle\mathbb{Z}" display="inline"><semantics><mi>ℤ</mi><annotation encoding="application/x-tex">\displaystyle\mathbb{Z}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Considero <math id="p1.m1" class="ltx_Math" alttext="\displaystyle ax+by" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle ax+by</annotation></semantics></math> <math id="p1.m2" class="ltx_Math" alttext="\displaystyle\;x,y\in\mathbb{Z}" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\;x,y\in\mathbb{Z}</annotation></semantics></math>.
+
+Por el teorema de Bezout, <math id="p1.m3" class="ltx_Math" alttext="\displaystyle\{ax+by\mid x,y\in\mathbb{Z}\}=d\mathbb{Z}" display="inline"><semantics><mrow><mrow><mo stretchy="false">{</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo fence="true" lspace="0em" rspace="0em">∣</mo><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>ℤ</mi></mrow><mo stretchy="false">}</mo></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mi>ℤ</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\{ax+by\mid x,y\in\mathbb{Z}\}=d\mathbb{Z}</annotation></semantics></math>. Luego <math id="p1.m4" class="ltx_Math" alttext="\displaystyle ax+by=c" display="inline"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\displaystyle ax+by=c</annotation></semantics></math> si y solo si <math id="p1.m5" class="ltx_Math" alttext="\displaystyle c" display="inline"><semantics><mi>c</mi><annotation encoding="application/x-tex">\displaystyle c</annotation></semantics></math> es multiplo de <math id="p1.m6" class="ltx_Math" alttext="\displaystyle d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">\displaystyle d</annotation></semantics></math>.
+
+Vamos a demostrar que si <math id="p1.m7" class="ltx_Math" alttext="\displaystyle(x_{0},y_{0})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(x_{0},y_{0})</annotation></semantics></math> es una solucion entonces</p>
+<div id="Ex75" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex75.m1" class="ltx_Math" alttext="\displaystyle\begin{dcases}x=x_{0}+\frac{b}{d}t\\
+y=y_{0}-\frac{a}{d}t\end{dcases}\quad t\in\mathbb{Z}" display="block"><semantics><mrow><mrow><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>x</mi><mo>=</mo><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><mrow><mfrac><mi>b</mi><mi>d</mi></mfrac><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>y</mi><mo>=</mo><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>−</mo><mrow><mfrac><mi>a</mi><mi>d</mi></mfrac><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr></mtable></mrow><mspace width="1em"></mspace><mi>t</mi></mrow><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\begin{dcases}x=x_{0}+\frac{b}{d}t\\
+y=y_{0}-\frac{a}{d}t\end{dcases}\quad t\in\mathbb{Z}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">son todas las soluciones.
+
+Tenemos que demostrar que todas esas parejas son soluciones y que no hay mas.</p>
+<ol id="I2" class="ltx_enumerate">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p">Veamos que son soluciones.</p>
+<div class="ltx_equation ltx_eqn_div">
+<span><math id="I2.i1.p1.m1" class="ltx_Math" alttext="a(x_{0}+\frac{b}{d}z)+b(y_{0}-\frac{a}{d}t)=a\cdot x_{0}+a\cdot\frac{b}{d}%
+\cdot z+b\cdot y_{0}-b\frac{a}{d}t=a\cdot x_{0}+by_{0}=\\
+=a\cdot x_{0}+a\cdot y_{0}=c\text{ porque }(x_{0},y_{0})\text{ es solucion}" display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><mrow><mfrac><mi>b</mi><mi>d</mi></mfrac><mo>⁢</mo><mi>z</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>−</mo><mrow><mfrac><mi>a</mi><mi>d</mi></mfrac><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>a</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>+</mo><mrow><mi>a</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mfrac><mi>b</mi><mi>d</mi></mfrac><mo lspace="0.222em" rspace="0.222em">⋅</mo><mi>z</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>y</mi><mn>0</mn></msub></mrow></mrow><mo>−</mo><mrow><mi>b</mi><mo>⁢</mo><mfrac><mi>a</mi><mi>d</mi></mfrac><mo>⁢</mo><mi>t</mi></mrow></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msub><mi>y</mi><mn>0</mn></msub></mrow></mrow><mo>=</mo><mi></mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>a</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>+</mo><mrow><mi>a</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>y</mi><mn>0</mn></msub></mrow></mrow><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><mtext> porque </mtext><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mtext> es solucion</mtext></mrow></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">a(x_{0}+\frac{b}{d}z)+b(y_{0}-\frac{a}{d}t)=a\cdot x_{0}+a\cdot\frac{b}{d}%
+\cdot z+b\cdot y_{0}-b\frac{a}{d}t=a\cdot x_{0}+by_{0}=\\
+=a\cdot x_{0}+a\cdot y_{0}=c\text{ porque }(x_{0},y_{0})\text{ es solucion}</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I2.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Voy a ver que todas las soluciones son asi.
+
+Sea <math id="I2.i2.p1.m1" class="ltx_Math" alttext="\displaystyle(x_{1},y_{1})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(x_{1},y_{1})</annotation></semantics></math> otra solucion de la ecuacion.
+
+Entonces <math id="I2.i2.p1.m2" class="ltx_Math" alttext="\displaystyle ax_{1}+by_{1}=c" display="inline"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msub><mi>y</mi><mn>1</mn></msub></mrow></mrow><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\displaystyle ax_{1}+by_{1}=c</annotation></semantics></math>. Como <math id="I2.i2.p1.m3" class="ltx_Math" alttext="\displaystyle ax_{0}+by_{0}=c\Rightarrow ax_{1}+by_{1}=ax_{0}+by_{0}" display="inline"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msub><mi>y</mi><mn>0</mn></msub></mrow></mrow><mo>=</mo><mi>c</mi><mo stretchy="false">⇒</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msub><mi>y</mi><mn>1</mn></msub></mrow></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msub><mi>y</mi><mn>0</mn></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle ax_{0}+by_{0}=c\Rightarrow ax_{1}+by_{1}=ax_{0}+by_{0}</annotation></semantics></math> <math id="I2.i2.p1.m4" class="ltx_Math" alttext="\displaystyle\Rightarrow ax_{1}-ax_{0}=by_{0}-by_{1}" display="inline"><semantics><mrow><mi></mi><mo stretchy="false">⇒</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>−</mo><mrow><mi>a</mi><mo>⁢</mo><msub><mi>x</mi><mn>0</mn></msub></mrow></mrow><mo>=</mo><mrow><mrow><mi>b</mi><mo>⁢</mo><msub><mi>y</mi><mn>0</mn></msub></mrow><mo>−</mo><mrow><mi>b</mi><mo>⁢</mo><msub><mi>y</mi><mn>1</mn></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\Rightarrow ax_{1}-ax_{0}=by_{0}-by_{1}</annotation></semantics></math>
+
+<math id="I2.i2.p1.m5" class="ltx_Math" alttext="\displaystyle a(x_{1}-x_{0})=b(y_{0}-y_{1})" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>b</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle a(x_{1}-x_{0})=b(y_{0}-y_{1})</annotation></semantics></math>
+
+<math id="I2.i2.p1.m6" class="ltx_Math" alttext="\displaystyle\frac{a}{d}(x_{1}-x_{0})=\frac{b}{d}(y_{0}-y_{1})" display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><mfrac><mi>a</mi><mi>d</mi></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mi>b</mi><mi>d</mi></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\frac{a}{d}(x_{1}-x_{0})=\frac{b}{d}(y_{0}-y_{1})</annotation></semantics></math>
+
+Entonces <math id="I2.i2.p1.m7" class="ltx_Math" alttext="\displaystyle\frac{a}{d}\mid\frac{b}{d}(y_{0}-y_{1})" display="inline"><semantics><mrow><mstyle displaystyle="true"><mfrac><mi>a</mi><mi>d</mi></mfrac></mstyle><mo>∣</mo><mrow><mstyle displaystyle="true"><mfrac><mi>b</mi><mi>d</mi></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\frac{a}{d}\mid\frac{b}{d}(y_{0}-y_{1})</annotation></semantics></math>
+
+Ademas, por el lema <a href="S8.html#Thmtheorem9" title="Lema 8.9. ‣ 8 Divisibilidad en ℤ. Algoritmo de Euclides. ‣ Parte III Aritmética entera y modular ‣ Matemática Discreta" class="ltx_ref"><span class="ltx_text ltx_ref_tag">8.9</span></a> <math id="I2.i2.p1.m8" class="ltx_Math" alttext="\displaystyle\mathrm{m.c.d.}(\frac{a}{d},\frac{b}{d})=1" display="inline"><semantics><mrow><mi mathvariant="normal">m</mi><mo lspace="0em" rspace="0.167em">.</mo><mi mathvariant="normal">c</mi><mo lspace="0em" rspace="0.167em">.</mo><mi mathvariant="normal">d</mi><mo lspace="0em" rspace="0.167em">.</mo><mrow><mrow><mo stretchy="false">(</mo><mstyle displaystyle="true"><mfrac><mi>a</mi><mi>d</mi></mfrac></mstyle><mo>,</mo><mstyle displaystyle="true"><mfrac><mi>b</mi><mi>d</mi></mfrac></mstyle><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathrm{m.c.d.}(\frac{a}{d},\frac{b}{d})=1</annotation></semantics></math>
+
+Aplicando el lema de Euclides <math id="I2.i2.p1.m9" class="ltx_Math" alttext="\displaystyle\frac{a}{d}\mid(y_{0}-y_{1})\Rightarrow\exists t\in\mathbb{Z}" display="inline"><semantics><mrow><mrow><mstyle displaystyle="true"><mfrac><mi>a</mi><mi>d</mi></mfrac></mstyle><mo>∣</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">⇒</mo><mrow><mo rspace="0.167em">∃</mo><mi>t</mi></mrow><mo>∈</mo><mi>ℤ</mi></mrow><annotation encoding="application/x-tex">\displaystyle\frac{a}{d}\mid(y_{0}-y_{1})\Rightarrow\exists t\in\mathbb{Z}</annotation></semantics></math> tal que <math id="I2.i2.p1.m10" class="ltx_Math" alttext="\displaystyle y_{0}-y_{1}=t\cdot\frac{a}{d}" display="inline"><semantics><mrow><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>−</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>=</mo><mrow><mi>t</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mi>a</mi><mi>d</mi></mfrac></mstyle></mrow></mrow><annotation encoding="application/x-tex">\displaystyle y_{0}-y_{1}=t\cdot\frac{a}{d}</annotation></semantics></math>
+
+Por tanto <math id="I2.i2.p1.m11" class="ltx_Math" alttext="\displaystyle y_{1}=y_{0}-t\cdot\frac{a}{d}" display="inline"><semantics><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>=</mo><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>−</mo><mrow><mi>t</mi><mo lspace="0.222em" rspace="0.222em">⋅</mo><mstyle displaystyle="true"><mfrac><mi>a</mi><mi>d</mi></mfrac></mstyle></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle y_{1}=y_{0}-t\cdot\frac{a}{d}</annotation></semantics></math>.
+
+Voy a obtener <math id="I2.i2.p1.m12" class="ltx_Math" alttext="\displaystyle x_{1}" display="inline"><semantics><msub><mi>x</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\displaystyle x_{1}</annotation></semantics></math>:</p>
+<div id="Ex76" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex76.m1" class="ltx_Math" alttext="\displaystyle\frac{a}{d}(x_{1}-x_{0})=\frac{b}{d}t\frac{a}{d}\Rightarrow x_{1}%
+-x_{0}=\frac{b}{d}t\Rightarrow x_{1}=x_{0}+\frac{b}{d}t" display="block"><semantics><mrow><mrow><mfrac><mi>a</mi><mi>d</mi></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mi>b</mi><mi>d</mi></mfrac><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mfrac><mi>a</mi><mi>d</mi></mfrac></mrow><mo stretchy="false">⇒</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>=</mo><mrow><mfrac><mi>b</mi><mi>d</mi></mfrac><mo>⁢</mo><mi>t</mi></mrow><mo stretchy="false">⇒</mo><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><mrow><mfrac><mi>b</mi><mi>d</mi></mfrac><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\frac{a}{d}(x_{1}-x_{0})=\frac{b}{d}t\frac{a}{d}\Rightarrow x_{1}%
+-x_{0}=\frac{b}{d}t\Rightarrow x_{1}=x_{0}+\frac{b}{d}t</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+</ol>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="Thmexamplex28" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex28.p1" class="ltx_para">
+<p class="ltx_p">Encuentra (si existen) todas las soluciones enteras de las ecuaciones:</p>
+<ol id="I3" class="ltx_enumerate">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">1.</span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i1.p1.m1" class="ltx_Math" alttext="\displaystyle 224x+92y=82" display="inline"><semantics><mrow><mrow><mrow><mn>224</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mn>92</mn><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mn>82</mn></mrow><annotation encoding="application/x-tex">\displaystyle 224x+92y=82</annotation></semantics></math>
+
+<math id="I3.i1.p1.m2" class="ltx_Math" alttext="\displaystyle\mathrm{m.c.d.}(224,92)=4" display="inline"><semantics><mrow><mi mathvariant="normal">m</mi><mo lspace="0em" rspace="0.167em">.</mo><mi mathvariant="normal">c</mi><mo lspace="0em" rspace="0.167em">.</mo><mi mathvariant="normal">d</mi><mo lspace="0em" rspace="0.167em">.</mo><mrow><mrow><mo stretchy="false">(</mo><mn>224,92</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>4</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathrm{m.c.d.}(224,92)=4</annotation></semantics></math>
+
+Luego <math id="I3.i1.p1.m3" class="ltx_Math" alttext="\displaystyle 4\nmid 82\Rightarrow\not\exists" display="inline"><semantics><mrow><mn>4</mn><mo>∤</mo><mn>82</mn><mo stretchy="false">⇒</mo><mo>∄</mo></mrow><annotation encoding="application/x-tex">\displaystyle 4\nmid 82\Rightarrow\not\exists</annotation></semantics></math> sol de la ecuacion.</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">2.</span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I3.i2.p1.m1" class="ltx_Math" alttext="\displaystyle 224x+92y=44" display="inline"><semantics><mrow><mrow><mrow><mn>224</mn><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mn>92</mn><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mn>44</mn></mrow><annotation encoding="application/x-tex">\displaystyle 224x+92y=44</annotation></semantics></math>
+
+<math id="I3.i2.p1.m2" class="ltx_Math" alttext="\displaystyle\mathrm{m.c.d.}(224,92)=4\mid 44\Rightarrow\exists\text{ soluciones}" display="inline"><semantics><mrow><mi mathvariant="normal">m</mi><mo lspace="0em" rspace="0.167em">.</mo><mi mathvariant="normal">c</mi><mo lspace="0em" rspace="0.167em">.</mo><mi mathvariant="normal">d</mi><mo lspace="0em" rspace="0.167em">.</mo><mrow><mrow><mo stretchy="false">(</mo><mn>224,92</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mn>4</mn><mo>∣</mo><mn>44</mn></mrow><mo stretchy="false">⇒</mo><mrow><mo rspace="0.167em">∃</mo><mtext> soluciones</mtext></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathrm{m.c.d.}(224,92)=4\mid 44\Rightarrow\exists\text{ soluciones}</annotation></semantics></math>
+
+Para encontrar una solucion particular <math id="I3.i2.p1.m3" class="ltx_Math" alttext="\displaystyle(x_{0},y_{0})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(x_{0},y_{0})</annotation></semantics></math> nos apoyamos en una identidad de Bezout entre 224 y 92.
+
+<math id="I3.i2.p1.m4" class="ltx_Math" alttext="\displaystyle 224\cdot 7+92\cdot(-17)=4" display="inline"><semantics><mrow><mrow><mrow><mn>224</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>7</mn></mrow><mo>+</mo><mrow><mn>92</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>17</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\displaystyle 224\cdot 7+92\cdot(-17)=4</annotation></semantics></math> (7 y -17 calculado anteriormente con el algoritmo extendido de Euclides)
+
+Multiplico por 11: <math id="I3.i2.p1.m5" class="ltx_Math" alttext="\displaystyle 224\cdot 11\cdot 7+92\cdot 11\cdot(-17)=44" display="inline"><semantics><mrow><mrow><mrow><mn>224</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>11</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>7</mn></mrow><mo>+</mo><mrow><mn>92</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>11</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>17</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>44</mn></mrow><annotation encoding="application/x-tex">\displaystyle 224\cdot 11\cdot 7+92\cdot 11\cdot(-17)=44</annotation></semantics></math>
+
+Luego <math id="I3.i2.p1.m6" class="ltx_Math" alttext="\displaystyle x_{0}=11\cdot 7=77" display="inline"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mrow><mn>11</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>7</mn></mrow><mo>=</mo><mn>77</mn></mrow><annotation encoding="application/x-tex">\displaystyle x_{0}=11\cdot 7=77</annotation></semantics></math>, <math id="I3.i2.p1.m7" class="ltx_Math" alttext="\displaystyle y_{0}=(-17)\cdot 11=-187" display="inline"><semantics><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>17</mn></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow><mo rspace="0.222em">⋅</mo><mn>11</mn></mrow><mo>=</mo><mrow><mo>−</mo><mn>187</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle y_{0}=(-17)\cdot 11=-187</annotation></semantics></math>
+
+El teorema que hemos demostrado me dice que el conjunto de soluciones es</p>
+<div id="Ex77" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex77.m1" class="ltx_Math" alttext="\displaystyle\begin{dcases}x=x_{0}+\frac{b}{d}t\\
+y=y_{0}-\frac{a}{d}t\end{dcases}\Rightarrow\begin{dcases}x=77+23t\\
+y=-187-56t\end{dcases}\quad t\in\mathbb{Z}" display="block"><semantics><mrow><mrow><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>x</mi><mo>=</mo><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><mrow><mfrac><mi>b</mi><mi>d</mi></mfrac><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>y</mi><mo>=</mo><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>−</mo><mrow><mfrac><mi>a</mi><mi>d</mi></mfrac><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr></mtable></mrow><mo stretchy="false">⇒</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>x</mi><mo>=</mo><mrow><mn>77</mn><mo>+</mo><mrow><mn>23</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>187</mn></mrow><mo>−</mo><mrow><mn>56</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr></mtable></mrow></mrow><mspace width="1em"></mspace><mrow><mi>t</mi><mo>∈</mo><mi>ℤ</mi></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\begin{dcases}x=x_{0}+\frac{b}{d}t\\
+y=y_{0}-\frac{a}{d}t\end{dcases}\Rightarrow\begin{dcases}x=77+23t\\
+y=-187-56t\end{dcases}\quad t\in\mathbb{Z}</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I3.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">3.</span><div id="I3.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p"><math id="I3.i3.p1.m1" class="ltx_Math" alttext="\displaystyle 224x-92y=-20" display="inline"><semantics><mrow><mrow><mrow><mn>224</mn><mo>⁢</mo><mi>x</mi></mrow><mo>−</mo><mrow><mn>92</mn><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mn>20</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle 224x-92y=-20</annotation></semantics></math>
+
+<math id="I3.i3.p1.m2" class="ltx_Math" alttext="\displaystyle\mathrm{m.c.d.}(224,-92)=\mathrm{m.c.d.}(224,92)=4" display="inline"><semantics><mrow><mi mathvariant="normal">m</mi><mo lspace="0em" rspace="0.167em">.</mo><mi mathvariant="normal">c</mi><mo lspace="0em" rspace="0.167em">.</mo><mi mathvariant="normal">d</mi><mo lspace="0em" rspace="0.167em">.</mo><mrow><mrow><mo stretchy="false">(</mo><mn>224</mn><mo>,</mo><mrow><mo>−</mo><mn>92</mn></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mi mathvariant="normal">m</mi></mrow><mo lspace="0em" rspace="0.167em">.</mo><mi mathvariant="normal">c</mi><mo lspace="0em" rspace="0.167em">.</mo><mi mathvariant="normal">d</mi><mo lspace="0em" rspace="0.167em">.</mo><mrow><mrow><mo stretchy="false">(</mo><mn>224,92</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>4</mn></mrow></mrow><annotation encoding="application/x-tex">\displaystyle\mathrm{m.c.d.}(224,-92)=\mathrm{m.c.d.}(224,92)=4</annotation></semantics></math>
+
+<math id="I3.i3.p1.m3" class="ltx_Math" alttext="\displaystyle 4\mid-20\Rightarrow\exists" display="inline"><semantics><mrow><mrow><mn>4</mn><mo>∣</mo><mrow><mo>−</mo><mn>20</mn></mrow></mrow><mo stretchy="false">⇒</mo><mo>∃</mo></mrow><annotation encoding="application/x-tex">\displaystyle 4\mid-20\Rightarrow\exists</annotation></semantics></math> soluciones
+
+A partir de <math id="I3.i3.p1.m4" class="ltx_Math" alttext="\displaystyle 4=224\cdot 7+92\cdot(-17)" display="inline"><semantics><mrow><mn>4</mn><mo>=</mo><mrow><mrow><mn>224</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>7</mn></mrow><mo>+</mo><mrow><mn>92</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>17</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle 4=224\cdot 7+92\cdot(-17)</annotation></semantics></math> multiplicando por 5:
+
+<math id="I3.i3.p1.m5" class="ltx_Math" alttext="\displaystyle-20=224\cdot(-5)\cdot 7+92\cdot(-5)\cdot(-17)\Rightarrow-20=224%
+\cdot(-35)-92\cdot(-85)" display="inline"><semantics><mrow><mrow><mo>−</mo><mn>20</mn></mrow><mo>=</mo><mrow><mrow><mn>224</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>5</mn></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow><mo rspace="0.222em">⋅</mo><mn>7</mn></mrow><mo>+</mo><mrow><mn>92</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>5</mn></mrow><mo rspace="0.055em" stretchy="false">)</mo></mrow><mo rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>17</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">⇒</mo><mrow><mo>−</mo><mn>20</mn></mrow><mo>=</mo><mrow><mrow><mn>224</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>35</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mn>92</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mo>−</mo><mn>85</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle-20=224\cdot(-5)\cdot 7+92\cdot(-5)\cdot(-17)\Rightarrow-20=224%
+\cdot(-35)-92\cdot(-85)</annotation></semantics></math>
+
+Luego <math id="I3.i3.p1.m6" class="ltx_Math" alttext="\displaystyle x_{0}=-35,y_{0}=-85" display="inline"><semantics><mrow><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mrow><mo>−</mo><mn>35</mn></mrow></mrow><mo>,</mo><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>=</mo><mrow><mo>−</mo><mn>85</mn></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle x_{0}=-35,y_{0}=-85</annotation></semantics></math> es una solucion.</p>
+<div id="Ex78" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex78.m1" class="ltx_Math" alttext="\displaystyle\begin{dcases}x=-35-23t\\
+y=-85-56t\end{dcases}" display="block"><semantics><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>x</mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>35</mn></mrow><mo>−</mo><mrow><mn>23</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mi>y</mi><mo>=</mo><mrow><mrow><mo>−</mo><mn>85</mn></mrow><mo>−</mo><mrow><mn>56</mn><mo>⁢</mo><mi>t</mi></mrow></mrow></mrow></mtd><mtd></mtd></mtr></mtable></mrow><annotation encoding="application/x-tex">\displaystyle\begin{dcases}x=-35-23t\\
+y=-85-56t\end{dcases}</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="Thmremarkx3" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx3.p1" class="ltx_para">
+<p class="ltx_p">Si existen soluciones, encontrar una solucion particular <math id="Thmremarkx3.p1.m1" class="ltx_Math" alttext="\displaystyle(x_{0},y_{0})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\displaystyle(x_{0},y_{0})</annotation></semantics></math> se hace facilmente a traves de una identidad de Bezout.
+
+Si la ecuaicon es <math id="Thmremarkx3.p1.m2" class="ltx_Math" alttext="\displaystyle ax+by=c" display="inline"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\displaystyle ax+by=c</annotation></semantics></math> y tenemos una identidad de Bezout <math id="Thmremarkx3.p1.m3" class="ltx_Math" alttext="\displaystyle au+bv=d" display="inline"><semantics><mrow><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>u</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>v</mi></mrow></mrow><mo>=</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">\displaystyle au+bv=d</annotation></semantics></math> entonces <math id="Thmremarkx3.p1.m4" class="ltx_Math" alttext="\displaystyle(x_{0},y_{0})=(um,vm)" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mi>u</mi><mo>⁢</mo><mi>m</mi></mrow><mo>,</mo><mrow><mi>v</mi><mo>⁢</mo><mi>m</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle(x_{0},y_{0})=(um,vm)</annotation></semantics></math> es una solucion particular, donde <math id="Thmremarkx3.p1.m5" class="ltx_Math" alttext="\displaystyle m=\frac{c}{d}" display="inline"><semantics><mrow><mi>m</mi><mo>=</mo><mstyle displaystyle="true"><mfrac><mi>c</mi><mi>d</mi></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle m=\frac{c}{d}</annotation></semantics></math>.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="S8.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S10.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html><html lang="es">
+<head>
+<meta content="Matemática Discreta" course="1º Curso" prof="Ángel Pérez" prof2="Miguel Romance" data-pagefind-filter="asignatura[content], curso[course], profesor[prof], profesor[prof2]">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>5 Principios basicos ‣ Parte II Combinatoria ‣ Matemática Discreta‣ Parte II Combinatoria ‣ Matemática Discreta</title>
+<!--Generated on Fri Jun  7 11:08:28 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
+
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-main.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Pt2.html" title="Parte II Combinatoria ‣ Matemática Discreta">
+<link rel="up up" href="index.html" title="Matemática Discreta">
+<link rel="start" href="index.html" title="Matemática Discreta">
+<link rel="prev" href="Pt2.html" title="Parte II Combinatoria ‣ Matemática Discreta">
+<link rel="next" href="S6.html" title="6 Estructuras combinatorias ‣ Parte II Combinatoria ‣ Matemática Discreta">
+<link rel="section" href="S6.html" title="6 Estructuras combinatorias ‣ Parte II Combinatoria ‣ Matemática Discreta">
+<link rel="section" href="S7.html" title="7 Numeros combinatorios ‣ Parte II Combinatoria ‣ Matemática Discreta">
+<link rel="part" href="Pt1.html" title="Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta">
+<link rel="part" href="Pt2.html" title="Parte II Combinatoria ‣ Matemática Discreta">
+<link rel="part" href="Pt3.html" title="Parte III Aritmética entera y modular ‣ Matemática Discreta">
+<link rel="part" href="Pt4.html" title="Parte IV Teoria de grafos ‣ Matemática Discreta">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="Matemática Discreta" class="ltx_ref" rel="start">Matemática Discreta</a>
+</li>
+<li class="divider">
+<li data-level="I" data-path="Pt1.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt1.html" title="Parte I Fundamentos y el principio de inducción ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">I </span></b>Fundamentos y el principio de inducción</a></li>
+<li data-level="II" data-path="Pt2.html" class="ltx_tocentry ltx_tocentry_part  chapter ">
+<a href="Pt2.html" title="Parte II Combinatoria ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">II </span></b>Combinatoria</a>
+<ol class="ltx_toclist ltx_toclist_part">
+<li data-level="5" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="5 Principios basicos ‣ Parte II Combinatoria ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Principios basicos</a></li>
+<li data-level="6" data-path="S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S6.html" title="6 Estructuras combinatorias ‣ Parte II Combinatoria ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Estructuras combinatorias</a></li>
+<li data-level="7" data-path="S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="S7.html" title="7 Numeros combinatorios ‣ Parte II Combinatoria ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Numeros combinatorios</a></li>
+</ol>
+</li>
+<li data-level="III" data-path="Pt3.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt3.html" title="Parte III Aritmética entera y modular ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">III </span></b>Aritmética entera y modular</a></li>
+<li data-level="IV" data-path="Pt4.html" class="ltx_tocentry ltx_tocentry_part  chapter "><a href="Pt4.html" title="Parte IV Teoria de grafos ‣ Matemática Discreta" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">IV </span></b>Teoria de grafos</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Principios basicos</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section ltx_authors_1line normal" lang="es">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">5</span> Principios basicos</h1>
+
+<div id="Thmproposition1" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 5.1</span></span><span class="ltx_text ltx_font_bold"> </span>(Principio del producto)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sea <math id="Thmproposition1.p1.m1" class="ltx_Math" alttext="\displaystyle\mathcal{{A}}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi><annotation encoding="application/x-tex">\displaystyle\mathcal{{A}}</annotation></semantics></math> una actividad que se puede realizar en <math id="Thmproposition1.p1.m2" class="ltx_Math" alttext="\displaystyle t\geq 2" display="inline"><semantics><mrow><mi>t</mi><mo mathvariant="normal">≥</mo><mn mathvariant="normal">2</mn></mrow><annotation encoding="application/x-tex">\displaystyle t\geq 2</annotation></semantics></math> pasos secuenciales, de manera que el paso 1 se puede hacer de <math id="Thmproposition1.p1.m3" class="ltx_Math" alttext="\displaystyle n_{1}" display="inline"><semantics><msub><mi>n</mi><mn mathvariant="normal">1</mn></msub><annotation encoding="application/x-tex">\displaystyle n_{1}</annotation></semantics></math> fofrmas distintas, el paso 2 se puede hacer de <math id="Thmproposition1.p1.m4" class="ltx_Math" alttext="\displaystyle n_{2}" display="inline"><semantics><msub><mi>n</mi><mn mathvariant="normal">2</mn></msub><annotation encoding="application/x-tex">\displaystyle n_{2}</annotation></semantics></math> formas distintas, …, y el paso <math id="Thmproposition1.p1.m5" class="ltx_Math" alttext="\displaystyle t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">\displaystyle t</annotation></semantics></math> se puede hacer de <math id="Thmproposition1.p1.m6" class="ltx_Math" alttext="\displaystyle n_{t}" display="inline"><semantics><msub><mi>n</mi><mi>t</mi></msub><annotation encoding="application/x-tex">\displaystyle n_{t}</annotation></semantics></math> formas distintas.
+
+Entonces el numero de posibles formas de realizar la actividad <math id="Thmproposition1.p1.m7" class="ltx_Math" alttext="\displaystyle\mathcal{{A}}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi><annotation encoding="application/x-tex">\displaystyle\mathcal{{A}}</annotation></semantics></math> es <math id="Thmproposition1.p1.m8" class="ltx_Math" alttext="\displaystyle n_{1}\cdot n_{2}\cdots n_{t}" display="inline"><semantics><mrow><mrow><msub><mi>n</mi><mn mathvariant="normal">1</mn></msub><mo lspace="0.222em" mathvariant="normal" rspace="0.222em">⋅</mo><msub><mi>n</mi><mn mathvariant="normal">2</mn></msub></mrow><mo mathvariant="italic">⁢</mo><mi mathvariant="normal">⋯</mi><mo mathvariant="italic">⁢</mo><msub><mi>n</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle n_{1}\cdot n_{2}\cdots n_{t}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Thmexamplex9" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex9.p1" class="ltx_para">
+<p class="ltx_p">Sean <math id="Thmexamplex9.p1.m1" class="ltx_Math" alttext="\displaystyle B_{1},B_{2},\ldots,B_{t}" display="inline"><semantics><mrow><msub><mi>B</mi><mn>1</mn></msub><mo>,</mo><msub><mi>B</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>B</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle B_{1},B_{2},\ldots,B_{t}</annotation></semantics></math> conjuntos finitos no vacios.
+
+Calcula <math id="Thmexamplex9.p1.m2" class="ltx_Math" alttext="\displaystyle|B_{1}\times B_{2}\times\cdots\times B_{t}|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mrow><msub><mi>B</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>B</mi><mn>2</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>B</mi><mi>t</mi></msub></mrow><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">\displaystyle|B_{1}\times B_{2}\times\cdots\times B_{t}|</annotation></semantics></math>.
+
+<math id="Thmexamplex9.p1.m3" class="ltx_Math" alttext="\displaystyle B_{1}\times B_{2}\times\cdots\times B_{t}=\{(b_{1},b_{2},\ldots,%
+b_{t})\mid\forall b_{i}\exists B_{i}\}" display="inline"><semantics><mrow><mrow><msub><mi>B</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>B</mi><mn>2</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>B</mi><mi>t</mi></msub></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><msub><mi>b</mi><mn>1</mn></msub><mo>,</mo><msub><mi>b</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>b</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow><mo fence="true" lspace="0em" rspace="0.167em">∣</mo><mrow><mo rspace="0.167em">∀</mo><mrow><msub><mi>b</mi><mi>i</mi></msub><mo lspace="0.167em">⁢</mo><mrow><mo rspace="0.167em">∃</mo><msub><mi>B</mi><mi>i</mi></msub></mrow></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\displaystyle B_{1}\times B_{2}\times\cdots\times B_{t}=\{(b_{1},b_{2},\ldots,%
+b_{t})\mid\forall b_{i}\exists B_{i}\}</annotation></semantics></math>.
+
+Por tanto, habra <math id="Thmexamplex9.p1.m4" class="ltx_Math" alttext="\displaystyle|B_{1}|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><msub><mi>B</mi><mn>1</mn></msub><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">\displaystyle|B_{1}|</annotation></semantics></math> opciones de la primera coordenada, <math id="Thmexamplex9.p1.m5" class="ltx_Math" alttext="\displaystyle|B_{2}|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><msub><mi>B</mi><mn>2</mn></msub><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">\displaystyle|B_{2}|</annotation></semantics></math> opciones de la segunda, …, <math id="Thmexamplex9.p1.m6" class="ltx_Math" alttext="\displaystyle|B_{t}|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><msub><mi>B</mi><mi>t</mi></msub><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">\displaystyle|B_{t}|</annotation></semantics></math> opciones de la t-esima.
+
+<math id="Thmexamplex9.p1.m7" class="ltx_Math" alttext="\displaystyle|B_{1}\times B_{2}\times\cdots\times B_{t}|=B_{1}\cdot B_{2}%
+\cdots B_{t}" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>B</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>B</mi><mn>2</mn></msub><mo lspace="0.222em" rspace="0.222em">×</mo><mi mathvariant="normal">⋯</mi><mo lspace="0.222em" rspace="0.222em">×</mo><msub><mi>B</mi><mi>t</mi></msub></mrow><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mrow><msub><mi>B</mi><mn>1</mn></msub><mo lspace="0.222em" rspace="0.222em">⋅</mo><msub><mi>B</mi><mn>2</mn></msub></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mi>B</mi><mi>t</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle|B_{1}\times B_{2}\times\cdots\times B_{t}|=B_{1}\cdot B_{2}%
+\cdots B_{t}</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmexamplex10" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex10.p1" class="ltx_para">
+<p class="ltx_p">El alfabeto español consta de 27 letras de las cuales 5 son vocales. Cuantas palabras (con o sin sentido) de 7 letras se pueden formar de manera que empiecen por vocal y que nunca tengan dos vocales ni dos consonantes seguidas?
+
+Solucion: se pueden formar <math id="Thmexamplex10.p1.m1" class="ltx_Math" alttext="\displaystyle 5^{4}\cdot 22^{3}" display="inline"><semantics><mrow><msup><mn>5</mn><mn>4</mn></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mn>22</mn><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\displaystyle 5^{4}\cdot 22^{3}</annotation></semantics></math> palabras.</p>
+</div>
+</div>
+<div id="Thmexamplex11" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex11.p1" class="ltx_para">
+<p class="ltx_p">Se lanzan simultaneamente dos dados de 6 caras, uno de color rojo y otro de color azul. Despues se suman los resultados. De cuantas formas se puede obtener un resultado total de 10 o mas?
+
+Consideramos varios casos dependiendo de la suma de los dos dados:</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p">Caso 1: suma 12. Se puede sacar con un 6 en ambos dados (1 forma).</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p">Caso 2: suma 11. Se puede sacar un 6 en el rojo y 5 en el azul o 6 en el azul y 5 en el rojo (2 formas).</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I1.i3.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Caso 3: suma 10. 5 rojo y 5 azul, 4 rojo y 6 azul, 6 rojo y 4 azul (3 formas).</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">La solucion es <math id="Thmexamplex11.p1.m1" class="ltx_Math" alttext="\displaystyle 1+2+3=6" display="inline"><semantics><mrow><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn></mrow><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">\displaystyle 1+2+3=6</annotation></semantics></math> formas de obtener 10 o mas.</p>
+</div>
+</div>
+<div id="Thmproposition2" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 5.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sea <math id="Thmproposition2.p1.m1" class="ltx_Math" alttext="\displaystyle\mathcal{{A}}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi><annotation encoding="application/x-tex">\displaystyle\mathcal{{A}}</annotation></semantics></math> una actividad tal que las distintas formas de realizarla son los elementos de un conjunto finito <math id="Thmproposition2.p1.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math>. Supongamos que <math id="Thmproposition2.p1.m3" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math> se puede escribir como union de subconjuntos disjuntos dos a dos, es decir,</span></p>
+<div id="Ex26" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex26.m1" class="ltx_Math" alttext="\displaystyle B=B_{1}\cup B_{2}\cup\cdots\cup B_{t}\text{, y si }i\neq j\text{%
+ entonces }B_{i}\cap B_{j}=\varnothing" display="block"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><msub><mi>B</mi><mn>1</mn></msub><mo>∪</mo><msub><mi>B</mi><mn>2</mn></msub><mo>∪</mo><mi mathvariant="normal">⋯</mi><mo>∪</mo><mrow><msub><mi>B</mi><mi>t</mi></msub><mo>⁢</mo><mtext mathvariant="italic">, y si </mtext><mo>⁢</mo><mi>i</mi></mrow></mrow><mo>≠</mo><mrow><mrow><mi>j</mi><mo>⁢</mo><mtext mathvariant="italic"> entonces </mtext><mo>⁢</mo><msub><mi>B</mi><mi>i</mi></msub></mrow><mo>∩</mo><msub><mi>B</mi><mi>j</mi></msub></mrow><mo>=</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">\displaystyle B=B_{1}\cup B_{2}\cup\cdots\cup B_{t}\text{, y si }i\neq j\text{%
+ entonces }B_{i}\cap B_{j}=\varnothing</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Supongamos tambien que <math id="Thmproposition2.p1.m4" class="ltx_Math" alttext="\displaystyle|B_{j}|=n_{j}" display="inline"><semantics><mrow><mrow><mo mathvariant="normal" stretchy="false">|</mo><msub><mi>B</mi><mi>j</mi></msub><mo mathvariant="normal" stretchy="false">|</mo></mrow><mo mathvariant="normal">=</mo><msub><mi>n</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle|B_{j}|=n_{j}</annotation></semantics></math>.
+
+Entonces el numero de posibles formas de realizar la actividad <math id="Thmproposition2.p1.m5" class="ltx_Math" alttext="\displaystyle\mathcal{{A}}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi><annotation encoding="application/x-tex">\displaystyle\mathcal{{A}}</annotation></semantics></math> es <math id="Thmproposition2.p1.m6" class="ltx_Math" alttext="\displaystyle n_{1}+n_{2}+\cdots+n_{t}" display="inline"><semantics><mrow><msub><mi>n</mi><mn mathvariant="normal">1</mn></msub><mo mathvariant="normal">+</mo><msub><mi>n</mi><mn mathvariant="normal">2</mn></msub><mo mathvariant="normal">+</mo><mi mathvariant="normal">⋯</mi><mo mathvariant="normal">+</mo><msub><mi>n</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">\displaystyle n_{1}+n_{2}+\cdots+n_{t}</annotation></semantics></math>.
+
+(Es decir, <math id="Thmproposition2.p1.m7" class="ltx_Math" alttext="\displaystyle|B|=|B_{1}\cup B_{2}\cup\cdots\cup B_{t}|=|B_{1}|+|B_{2}|+\cdots+%
+|B_{t}|" display="inline"><semantics><mrow><mrow><mo mathvariant="normal" stretchy="false">|</mo><mi>B</mi><mo mathvariant="normal" stretchy="false">|</mo></mrow><mo mathvariant="normal">=</mo><mrow><mo mathvariant="normal" stretchy="false">|</mo><mrow><msub><mi>B</mi><mn mathvariant="normal">1</mn></msub><mo mathvariant="normal">∪</mo><msub><mi>B</mi><mn mathvariant="normal">2</mn></msub><mo mathvariant="normal">∪</mo><mi mathvariant="normal">⋯</mi><mo mathvariant="normal">∪</mo><msub><mi>B</mi><mi>t</mi></msub></mrow><mo mathvariant="normal" stretchy="false">|</mo></mrow><mo mathvariant="normal">=</mo><mrow><mrow><mo mathvariant="normal" stretchy="false">|</mo><msub><mi>B</mi><mn mathvariant="normal">1</mn></msub><mo mathvariant="normal" stretchy="false">|</mo></mrow><mo mathvariant="normal">+</mo><mrow><mo mathvariant="normal" stretchy="false">|</mo><msub><mi>B</mi><mn mathvariant="normal">2</mn></msub><mo mathvariant="normal" stretchy="false">|</mo></mrow><mo mathvariant="normal">+</mo><mi mathvariant="normal">⋯</mi><mo mathvariant="normal">+</mo><mrow><mo mathvariant="normal" stretchy="false">|</mo><msub><mi>B</mi><mi>t</mi></msub><mo mathvariant="normal" stretchy="false">|</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle|B|=|B_{1}\cup B_{2}\cup\cdots\cup B_{t}|=|B_{1}|+|B_{2}|+\cdots+%
+|B_{t}|</annotation></semantics></math>).</span></p>
+</div>
+</div>
+<div id="Thmexamplex12" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex12.p1" class="ltx_para">
+<p class="ltx_p">El alfabeto español consta de 27 letras de las cuales 5 son vocales. Cuantas palabras de 4 letras se pueden formar de manera que empiecen por “D” y acaben en consonante o que empiecen por “F” y acaben en vocal?</p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p">Caso 1: <math id="I2.i1.p1.m1" class="ltx_Math" alttext="\displaystyle 1\cdot 27^{2}\cdot 22" display="inline"><semantics><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mn>27</mn><mn>2</mn></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>22</mn></mrow><annotation encoding="application/x-tex">\displaystyle 1\cdot 27^{2}\cdot 22</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I2.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Caso 2: <math id="I2.i2.p1.m1" class="ltx_Math" alttext="\displaystyle 1\cdot 27^{2}\cdot 5" display="inline"><semantics><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mn>27</mn><mn>2</mn></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\displaystyle 1\cdot 27^{2}\cdot 5</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Todos los casos posibles son <math id="Thmexamplex12.p1.m1" class="ltx_Math" alttext="\displaystyle 27^{2}\cdot 22+27^{2}\cdot 5=27^{3}" display="inline"><semantics><mrow><mrow><mrow><msup><mn>27</mn><mn>2</mn></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>22</mn></mrow><mo>+</mo><mrow><msup><mn>27</mn><mn>2</mn></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>5</mn></mrow></mrow><mo>=</mo><msup><mn>27</mn><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\displaystyle 27^{2}\cdot 22+27^{2}\cdot 5=27^{3}</annotation></semantics></math> (como son casos disjuntos puedo aplicar la regla de la suma).</p>
+</div>
+</div>
+<div id="Thmexamplex13" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex13.p1" class="ltx_para">
+<p class="ltx_p">Cuantas palabras de 4 letras se pueden formar de manera que empiecen por “D” o acaben en “F”?</p>
+<ul id="I3" class="ltx_itemize">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p">Caso 1: <math id="I3.i1.p1.m1" class="ltx_Math" alttext="\displaystyle 1\cdot 27^{3}" display="inline"><semantics><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mn>27</mn><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\displaystyle 1\cdot 27^{3}</annotation></semantics></math></p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text" style="width:5.2pt;"><span class="ltx_rule" style="width:3.0pt;height:3pt;vertical-align:0.9pt;background:black;display:inline-block;"> </span></span></span><div id="I3.i2.p1" class="ltx_para ltx_noindent">​<p class="ltx_p">Caso 2: <math id="I3.i2.p1.m1" class="ltx_Math" alttext="\displaystyle 1\cdot 27^{3}" display="inline"><semantics><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mn>27</mn><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\displaystyle 1\cdot 27^{3}</annotation></semantics></math></p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">En este caso, no son disjuntos (por ejemplo, DEEF esta en ambos).
+
+Debemos restar la interseccion, que será <math id="Thmexamplex13.p1.m1" class="ltx_Math" alttext="\displaystyle 1\cdot 27^{2}\cdot 1=27^{2}" display="inline"><semantics><mrow><mrow><mn>1</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><msup><mn>27</mn><mn>2</mn></msup><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>1</mn></mrow><mo>=</mo><msup><mn>27</mn><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\displaystyle 1\cdot 27^{2}\cdot 1=27^{2}</annotation></semantics></math>.
+
+La solucion final es <math id="Thmexamplex13.p1.m2" class="ltx_Math" alttext="\displaystyle 27^{3}+27^{3}-27^{2}" display="inline"><semantics><mrow><mrow><msup><mn>27</mn><mn>3</mn></msup><mo>+</mo><msup><mn>27</mn><mn>3</mn></msup></mrow><mo>−</mo><msup><mn>27</mn><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\displaystyle 27^{3}+27^{3}-27^{2}</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmtheorem1" class="ltx_theorem ltx_theorem_theorem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Teorema 5.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmtheorem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sean <math id="Thmtheorem1.p1.m1" class="ltx_Math" alttext="\displaystyle B,B_{1},B_{2}" display="inline"><semantics><mrow><mi>B</mi><mo mathvariant="normal">,</mo><msub><mi>B</mi><mn mathvariant="normal">1</mn></msub><mo mathvariant="normal">,</mo><msub><mi>B</mi><mn mathvariant="normal">2</mn></msub></mrow><annotation encoding="application/x-tex">\displaystyle B,B_{1},B_{2}</annotation></semantics></math> conjuntos finitos tales que <math id="Thmtheorem1.p1.m2" class="ltx_Math" alttext="\displaystyle B=B_{1}\cup B_{2}" display="inline"><semantics><mrow><mi>B</mi><mo mathvariant="normal">=</mo><mrow><msub><mi>B</mi><mn mathvariant="normal">1</mn></msub><mo mathvariant="normal">∪</mo><msub><mi>B</mi><mn mathvariant="normal">2</mn></msub></mrow></mrow><annotation encoding="application/x-tex">\displaystyle B=B_{1}\cup B_{2}</annotation></semantics></math>. Entonces</span></p>
+<div id="Ex27" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex27.m1" class="ltx_Math" alttext="\displaystyle|B|=|B_{1}|+|B_{2}|-|B_{1}\cap B_{2}|." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">|</mo><msub><mi>B</mi><mn>1</mn></msub><mo stretchy="false">|</mo></mrow><mo>+</mo><mrow><mo stretchy="false">|</mo><msub><mi>B</mi><mn>2</mn></msub><mo stretchy="false">|</mo></mrow></mrow><mo>−</mo><mrow><mo stretchy="false">|</mo><mrow><msub><mi>B</mi><mn>1</mn></msub><mo>∩</mo><msub><mi>B</mi><mn>2</mn></msub></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle|B|=|B_{1}|+|B_{2}|-|B_{1}\cap B_{2}|.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demostración.</h6>
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Trivial.
+∎</p>
+</div>
+</div>
+<div id="Thmexamplex14" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex14.p1" class="ltx_para">
+<p class="ltx_p">Se lanzan dos dados de 6 caras, uno rojo y otro azul. Despues se suman los resultados. De cuantas formas se puede obtener un resultado total de 4 o mas?
+
+Lo contrario de sacar <math id="Thmexamplex14.p1.m1" class="ltx_Math" alttext="\displaystyle\geq 4" display="inline"><semantics><mrow><mi></mi><mo>≥</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\displaystyle\geq 4</annotation></semantics></math> es sacar <math id="Thmexamplex14.p1.m2" class="ltx_Math" alttext="\displaystyle&lt;4" display="inline"><semantics><mrow><mi></mi><mo>&lt;</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\displaystyle&lt;4</annotation></semantics></math>, que es lo mismo que sacar <math id="Thmexamplex14.p1.m3" class="ltx_Math" alttext="\displaystyle 2" display="inline"><semantics><mn>2</mn><annotation encoding="application/x-tex">\displaystyle 2</annotation></semantics></math> o <math id="Thmexamplex14.p1.m4" class="ltx_Math" alttext="\displaystyle 3" display="inline"><semantics><mn>3</mn><annotation encoding="application/x-tex">\displaystyle 3</annotation></semantics></math>.
+
+Para que sume 2, el azul sera 1 y el rojo 1 (1 forma).
+
+Para que sume 3, hay dos posibilidades: azul 1 y rojo 2, azul 2 y rojo 1.
+
+En total, hay 4 formas. Podemos sacar el numero de opciones de <math id="Thmexamplex14.p1.m5" class="ltx_Math" alttext="\displaystyle\geq 4" display="inline"><semantics><mrow><mi></mi><mo>≥</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\displaystyle\geq 4</annotation></semantics></math> restando del total (<math id="Thmexamplex14.p1.m6" class="ltx_Math" alttext="\displaystyle 6\cdot 6=36" display="inline"><semantics><mrow><mrow><mn>6</mn><mo lspace="0.222em" rspace="0.222em">⋅</mo><mn>6</mn></mrow><mo>=</mo><mn>36</mn></mrow><annotation encoding="application/x-tex">\displaystyle 6\cdot 6=36</annotation></semantics></math>). <math id="Thmexamplex14.p1.m7" class="ltx_Math" alttext="\displaystyle 36-3=33" display="inline"><semantics><mrow><mrow><mn>36</mn><mo>−</mo><mn>3</mn></mrow><mo>=</mo><mn>33</mn></mrow><annotation encoding="application/x-tex">\displaystyle 36-3=33</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Thmproposition3" class="ltx_theorem ltx_theorem_proposition">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Proposición 5.3</span></span><span class="ltx_text ltx_font_bold"> </span>(Principio del complementario)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmproposition3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sea <math id="Thmproposition3.p1.m1" class="ltx_Math" alttext="\displaystyle\mathcal{{A}}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi><annotation encoding="application/x-tex">\displaystyle\mathcal{{A}}</annotation></semantics></math> una actividad tal que las distintas formas de realizarla son los elementos de un conjunto finito <math id="Thmproposition3.p1.m2" class="ltx_Math" alttext="\displaystyle B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">\displaystyle B</annotation></semantics></math>. Supongamos que <math id="Thmproposition3.p1.m3" class="ltx_Math" alttext="\displaystyle D" display="inline"><semantics><mi>D</mi><annotation encoding="application/x-tex">\displaystyle D</annotation></semantics></math> es otro conjunto finito tal que <math id="Thmproposition3.p1.m4" class="ltx_Math" alttext="\displaystyle B\subseteq D" display="inline"><semantics><mrow><mi>B</mi><mo mathvariant="normal">⊆</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">\displaystyle B\subseteq D</annotation></semantics></math> y sabemos que <math id="Thmproposition3.p1.m5" class="ltx_Math" alttext="\displaystyle|D|=n" display="inline"><semantics><mrow><mrow><mo mathvariant="normal" stretchy="false">|</mo><mi>D</mi><mo mathvariant="normal" stretchy="false">|</mo></mrow><mo mathvariant="normal">=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">\displaystyle|D|=n</annotation></semantics></math> y que <math id="Thmproposition3.p1.m6" class="ltx_Math" alttext="\displaystyle|D\setminus B|=m" display="inline"><semantics><mrow><mrow><mo mathvariant="normal" stretchy="false">|</mo><mrow><mi>D</mi><mo mathvariant="normal">∖</mo><mi>B</mi></mrow><mo mathvariant="normal" stretchy="false">|</mo></mrow><mo mathvariant="normal">=</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">\displaystyle|D\setminus B|=m</annotation></semantics></math>.
+
+Entonces el numero de posibles formas de realizar la actividad <math id="Thmproposition3.p1.m7" class="ltx_Math" alttext="\displaystyle\mathcal{{A}}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi><annotation encoding="application/x-tex">\displaystyle\mathcal{{A}}</annotation></semantics></math> es <math id="Thmproposition3.p1.m8" class="ltx_Math" alttext="\displaystyle n-m" display="inline"><semantics><mrow><mi>n</mi><mo mathvariant="normal">−</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">\displaystyle n-m</annotation></semantics></math>. Es decir, <math id="Thmproposition3.p1.m9" class="ltx_Math" alttext="\displaystyle|B|=|D|-|D\setminus B|" display="inline"><semantics><mrow><mrow><mo mathvariant="normal" stretchy="false">|</mo><mi>B</mi><mo mathvariant="normal" stretchy="false">|</mo></mrow><mo mathvariant="normal">=</mo><mrow><mrow><mo mathvariant="normal" stretchy="false">|</mo><mi>D</mi><mo mathvariant="normal" stretchy="false">|</mo></mrow><mo mathvariant="normal">−</mo><mrow><mo mathvariant="normal" stretchy="false">|</mo><mrow><mi>D</mi><mo mathvariant="normal">∖</mo><mi>B</mi></mrow><mo mathvariant="normal" stretchy="false">|</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\displaystyle|B|=|D|-|D\setminus B|</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div id="Thmremarkx1" class="ltx_theorem ltx_theorem_remark">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Observación</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmremarkx1.p1" class="ltx_para">
+<p class="ltx_p">El principio del complementario es un corolario del principio de la suma.</p>
+<div id="Ex28" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex28.m1" class="ltx_Math" alttext="\displaystyle|B|+|D\setminus B|=|D|\Rightarrow|B|=|D|-|D\setminus B|." display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow><mo>+</mo><mrow><mo stretchy="false">|</mo><mrow><mi>D</mi><mo>∖</mo><mi>B</mi></mrow><mo stretchy="false">|</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>D</mi><mo stretchy="false">|</mo></mrow><mo stretchy="false">⇒</mo><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mi>D</mi><mo stretchy="false">|</mo></mrow><mo>−</mo><mrow><mo stretchy="false">|</mo><mrow><mi>D</mi><mo>∖</mo><mi>B</mi></mrow><mo stretchy="false">|</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle|B|+|D\setminus B|=|D|\Rightarrow|B|=|D|-|D\setminus B|.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmexamplex15" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Ejemplo</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmexamplex15.p1" class="ltx_para">
+<p class="ltx_p">Cuantas palabras de 6 letras se pueden formar de manera que contengan al menos una vocal?
+
+Como tiene que haber <math id="Thmexamplex15.p1.m1" class="ltx_Math" alttext="\displaystyle\geq 1" display="inline"><semantics><mrow><mi></mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\displaystyle\geq 1</annotation></semantics></math> vocales, lo contrario es que no haya ninguna vocal, que es lo mismo que “todo consonantes”. En ese caso, hay <math id="Thmexamplex15.p1.m2" class="ltx_Math" alttext="\displaystyle 22^{6}" display="inline"><semantics><msup><mn>22</mn><mn>6</mn></msup><annotation encoding="application/x-tex">\displaystyle 22^{6}</annotation></semantics></math> posibilidades y el total es <math id="Thmexamplex15.p1.m3" class="ltx_Math" alttext="\displaystyle 27^{6}" display="inline"><semantics><msup><mn>27</mn><mn>6</mn></msup><annotation encoding="application/x-tex">\displaystyle 27^{6}</annotation></semantics></math>.
+
+La solucion sera <math id="Thmexamplex15.p1.m4" class="ltx_Math" alttext="\displaystyle 27^{6}-22^{6}" display="inline"><semantics><mrow><msup><mn>27</mn><mn>6</mn></msup><mo>−</mo><msup><mn>22</mn><mn>6</mn></msup></mrow><annotation encoding="application/x-tex">\displaystyle 27^{6}-22^{6}</annotation></semantics></math>.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Pt2.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="S6.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="module">
+      await import('/pagefind/pagefind-highlight.js');
+      new PagefindHighlight({ highlightParam: "highlight" });
+  </script><script type="text/javascript">
+              gitbook.require(["gitbook"], function(gitbook) {
+              gitbook.start({
+                "fontsettings": {
+                  "theme": "white",
+                  "family": "sans",
+                  "size": 2
+                },
+                "download": [ [ "main.pdf", "PDF" ], ],
+                "search": {
+                  "engine": "fuse"
+                },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>
