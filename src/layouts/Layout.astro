@@ -8,7 +8,6 @@ import avatar from "../images/avatar.jpeg";
 
 const { title, description } = Astro.props;
 import "@fontsource-variable/inter";
-import { ViewTransitions } from "astro:transitions";
 import { slide, fade } from "astro:transitions";
 import NavBar from "../components/NavBar.astro";
 import Busqueda from "../components/Busqueda.astro";
@@ -38,6 +37,7 @@ import Footer from "../components/Footer.astro";
 			</div>
 		</div>
 		<Footer />
+		<Busqueda />
 		<style is:global>
 			html {
 				font-family: "Inter Variable", sans-serif;
