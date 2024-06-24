@@ -9,13 +9,14 @@ import avatar from "../images/avatar.jpeg";
 const { title, description } = Astro.props;
 import "@fontsource-variable/inter";
 import { ViewTransitions } from "astro:transitions";
-import { slide, fade } from 'astro:transitions';
+import { slide, fade } from "astro:transitions";
 import NavBar from "../components/NavBar.astro";
 import Busqueda from "../components/Busqueda.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
-<html lang="en" transition:animate={fade({ duration: '0.4s' })}>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
@@ -26,15 +27,17 @@ import Busqueda from "../components/Busqueda.astro";
 		<link href="/apuntes/pagefind/pagefind-ui.css" rel="stylesheet" />
 		<script src="/apuntes/pagefind/pagefind-ui.js" is:inline></script>
 		<title>{title}</title>
-		<ViewTransitions />
+		<!-- <ViewTransitions transition:persist/> -->
 	</head>
 	<body>
-		<NavBar />
+		<div class="min-h-[calc(100vh-5rem)]">
+			<NavBar />
 
-		<div>
-			<slot />
+			<div>
+				<slot />
+			</div>
 		</div>
-		<Busqueda />
+		<Footer />
 		<style is:global>
 			html {
 				font-family: "Inter Variable", sans-serif;

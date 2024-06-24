@@ -4,7 +4,6 @@ date: 2024-05-26
 image: '/src/assets/apuntes.png'
 description: 'Mis apuntes del grado de Matemáticas en la URJC en HTML/PDF'
 project: true
-
 ---
 
 
@@ -14,17 +13,20 @@ La mayoría del contenido no está revisado tras las clases y pueden haber errat
 
 Puedes encontrar el código fuente de los apuntes (escritos en LaTeX) [aquí](https://github.com/DiegoRodriguezT/apuntesmat). Si quieres contribuir corrigiendo erratas, añadiendo contenido o proponiendo mejoras, deja un pull request en el repositorio de GitHub o ponte en contacto conmigo. 
  
+import Card from '../../components/ApuntesCard.astro'
+import AlgebraIcon from '../../components/icons/al-2324.astro'
+import DiscretaIcon from '../../components/icons/md-2324.astro'
+import LogicaIcon from '../../components/icons/lg-2324.astro'
+import CalculoIcon from '../../components/icons/cal-2324.astro'
+import ProbabilidadIcon from '../../components/icons/pb-2526.astro'
 
-## 1º Curso
-
-### 1º Cuatrimestre
-
-- [Matemática Discreta](/apuntes/md-2324)
-- [Álgebra Lineal](/apuntes/al-2324) **INCOMPLETO**
-- [Lógica](/apuntes/lg-2324)
-
-### 2º Cuatrimestre
-- [Estructuras Algebraicas](/apuntes/ea-2324/)
-- [Cálculo](/apuntes/cal-2324/)
-- ~~Probabilidad~~ (cursada en 3º)
+## Primero
+<div class="flex flex-wrap gap-2 justify-center">
+<Card title="Matemática Discreta" href="/apuntes/md-2324"><DiscretaIcon/></Card>
+<Card title="Álgebra Lineal" href="/apuntes/al-2324"><AlgebraIcon/></Card>
+<Card title="Lógica" href="/apuntes/lg-2324"><LogicaIcon slot="left"/></Card>
+<Card title="Cálculo" href="/apuntes/cal-2324"><CalculoIcon slot="big"/></Card>
+<Card title="Estructuras Algebraicas" href="/apuntes/ea-2324"></Card>
+<Card title="Probabilidad" subtitle="(no disponible)" href="#primero"><ProbabilidadIcon/></Card>
+</div>
 

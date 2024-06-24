@@ -60,6 +60,7 @@ import Search from "../components/Search.astro";
 
 <script is:inline>
 	const magnifyingGlass = document.getElementById("magnifying-glass");
+	const magnifyingGlass2 = document.getElementById("magnifying-glass2");
 	const backdrop = document.getElementById("backdrop");
 
 	function openPagefind() {
@@ -74,8 +75,11 @@ import Search from "../components/Search.astro";
 
 	document.addEventListener("astro:after-swap", function () {
 		const magnifyingGlass = document.getElementById("magnifying-glass");
-
+		const magnifyingGlass2 = document.getElementById("magnifying-glass2");
 		magnifyingGlass?.addEventListener("click", () => {
+			openPagefind();
+		});
+		magnifyingGlass2?.addEventListener("click", () => {
 			openPagefind();
 		});
 	});
@@ -89,6 +93,10 @@ import Search from "../components/Search.astro";
 
 	// open pagefind
 	magnifyingGlass?.addEventListener("click", () => {
+		openPagefind();
+	});
+
+	magnifyingGlass2?.addEventListener("click", () => {
 		openPagefind();
 	});
 
