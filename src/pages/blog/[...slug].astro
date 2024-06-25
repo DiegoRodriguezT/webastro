@@ -24,7 +24,7 @@ const post = Astro.props;
 const { Content } = await post.render();
 export const prerender = true;
 
-const apuntes = (post.data.title == "Apuntes de Matemáticas") ? true : false;
+const apuntes = post.data.title == "Apuntes de Matemáticas" ? true : false;
 ---
 
 <Blog {...post.data}>

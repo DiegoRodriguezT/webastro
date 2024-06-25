@@ -10,7 +10,11 @@ export default defineConfig({
   integrations: [tailwind(), mdx(), sitemap(), pagefind()],
   site: 'https://dev.diiegorgueez.me',
   output: "hybrid",
-  adapter: vercel({ analytics: true }),
+  adapter: vercel({
+    webAnalytics: { enabled: true },
+    imageService: true,
+
+  }),
   // adapter: node({
   //   mode: 'standalone',
   // }),
