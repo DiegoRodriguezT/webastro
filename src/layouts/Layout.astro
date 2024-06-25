@@ -5,7 +5,7 @@ interface Props {
 }
 import { Image } from "astro:assets";
 import avatar from "../images/avatar.jpeg";
-import  SpeedInsights  from "@vercel/speed-insights/astro"
+import SpeedInsights from "@vercel/speed-insights/astro";
 const { title, description } = Astro.props;
 import "@fontsource-variable/inter";
 import { slide, fade } from "astro:transitions";
@@ -38,6 +38,7 @@ import Footer from "../components/Footer.astro";
 		</div>
 		<Footer />
 		<Busqueda />
+		<SpeedInsights />
 		<style is:global>
 			html {
 				font-family: "Inter Variable", sans-serif;
