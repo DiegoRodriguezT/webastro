@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import { ViewTransitions } from "astro:transitions";
 import FormattedDate from "../components/FormattedDate.astro";
-import Busqueda from "../components/NavBar.astro";
+import Busqueda from "../components/Busqueda.astro";
 import Layout from "./Layout.astro";
 
 type Props = CollectionEntry<"blog">["data"];
@@ -20,6 +20,8 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
 ---
 
 <Layout title={`diiegorgueez - ${title}`} description={description}>
+  <link href="/apuntes/pagefind/pagefind-ui.css" rel="stylesheet" />
+  <script src="/apuntes/pagefind/pagefind-ui.js" is:inline></script>
   <div class="m-auto max-w-full px-6 pt-4">
     <Image
       src={images[image]()}
@@ -36,7 +38,7 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
           <div class="min-h-screen">
             <div class="flex flex-col sticky top-0 max-[885px]:hidden">
               <a
-                class="w-11 h-11 rounded-full flex items-center justify-center bg-white hover:bg-[#ecedf0] text-sm leading-6 font-medium text-gray-500 hover:text-gray-700 focus:ring focus:ring-gray-100 m-4 border-neutral-200 border"
+                class="w-11 h-11 rounded-full flex items-center justify-center bg-white hover:bg-[#ecedf0] text-sm leading-6 font-medium text-gray-500 hover:text-gray-700 focus:ring focus:ring-gray-100 m-4 mb-3 border-neutral-200 border"
                 href="/blog/"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +85,7 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
           <button
             aria-labelledby="Búsqueda"
             class:list={[
-              "md:size-11 sm:size-11 size-10 rounded-full flex items-center justify-center bg-white hover:bg-[#ecedf0] text-sm leading-6 font-medium text-gray-500 hover:text-gray-700 focus:ring focus:ring-gray-100 m-4 border-neutral-200 border min-[885px]:hidden sticky top-3 r-0 -mr-4 shadow overflow-scroll",
+              "sm:size-12 size-10 rounded-full flex items-center justify-center bg-white hover:bg-[#ecedf0] text-sm leading-6 font-medium text-gray-500 hover:text-gray-700 focus:ring focus:ring-gray-100 m-4 border-neutral-200 border min-[885px]:hidden sticky top-3 r-0 -mr-4 shadow overflow-scroll",
               { invisible: apuntes ? false : true },
             ]}
             id="magnifying-glass2"
@@ -119,4 +121,6 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
       <slot />
     </div>
   </div>
+  <Busqueda />
+
 </Layout>

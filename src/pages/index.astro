@@ -7,17 +7,19 @@ import Blog from "../components/Blog.astro";
 ---
 
 <Layout
-	title="diiegorgueez"
-	description="Página web de diiegorgueez, desarrollador y futuro matemático e ingeniero informático."
+  title="diiegorgueez"
+  description="Página web de diiegorgueez, desarrollador y futuro matemático e ingeniero informático."
 >
-	<div
-		class="fixed inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
-	>
-	</div>
-	<main>
-		<Header />
+  <div class="absolute top-0 -z-10 h-full w-full bg-white">
+    <div
+      class="fixed bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-blue-100 opacity-50 blur-[80px]"
+    >
+    </div>
+  </div>
+  <main>
+    <Header />
 
-		<Projects />
-		<Blog />
-	</main>
+    <Projects />
+    <Blog />
+  </main>
 </Layout>
