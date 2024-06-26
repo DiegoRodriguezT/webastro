@@ -8,7 +8,6 @@ import FormattedDate from "../components/FormattedDate.astro";
 import Busqueda from "../components/NavBar.astro";
 import Layout from "./Layout.astro";
 
-
 type Props = CollectionEntry<"blog">["data"];
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
@@ -37,7 +36,7 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
 			class="m-auto px-5 max-w-full w-[700px] pb-5 flex-col flex gap-y-6"
 		>
 			<div class="relative mt-5">
-				<div class="absolute -left-24 -top-6">
+				<div class="absolute -left-24 -top-7">
 					<div class="min-h-screen">
 						<div
 							class="flex flex-col sticky top-0 max-[885px]:hidden"

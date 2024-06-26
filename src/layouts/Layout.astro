@@ -2,13 +2,15 @@
 interface Props {
 	title: string;
 	description: string;
+	image?: string;
 }
-import { Image } from "astro:assets";
-import avatar from "../images/avatar.jpeg";
 import SpeedInsights from "@vercel/speed-insights/astro";
-const { title, description } = Astro.props;
+const {
+	title,
+	description,
+	image = "/screenshot.png",
+} = Astro.props;
 import "@fontsource-variable/inter";
-import { slide, fade } from "astro:transitions";
 import NavBar from "../components/NavBar.astro";
 import Busqueda from "../components/Busqueda.astro";
 import Footer from "../components/Footer.astro";
@@ -23,6 +25,20 @@ import Footer from "../components/Footer.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<meta name="generator" content={Astro.generator} />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={Astro.url} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={new URL(image, Astro.url)} />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={Astro.url} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<meta property="twitter:image" content={new URL(image, Astro.url)} />
+
 		<link href="/apuntes/pagefind/pagefind-ui.css" rel="stylesheet" />
 		<script src="/apuntes/pagefind/pagefind-ui.js" is:inline></script>
 		<title>{title}</title>
