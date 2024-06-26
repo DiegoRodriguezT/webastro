@@ -5,11 +5,7 @@ interface Props {
 	image?: string;
 }
 import SpeedInsights from "@vercel/speed-insights/astro";
-const {
-	title,
-	description,
-	image = "/screenshot.png",
-} = Astro.props;
+const { title, description, image = "/images/screenshot.png" } = Astro.props;
 import "@fontsource-variable/inter";
 import NavBar from "../components/NavBar.astro";
 import Busqueda from "../components/Busqueda.astro";
