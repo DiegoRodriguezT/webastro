@@ -21,22 +21,12 @@ const post = Astro.props;
 
 const { Content } = await post.render();
 export const prerender = true;
-const tags = post.data.tags;
-const apuntes = post.data.title == "Apuntes de Matemáticas" ? true : false;
+
 ---
 
 <Blog {...post.data}>
 	<Prose>
 		<Content />
 	</Prose>
-	{tags != null ? <hr/>: ""}
-	<div class="flex flex-wrap gap-3">
-		{
-			tags?.map((tag) => 
-				<a class="px-5 py-3 bg-gray-50 border rounded-xl text-base font-medium hover:-translate-y-[2px] transition focus:ring focus:ring-gray-100" href={`/tags/${tag}`}>
-					{tag}
-				</a>
-			)
-		}
-	</div>
+	
 </Blog>
