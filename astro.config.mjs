@@ -25,7 +25,7 @@ export default defineConfig({
     service: squooshImageService()
   },
   redirects: {
-    '/apuntes': '/blog/apuntes',
+    '/apuntes': '/posts/apuntes',
     '/apuntes/md-2324': '/apuntes/md-2324/',
     '/apuntes/lg-2324': '/apuntes/lg-2324/',
     '/apuntes/cal-2324': '/apuntes/cal-2324/',
