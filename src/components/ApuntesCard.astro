@@ -13,6 +13,7 @@ const { title, href, color, subtitle } = Astro.props;
 <a
 	href={href}
 	class="!no-underline !text-gray-800 !hover:text-gray-800 inline-block bg-white "
+	data-umami-event="{title} button"
 >
 	<div
 		class={`sm:size-40 md:size-48 lg:size-52 size-36 border rounded-xl relative bg-gradient-to-t hover:scale-105 transition-all duration-300 hover:opacity-100`}

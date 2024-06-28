@@ -6,27 +6,25 @@ import Prose from "../../components/Prose.astro";
 import Blog from "../../layouts/BlogLayout.astro";
 
 export async function getStaticPaths() {
-	const postsBlog = await getCollection("blog");
-	return postsBlog.map((post) => ({
-		params: {
-			slug: post.slug,
-		},
-		props: post,
-	}));
+  const postsBlog = await getCollection("posts");
+  return postsBlog.map((post) => ({
+    params: {
+      slug: post.slug,
+    },
+    props: post,
+  }));
 }
 
-type Props = CollectionEntry<"blog">;
+type Props = CollectionEntry<"posts">;
 
 const post = Astro.props;
 
 const { Content } = await post.render();
 export const prerender = true;
-
 ---
 
 <Blog {...post.data}>
-	<Prose>
-		<Content />
-	</Prose>
-	
+  <Prose>
+    <Content />
+  </Prose>
 </Blog>

@@ -2,7 +2,7 @@
 import Card from "./Card.astro";
 import { getCollection } from "astro:content";
 
-const projects = await getCollection("blog", ({ data }) => {
+const projects = await getCollection("posts", ({ data }) => {
 	return data.project == true;
 });
 // console.log(projects);
@@ -14,7 +14,7 @@ const projects = await getCollection("blog", ({ data }) => {
 		{
 			projects.map((project) => (
 				<Card
-					href={`/blog/${project.slug}`}
+					href={`/posts/${project.slug}`}
 					title={project.data.title}
 					transition:name={project.data.image}
 					body={`${project.data.description}.`}

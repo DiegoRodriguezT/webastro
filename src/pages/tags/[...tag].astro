@@ -4,7 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 import Blog from "../../components/Blog.astro";
 
 export async function getStaticPaths() {
-  const postsBlog = await getCollection("blog");
+  const postsBlog = await getCollection("posts");
   // Get from all post each of its tags and return them individually as path
   const tags = postsBlog.flatMap((post) => post.data.tags ?? []);
   const uniqueTags = [...new Set(tags)];
@@ -18,7 +18,7 @@ export async function getStaticPaths() {
   }));
 }
 interface Props {
-	tag: string;
+  tag: string;
 }
 
 const { tag } = Astro.props;
@@ -27,5 +27,5 @@ export const prerender = true;
 ---
 
 <Layout title={`diiegorgueez - ${tag}`} description={`Posts con el tag ${tag}`}>
-	<Blog title={`#${tag}`} tag={tag}></Blog>
+  <Blog title={`#${tag}`} tag={tag} />
 </Layout>

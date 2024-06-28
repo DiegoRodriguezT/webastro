@@ -10,11 +10,11 @@ const { title = "Últimos posts", tag } = Astro.props;
 
 const posts =
   tag == null
-    ? (await getCollection("blog")).sort(
+    ? (await getCollection("posts")).sort(
         (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
       )
     : (
-        await getCollection("blog", ({ data }) => {
+        await getCollection("posts", ({ data }) => {
           return data.tags.includes(tag) === true;
         })
       ).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
@@ -33,7 +33,7 @@ const posts =
         <SmallCard
           title={post.data.title}
           description={post.data.description}
-          href={`/blog/${post.slug}`}
+          href={`/posts/${post.slug}`}
           date={post.data.date}
         />
       ))

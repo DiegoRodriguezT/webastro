@@ -8,7 +8,7 @@ import FormattedDate from "../components/FormattedDate.astro";
 import Busqueda from "../components/Busqueda.astro";
 import Layout from "./Layout.astro";
 
-type Props = CollectionEntry<"blog">["data"];
+type Props = CollectionEntry<"posts">["data"];
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/*.{jpeg,jpg,png,gif}"
@@ -62,6 +62,7 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
                   { invisible: apuntes ? false : true },
                 ]}
                 id="magnifying-glass"
+                data-umami-event="Search button"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -89,6 +90,7 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
               { invisible: apuntes ? false : true },
             ]}
             id="magnifying-glass2"
+            data-umami-event="Search button (mobile)"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
