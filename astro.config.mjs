@@ -10,7 +10,7 @@ import partytown from "@astrojs/partytown";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), mdx(), sitemap(), pagefind(), partytown()],
-  site: 'https://dev.diiegorgueez.me',
+  site: 'https://diiegorgueez.me',
   output: "hybrid",
   adapter: vercel({
     webAnalytics: {
