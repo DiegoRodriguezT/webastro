@@ -1,25 +1,27 @@
 ---
 import { Image } from "astro:assets";
-import avatar from "/src/assets/avatar.jpeg";
+import avatar from "/src/assets/yo.png";
+import ThemeIcon from "./ThemeIcon.astro";
 ---
 
-<header
-	class="py-8 m-auto flex flex-col w-3/4 md:flex-row place-items-center justify-between gap-y-4"
->
-	<div class="flex flex-row items-center gap-x-4">
-		<a href="/"
-			><Image
-				src={avatar}
-				loading="eager"
-				class="size-10 rounded-full ring-2 ring-gray-300 transition hover:scale-110"
-				alt="diiegorgueez"
-			/>
-		</a>
-		<!-- <span class="text-lg font-semibold">diiegorgueez</span> -->
-	</div>
+<div class="flex justify-center m-auto">
+  <header
+    class="py-3 my-4 px-5 mx-3 flex w-[900px] max-w-full flex-row place-items-center justify-between gap-y-4"
+  >
+    <div class="flex flex-row items-center gap-x-4">
+      <a href="/"
+        ><Image
+          src={avatar}
+          loading="eager"
+          class="size-[50px] rounded-2xl ring-2 ring-gray-300 dark:ring-gray-500 transition hover:scale-110 bg-gray-200 dark:bg-gray-800"
+          alt="diiegorgueez"
+        />
+      </a>
+      <!-- <span class="text-lg font-semibold">diiegorgueez</span> -->
+    </div>
 
-	<nav class="flex flex-row gap-x-4 gap-y-2 font-medium">
-		<!-- <a
+    <nav class="flex flex-row gap-x-5 gap-y-2 font-medium place-items-center">
+      <!-- <a
 			href="/"
 			aria-labelledby="Home"
 			id="home"
@@ -43,10 +45,9 @@ import avatar from "/src/assets/avatar.jpeg";
 		>
 		<a href="/#projects" class="transition hover:text-blue-500">Proyectos</a
 		> -->
-		<a href="/posts" class="transition hover:text-blue-500">Blog</a>
-		<a
-			href="/contact"
-			class="transition hover:text-blue-500">Contacto</a
-		>
-	</nav>
-</header>
+      <a href="/posts" class="transition hover:text-blue-500">Blog</a>
+      <a href="/contact" class="transition hover:text-blue-500">Contacto</a>
+      <ThemeIcon />
+    </nav>
+  </header>
+</div>

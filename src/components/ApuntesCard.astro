@@ -5,37 +5,38 @@ interface Props {
   href: string;
   color: string;
   subtitle: string;
+  subtitle2: string;
 }
 
-const { title, href, color, subtitle } = Astro.props;
+const { title, href, color, subtitle, subtitle2 } = Astro.props;
 ---
 
 <a
   href={href}
-  class="!no-underline !text-gray-800 !hover:text-gray-800 inline-block bg-white"
+  class="!no-underline !text-gray-800 !hover:text-gray-800 inline-block dark:!text-white hover:scale-[1.03] transition-all duration-300 group-hover:opacity-60 hover:!opacity-100"
   data-umami-event={`${title} button`}
 >
   <div
-    class={`sm:size-40 md:size-48 lg:size-52 size-36 border rounded-xl relative bg-gradient-to-t hover:scale-105 transition-all duration-300 hover:opacity-100`}
+    class={`sm:size-40 md:size-48 lg:size-52 size-36 border rounded-xl relative  hover:opacity-100 dark:border-gray-700 bg-white dark:bg-gradient-to-r dark:from-gray-950/90 dark:to-gray-900 transition-all hover:bg-gradient-to-t hover:from-gray-50`}
   >
     <div
-      class="size-[87px] sm:size-[110px] md:size-[120px] absolute top-1 sm:top-2 md:top-3 right-4 md:right-8 opacity-65"
+      class="size-[87px] sm:size-[110px] md:size-[120px] absolute top-1 sm:top-2 md:top-3 right-4 md:right-8 opacity-85"
     >
       <slot />
     </div>
     <div
-      class="size-[100px] sm:size-[125px] md:size-36 lg:size-40 absolute top-2 md:top-3 sm:left-3 left-5 md:left-4 opacity-65"
+      class="size-[100px] sm:size-[125px] md:size-36 lg:size-40 absolute top-2 md:top-3 sm:left-3 left-5 md:left-4 opacity-85"
     >
       <slot name="left" />
     </div>
     <div
-      class="size-28 sm:size-36 md:size-44 absolute top-6 right-4 sm:right-3 md:right-4 opacity-65"
+      class="size-28 sm:size-36 md:size-44 absolute top-6 right-4 sm:right-3 md:right-4 opacity-85"
     >
       <slot name="big" />
     </div>
     <div class="flex flex-col absolute bottom-4 mx-5">
       <span class="text-base md:text-xl lg:text-2xl font-bold">{title}</span>
-      <span class="text-sm md:text-base lg:text-lg">{subtitle}</span>
+      <span class="text-sm md:text-base">{subtitle}</span>
     </div>
   </div>
 </a>

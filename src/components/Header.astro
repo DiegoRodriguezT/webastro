@@ -5,7 +5,7 @@ import SocialButton from "../components/SocialButton.astro";
 
 <header class="m-auto w-[700px] max-w-full py-11 px-5">
 	<h1
-		class="font-extrabold text-3xl md:text-5xl lg:text-6xl text-black leading-tight py-4"
+		class="font-extrabold text-3xl md:text-5xl lg:text-6xl text-black dark:text-white leading-tight py-4"
 	>
 		Hola! <span class="animate-waving-hand">👋</span>
 		<br /> Soy <span
@@ -13,12 +13,12 @@ import SocialButton from "../components/SocialButton.astro";
 			>Diego Rodríguez</span
 		>
 	</h1>
-	<h2 class="py-7 text-sm md:text-lg lg:text-xl text-gray-700 font-medium text-pretty">
-		Estudiante de <span class="text-blue-600"
+	<h2 class="py-7 text-sm md:text-lg lg:text-xl text-gray-700 dark:text-gray-300 font-medium text-pretty">
+		Estudiante de <span class="text-blue-600 dark:text-blue-400 font-semibold"
 			>Matemáticas e Ingeniería Informática</span
 		> en la Universidad Rey Juan Carlos 🧑‍💻.
 	</h2>
-	<nav class="flex gap-x-3 gap-y-3 flex-wrap">
+	<nav class="flex gap-x-3 gap-y-3 flex-wrap dark:text-white">
 		<SocialButton data-umami-event="LinkedIn button" href="https://linkedin.com/in/diegordguez"
 			><svg
 				slot="icon"

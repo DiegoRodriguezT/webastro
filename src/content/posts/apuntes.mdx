@@ -20,15 +20,16 @@ import DiscretaIcon from '../../components/icons/md-2324.astro'
 import LogicaIcon from '../../components/icons/lg-2324.astro'
 import CalculoIcon from '../../components/icons/cal-2324.astro'
 import ProbabilidadIcon from '../../components/icons/pb-2526.astro'
+import EstructurasIcon from '../../components/icons/ea-2324.astro'
 import Busqueda from '../../components/Busqueda.astro'
 
 ## Primero
-<div class="flex flex-wrap gap-2 justify-center">
+<div class="flex flex-wrap gap-2 justify-center group">
 <Card title="Matemática Discreta" href="/apuntes/md-2324"><DiscretaIcon/></Card>
-<Card title="Álgebra Lineal" href="/apuntes/al-2324"><AlgebraIcon/></Card>
+<Card title="Álgebra Lineal" subtitle2="(incompleto)" href="/apuntes/al-2324"><AlgebraIcon/></Card>
 <Card title="Lógica" href="/apuntes/lg-2324"><LogicaIcon slot="left"/></Card>
+<Card title="Estructuras Algebraicas" href="/apuntes/ea-2324"><EstructurasIcon slot="left"/></Card>
 <Card title="Cálculo" href="/apuntes/cal-2324"><CalculoIcon slot="big"/></Card>
-<Card title="Estructuras Algebraicas" href="/apuntes/ea-2324"></Card>
 <Card title="Probabilidad" subtitle="(no disponible)" href="#primero"><ProbabilidadIcon/></Card>
 </div>
 

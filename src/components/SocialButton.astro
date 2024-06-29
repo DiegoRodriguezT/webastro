@@ -1,7 +1,8 @@
 <a
-	{...Astro.props}
-	class="py-2 px-3 rounded-full border-slate-200 bg-gradient-to-tr from-white to-gray-50 border  hover:bg-gray-200 hover:scale-105 transition flex gap-x-1 justify-center items-center" target="_blank"
+  {...Astro.props}
+  class="py-2 px-3 rounded-full border-slate-200 bg-gradient-to-tr from-white to-gray-50 border hover:bg-gray-200 hover:scale-105 transition flex gap-x-1 justify-center items-center dark:from-slate-800 dark:to-slate-900 dark:border-gray-700"
+  target="_blank"
 >
-	<slot name="icon" />
-	<slot />
+  <slot name="icon" />
+  <slot />
 </a>

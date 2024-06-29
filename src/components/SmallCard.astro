@@ -12,14 +12,15 @@ const { title, description, href, date } = Astro.props;
 
 <a href={href}>
 	<div
-		class="flex flex-col rounded-xl p-4 gap-y-1 border bg-white  hover:bg-gray-100/70 transition-all duration-300 font-medium"
+		class="flex flex-col rounded-xl p-4 gap-y-2 border bg-white  hover:bg-gray-100/70 hover:transition-all hover:duration-300 font-medium hover:shadow-md hover:shadow-blue-800/15 dark:bg-slate-900 dark:border-gray-700 dark:hover:shadow-slate-800"
 	>
 		<div
 			class="flex flex-col md:flex-row md:place-items-center gap-x-4 text-gray-500"
 		>
-			<h3 class="text-lg md:text-xl font-bold text-black">{title}</h3>
+			<h3 class="text-lg md:text-xl font-bold text-black dark:text-white">{title}</h3>
 			<FormattedDate date={date} />
 		</div>
 		<p class="text-base md:text-lg">{description}.</p>
+		<span class="text-sm font-mono">Leer más →</span>
 	</div>
 </a>

@@ -13,8 +13,8 @@ type Props = CollectionEntry<"posts">["data"];
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/*.{jpeg,jpg,png,gif}"
 );
-if (!images[image])
-  throw new Error(`"${image}" no existe en "src/assets/*.{jpeg,jpg,png,gif}"`);
+// if (!images[image])
+//   throw new Error(`"${image}" no existe en "src/assets/*.{jpeg,jpg,png,gif}"`);
 
 const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir barra de búsqueda solo en /apuntes.
 ---
@@ -23,22 +23,25 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
   <link href="/apuntes/pagefind/pagefind-ui.css" rel="stylesheet" />
   <script src="/apuntes/pagefind/pagefind-ui.js" is:inline></script>
   <div class="m-auto max-w-full px-6 pt-4">
-    <Image
-      src={images[image]()}
-      alt=""
-      width="900"
-      height="450"
-      class="rounded-xl shadow-xl border m-auto mb-10 max-w-full"
-      loading="eager"
-    />
+    {images[image] &&
+       <Image
+         src={images[image]()}
+         alt=""
+         width="850"
+         height="425"
+         class="rounded-xl border m-auto mb-10 max-w-full transition-all"
+         loading="eager"
+       />
+    }
+    
 
     <div class="m-auto px-5 max-w-full w-[700px] pb-5 flex-col flex gap-y-6">
       <div class="relative mt-5">
         <div class="absolute -left-24 -top-7">
-          <div class="min-h-screen">
-            <div class="flex flex-col sticky top-0 max-[885px]:hidden">
+          <div class="min-h-screen ">
+            <div class="flex flex-col sticky top-0 max-[885px]:hidden dark:text-white text-gray-500 font-medium leading-6 ">
               <a
-                class="w-11 h-11 rounded-full flex items-center justify-center bg-white hover:bg-[#ecedf0] text-sm leading-6 font-medium text-gray-500 hover:text-gray-700 focus:ring focus:ring-gray-100 m-4 mb-3 border-neutral-200 border"
+                class="w-11 h-11 rounded-full flex items-center justify-center bg-white dark:bg-slate-800  hover:bg-[#ecedf0] text-sm hover:text-gray-700 focus:ring focus:ring-gray-100 m-4 mb-3 border-neutral-200 border dark:border-gray-600 dark:hover:bg-slate-900 dark:hover:text-gray-300 dark:focus:ring-gray-500"
                 href="/posts/"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -51,14 +54,14 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"
-                  ><path stroke="none" d="M0 0h24v24H0z" fill="none"
+                  ><title>Volver</title><path stroke="none" d="M0 0h24v24H0z" fill="none"
                   ></path><path d="M5 12l14 0"></path><path d="M5 12l6 6"
                   ></path><path d="M5 12l6 -6"></path></svg
                 >
               </a>
               <button
                 class:list={[
-                  "w-11 h-11 rounded-full flex items-center justify-center bg-white hover:bg-[#ecedf0] text-sm leading-6 font-medium text-gray-500 hover:text-gray-700 focus:ring focus:ring-gray-100 mx-4 border-neutral-200 border",
+                  "w-11 h-11 rounded-full flex items-center justify-center bg-white hover:bg-[#ecedf0] dark:bg-slate-800 text-sm hover:text-gray-700 focus:ring focus:ring-gray-100 mx-4 border-neutral-200 border dark:border-gray-600 dark:hover:bg-slate-900 dark:hover:text-gray-300 dark:focus:ring-gray-500",
                   { invisible: apuntes ? false : true },
                 ]}
                 id="magnifying-glass"
@@ -74,7 +77,7 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   class="icon icon-tabler icons-tabler-outline icon-tabler-search"
-                  ><path stroke="none" d="M0 0h24v24H0z" fill="none"
+                  ><title>Buscar en los apuntes</title><path stroke="none" d="M0 0h24v24H0z" fill="none"
                   ></path><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"
                   ></path><path d="M21 21l-6 -6"></path></svg
                 >
@@ -86,7 +89,7 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
           <button
             aria-labelledby="Búsqueda"
             class:list={[
-              "sm:size-12 size-10 rounded-full flex items-center justify-center bg-white hover:bg-[#ecedf0] text-sm leading-6 font-medium text-gray-500 hover:text-gray-700 focus:ring focus:ring-gray-100 m-4 border-neutral-200 border min-[885px]:hidden sticky top-3 r-0 -mr-4 shadow",
+              "sm:size-12 size-10 rounded-full flex items-center justify-center bg-white hover:bg-[#ecedf0] text-sm leading-6 font-medium text-gray-500 hover:text-gray-700 focus:ring focus:ring-gray-100 m-4 border-neutral-200 border min-[885px]:hidden sticky top-3 r-0 -mr-4 shadow dark:bg-slate-800 dark:border-gray-600 dark:text-white dark:hover:bg-slate-900 dark:hover:text-gray-300 dark:focus:ring-gray-500",
               { invisible: apuntes ? false : true },
             ]}
             id="magnifying-glass2"
@@ -115,8 +118,8 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
             {title}
           </h1>
         </div>
-        <div class="text-base md:text-lg text-gray-500 font-light text-pretty">
-          <span>{description} •</span>
+        <div class="text-base md:text-lg text-gray-500 dark:text-gray-400 font-light text-pretty">
+          <span class="">{description} •</span>
           <FormattedDate date={date} />
         </div>
       </div>
@@ -126,7 +129,8 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
         {
           tags?.map((tag) => (
             <a
-              class="px-5 py-3 bg-gray-50 border rounded-xl text-base font-medium hover:-translate-y-[2px] transition focus:ring focus:ring-gray-100"
+              class="px-5 py-3 bg-gray-50 border rounded-xl text-base font-medium hover:-translate-y-[2px] transition focus:ring focus:ring-gray-100
+              dark:bg-gray-800 dark:border-gray-700 dark:focus:ring-gray-800"
               href={`/tags/${tag}`}
             >
               {tag}
