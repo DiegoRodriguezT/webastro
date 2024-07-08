@@ -7,7 +7,7 @@ import { ViewTransitions } from "astro:transitions";
 import FormattedDate from "../components/FormattedDate.astro";
 import Busqueda from "../components/Busqueda.astro";
 import Layout from "./Layout.astro";
-
+import Tag from "../components/Tag.astro"
 type Props = CollectionEntry<"posts">["data"];
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
@@ -20,6 +20,7 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
 ---
 
 <Layout title={`${title} - diiegorgueez`} description={description}>
+  
   <link href="/apuntes/pagefind/pagefind-ui.css" rel="stylesheet" />
   <script src="/apuntes/pagefind/pagefind-ui.js" is:inline></script>
   <div class="m-auto max-w-full px-6 pt-4">
@@ -118,23 +119,17 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
             {title}
           </h1>
         </div>
-        <div class="text-base md:text-lg text-gray-500 dark:text-gray-400 font-light text-pretty">
+        <div class="text-base md:text-lg text-gray-500 dark:text-gray-300 font-light text-pretty">
           <span class="">{description} •</span>
           <FormattedDate date={date} />
         </div>
       </div>
       <slot />
-      {tags != null ? <hr /> : ""}
+      {tags != null ? <hr class="dark:border-gray-700" /> : ""}
       <div class="flex flex-wrap gap-3 pb-6">
         {
           tags?.map((tag) => (
-            <a
-              class="px-5 py-3 bg-gray-50 border rounded-xl text-base font-medium hover:-translate-y-[2px] transition focus:ring focus:ring-gray-100
-              dark:bg-gray-800 dark:border-gray-700 dark:focus:ring-gray-800"
-              href={`/tags/${tag}`}
-            >
-              {tag}
-            </a>
+            <Tag slug={tag}>{tag}</Tag>
           ))
         }
       </div>
