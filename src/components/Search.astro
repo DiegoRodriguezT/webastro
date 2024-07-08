@@ -1,8 +1,8 @@
-<div id="search"></div>
+
 <script>
-  window.addEventListener("DOMContentLoaded", (event) => {
-    // @ts-ignore
-    new PagefindUI({
+import { PagefindUI } from "@pagefind/default-ui";
+function initPagefind() {
+  new PagefindUI({
       element: "#search",
       translations: {
         placeholder: "Buscar",
@@ -37,5 +37,12 @@
       },
       showEmptyFilters: false,
     });
-  });
+}
+
+document.addEventListener("astro:page-load", initPagefind);
+  // if (document.readyState === "loading") {
+  //   document.addEventListener("DOMContentLoaded", initPagefind);
+  // } else {
+  //   initPagefind();
+  // }
 </script>

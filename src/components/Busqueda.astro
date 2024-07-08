@@ -7,47 +7,9 @@ import Search from "../components/Search.astro";
   class="bg-[rgba(0, 0, 0, 0.5] invisible fixed left-0 top-0 z-50 flex h-screen w-full justify-center p-6 pt-14 backdrop-blur-sm"
 >
   <div
-    id="pagefind-container"
-    class="m-0 flex h-fit max-h-[80%] w-full max-w-screen-md flex-col overflow-auto rounded-xl border border-slate/15 bg-gray-100/[98] p-2 px-4 py-3 shadow-lg dark:border-white/20 dark:bg-neutral-900 dark:text-white"
-  >
-    <!-- <Search
-      id="search"
-      className="pagefind-ui"
-      uiOptions={{
-        translations: {
-          placeholder: "Buscar",
-          clear_search: "Limpiar",
-          load_more: "Ver más resultados",
-          search_label: "Buscar en este sitio",
-          filters_label: "Filtros",
-          zero_results: "No se encontraron resultados para [SEARCH_TERM]",
-          many_results: "[COUNT] resultados encontrados para [SEARCH_TERM]",
-          one_result: "[COUNT] resultado encontrado para [SEARCH_TERM]",
-          alt_search:
-            "No se encontraron resultados para [SEARCH_TERM]. Mostrando en su lugar resultados para [DIFFERENT_TERM]",
-          search_suggestion:
-            "No se encontraron resultados para [SEARCH_TERM]. Prueba una de las siguientes búsquedas:",
-          searching: "Buscando [SEARCH_TERM]...",
-        },
-        showSubResults: true,
-        baseUrl: "apuntes/",
-        showImages: false,
-        autofocus: false,
-        pageSize: 10,
-        highlightParam: "highlight",
-        excerpLength: 15,
-        processResult: function (result) {
-          if (!result.raw_title) {
-            result.raw_title = result.meta.title;
-          }
-          // Add the page type to the title
-          result.meta.title = `${result.filters["asignatura"]} ▸ ${result.raw_title}`;
-
-          return result;
-        },
-        showEmptyFilters: false,
-      }}
-    /> -->
+    id="pagefind-container "
+    class="m-0 flex h-fit max-h-[80%] w-full max-w-screen-md flex-col overflow-auto rounded-xl border border-slate/15 bg-gray-100/[98] p-2 px-4 py-3 shadow-lg dark:border-white/20 dark:bg-gray-950/[98] dark:text-white"
+  ><div id="search"></div>
     <Search />
     <div class="mr-2 pb-1 pt-4 text-right text-xs dark:prose-invert">
       Presiona <span class="prose text-xs dark:prose-invert"
@@ -57,8 +19,9 @@ import Search from "../components/Search.astro";
   </div>
 </div>
 
-<script is:inline>
-  const magnifyingGlass = document.getElementById("magnifying-glass");
+<script is:inline >
+  document.addEventListener("astro:page-load", () => {
+    const magnifyingGlass = document.getElementById("magnifying-glass");
   const magnifyingGlass2 = document.getElementById("magnifying-glass2");
   const backdrop = document.getElementById("backdrop");
 
@@ -66,20 +29,20 @@ import Search from "../components/Search.astro";
     const searchDiv = document.getElementById("search");
     const search = searchDiv.querySelector("input");
     setTimeout(() => {
-      search.focus();
+        search.focus();
     }, 0);
     backdrop?.classList.remove("invisible");
     backdrop?.classList.add("visible");
   }
 
-  document.addEventListener("astro:page-load", () => {
+  // document.addEventListener("astro:page-load", () => {
     magnifyingGlass?.addEventListener("click", () => {
       openPagefind();
     });
     magnifyingGlass2?.addEventListener("click", () => {
       openPagefind();
     });
-  });
+  // });
 
   function closePagefind() {
     const search = document.getElementById("search");
@@ -121,10 +84,12 @@ import Search from "../components/Search.astro";
   });
 
   // prevent form submission
-  const form = document.getElementById("form");
-  form?.addEventListener("submit", (event) => {
-    event.preventDefault();
-  });
+//   const form = document.getElementById("form");
+//   form?.addEventListener("submit", (event) => {
+//     event.preventDefault();
+//   }
+// );
+  })
 </script>
 
 <style is:global>
@@ -143,8 +108,8 @@ import Search from "../components/Search.astro";
   html.dark {
     --pagefind-ui-primary: #d4d4d4;
     --pagefind-ui-text: #eeeeee;
-    --pagefind-ui-background: #171717;
-    --pagefind-ui-border: #404040;
+    --pagefind-ui-background: #020617;
+    --pagefind-ui-border: #1f2937;
     /* --pagefind-ui-primary: #eeeeee;
   --pagefind-ui-text: #eeeeee;
   --pagefind-ui-background: #152028;

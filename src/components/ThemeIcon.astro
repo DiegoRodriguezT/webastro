@@ -10,7 +10,8 @@
   :global(.dark) .icon-tabler-sun { display: none; }
 </style>
 
-<script is:inline>
+<script is:inline >
+	document.addEventListener('astro:page-load', () => {
 	const theme = (() => {
 	  if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
 		return localStorage.getItem('theme');
@@ -38,4 +39,15 @@
 	}
   
 	document.getElementById("toggle").addEventListener("click", handleToggleClick);
+})
+  </script>
+
+<script>
+	function applyTheme() {
+	  localStorage.theme === 'dark'
+		? document.documentElement.classList.add("dark")
+		: document.documentElement.classList.remove("dark");
+	}
+  document.addEventListener('astro:after-swap', applyTheme);
+	applyTheme();
   </script>
