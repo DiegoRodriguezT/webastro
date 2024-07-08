@@ -50,6 +50,9 @@ importers:
       astro-pagefind:
         specifier: ^1.5.0
         version: 1.5.0(astro@4.11.1(@types/node@20.14.8))
+      astro-vtbot:
+        specifier: ^1.7.26
+        version: 1.7.26
       fullcalendar:
         specifier: ^6.1.14
         version: 6.1.14
@@ -958,6 +961,9 @@ packages:
     resolution: {integrity: sha512-CN7Afe9qW640U1qliCQMXN259Dl6VPUnl8FneLfKE7STV4HLiif4PbNZejylC6yXYyP6uyNVDHNOfJfBBW5h6A==}
     peerDependencies:
       astro: ^2.0.4 || ^3.0.0 || ^4.0.0
+
+  astro-vtbot@1.7.26:
+    resolution: {integrity: sha512-mpO2dA1WEX2+FHyZpE9O1CCxvlDfElpl7W64DVZ4n/h4Gm66U2h6+uw6xAynPtGaA25ehIAn8u4JmfZZfWUpyA==}
 
   astro@4.11.1:
     resolution: {integrity: sha512-6e9/9nafmnxzaLSq2+9VNpi+7j0E4UoK2IJ7gkhyv1wk3XfciA6zHc3ESx7/Sk/rjenz9NSTTzAwcmVzWWHv/g==}
@@ -3690,6 +3696,8 @@ snapshots:
       astro: 4.11.1(@types/node@20.14.8)
       pagefind: 1.1.0
       sirv: 2.0.4
+
+  astro-vtbot@1.7.26: {}
 
   astro@4.11.1(@types/node@20.14.8):
     dependencies:

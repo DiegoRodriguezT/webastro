@@ -24,6 +24,7 @@
     "@vercel/speed-insights": "^1.0.12",
     "astro": "^4.10.3",
     "astro-pagefind": "^1.5.0",
+    "astro-vtbot": "^1.7.26",
     "fullcalendar": "^6.1.14",
     "katex": "^0.16.10",
     "sticksy": "^0.2.0",

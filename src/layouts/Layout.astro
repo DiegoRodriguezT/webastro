@@ -21,6 +21,7 @@ const {
 import "@fontsource-variable/inter";
 import NavBar from "../components/NavBar.astro";
 import Footer from "../components/Footer.astro";
+
 ---
 
 <!doctype html>
@@ -57,6 +58,20 @@ import Footer from "../components/Footer.astro";
     <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
     <title>{title || frontmatter.title}</title>
+    <script>
+      function animate() {
+    const animateElements = document.querySelectorAll(".animate");
+
+    animateElements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add("show");
+      }, index *100);
+    });
+  }
+  document.addEventListener("DOMContentLoaded", () => animate());
+  document.addEventListener("astro:after-swap", () => animate());
+
+    </script>
   </head>
   <body>
     
@@ -78,6 +93,14 @@ import Footer from "../components/Footer.astro";
         color: #fff;
         background-color: rgb(3 7 18)
       }
+      .animate {
+  @apply -translate-y-3 opacity-0;
+  @apply transition-all duration-300 ease-out;
+}
+
+.animate.show {
+  @apply translate-y-0 opacity-100;
+}
     </style>
   </body>
 </html>

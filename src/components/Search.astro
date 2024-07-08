@@ -1,7 +1,6 @@
 
-<script>
+<script is:inline data-astro-rerun>
 function initPagefind() {
-  // @ts-ignore
   new PagefindUI({
       element: "#search",
       translations: {
@@ -25,7 +24,7 @@ function initPagefind() {
       autofocus: false,
       pageSize: 10,
       highlightParam: "highlight",
-      excerpLength: 30,
+      excerptLength: 30,
       processResult: function (result) {
         if (!result.raw_title) {
           result.raw_title = result.meta.title;
@@ -39,7 +38,7 @@ function initPagefind() {
     });
 }
 
-document.addEventListener("astro:page-load", initPagefind);
+document.addEventListener("astro:page-load", initPagefind, { once: true });
   // if (document.readyState === "loading") {
   //   document.addEventListener("DOMContentLoaded", initPagefind);
   // } else {

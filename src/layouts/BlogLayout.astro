@@ -36,7 +36,7 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
     }
     
 
-    <div class="m-auto px-5 max-w-full w-[700px] pb-5 flex-col flex gap-y-6">
+    <div class="m-auto px-5 max-w-full w-[700px] pb-5 flex-col flex gap-y-6 animate">
       <div class="relative mt-5">
         <div class="absolute -left-24 -top-7">
           <div class="min-h-screen ">
@@ -114,14 +114,14 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
         </div>
         <div class="pb-3">
           <h1
-            class="text-xl sm:text-2xl md:text-4xl font-extrabold bg-gradient-to-t"
+            class="text-xl sm:text-2xl md:text-4xl font-extrabold" transition:name={`${title} post`}
           >
             {title}
           </h1>
         </div>
         <div class="text-base md:text-lg text-gray-500 dark:text-gray-300 font-light text-pretty">
-          <span class="">{description} •</span>
-          <FormattedDate date={date} />
+          <span class="" transition:name={`${title} description`}>{description} •</span>
+          <FormattedDate date={date} title={title}/>
         </div>
       </div>
       <slot />
@@ -135,5 +135,5 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
       </div>
     </div>
   </div>
-  <Busqueda />
+  {apuntes && <Busqueda />}
 </Layout>
