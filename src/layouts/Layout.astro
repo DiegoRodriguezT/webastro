@@ -9,7 +9,6 @@ interface Props {
   };
 }
 
-import SpeedInsights from "@vercel/speed-insights/astro";
 import { ViewTransitions } from 'astro:transitions';
 
 const {
@@ -21,7 +20,6 @@ const {
 import "@fontsource-variable/inter";
 import NavBar from "../components/NavBar.astro";
 import Footer from "../components/Footer.astro";
-
 ---
 
 <!doctype html>
@@ -30,7 +28,7 @@ import Footer from "../components/Footer.astro";
     <script
       defer
       src="https://analytics.diiegorgueez.me/script.js"
-      data-website-id="8b19a483-a80c-4b01-b340-47df457b0eb3"></script>
+      data-website-id="8b19a483-a80c-4b01-b340-47df457b0eb3" ></script>
     <meta charset="UTF-8" />
     <meta name="description" content={description || frontmatter.description} />
     <meta name="viewport" content="width=device-width" />
@@ -58,14 +56,14 @@ import Footer from "../components/Footer.astro";
     <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
     <title>{title || frontmatter.title}</title>
-    <script>
+    <script is:inline>
       function animate() {
     const animateElements = document.querySelectorAll(".animate");
 
     animateElements.forEach((element, index) => {
       setTimeout(() => {
         element.classList.add("show");
-      }, index *100);
+      }, index *50);
     });
   }
   document.addEventListener("DOMContentLoaded", () => animate());
@@ -83,7 +81,6 @@ import Footer from "../components/Footer.astro";
       </div>
     </div>
     <Footer />
-    <SpeedInsights />
     <style is:global>
       html {
         font-family: "Inter Variable", sans-serif;
@@ -94,14 +91,14 @@ import Footer from "../components/Footer.astro";
         color: #fff;
         background-color: rgb(3 7 18)
       }
-      .animate {
+       .animate {
   @apply -translate-y-3 opacity-0;
   @apply transition-all duration-300 ease-out;
 }
 
 .animate.show {
   @apply translate-y-0 opacity-100;
-}
+  } 
     </style>
   </body>
 </html>

@@ -60,10 +60,9 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
                   ></path><path d="M5 12l6 -6"></path></svg
                 >
               </a>
-              <button
+              {apuntes && <button
                 class:list={[
                   "w-11 h-11 rounded-full flex items-center justify-center bg-white hover:bg-[#ecedf0] dark:bg-slate-800 text-sm hover:text-gray-700 focus:ring focus:ring-gray-100 mx-4 border-neutral-200 border dark:border-gray-600 dark:hover:bg-slate-900 dark:hover:text-gray-300 dark:focus:ring-gray-500",
-                  { invisible: apuntes ? false : true },
                 ]}
                 id="magnifying-glass"
                 data-umami-event="Search button"
@@ -80,18 +79,16 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
                   class="icon icon-tabler icons-tabler-outline icon-tabler-search"
                   ><title>Buscar en los apuntes</title><path stroke="none" d="M0 0h24v24H0z" fill="none"
                   ></path><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"
-                  ></path><path d="M21 21l-6 -6"></path></svg
-                >
-              </button>
+                  ></path><path d="M21 21l-6 -6"></path></svg>
+              </button>}
             </div>
           </div>
         </div>
-        <div class="absolute -right-1 -top-5 min-h-screen">
+        {apuntes && <div class="absolute -right-1 -top-5 min-h-screen z-10">
           <button
             aria-labelledby="Búsqueda"
             class:list={[
-              "sm:size-12 size-10 rounded-full flex items-center justify-center bg-white hover:bg-[#ecedf0] text-sm leading-6 font-medium text-gray-500 hover:text-gray-700 focus:ring focus:ring-gray-100 m-4 border-neutral-200 border min-[885px]:hidden sticky top-3 r-0 -mr-4 shadow dark:bg-slate-800 dark:border-gray-600 dark:text-white dark:hover:bg-slate-900 dark:hover:text-gray-300 dark:focus:ring-gray-500",
-              { invisible: apuntes ? false : true },
+              "sm:size-12 size-10 rounded-full flex items-center justify-center !opacity-100 bg-white hover:bg-[#ecedf0] text-sm leading-6 font-medium text-gray-500 hover:text-gray-700 focus:ring focus:ring-gray-100 m-4 border-neutral-200 border min-[885px]:hidden sticky top-3 r-0 -mr-4 shadow dark:bg-slate-800 dark:border-gray-600 dark:text-white dark:hover:bg-slate-900 dark:hover:text-gray-300 dark:focus:ring-gray-500",
             ]}
             id="magnifying-glass2"
             data-umami-event="Search button (mobile)"
@@ -108,19 +105,18 @@ const apuntes = title == "Apuntes de Matemáticas" ? true : false; // Añadir ba
               class="icon icon-tabler icons-tabler-outline icon-tabler-search"
               ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
                 d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path><path
-                d="M21 21l-6 -6"></path></svg
-            >
+                d="M21 21l-6 -6"></path></svg>
           </button>
-        </div>
+        </div>}
         <div class="pb-3">
           <h1
-            class="text-xl sm:text-2xl md:text-4xl font-extrabold" transition:name={`${title} post`}
+            class="text-xl sm:text-2xl md:text-4xl font-extrabold inline-block" transition:name={`${title} post`}
           >
             {title}
           </h1>
         </div>
-        <div class="text-base md:text-lg text-gray-500 dark:text-gray-300 font-light text-pretty">
-          <span class="" transition:name={`${title} description`}>{description} •</span>
+        <div class="text-sm sm:text-base md:text-lg text-gray-500 dark:text-gray-300 font-light text-pretty">
+          <span class="" transition:name={`${title} description`}>{description} </span>•
           <FormattedDate date={date} title={title}/>
         </div>
       </div>

@@ -1,5 +1,4 @@
 ---
-import type { AstroBuiltinAttributes } from "astro";
 interface Props {
   title: string;
   href: string;
@@ -18,7 +17,7 @@ const { title, href, color, subtitle, subtitle2 } = Astro.props;
 >
   <div
     class={`sm:size-40 md:size-48 lg:size-52 size-36 border rounded-xl relative  hover:opacity-100 
-    dark:border-gray-800 bg-white dark:bg-gray-950 transition-all hover:bg-gradient-to-t hover:from-gray-50 dark:hover:from-gray-950/80`}
+    dark:border-gray-800 bg-white dark:bg-gray-950 transition-all dark:hover:from-gray-950/80`}
   >
     <div
       class="size-[87px] sm:size-[110px] md:size-[120px] absolute top-1 sm:top-2 md:top-3 right-4 md:right-8 opacity-85"
@@ -36,8 +35,8 @@ const { title, href, color, subtitle, subtitle2 } = Astro.props;
       <slot name="big" />
     </div>
     <div class="flex flex-col absolute bottom-4 mx-5">
-      <span class="text-base md:text-xl lg:text-2xl font-bold">{title}</span>
-      <span class="text-sm md:text-base">{subtitle}</span>
+      <div class="flex flex-col sm:flex-row sm:place-items-end"><span class="text-base md:text-xl lg:text-2xl font-bold">{title}</span><span class=" text-xs md:text-sm pb-1 text-gray-500">{subtitle2}</span></div>
+      <span class="text-sm md:text-base text-gray-500">{subtitle}</span>
     </div>
   </div>
 </a>

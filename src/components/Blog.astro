@@ -8,8 +8,7 @@ interface Props {
 
 const { title = "Últimos posts", tag } = Astro.props;
 
-const transition = title == "Últimos posts" ? true : false;
-
+// const transition = title == "Últimos posts" ? true : false;
 const posts =
   tag == null
     ? (await getCollection("posts")).sort(
@@ -17,7 +16,7 @@ const posts =
       )
     : (
         await getCollection("posts", ({ data }) => {
-          return data.tags.includes(tag) === true;
+          return data.tags?.includes(tag) === true;
         })
       ).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
@@ -29,7 +28,7 @@ const posts =
   <h2 class="text-2xl md:text-3xl lg:text-3xl font-extrabold animate">
     {title}
   </h2>
-  <div class="flex flex-col m-auto px-4 mt-6 gap-y-3 group">
+  <div class="flex flex-col m-auto px-4 mt-6 gap-y-3 group animate">
     {
       posts.map((post) => (
         <SmallCard
@@ -37,7 +36,6 @@ const posts =
           description={post.data.description}
           href={`/posts/${post.slug}`}
           date={post.data.date}
-          transition={transition}
         />
       ))
     }
